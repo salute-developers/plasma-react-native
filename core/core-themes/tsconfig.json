@@ -1,0 +1,16 @@
+{
+    "compilerOptions": {
+        "esModuleInterop": true,
+        "typeRoots": ["./types", "./node_modules/@types"],
+        "target": "ES5",
+        "module": "commonjs",
+        "moduleResolution": "node",
+        "strict": true,
+        "resolveJsonModule": true,
+        "declaration": true,
+        "sourceMap": true,
+        "removeComments": false,
+        "outDir": "./build/cjs",
+        "rootDir": "./src"
+    }
+}
