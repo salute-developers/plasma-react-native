@@ -1,0 +1,52 @@
+{
+  "name": "plasma-native",
+  "private": true,
+  "author": "Salute Frontend Team <salute.developers@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "lint:lerna": "npx lerna run lint --parallel --since=$(git merge-base --fork-point origin/main)",
+    "lint": "npm run lint:lerna",
+    "prepare": "test ! -n \"$CI\" && husky install || echo skip husky",
+    "bootstrap": "npx lerna bootstrap",
+    "bootstrap:since": "npm run bootstrap -- --since=$(git merge-base --fork-point origin/main)"
+  },
+  "devDependencies": {
+    "@actions/core": "1.2.7",
+    "@actions/github": "4.0.0",
+    "@babel/plugin-transform-react-constant-elements": "7.22.5",
+    "@commitlint/cli": "17.4.4",
+    "@commitlint/config-conventional": "17.4.4",
+    "@salutejs/eslint-config": "1.2.0",
+    "@salutejs/eslint-config-base": "0.4.0",
+    "@salutejs/prettier-config": "0.3.0",
+    "@typescript-eslint/eslint-plugin": "5.48.2",
+    "@typescript-eslint/parser": "5.48.2",
+    "babel-eslint": "10.1.0",
+    "babel-loader": "9.1.3",
+    "babel-plugin-const-enum": "1.2.0",
+    "babel-plugin-inline-svg": "1.2.0",
+    "babel-plugin-istanbul": "6.1.1",
+    "babel-plugin-styled-components": "1.13.2",
+    "eslint": ">= 8.32.0",
+    "eslint-config-airbnb": "18.1.0",
+    "eslint-config-prettier": "6.11.0",
+    "eslint-plugin-cypress": "3.2.0",
+    "eslint-plugin-flowtype": "4.7.0",
+    "eslint-plugin-import": ">= 2.27.4",
+    "eslint-plugin-jest": "23.8.2",
+    "eslint-plugin-jsx-a11y": "6.2.3",
+    "eslint-plugin-prettier": "3.1.3",
+    "eslint-plugin-react": "7.19.0",
+    "eslint-plugin-react-hooks": "3.0.0",
+    "fast-glob": "3.2.12",
+    "fs-extra": "10.0.0",
+    "husky": "^8.0.0",
+    "lerna": "6.5.1",
+    "lint-staged": "13.1.2",
+    "prettier": "2.0.5",
+    "typescript": "4.2.4"
+  },
+  "engines": {
+    "npm": "^8.19.0 || ^9.5.1"
+  }
+}

@@ -1,0 +1,6 @@
+/node_modules/
+/build
+
+# Exclude package(-lock).json for all packages
+package.json
+package-lock.json

@@ -1,0 +1,19 @@
+{
+    "packages": ["core/*", "libraries/*", "packages/*", "themes/*"],
+    "version": "independent",
+    "ignoreChanges": ["*.md", "package-lock.json"],
+    "loglevel": "verbose",
+    "exact": true,
+    "command": {
+        "bootstrap": {
+            "npmClientArgs": ["--no-audit", "--no-optional", "--loglevel error", "--no-progress", "--unsafe-perm"]
+        },
+        "publish": {
+            "verifyAccess": false
+        },
+        "list": {
+            "ignoreChanges": ["*.md", "package-lock.json"]
+        }
+    },
+    "$schema": "node_modules/lerna/schemas/lerna-schema.json"
+}

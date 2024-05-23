@@ -1,0 +1,6 @@
+node_modules/
+.idea/
+tsconfig.tsbuildinfo
+tsconfig.es.tsbuildinfo
+s3_build
+temp
