@@ -1,1 +1,8 @@
 node_modules
+<<<<<<< Updated upstream
+=======
+
+libraries/**/metro.config.js
+
+themes/**/src/*
+>>>>>>> Stashed changes

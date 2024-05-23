@@ -1,6 +1,8 @@
 /node_modules/
 /build
 
+themes/**/src/*
+
 # Exclude package(-lock).json for all packages
 package.json
 package-lock.json
