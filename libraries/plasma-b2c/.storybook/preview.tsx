@@ -2,6 +2,9 @@ import React, { useState } from 'react';
 import type { Preview, StoryFn, StoryContext } from '@storybook/react';
 import { Switch, Text, View } from 'react-native';
 
+import { plasma_b2c } from '@salutejs-native/plasma-themes';
+import { ThemeProvider } from '@salutejs-native/core-components';
+
 type ThemeMode = 'light' | 'dark';
 
 interface CustomToolbarProps {
@@ -56,7 +59,7 @@ export const withPaddings = (Story: StoryFn) => {
 export const withThemeProvider = (Story: StoryFn, context: StoryContext) => {
     const [themeMode, setThemeMode] = useState<ThemeMode>(context.globals.theme);
 
-    const color = themeMode === 'dark' ? 'black' : 'white';
+    const data = plasma_b2c;
 
     const onThemeModeToggle = (value: boolean) => {
         const themeMode = value ? 'dark' : 'light';
@@ -66,21 +69,32 @@ export const withThemeProvider = (Story: StoryFn, context: StoryContext) => {
     };
 
     return (
-        <>
-            <CustomToolbar themeMode={themeMode} onThemeModeToggle={onThemeModeToggle} />
-            <View
-                style={{
-                    backgroundColor: color,
-                    height: '100%',
-                }}
-            >
-                <Story />
-            </View>
-        </>
+        <ThemeProvider
+            theme={{
+                mode: themeMode,
+                screenSize: 'screenM', // TODO: Сделать это свойство динамическим
+                data,
+            }}
+        >
+            <>
+                <CustomToolbar themeMode={themeMode} onThemeModeToggle={onThemeModeToggle} />
+                <View
+                    style={{
+                        backgroundColor: data.color[themeMode].backgroundPrimary,
+                        height: '100%',
+                    }}
+                >
+                    <Story />
+                </View>
+            </>
+        </ThemeProvider>
     );
 };
 
 const preview: Preview = {
+    parameters: {
+        controls: { expanded: true },
+    },
     decorators: [withPaddings, withThemeProvider],
     globalTypes: {
         theme: {
