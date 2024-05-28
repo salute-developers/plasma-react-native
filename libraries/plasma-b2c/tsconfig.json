@@ -33,8 +33,11 @@
         "skipLibCheck": true,
         "forceConsistentCasingInFileNames": true,
         "baseUrl": ".",
-        "outDir": "./",
-        "rootDir": "./src"
+        "outDir": "./build/cjs",
+        "rootDir": "./src",
+
+        "noEmit": false
     },
-    "include": ["./src"]
+    "include": ["./src/**/*"],
+    "exclude": ["./src/index.dev.ts", "./src/index.prod.ts"]
 }
