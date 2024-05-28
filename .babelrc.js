@@ -1,5 +1,5 @@
 const plugins = ['babel-plugin-annotate-pure-calls', '@babel/plugin-transform-react-constant-elements'];
-const ignore = ['**/*.d.ts', '**/helpers', '**/__helpers', '**/*.stories.tsx'];
+const ignore = ['**/*.d.ts', '**/*.stories.tsx'];
 
 process.env.COVERAGE && plugins.push(['babel-plugin-istanbul']);
 

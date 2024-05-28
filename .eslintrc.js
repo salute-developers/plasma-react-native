@@ -25,6 +25,9 @@ module.exports = {
         'react/require-default-props': 'off',
         'react/no-unused-prop-types': 'off',
 
+        'react/jsx-uses-react': 'off',
+        'react/react-in-jsx-scope': 'off',
+
         'react-hooks/exhaustive-deps': 'off', // TODO: вернуть на warn, а затем  https://github.com/salute-developers/plasma/issues/160
 
         '@typescript-eslint/no-unnecessary-type-constraint': 'warn',
