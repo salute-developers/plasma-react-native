@@ -67,7 +67,7 @@ export const getStyle = (
         text: {
             color: viewStyle.color,
             ...fontFace,
-            fontWeight: sizeStyle.fontWeight,
+            fontSize: sizeStyle.fontSize,
             letterSpacing: sizeStyle.letterSpacing,
             lineHeight: sizeStyle.lineHeight,
             ...externalStyle?.text,

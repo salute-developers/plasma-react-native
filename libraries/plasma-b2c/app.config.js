@@ -1,7 +1,7 @@
 export default ({ config }) => ({
     ...config,
-    name: 'Storybook Tutorial Template',
-    slug: 'storybook-tutorial-template',
+    name: 'Plasma B2C',
+    slug: 'plasma-b2c',
     extra: {
         storybookEnabled: process.env.STORYBOOK_ENABLED,
     },
