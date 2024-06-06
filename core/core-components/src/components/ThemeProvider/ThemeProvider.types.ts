@@ -6,28 +6,30 @@ export type Color = {
     };
 };
 
+export interface LinearGradientType {
+    kind: 'linear';
+    locations: ReadonlyArray<number>;
+    colors: ReadonlyArray<string>;
+    angle: number;
+}
+
+export interface RadialGradientType {
+    kind: 'radial';
+    locations: ReadonlyArray<number>;
+    colors: ReadonlyArray<string>;
+    centerX: number;
+    centerY: number;
+    radius: number;
+}
+
+export interface BackgroundGradientType {
+    kind: 'color';
+    background: string;
+}
+
 export interface Gradient {
     [k: string]: {
-        [k: string]: ReadonlyArray<
-            | {
-                  kind: 'linear';
-                  locations: ReadonlyArray<number>;
-                  colors: ReadonlyArray<string>;
-                  angle: number;
-              }
-            | {
-                  kind: 'radial';
-                  locations: ReadonlyArray<number>;
-                  colors: ReadonlyArray<string>;
-                  centerX: number;
-                  centerY: number;
-                  radius: number;
-              }
-            | {
-                  kind: 'color';
-                  background: string;
-              }
-        >;
+        [k: string]: ReadonlyArray<LinearGradientType | RadialGradientType | BackgroundGradientType>;
     };
 }
 
@@ -50,9 +52,9 @@ export interface Shadow {
     };
 }
 
-type FontWeight = 'normal' | 'bold' | '100' | '200' | '300' | '400' | '500' | '600' | '700' | '800' | '900';
+export type FontWeight = 'normal' | 'bold' | '100' | '200' | '300' | '400' | '500' | '600' | '700' | '800' | '900';
 
-type FontStyle = 'italic' | 'normal';
+export type FontStyle = 'italic' | 'normal';
 
 export interface FontFamily {
     [k: string]: {
