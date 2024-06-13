@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import type { Preview, StoryFn, StoryContext } from '@storybook/react';
-import { Switch, Text, View } from 'react-native';
+import { ScrollView, Switch, Text, View } from 'react-native';
 
 import { plasma_b2c } from '@salutejs-native/plasma-themes';
 import { ThemeProvider } from '@salutejs-native/core-components';
@@ -45,14 +45,14 @@ const CustomToolbar = (props: CustomToolbarProps) => {
 
 export const withPaddings = (Story: StoryFn) => {
     return (
-        <View
+        <ScrollView
             style={{
                 flex: 1,
                 padding: 8,
             }}
         >
             <Story />
-        </View>
+        </ScrollView>
     );
 };
 
