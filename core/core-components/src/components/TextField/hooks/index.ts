@@ -1,0 +1,1 @@
+export { useInnerLabelAnimation } from './useInnerLabelAnimation';
