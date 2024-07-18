@@ -1,12 +1,7 @@
 import { TokenType } from '../types';
 import { kebabToCamel, writeTokens } from '../utils';
 
-const getTypography = (
-    typography: any,
-    fontFamily: any,
-    tokens: TokenType[],
-    size: 'screen-s' | 'screen-m' | 'screen-l',
-) =>
+const getTypography = (typography: any, tokens: TokenType[], size: 'screen-s' | 'screen-m' | 'screen-l') =>
     tokens
         .filter((token) => token.tags[0] === size)
         .map((token) => {
@@ -36,19 +31,14 @@ const getContent = (
 };
 `;
 
-export const createTypographyTokens = (
-    themeDir: string,
-    typography: any,
-    fontFamily: any,
-    tokens?: Array<TokenType>,
-) => {
+export const createTypographyTokens = (themeDir: string, typography: any, tokens?: Array<TokenType>) => {
     if (!tokens?.length) {
         return;
     }
 
-    const screenSTypography = getTypography(typography, fontFamily, tokens, 'screen-s');
-    const screenMTypography = getTypography(typography, fontFamily, tokens, 'screen-m');
-    const screenLTypography = getTypography(typography, fontFamily, tokens, 'screen-l');
+    const screenSTypography = getTypography(typography, tokens, 'screen-s');
+    const screenMTypography = getTypography(typography, tokens, 'screen-m');
+    const screenLTypography = getTypography(typography, tokens, 'screen-l');
 
     const content = getContent(screenSTypography, screenMTypography, screenLTypography);
 

@@ -4,7 +4,7 @@ import path from 'path';
 import { prettify } from '../utils';
 import { MetaGrouped } from '../types';
 
-export const createIndex = (themesDir: string, metaGrouped: MetaGrouped) => {
+export const generateIndex = (themesDir: string, metaGrouped: MetaGrouped) => {
     const content = Object.keys(metaGrouped)
         .map((type) => {
             return `export * from './${type}';`;

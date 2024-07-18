@@ -1,9 +1,9 @@
 import fs from 'fs';
 import path from 'path';
 
-import { createThemesIndex, createTheme, createRootIndex } from './creators';
 import { ThemeRequest } from './types';
 import { readTheme } from './utils';
+import { generateRootIndex, generateTheme, generateThemesIndex } from './generators';
 
 export const generate = async (themes: ThemeRequest[]) => {
     const outDir = 'src';
@@ -15,10 +15,10 @@ export const generate = async (themes: ThemeRequest[]) => {
     for (const theme of themes) {
         // eslint-disable-next-line no-await-in-loop
         const themeSource = await readTheme(theme.name, theme.version);
-        createTheme(themesDir, themeSource);
+        generateTheme(themesDir, themeSource);
     }
 
-    createThemesIndex(themesDir, themes);
+    generateThemesIndex(themesDir, themes);
 
-    createRootIndex(outDir);
+    generateRootIndex(outDir);
 };

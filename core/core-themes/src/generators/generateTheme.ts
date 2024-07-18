@@ -11,10 +11,10 @@ import {
     createShadowTokens,
     createShapeTokens,
     createTypographyTokens,
-    createIndex,
-} from '.';
+} from '../creators';
+import { generateIndex } from '.';
 
-export const createTheme = (outDir: string, themeSource: ThemeSource) => {
+export const generateTheme = (outDir: string, themeSource: ThemeSource) => {
     const { meta, variations } = themeSource;
     const metaGrouped = getMetaGrouped(meta);
 
@@ -26,7 +26,7 @@ export const createTheme = (outDir: string, themeSource: ThemeSource) => {
     createShadowTokens(themeDir, variations.shadow, metaGrouped.shadow);
     createShapeTokens(themeDir, variations.shape, metaGrouped.shape);
     createFontFamilyTokens(themeDir, variations.fontFamily, metaGrouped.fontFamily);
-    createTypographyTokens(themeDir, variations.typography, variations.fontFamily, metaGrouped.typography);
+    createTypographyTokens(themeDir, variations.typography, metaGrouped.typography);
 
-    createIndex(themeDir, metaGrouped);
+    generateIndex(themeDir, metaGrouped);
 };

@@ -4,7 +4,7 @@ import path from 'path';
 import { prettify } from '../utils';
 import { ThemeRequest } from '../types';
 
-export const createThemesIndex = (outDir: string, themes: ThemeRequest[]) => {
+export const generateThemesIndex = (outDir: string, themes: ThemeRequest[]) => {
     const content = themes
         .map(({ name }) => {
             return `export * as ${name} from './${name}';`;
