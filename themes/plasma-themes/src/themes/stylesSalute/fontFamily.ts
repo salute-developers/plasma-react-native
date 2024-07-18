@@ -4,6 +4,12 @@ export const fontFamily = {
         name: 'SB Sans Display',
         fonts: [
             {
+                fileName: 'SBSansDisplay-Light',
+                link: 'https://cdn-app.sberdevices.ru/shared-static/0.0.0/fonts/SBSansDisplay.0.2.0/SBSansDisplay-Light.otf',
+                fontWeight: '300',
+                fontStyle: 'normal',
+            },
+            {
                 fileName: 'SBSansDisplay-Thin',
                 link: 'https://cdn-app.sberdevices.ru/shared-static/0.0.0/fonts/SBSansDisplay.0.2.0/SBSansDisplay-Thin.otf',
                 fontWeight: '100',
@@ -12,7 +18,7 @@ export const fontFamily = {
             {
                 fileName: 'SBSansDisplay-Bold',
                 link: 'https://cdn-app.sberdevices.ru/shared-static/0.0.0/fonts/SBSansDisplay.0.2.0/SBSansDisplay-Bold.otf',
-                fontWeight: '600',
+                fontWeight: '700',
                 fontStyle: 'normal',
             },
             {
@@ -40,6 +46,12 @@ export const fontFamily = {
         name: 'SB Sans Display',
         fonts: [
             {
+                fileName: 'SBSansDisplay-Light',
+                link: 'https://cdn-app.sberdevices.ru/shared-static/0.0.0/fonts/SBSansDisplay.0.2.0/SBSansDisplay-Light.otf',
+                fontWeight: '300',
+                fontStyle: 'normal',
+            },
+            {
                 fileName: 'SBSansDisplay-Thin',
                 link: 'https://cdn-app.sberdevices.ru/shared-static/0.0.0/fonts/SBSansDisplay.0.2.0/SBSansDisplay-Thin.otf',
                 fontWeight: '100',
@@ -48,7 +60,7 @@ export const fontFamily = {
             {
                 fileName: 'SBSansDisplay-Bold',
                 link: 'https://cdn-app.sberdevices.ru/shared-static/0.0.0/fonts/SBSansDisplay.0.2.0/SBSansDisplay-Bold.otf',
-                fontWeight: '600',
+                fontWeight: '700',
                 fontStyle: 'normal',
             },
             {
@@ -120,13 +132,13 @@ export const fontFamily = {
             {
                 fileName: 'SBSansText-Bold',
                 link: 'https://cdn-app.sberdevices.ru/shared-static/0.0.0/fonts/SBSansText.0.2.0/SBSansText-Bold.otf',
-                fontWeight: '600',
+                fontWeight: '700',
                 fontStyle: 'normal',
             },
             {
                 fileName: 'SBSansText-BoldItalic',
                 link: 'https://cdn-app.sberdevices.ru/shared-static/0.0.0/fonts/SBSansText.0.2.0/SBSansText-BoldItalic.otf',
-                fontWeight: '600',
+                fontWeight: '700',
                 fontStyle: 'italic',
             },
             {
@@ -186,13 +198,13 @@ export const fontFamily = {
             {
                 fileName: 'SBSansText-Bold',
                 link: 'https://cdn-app.sberdevices.ru/shared-static/0.0.0/fonts/SBSansText.0.2.0/SBSansText-Bold.otf',
-                fontWeight: '600',
+                fontWeight: '700',
                 fontStyle: 'normal',
             },
             {
                 fileName: 'SBSansText-BoldItalic',
                 link: 'https://cdn-app.sberdevices.ru/shared-static/0.0.0/fonts/SBSansText.0.2.0/SBSansText-BoldItalic.otf',
-                fontWeight: '600',
+                fontWeight: '700',
                 fontStyle: 'italic',
             },
             {

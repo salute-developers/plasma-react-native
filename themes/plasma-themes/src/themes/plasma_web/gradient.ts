@@ -32,6 +32,68 @@ export const gradient = {
         surfaceAccentGradientActive: [{ kind: 'linear', locations: [0, 1], colors: ['#FFFFFF', '#000000'], angle: 90 }],
         /** Акцентный фон поверхности/контрола с градиентом */
         surfaceAccentGradient: [{ kind: 'linear', locations: [0, 1], colors: ['#FFFFFF', '#000000'], angle: 90 }],
+        /** Фон для скелетона */
+        surfaceSkeletonGradient: [
+            {
+                kind: 'linear',
+                locations: [0, 0.0625, 0.125, 0.25, 0.375, 0.4375, 0.5, 0.5625, 0.625, 0.75, 0.875, 0.9375, 1],
+                colors: [
+                    '#FFFFFF17',
+                    '#FFFFFF14',
+                    '#FFFFFF0D',
+                    '#FFFFFF03',
+                    '#FFFFFF0D',
+                    '#FFFFFF14',
+                    '#FFFFFF17',
+                    '#FFFFFF14',
+                    '#FFFFFF0D',
+                    '#FFFFFF03',
+                    '#FFFFFF0D',
+                    '#FFFFFF14',
+                    '#FFFFFF17',
+                ],
+                angle: 90,
+            },
+        ],
+        /** Фон для скелетона */
+        surfaceSkeletonGradientHover: [
+            { kind: 'linear', locations: [0, 1], colors: ['#FFFFFF', '#000000'], angle: 90 },
+        ],
+        /** Фон для скелетона */
+        surfaceSkeletonGradientActive: [
+            { kind: 'linear', locations: [0, 1], colors: ['#FFFFFF', '#000000'], angle: 90 },
+        ],
+        /** Яркий фон для скелетона */
+        surfaceSkeletonDeepGradient: [
+            {
+                kind: 'linear',
+                locations: [0, 0.0625, 0.125, 0.25, 0.375, 0.4375, 0.5, 0.5625, 0.625, 0.75, 0.875, 0.9375, 1],
+                colors: [
+                    '#FFFFFF5C',
+                    '#FFFFFF52',
+                    '#FFFFFF33',
+                    '#FFFFFF0A',
+                    '#FFFFFF33',
+                    '#FFFFFF52',
+                    '#FFFFFF5C',
+                    '#FFFFFF14',
+                    '#FFFFFF33',
+                    '#FFFFFF0A',
+                    '#FFFFFF33',
+                    '#FFFFFF52',
+                    '#FFFFFF5C',
+                ],
+                angle: 90,
+            },
+        ],
+        /** Яркий фон для скелетона */
+        surfaceSkeletonDeepGradientHover: [
+            { kind: 'linear', locations: [0, 1], colors: ['#FFFFFF', '#000000'], angle: 90 },
+        ],
+        /** Яркий фон для скелетона */
+        surfaceSkeletonDeepGradientActive: [
+            { kind: 'linear', locations: [0, 1], colors: ['#FFFFFF', '#000000'], angle: 90 },
+        ],
         /** Акцентный фон поверхн./контрола с градиентом на темном фоне */
         onDarkSurfaceAccentGradientHover: [
             { kind: 'linear', locations: [0, 1], colors: ['#FFFFFF', '#000000'], angle: 90 },
@@ -42,6 +104,68 @@ export const gradient = {
         ],
         /** Акцентный фон поверхн./контрола с градиентом на темном фоне */
         onDarkSurfaceAccentGradient: [{ kind: 'linear', locations: [0, 1], colors: ['#FFFFFF', '#000000'], angle: 90 }],
+        /** Фон для скелетона */
+        onDarkSurfaceSkeletonGradient: [
+            {
+                kind: 'linear',
+                locations: [0, 0.0625, 0.125, 0.25, 0.375, 0.4375, 0.5, 0.5625, 0.625, 0.75, 0.875, 0.9375, 1],
+                colors: [
+                    '#FFFFFF17',
+                    '#FFFFFF14',
+                    '#FFFFFF0D',
+                    '#FFFFFF03',
+                    '#FFFFFF0D',
+                    '#FFFFFF14',
+                    '#FFFFFF17',
+                    '#FFFFFF14',
+                    '#FFFFFF0D',
+                    '#FFFFFF03',
+                    '#FFFFFF0D',
+                    '#FFFFFF14',
+                    '#FFFFFF17',
+                ],
+                angle: 90,
+            },
+        ],
+        /** Фон для скелетона */
+        onDarkSurfaceSkeletonGradientHover: [
+            { kind: 'linear', locations: [0, 1], colors: ['#FFFFFF', '#000000'], angle: 90 },
+        ],
+        /** Фон для скелетона */
+        onDarkSurfaceSkeletonGradientActive: [
+            { kind: 'linear', locations: [0, 1], colors: ['#FFFFFF', '#000000'], angle: 90 },
+        ],
+        /** Яркий фон для скелетона */
+        onDarkSurfaceSkeletonDeepGradient: [
+            {
+                kind: 'linear',
+                locations: [0, 0.0625, 0.125, 0.25, 0.375, 0.4375, 0.5, 0.5625, 0.625, 0.75, 0.875, 0.9375, 1],
+                colors: [
+                    '#FFFFFF5C',
+                    '#FFFFFF52',
+                    '#FFFFFF33',
+                    '#FFFFFF0A',
+                    '#FFFFFF33',
+                    '#FFFFFF52',
+                    '#FFFFFF5C',
+                    '#FFFFFF14',
+                    '#FFFFFF33',
+                    '#FFFFFF0A',
+                    '#FFFFFF33',
+                    '#FFFFFF52',
+                    '#FFFFFF5C',
+                ],
+                angle: 90,
+            },
+        ],
+        /** Яркий фон для скелетона */
+        onDarkSurfaceSkeletonDeepGradientHover: [
+            { kind: 'linear', locations: [0, 1], colors: ['#FFFFFF', '#000000'], angle: 90 },
+        ],
+        /** Яркий фон для скелетона */
+        onDarkSurfaceSkeletonDeepGradientActive: [
+            { kind: 'linear', locations: [0, 1], colors: ['#FFFFFF', '#000000'], angle: 90 },
+        ],
         /** Акцент. фон поверхн./контрола с градиентом на светлом фоне */
         onLightSurfaceAccentGradientHover: [
             { kind: 'linear', locations: [0, 1], colors: ['#FFFFFF', '#000000'], angle: 90 },
@@ -52,6 +176,130 @@ export const gradient = {
         ],
         /** Акцент. фон поверхн./контрола с градиентом на светлом фоне */
         onLightSurfaceAccentGradient: [
+            { kind: 'linear', locations: [0, 1], colors: ['#FFFFFF', '#000000'], angle: 90 },
+        ],
+        /** Фон для скелетона */
+        onLightSurfaceSkeletonGradient: [
+            {
+                kind: 'linear',
+                locations: [0, 0.0625, 0.125, 0.25, 0.375, 0.4375, 0.5, 0.5625, 0.625, 0.75, 0.875, 0.9375, 1],
+                colors: [
+                    '#08080817',
+                    '#08080814',
+                    '#0808080D',
+                    '#08080803',
+                    '#0808080D',
+                    '#08080814',
+                    '#08080817',
+                    '#08080814',
+                    '#0808080D',
+                    '#08080803',
+                    '#0808080D',
+                    '#08080814',
+                    '#08080817',
+                ],
+                angle: 90,
+            },
+        ],
+        /** Фон для скелетона */
+        onLightSurfaceSkeletonGradientHover: [
+            { kind: 'linear', locations: [0, 1], colors: ['#FFFFFF', '#000000'], angle: 90 },
+        ],
+        /** Фон для скелетона */
+        onLightSurfaceSkeletonGradientActive: [
+            { kind: 'linear', locations: [0, 1], colors: ['#FFFFFF', '#000000'], angle: 90 },
+        ],
+        /** Яркий фон для скелетона */
+        onLightSurfaceSkeletonDeepGradient: [
+            {
+                kind: 'linear',
+                locations: [0, 0.0625, 0.125, 0.25, 0.375, 0.4375, 0.5, 0.5625, 0.625, 0.75, 0.875, 0.9375, 1],
+                colors: [
+                    '#0808085C',
+                    '#08080852',
+                    '#08080833',
+                    '#0808080A',
+                    '#08080833',
+                    '#08080852',
+                    '#0808085C',
+                    '#08080814',
+                    '#08080833',
+                    '#0808080A',
+                    '#08080833',
+                    '#08080852',
+                    '#0808085C',
+                ],
+                angle: 90,
+            },
+        ],
+        /** Яркий фон для скелетона */
+        onLightSurfaceSkeletonDeepGradientHover: [
+            { kind: 'linear', locations: [0, 1], colors: ['#FFFFFF', '#000000'], angle: 90 },
+        ],
+        /** Яркий фон для скелетона */
+        onLightSurfaceSkeletonDeepGradientActive: [
+            { kind: 'linear', locations: [0, 1], colors: ['#FFFFFF', '#000000'], angle: 90 },
+        ],
+        /** Фон для скелетона */
+        inverseSurfaceSkeletonGradient: [
+            {
+                kind: 'linear',
+                locations: [0, 0.0625, 0.125, 0.25, 0.375, 0.4375, 0.5, 0.5625, 0.625, 0.75, 0.875, 0.9375, 1],
+                colors: [
+                    '#08080817',
+                    '#08080814',
+                    '#0808080D',
+                    '#08080803',
+                    '#0808080D',
+                    '#08080814',
+                    '#08080817',
+                    '#08080814',
+                    '#0808080D',
+                    '#08080803',
+                    '#0808080D',
+                    '#08080814',
+                    '#08080817',
+                ],
+                angle: 90,
+            },
+        ],
+        /** Фон для скелетона */
+        inverseSurfaceSkeletonGradientHover: [
+            { kind: 'linear', locations: [0, 1], colors: ['#FFFFFF', '#000000'], angle: 90 },
+        ],
+        /** Фон для скелетона */
+        inverseSurfaceSkeletonGradientActive: [
+            { kind: 'linear', locations: [0, 1], colors: ['#FFFFFF', '#000000'], angle: 90 },
+        ],
+        /** Яркий фон для скелетона */
+        inverseSurfaceSkeletonDeepGradient: [
+            {
+                kind: 'linear',
+                locations: [0, 0.0625, 0.125, 0.25, 0.375, 0.4375, 0.5, 0.5625, 0.625, 0.75, 0.875, 0.9375, 1],
+                colors: [
+                    '#0808085C',
+                    '#08080852',
+                    '#08080833',
+                    '#0808080A',
+                    '#08080833',
+                    '#08080852',
+                    '#0808085C',
+                    '#08080814',
+                    '#08080833',
+                    '#0808080A',
+                    '#08080833',
+                    '#08080852',
+                    '#0808085C',
+                ],
+                angle: 90,
+            },
+        ],
+        /** Яркий фон для скелетона */
+        inverseSurfaceSkeletonDeepGradientHover: [
+            { kind: 'linear', locations: [0, 1], colors: ['#FFFFFF', '#000000'], angle: 90 },
+        ],
+        /** Яркий фон для скелетона */
+        inverseSurfaceSkeletonDeepGradientActive: [
             { kind: 'linear', locations: [0, 1], colors: ['#FFFFFF', '#000000'], angle: 90 },
         ],
     },
@@ -88,6 +336,68 @@ export const gradient = {
         surfaceAccentGradientActive: [{ kind: 'linear', locations: [0, 1], colors: ['#FFFFFF', '#000000'], angle: 90 }],
         /** Акцентный фон поверхности/контрола с градиентом */
         surfaceAccentGradient: [{ kind: 'linear', locations: [0, 1], colors: ['#FFFFFF', '#000000'], angle: 90 }],
+        /** Фон для скелетона */
+        surfaceSkeletonGradient: [
+            {
+                kind: 'linear',
+                locations: [0, 0.0625, 0.125, 0.25, 0.375, 0.4375, 0.5, 0.5625, 0.625, 0.75, 0.875, 0.9375, 1],
+                colors: [
+                    '#08080817',
+                    '#08080814',
+                    '#0808080D',
+                    '#08080803',
+                    '#0808080D',
+                    '#08080814',
+                    '#08080817',
+                    '#08080814',
+                    '#0808080D',
+                    '#08080803',
+                    '#0808080D',
+                    '#08080814',
+                    '#08080817',
+                ],
+                angle: 90,
+            },
+        ],
+        /** Фон для скелетона */
+        surfaceSkeletonGradientHover: [
+            { kind: 'linear', locations: [0, 1], colors: ['#FFFFFF', '#000000'], angle: 90 },
+        ],
+        /** Фон для скелетона */
+        surfaceSkeletonGradientActive: [
+            { kind: 'linear', locations: [0, 1], colors: ['#FFFFFF', '#000000'], angle: 90 },
+        ],
+        /** Яркий фон для скелетона */
+        surfaceSkeletonDeepGradient: [
+            {
+                kind: 'linear',
+                locations: [0, 0.0625, 0.125, 0.25, 0.375, 0.4375, 0.5, 0.5625, 0.625, 0.75, 0.875, 0.9375, 1],
+                colors: [
+                    '#0808085C',
+                    '#08080852',
+                    '#08080833',
+                    '#0808080A',
+                    '#08080833',
+                    '#08080852',
+                    '#0808085C',
+                    '#08080814',
+                    '#08080833',
+                    '#0808080A',
+                    '#08080833',
+                    '#08080852',
+                    '#0808085C',
+                ],
+                angle: 90,
+            },
+        ],
+        /** Яркий фон для скелетона */
+        surfaceSkeletonDeepGradientHover: [
+            { kind: 'linear', locations: [0, 1], colors: ['#FFFFFF', '#000000'], angle: 90 },
+        ],
+        /** Яркий фон для скелетона */
+        surfaceSkeletonDeepGradientActive: [
+            { kind: 'linear', locations: [0, 1], colors: ['#FFFFFF', '#000000'], angle: 90 },
+        ],
         /** Акц. фон поверхности/контрола с градиентом на темном фоне */
         onDarkSurfaceAccentGradientHover: [
             { kind: 'linear', locations: [0, 1], colors: ['#FFFFFF', '#000000'], angle: 90 },
@@ -98,6 +408,68 @@ export const gradient = {
         ],
         /** Акц. фон поверхности/контрола с градиентом на темном фоне */
         onDarkSurfaceAccentGradient: [{ kind: 'linear', locations: [0, 1], colors: ['#FFFFFF', '#000000'], angle: 90 }],
+        /** Фон для скелетона */
+        onDarkSurfaceSkeletonGradient: [
+            {
+                kind: 'linear',
+                locations: [0, 0.0625, 0.125, 0.25, 0.375, 0.4375, 0.5, 0.5625, 0.625, 0.75, 0.875, 0.9375, 1],
+                colors: [
+                    '#FFFFFF17',
+                    '#FFFFFF14',
+                    '#FFFFFF0D',
+                    '#FFFFFF03',
+                    '#FFFFFF0D',
+                    '#FFFFFF14',
+                    '#FFFFFF17',
+                    '#FFFFFF14',
+                    '#FFFFFF0D',
+                    '#FFFFFF03',
+                    '#FFFFFF0D',
+                    '#FFFFFF14',
+                    '#FFFFFF17',
+                ],
+                angle: 90,
+            },
+        ],
+        /** Фон для скелетона */
+        onDarkSurfaceSkeletonGradientHover: [
+            { kind: 'linear', locations: [0, 1], colors: ['#FFFFFF', '#000000'], angle: 90 },
+        ],
+        /** Фон для скелетона */
+        onDarkSurfaceSkeletonGradientActive: [
+            { kind: 'linear', locations: [0, 1], colors: ['#FFFFFF', '#000000'], angle: 90 },
+        ],
+        /** Яркий фон для скелетона */
+        onDarkSurfaceSkeletonDeepGradient: [
+            {
+                kind: 'linear',
+                locations: [0, 0.0625, 0.125, 0.25, 0.375, 0.4375, 0.5, 0.5625, 0.625, 0.75, 0.875, 0.9375, 1],
+                colors: [
+                    '#FFFFFF5C',
+                    '#FFFFFF52',
+                    '#FFFFFF33',
+                    '#FFFFFF0A',
+                    '#FFFFFF33',
+                    '#FFFFFF52',
+                    '#FFFFFF5C',
+                    '#FFFFFF14',
+                    '#FFFFFF33',
+                    '#FFFFFF0A',
+                    '#FFFFFF33',
+                    '#FFFFFF52',
+                    '#FFFFFF5C',
+                ],
+                angle: 90,
+            },
+        ],
+        /** Яркий фон для скелетона */
+        onDarkSurfaceSkeletonDeepGradientHover: [
+            { kind: 'linear', locations: [0, 1], colors: ['#FFFFFF', '#000000'], angle: 90 },
+        ],
+        /** Яркий фон для скелетона */
+        onDarkSurfaceSkeletonDeepGradientActive: [
+            { kind: 'linear', locations: [0, 1], colors: ['#FFFFFF', '#000000'], angle: 90 },
+        ],
         /** Акц. фон поверхности/контрола с градиентом на светлом фоне */
         onLightSurfaceAccentGradientHover: [
             { kind: 'linear', locations: [0, 1], colors: ['#FFFFFF', '#000000'], angle: 90 },
@@ -108,6 +480,130 @@ export const gradient = {
         ],
         /** Акц. фон поверхности/контрола с градиентом на светлом фоне */
         onLightSurfaceAccentGradient: [
+            { kind: 'linear', locations: [0, 1], colors: ['#FFFFFF', '#000000'], angle: 90 },
+        ],
+        /** Фон для скелетона */
+        onLightSurfaceSkeletonGradient: [
+            {
+                kind: 'linear',
+                locations: [0, 0.0625, 0.125, 0.25, 0.375, 0.4375, 0.5, 0.5625, 0.625, 0.75, 0.875, 0.9375, 1],
+                colors: [
+                    '#08080817',
+                    '#08080814',
+                    '#0808080D',
+                    '#08080803',
+                    '#0808080D',
+                    '#08080814',
+                    '#08080817',
+                    '#08080814',
+                    '#0808080D',
+                    '#08080803',
+                    '#0808080D',
+                    '#08080814',
+                    '#08080817',
+                ],
+                angle: 90,
+            },
+        ],
+        /** Фон для скелетона */
+        onLightSurfaceSkeletonGradientHover: [
+            { kind: 'linear', locations: [0, 1], colors: ['#FFFFFF', '#000000'], angle: 90 },
+        ],
+        /** Фон для скелетона */
+        onLightSurfaceSkeletonGradientActive: [
+            { kind: 'linear', locations: [0, 1], colors: ['#FFFFFF', '#000000'], angle: 90 },
+        ],
+        /** Яркий фон для скелетона */
+        onLightSurfaceSkeletonDeepGradient: [
+            {
+                kind: 'linear',
+                locations: [0, 0.0625, 0.125, 0.25, 0.375, 0.4375, 0.5, 0.5625, 0.625, 0.75, 0.875, 0.9375, 1],
+                colors: [
+                    '#0808085C',
+                    '#08080852',
+                    '#08080833',
+                    '#0808080A',
+                    '#08080833',
+                    '#08080852',
+                    '#0808085C',
+                    '#08080814',
+                    '#08080833',
+                    '#0808080A',
+                    '#08080833',
+                    '#08080852',
+                    '#0808085C',
+                ],
+                angle: 90,
+            },
+        ],
+        /** Яркий фон для скелетона */
+        onLightSurfaceSkeletonDeepGradientHover: [
+            { kind: 'linear', locations: [0, 1], colors: ['#FFFFFF', '#000000'], angle: 90 },
+        ],
+        /** Яркий фон для скелетона */
+        onLightSurfaceSkeletonDeepGradientActive: [
+            { kind: 'linear', locations: [0, 1], colors: ['#FFFFFF', '#000000'], angle: 90 },
+        ],
+        /** Фон для скелетона */
+        inverseSurfaceSkeletonGradient: [
+            {
+                kind: 'linear',
+                locations: [0, 0.0625, 0.125, 0.25, 0.375, 0.4375, 0.5, 0.5625, 0.625, 0.75, 0.875, 0.9375, 1],
+                colors: [
+                    '#FFFFFF17',
+                    '#FFFFFF14',
+                    '#FFFFFF0D',
+                    '#FFFFFF03',
+                    '#FFFFFF0D',
+                    '#FFFFFF14',
+                    '#FFFFFF17',
+                    '#FFFFFF14',
+                    '#FFFFFF0D',
+                    '#FFFFFF03',
+                    '#FFFFFF0D',
+                    '#FFFFFF14',
+                    '#FFFFFF17',
+                ],
+                angle: 90,
+            },
+        ],
+        /** Фон для скелетона */
+        inverseSurfaceSkeletonGradientHover: [
+            { kind: 'linear', locations: [0, 1], colors: ['#FFFFFF', '#000000'], angle: 90 },
+        ],
+        /** Фон для скелетона */
+        inverseSurfaceSkeletonGradientActive: [
+            { kind: 'linear', locations: [0, 1], colors: ['#FFFFFF', '#000000'], angle: 90 },
+        ],
+        /** Яркий фон для скелетона */
+        inverseSurfaceSkeletonDeepGradient: [
+            {
+                kind: 'linear',
+                locations: [0, 0.0625, 0.125, 0.25, 0.375, 0.4375, 0.5, 0.5625, 0.625, 0.75, 0.875, 0.9375, 1],
+                colors: [
+                    '#FFFFFF5C',
+                    '#FFFFFF52',
+                    '#FFFFFF33',
+                    '#FFFFFF0A',
+                    '#FFFFFF33',
+                    '#FFFFFF52',
+                    '#FFFFFF5C',
+                    '#FFFFFF14',
+                    '#FFFFFF33',
+                    '#FFFFFF0A',
+                    '#FFFFFF33',
+                    '#FFFFFF52',
+                    '#FFFFFF5C',
+                ],
+                angle: 90,
+            },
+        ],
+        /** Яркий фон для скелетона */
+        inverseSurfaceSkeletonDeepGradientHover: [
+            { kind: 'linear', locations: [0, 1], colors: ['#FFFFFF', '#000000'], angle: 90 },
+        ],
+        /** Яркий фон для скелетона */
+        inverseSurfaceSkeletonDeepGradientActive: [
             { kind: 'linear', locations: [0, 1], colors: ['#FFFFFF', '#000000'], angle: 90 },
         ],
     },

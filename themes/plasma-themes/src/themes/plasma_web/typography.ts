@@ -56,7 +56,7 @@ export const typography = {
         },
         /** typography s header-h1 */
         headerH1Normal: {
-            fontFamilyRef: 'fontFamily.display',
+            fontFamilyRef: 'fontFamily.header',
             fontWeight: '400',
             fontStyle: 'normal',
             fontSize: 28,
@@ -65,7 +65,7 @@ export const typography = {
         },
         /** typography s header-h1-bold */
         headerH1Bold: {
-            fontFamilyRef: 'fontFamily.display',
+            fontFamilyRef: 'fontFamily.header',
             fontWeight: '600',
             fontStyle: 'normal',
             fontSize: 28,
@@ -74,7 +74,7 @@ export const typography = {
         },
         /** typography s header-h2 */
         headerH2Normal: {
-            fontFamilyRef: 'fontFamily.display',
+            fontFamilyRef: 'fontFamily.header',
             fontWeight: '400',
             fontStyle: 'normal',
             fontSize: 24,
@@ -83,7 +83,7 @@ export const typography = {
         },
         /** typography s header-h2-bold */
         headerH2Bold: {
-            fontFamilyRef: 'fontFamily.display',
+            fontFamilyRef: 'fontFamily.header',
             fontWeight: '600',
             fontStyle: 'normal',
             fontSize: 24,
@@ -92,7 +92,7 @@ export const typography = {
         },
         /** typography s header-h3 */
         headerH3Normal: {
-            fontFamilyRef: 'fontFamily.display',
+            fontFamilyRef: 'fontFamily.header',
             fontWeight: '400',
             fontStyle: 'normal',
             fontSize: 20,
@@ -101,7 +101,7 @@ export const typography = {
         },
         /** typography s header-h3-bold */
         headerH3Bold: {
-            fontFamilyRef: 'fontFamily.display',
+            fontFamilyRef: 'fontFamily.header',
             fontWeight: '600',
             fontStyle: 'normal',
             fontSize: 20,
@@ -110,7 +110,7 @@ export const typography = {
         },
         /** typography s header-h4 */
         headerH4Normal: {
-            fontFamilyRef: 'fontFamily.display',
+            fontFamilyRef: 'fontFamily.header',
             fontWeight: '400',
             fontStyle: 'normal',
             fontSize: 18,
@@ -119,7 +119,7 @@ export const typography = {
         },
         /** typography s header-h4-bold */
         headerH4Bold: {
-            fontFamilyRef: 'fontFamily.display',
+            fontFamilyRef: 'fontFamily.header',
             fontWeight: '600',
             fontStyle: 'normal',
             fontSize: 18,
@@ -128,7 +128,7 @@ export const typography = {
         },
         /** typography s header-h5 */
         headerH5Normal: {
-            fontFamilyRef: 'fontFamily.display',
+            fontFamilyRef: 'fontFamily.header',
             fontWeight: '400',
             fontStyle: 'normal',
             fontSize: 16,
@@ -137,7 +137,7 @@ export const typography = {
         },
         /** typography s header-h5-bold */
         headerH5Bold: {
-            fontFamilyRef: 'fontFamily.display',
+            fontFamilyRef: 'fontFamily.header',
             fontWeight: '600',
             fontStyle: 'normal',
             fontSize: 16,
@@ -146,7 +146,7 @@ export const typography = {
         },
         /** typography s body-l */
         bodyLNormal: {
-            fontFamilyRef: 'fontFamily.text',
+            fontFamilyRef: 'fontFamily.body',
             fontWeight: '400',
             fontStyle: 'normal',
             fontSize: 18,
@@ -155,7 +155,7 @@ export const typography = {
         },
         /** typography s body-l-bold */
         bodyLBold: {
-            fontFamilyRef: 'fontFamily.text',
+            fontFamilyRef: 'fontFamily.body',
             fontWeight: '600',
             fontStyle: 'normal',
             fontSize: 18,
@@ -164,7 +164,7 @@ export const typography = {
         },
         /** typography s body-m */
         bodyMNormal: {
-            fontFamilyRef: 'fontFamily.text',
+            fontFamilyRef: 'fontFamily.body',
             fontWeight: '400',
             fontStyle: 'normal',
             fontSize: 16,
@@ -173,7 +173,7 @@ export const typography = {
         },
         /** typography s body-m-bold */
         bodyMBold: {
-            fontFamilyRef: 'fontFamily.text',
+            fontFamilyRef: 'fontFamily.body',
             fontWeight: '600',
             fontStyle: 'normal',
             fontSize: 16,
@@ -182,7 +182,7 @@ export const typography = {
         },
         /** typography s body-s */
         bodySNormal: {
-            fontFamilyRef: 'fontFamily.text',
+            fontFamilyRef: 'fontFamily.body',
             fontWeight: '400',
             fontStyle: 'normal',
             fontSize: 14,
@@ -191,7 +191,7 @@ export const typography = {
         },
         /** typography s body-s-bold */
         bodySBold: {
-            fontFamilyRef: 'fontFamily.text',
+            fontFamilyRef: 'fontFamily.body',
             fontWeight: '600',
             fontStyle: 'normal',
             fontSize: 14,
@@ -200,7 +200,7 @@ export const typography = {
         },
         /** typography s body-xs */
         bodyXsNormal: {
-            fontFamilyRef: 'fontFamily.text',
+            fontFamilyRef: 'fontFamily.body',
             fontWeight: '400',
             fontStyle: 'normal',
             fontSize: 12,
@@ -209,7 +209,7 @@ export const typography = {
         },
         /** typography s body-xs-bold */
         bodyXsBold: {
-            fontFamilyRef: 'fontFamily.text',
+            fontFamilyRef: 'fontFamily.body',
             fontWeight: '600',
             fontStyle: 'normal',
             fontSize: 12,
@@ -218,7 +218,7 @@ export const typography = {
         },
         /** typography s body-xxs */
         bodyXxsNormal: {
-            fontFamilyRef: 'fontFamily.text',
+            fontFamilyRef: 'fontFamily.body',
             fontWeight: '400',
             fontStyle: 'normal',
             fontSize: 10,
@@ -227,7 +227,7 @@ export const typography = {
         },
         /** typography s body-xxs-bold */
         bodyXxsBold: {
-            fontFamilyRef: 'fontFamily.text',
+            fontFamilyRef: 'fontFamily.body',
             fontWeight: '600',
             fontStyle: 'normal',
             fontSize: 10,
@@ -364,7 +364,7 @@ export const typography = {
         },
         /** typography m header-h1 */
         headerH1Normal: {
-            fontFamilyRef: 'fontFamily.display',
+            fontFamilyRef: 'fontFamily.header',
             fontWeight: '400',
             fontStyle: 'normal',
             fontSize: 40,
@@ -373,7 +373,7 @@ export const typography = {
         },
         /** typography m header-h1-bold */
         headerH1Bold: {
-            fontFamilyRef: 'fontFamily.display',
+            fontFamilyRef: 'fontFamily.header',
             fontWeight: '600',
             fontStyle: 'normal',
             fontSize: 40,
@@ -382,7 +382,7 @@ export const typography = {
         },
         /** typography m header-h2 */
         headerH2Normal: {
-            fontFamilyRef: 'fontFamily.display',
+            fontFamilyRef: 'fontFamily.header',
             fontWeight: '400',
             fontStyle: 'normal',
             fontSize: 28,
@@ -391,7 +391,7 @@ export const typography = {
         },
         /** typography m header-h2-bold */
         headerH2Bold: {
-            fontFamilyRef: 'fontFamily.display',
+            fontFamilyRef: 'fontFamily.header',
             fontWeight: '600',
             fontStyle: 'normal',
             fontSize: 28,
@@ -400,7 +400,7 @@ export const typography = {
         },
         /** typography m header-h3 */
         headerH3Normal: {
-            fontFamilyRef: 'fontFamily.display',
+            fontFamilyRef: 'fontFamily.header',
             fontWeight: '400',
             fontStyle: 'normal',
             fontSize: 20,
@@ -409,7 +409,7 @@ export const typography = {
         },
         /** typography m header-h3-bold */
         headerH3Bold: {
-            fontFamilyRef: 'fontFamily.display',
+            fontFamilyRef: 'fontFamily.header',
             fontWeight: '600',
             fontStyle: 'normal',
             fontSize: 20,
@@ -418,7 +418,7 @@ export const typography = {
         },
         /** typography m header-h4 */
         headerH4Normal: {
-            fontFamilyRef: 'fontFamily.display',
+            fontFamilyRef: 'fontFamily.header',
             fontWeight: '400',
             fontStyle: 'normal',
             fontSize: 18,
@@ -427,7 +427,7 @@ export const typography = {
         },
         /** typography m header-h4-bold */
         headerH4Bold: {
-            fontFamilyRef: 'fontFamily.display',
+            fontFamilyRef: 'fontFamily.header',
             fontWeight: '600',
             fontStyle: 'normal',
             fontSize: 18,
@@ -436,7 +436,7 @@ export const typography = {
         },
         /** typography m header-h5 */
         headerH5Normal: {
-            fontFamilyRef: 'fontFamily.display',
+            fontFamilyRef: 'fontFamily.header',
             fontWeight: '400',
             fontStyle: 'normal',
             fontSize: 16,
@@ -445,7 +445,7 @@ export const typography = {
         },
         /** typography m header-h5-bold */
         headerH5Bold: {
-            fontFamilyRef: 'fontFamily.display',
+            fontFamilyRef: 'fontFamily.header',
             fontWeight: '600',
             fontStyle: 'normal',
             fontSize: 16,
@@ -454,7 +454,7 @@ export const typography = {
         },
         /** typography m body-l */
         bodyLNormal: {
-            fontFamilyRef: 'fontFamily.text',
+            fontFamilyRef: 'fontFamily.body',
             fontWeight: '400',
             fontStyle: 'normal',
             fontSize: 18,
@@ -463,7 +463,7 @@ export const typography = {
         },
         /** typography m body-l-bold */
         bodyLBold: {
-            fontFamilyRef: 'fontFamily.text',
+            fontFamilyRef: 'fontFamily.body',
             fontWeight: '600',
             fontStyle: 'normal',
             fontSize: 18,
@@ -472,7 +472,7 @@ export const typography = {
         },
         /** typography m body-m */
         bodyMNormal: {
-            fontFamilyRef: 'fontFamily.text',
+            fontFamilyRef: 'fontFamily.body',
             fontWeight: '400',
             fontStyle: 'normal',
             fontSize: 16,
@@ -481,7 +481,7 @@ export const typography = {
         },
         /** typography m body-m-bold */
         bodyMBold: {
-            fontFamilyRef: 'fontFamily.text',
+            fontFamilyRef: 'fontFamily.body',
             fontWeight: '600',
             fontStyle: 'normal',
             fontSize: 16,
@@ -490,7 +490,7 @@ export const typography = {
         },
         /** typography m body-s */
         bodySNormal: {
-            fontFamilyRef: 'fontFamily.text',
+            fontFamilyRef: 'fontFamily.body',
             fontWeight: '400',
             fontStyle: 'normal',
             fontSize: 14,
@@ -499,7 +499,7 @@ export const typography = {
         },
         /** typography m body-s-bold */
         bodySBold: {
-            fontFamilyRef: 'fontFamily.text',
+            fontFamilyRef: 'fontFamily.body',
             fontWeight: '600',
             fontStyle: 'normal',
             fontSize: 14,
@@ -508,7 +508,7 @@ export const typography = {
         },
         /** typography m body-xs */
         bodyXsNormal: {
-            fontFamilyRef: 'fontFamily.text',
+            fontFamilyRef: 'fontFamily.body',
             fontWeight: '400',
             fontStyle: 'normal',
             fontSize: 12,
@@ -517,7 +517,7 @@ export const typography = {
         },
         /** typography m body-xs-bold */
         bodyXsBold: {
-            fontFamilyRef: 'fontFamily.text',
+            fontFamilyRef: 'fontFamily.body',
             fontWeight: '600',
             fontStyle: 'normal',
             fontSize: 12,
@@ -526,7 +526,7 @@ export const typography = {
         },
         /** typography m body-xxs */
         bodyXxsNormal: {
-            fontFamilyRef: 'fontFamily.text',
+            fontFamilyRef: 'fontFamily.body',
             fontWeight: '400',
             fontStyle: 'normal',
             fontSize: 10,
@@ -535,7 +535,7 @@ export const typography = {
         },
         /** typography m body-xxs-bold */
         bodyXxsBold: {
-            fontFamilyRef: 'fontFamily.text',
+            fontFamilyRef: 'fontFamily.body',
             fontWeight: '600',
             fontStyle: 'normal',
             fontSize: 10,
@@ -672,7 +672,7 @@ export const typography = {
         },
         /** typography l header-h1 */
         headerH1Normal: {
-            fontFamilyRef: 'fontFamily.display',
+            fontFamilyRef: 'fontFamily.header',
             fontWeight: '400',
             fontStyle: 'normal',
             fontSize: 48,
@@ -681,7 +681,7 @@ export const typography = {
         },
         /** typography l header-h1-bold */
         headerH1Bold: {
-            fontFamilyRef: 'fontFamily.display',
+            fontFamilyRef: 'fontFamily.header',
             fontWeight: '600',
             fontStyle: 'normal',
             fontSize: 48,
@@ -690,7 +690,7 @@ export const typography = {
         },
         /** typography l header-h2 */
         headerH2Normal: {
-            fontFamilyRef: 'fontFamily.display',
+            fontFamilyRef: 'fontFamily.header',
             fontWeight: '400',
             fontStyle: 'normal',
             fontSize: 32,
@@ -699,7 +699,7 @@ export const typography = {
         },
         /** typography l header-h2-bold */
         headerH2Bold: {
-            fontFamilyRef: 'fontFamily.display',
+            fontFamilyRef: 'fontFamily.header',
             fontWeight: '600',
             fontStyle: 'normal',
             fontSize: 32,
@@ -708,7 +708,7 @@ export const typography = {
         },
         /** typography l header-h3 */
         headerH3Normal: {
-            fontFamilyRef: 'fontFamily.display',
+            fontFamilyRef: 'fontFamily.header',
             fontWeight: '400',
             fontStyle: 'normal',
             fontSize: 24,
@@ -717,7 +717,7 @@ export const typography = {
         },
         /** typography l header-h3-bold */
         headerH3Bold: {
-            fontFamilyRef: 'fontFamily.display',
+            fontFamilyRef: 'fontFamily.header',
             fontWeight: '600',
             fontStyle: 'normal',
             fontSize: 24,
@@ -726,7 +726,7 @@ export const typography = {
         },
         /** typography l header-h4 */
         headerH4Normal: {
-            fontFamilyRef: 'fontFamily.display',
+            fontFamilyRef: 'fontFamily.header',
             fontWeight: '400',
             fontStyle: 'normal',
             fontSize: 20,
@@ -735,7 +735,7 @@ export const typography = {
         },
         /** typography l header-h4-bold */
         headerH4Bold: {
-            fontFamilyRef: 'fontFamily.display',
+            fontFamilyRef: 'fontFamily.header',
             fontWeight: '600',
             fontStyle: 'normal',
             fontSize: 20,
@@ -744,7 +744,7 @@ export const typography = {
         },
         /** typography l header-h5 */
         headerH5Normal: {
-            fontFamilyRef: 'fontFamily.display',
+            fontFamilyRef: 'fontFamily.header',
             fontWeight: '400',
             fontStyle: 'normal',
             fontSize: 18,
@@ -753,7 +753,7 @@ export const typography = {
         },
         /** typography l header-h5-bold */
         headerH5Bold: {
-            fontFamilyRef: 'fontFamily.display',
+            fontFamilyRef: 'fontFamily.header',
             fontWeight: '600',
             fontStyle: 'normal',
             fontSize: 18,
@@ -762,7 +762,7 @@ export const typography = {
         },
         /** typography l body-l */
         bodyLNormal: {
-            fontFamilyRef: 'fontFamily.text',
+            fontFamilyRef: 'fontFamily.body',
             fontWeight: '400',
             fontStyle: 'normal',
             fontSize: 18,
@@ -771,7 +771,7 @@ export const typography = {
         },
         /** typography l body-l-bold */
         bodyLBold: {
-            fontFamilyRef: 'fontFamily.text',
+            fontFamilyRef: 'fontFamily.body',
             fontWeight: '600',
             fontStyle: 'normal',
             fontSize: 18,
@@ -780,7 +780,7 @@ export const typography = {
         },
         /** typography l body-m */
         bodyMNormal: {
-            fontFamilyRef: 'fontFamily.text',
+            fontFamilyRef: 'fontFamily.body',
             fontWeight: '400',
             fontStyle: 'normal',
             fontSize: 16,
@@ -789,7 +789,7 @@ export const typography = {
         },
         /** typography l body-m-bold */
         bodyMBold: {
-            fontFamilyRef: 'fontFamily.text',
+            fontFamilyRef: 'fontFamily.body',
             fontWeight: '600',
             fontStyle: 'normal',
             fontSize: 16,
@@ -798,7 +798,7 @@ export const typography = {
         },
         /** typography l body-s */
         bodySNormal: {
-            fontFamilyRef: 'fontFamily.text',
+            fontFamilyRef: 'fontFamily.body',
             fontWeight: '400',
             fontStyle: 'normal',
             fontSize: 14,
@@ -807,7 +807,7 @@ export const typography = {
         },
         /** typography l body-s-bold */
         bodySBold: {
-            fontFamilyRef: 'fontFamily.text',
+            fontFamilyRef: 'fontFamily.body',
             fontWeight: '600',
             fontStyle: 'normal',
             fontSize: 14,
@@ -816,7 +816,7 @@ export const typography = {
         },
         /** typography l body-xs */
         bodyXsNormal: {
-            fontFamilyRef: 'fontFamily.text',
+            fontFamilyRef: 'fontFamily.body',
             fontWeight: '400',
             fontStyle: 'normal',
             fontSize: 12,
@@ -825,7 +825,7 @@ export const typography = {
         },
         /** typography l body-xs-bold */
         bodyXsBold: {
-            fontFamilyRef: 'fontFamily.text',
+            fontFamilyRef: 'fontFamily.body',
             fontWeight: '600',
             fontStyle: 'normal',
             fontSize: 12,
@@ -834,7 +834,7 @@ export const typography = {
         },
         /** typography l body-xxs */
         bodyXxsNormal: {
-            fontFamilyRef: 'fontFamily.text',
+            fontFamilyRef: 'fontFamily.body',
             fontWeight: '400',
             fontStyle: 'normal',
             fontSize: 10,
@@ -843,7 +843,7 @@ export const typography = {
         },
         /** typography l body-xxs-bold */
         bodyXxsBold: {
-            fontFamilyRef: 'fontFamily.text',
+            fontFamilyRef: 'fontFamily.body',
             fontWeight: '600',
             fontStyle: 'normal',
             fontSize: 10,
