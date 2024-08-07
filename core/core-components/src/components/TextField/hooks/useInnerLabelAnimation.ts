@@ -16,8 +16,8 @@ export const useInnerLabelAnimation = (
     const [isFocused, setIsFocused] = useState(false);
     const [labelFocusedStyle, setLabelFocusedStyle] = useState({});
 
-    const positionValue = useRef(new Animated.Value(0)).current;
-    const fontSizeValue = useRef(new Animated.Value(0)).current;
+    const positionValue = useRef(new Animated.Value(labelPlacement === 'inner' && value ? 1 : 0)).current;
+    const fontSizeValue = useRef(new Animated.Value(labelPlacement === 'inner' && value ? 1 : 0)).current;
     const backgroundColorValue = useRef(new Animated.Value(0)).current;
 
     const animatedSetting = {

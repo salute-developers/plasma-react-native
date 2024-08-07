@@ -26,6 +26,7 @@ export const getStyle = (
     disabledOpacity?: number,
     readOnly?: boolean,
     labelPlacement?: LabelPlacement,
+    value?: string,
     viewStyle?: TextFieldConfig['variations']['view'][string],
     sizeStyle?: TextFieldConfig['variations']['size'][string],
     externalStyle?: Style,
@@ -45,13 +46,6 @@ export const getStyle = (
         };
     }
 
-    const labelFontFace = getFontFace(
-        sizeStyle.labelFontFamilyRef,
-        sizeStyle.labelFontStyle,
-        sizeStyle.labelFontWeight,
-        theme,
-    );
-
     const captionLeftFontFace = getFontFace(
         sizeStyle.captionLeftFontFamilyRef,
         sizeStyle.captionLeftFontStyle,
@@ -61,27 +55,21 @@ export const getStyle = (
 
     const fontFace = getFontFace(sizeStyle.fontFamilyRef, sizeStyle.fontStyle, sizeStyle.fontWeight, theme);
 
-    const labelStyles = getStyleForDynamicLabel(viewStyle, sizeStyle, labelPlacement, readOnly);
+    const labelStyles = getStyleForDynamicLabel(theme, viewStyle, sizeStyle, labelPlacement, readOnly, value);
 
     return StyleSheet.create({
         root: {
-            overflow: 'hidden',
             opacity: disabledOpacity,
             ...externalStyle?.root,
         },
         label: {
             ...labelStyles.label,
-            ...labelFontFace,
-            fontSize: sizeStyle.labelFontSize,
-            letterSpacing: sizeStyle.labelLetterSpacing,
-            lineHeight: sizeStyle.labelLineHeight,
             ...externalStyle?.label,
         },
         inputWrapper: {
             position: 'relative',
             display: 'flex',
             flexDirection: 'row',
-            alignItems: 'center',
             height: sizeStyle.height,
             borderRadius: sizeStyle.borderRadius,
             paddingRight: sizeStyle.paddingRight,
@@ -95,12 +83,12 @@ export const getStyle = (
             marginRight: sizeStyle.contentLeftMarginRight,
             marginBottom: sizeStyle.contentLeftMarginBottom,
             marginLeft: sizeStyle.contentLeftMarginLeft,
+            flexDirection: 'row',
+            alignItems: 'center',
             ...externalStyle?.contentLeft,
         },
         inputLabelWrapper: {
             flex: 1,
-            overflow: 'scroll',
-            position: 'relative',
             width: '100%',
             display: 'flex',
             flexDirection: 'row',
@@ -145,6 +133,8 @@ export const getStyle = (
             marginRight: sizeStyle.contentRightMarginRight,
             marginBottom: sizeStyle.contentRightMarginBottom,
             marginLeft: sizeStyle.contentRightMarginLeft,
+            flexDirection: 'row',
+            alignItems: 'center',
             ...externalStyle?.contentRight,
         },
         captionLeft: {
