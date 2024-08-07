@@ -33,7 +33,9 @@ const Storybook = () => {
         'SBSansText-Thin': require('assets/fonts/SBSansText-Thin.otf'),
     });
 
-    if (!fontsLoaded) return null;
+    if (!fontsLoaded) {
+        return null;
+    }
 
     return <StorybookUIRoot />;
 };
