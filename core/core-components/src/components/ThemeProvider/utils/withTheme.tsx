@@ -1,16 +1,21 @@
+import { forwardRef } from 'react';
+
 import { PropsType } from '../../../types';
 import { Theme } from '../ThemeProvider.types';
 import { useTheme } from '../hooks';
 
 export const withTheme = <T extends Record<string, any>, K extends {} & PropsType<T['variations']>>(
-    component: (config?: T, theme?: Theme) => (props: K) => React.JSX.Element | null,
+    componentBuilder: (
+        config?: T,
+        theme?: Theme,
+    ) => (props: K, ref: React.ForwardedRef<any>) => React.JSX.Element | null,
 ) => {
     return (getConfig?: (theme: Theme<any>) => T) => {
-        return (props: K) => {
+        return forwardRef((props: K, ref: React.ForwardedRef<any>) => {
             const theme = useTheme();
 
             if (!getConfig) {
-                return component()(props);
+                return componentBuilder()(props, ref);
             }
 
             const config = getConfig(theme);
@@ -30,7 +35,7 @@ export const withTheme = <T extends Record<string, any>, K extends {} & PropsTyp
                 ...defaultProps,
             };
 
-            return component(config, theme)(newProps);
-        };
+            return componentBuilder(config, theme)(newProps, ref);
+        });
     };
 };

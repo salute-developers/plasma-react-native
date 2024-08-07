@@ -1,10 +1,12 @@
 import {
     Animated,
     NativeSyntheticEvent,
+    Platform,
     Pressable,
     Text,
     TextInput,
     TextInputFocusEventData,
+    TextStyle,
     View,
 } from 'react-native';
 import { useMemo, useRef } from 'react';
@@ -59,8 +61,19 @@ export const textFieldCore = <T extends TextFieldConfig>(config?: T, theme?: The
     );
 
     const style = useMemo(
-        () => getStyle(theme, size, disabledOpacity, readOnly, labelPlacement, viewStyle, sizeStyle, externalStyle),
-        [view, size, disabled, readOnly, labelPlacement, theme?.mode],
+        () =>
+            getStyle(
+                theme,
+                size,
+                disabledOpacity,
+                readOnly,
+                labelPlacement,
+                value,
+                viewStyle,
+                sizeStyle,
+                externalStyle,
+            ),
+        [value, view, size, disabled, readOnly, labelPlacement, theme?.mode],
     );
 
     const hideLabel = size === 'xs' && labelPlacement === 'inner';
@@ -70,6 +83,14 @@ export const textFieldCore = <T extends TextFieldConfig>(config?: T, theme?: The
     const innerPlaceholderValue = hideLabel ? label : placeholder;
     const innerLabelValue = hideLabel ? undefined : label;
     const placeholderColor = getPlaceHolderColor(labelPlacement, size, readOnly, viewStyle);
+
+    const tvStyles = Platform.isTV
+        ? ({
+              opacity: 0,
+              position: 'absolute',
+              lineHeight: Platform.isTV && Platform.OS === 'ios' ? 0 : undefined, // INFO: Чтобы инпут в модалке был посередине
+          } as TextStyle)
+        : undefined;
 
     const onChange = (newValue: string) => {
         if (disabled || readOnly) {
@@ -108,7 +129,7 @@ export const textFieldCore = <T extends TextFieldConfig>(config?: T, theme?: The
                         {textBefore && additionalTextVisible && <Text style={style.textBefore}>{textBefore}</Text>}
                         <TextInput
                             {...rest}
-                            style={style.textInput}
+                            style={[style.textInput, tvStyles]}
                             placeholder={innerPlaceholderValue}
                             selectionColor={viewStyle?.caretColor}
                             placeholderTextColor={placeholderColor}
@@ -120,6 +141,11 @@ export const textFieldCore = <T extends TextFieldConfig>(config?: T, theme?: The
                             onFocus={handleFocus}
                             onBlur={handleBlur}
                         />
+                        {Platform.isTV && (
+                            <Text style={style.textInput}>
+                                {value || <Text style={{ color: placeholderColor }}>{innerPlaceholderValue}</Text>}
+                            </Text>
+                        )}
                         {labelInside && (
                             <Animated.Text style={[style.label, labelStyleAnimate]}>{innerLabelValue}</Animated.Text>
                         )}
