@@ -1,0 +1,12 @@
+#!/usr/bin/env sh
+. "$(dirname -- "$0")/_/husky.sh"
+
+npm run package-update --prefix "./core/core-components"
+
+for dir in $(find "libraries" -maxdepth 2 -type f -name 'package*' -exec dirname {} \; | sort -u); do
+  PACKAGE_NAME=$(basename "$dir")
+
+  npx lerna exec --scope=@salutejs-native/$PACKAGE_NAME -- npm run package-update
+done
+
+git diff --exit-code

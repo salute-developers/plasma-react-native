@@ -4,11 +4,13 @@
   "author": "Salute Frontend Team <salute.developers@gmail.com>",
   "license": "MIT",
   "scripts": {
+    "prepare": "test ! -n \"$CI\" && husky install || echo skip husky",
     "lint:lerna": "npx lerna run lint --parallel --since=$(git merge-base --fork-point origin/main)",
     "lint": "npm run lint:lerna",
-    "prepare": "test ! -n \"$CI\" && husky install || echo skip husky",
-    "bootstrap": "npx lerna bootstrap",
-    "bootstrap:since": "npm run bootstrap -- --since=$(git merge-base --fork-point origin/main)"
+    "platform:tv": "PLATFORM='tv' ./scripts/prepare-platform.sh",
+    "platform:mobile": "PLATFORM='mobile' ./scripts/prepare-platform.sh",
+    "bootstrap:tv": "npm run platform:tv && npx lerna bootstrap",
+    "bootstrap:mobile": "npm run platform:mobile && npx lerna bootstrap"
   },
   "devDependencies": {
     "@actions/core": "1.2.7",
