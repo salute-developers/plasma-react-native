@@ -1,13 +1,15 @@
 {
   "version": "0.5.0",
   "name": "@salutejs-native/core-components",
-  "description": "Core-components package for react-native",
+  "description": "Core-components package for react-native on mobile",
   "author": "Salute Frontend Team <salute.developers@gmail.com>",
   "license": "MIT",
   "module": "build/esm/index.js",
   "main": "build/cjs/index.js",
   "types": "build/cjs/index.d.ts",
+  "platform": "mobile",
   "scripts": {
+    "package-update": "../../scripts/package-update.sh",
     "prepare": "npm run build",
     "prebuild": "rm -rf ./build",
     "build": "npm run build:cjs && npm run build:esm",
@@ -24,7 +26,7 @@
     "@types/react": "~18.2.45",
     "react": "18.2.0",
     "react-dom": "18.2.0",
-    "react-native": "^0.74.1",
+    "react-native": "0.74.5",
     "react-native-svg": "^15.3.0"
   },
   "devDependencies": {
