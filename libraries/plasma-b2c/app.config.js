@@ -5,4 +5,11 @@ export default ({ config }) => ({
     extra: {
         storybookEnabled: process.env.STORYBOOK_ENABLED,
     },
+    plugins: ['@react-native-tvos/config-tv'],
+    android: {
+        package: 'com.anonymous.plasmab2c',
+    },
+    ios: {
+        bundleIdentifier: 'com.anonymous.plasmab2c',
+    },
 });

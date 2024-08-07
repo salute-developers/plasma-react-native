@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import type { Preview, StoryFn, StoryContext } from '@storybook/react';
-import { ScrollView, Switch, Text, View } from 'react-native';
+import { ScrollView, Switch, Text, View, Platform } from 'react-native';
 
 import { plasma_b2c } from '@salutejs-native/plasma-themes';
 import { ThemeProvider } from '@salutejs-native/core-components';
@@ -77,7 +77,7 @@ export const withThemeProvider = (Story: StoryFn, context: StoryContext) => {
             }}
         >
             <>
-                <CustomToolbar themeMode={themeMode} onThemeModeToggle={onThemeModeToggle} />
+                {!Platform.isTV && <CustomToolbar themeMode={themeMode} onThemeModeToggle={onThemeModeToggle} />}
                 <View
                     style={{
                         backgroundColor: data.color[themeMode].backgroundPrimary,
