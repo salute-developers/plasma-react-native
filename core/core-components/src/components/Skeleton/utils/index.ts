@@ -1,0 +1,1 @@
+export { extractAlphaFromHex } from './extractAlphaFromHex';

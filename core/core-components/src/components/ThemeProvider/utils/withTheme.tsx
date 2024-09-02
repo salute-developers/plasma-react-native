@@ -15,7 +15,7 @@ export const withTheme = <T extends Record<string, any>, K extends {} & PropsTyp
             const theme = useTheme();
 
             if (!getConfig) {
-                return componentBuilder()(props, ref);
+                return componentBuilder(undefined, theme)(props, ref);
             }
 
             const config = getConfig(theme);
