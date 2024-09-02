@@ -1,7 +1,7 @@
 import { LinearGradient as LinearGradientNative, Stop } from 'react-native-svg';
 
 import { Gradient } from '../../ThemeProvider';
-import { getLinearVectorPoints } from '../utils';
+import { getLinearVectorPoints } from '../../../utils';
 
 interface LinearGradientProps {
     id: string;
