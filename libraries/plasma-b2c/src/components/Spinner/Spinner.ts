@@ -1,4 +1,4 @@
-import { spinnerComponent } from '@salutejs-native/core-components';
+import { spinnerComponent } from '@salutejs/core-components';
 
 import { getConfig } from './Spinner.config';
 

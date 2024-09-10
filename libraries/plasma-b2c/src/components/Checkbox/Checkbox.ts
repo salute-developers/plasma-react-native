@@ -1,4 +1,4 @@
-import { checkboxComponent } from '@salutejs-native/core-components';
+import { checkboxComponent } from '@salutejs/core-components';
 
 import { getConfig } from './Checkbox.config';
 

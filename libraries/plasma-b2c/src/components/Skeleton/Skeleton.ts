@@ -1,4 +1,4 @@
-import { rectSkeletonComponent, lineSkeletonComponent, textSkeletonComponent } from '@salutejs-native/core-components';
+import { rectSkeletonComponent, lineSkeletonComponent, textSkeletonComponent } from '@salutejs/core-components';
 
 import { getConfig } from './Skeleton.config';
 

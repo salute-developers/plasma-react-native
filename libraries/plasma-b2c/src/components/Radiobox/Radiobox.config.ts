@@ -1,4 +1,4 @@
-import { Theme } from '@salutejs-native/core-components';
+import { Theme } from '@salutejs/core-components';
 
 import { PlasmaB2CTheme } from '../ThemeProvider';
 

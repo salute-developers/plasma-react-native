@@ -1,4 +1,4 @@
-import { radioboxComponent } from '@salutejs-native/core-components';
+import { radioboxComponent } from '@salutejs/core-components';
 
 import { getConfig } from './Radiobox.config';
 

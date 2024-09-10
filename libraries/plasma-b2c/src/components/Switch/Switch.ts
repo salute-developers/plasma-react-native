@@ -1,4 +1,4 @@
-import { switchComponent } from '@salutejs-native/core-components';
+import { switchComponent } from '@salutejs/core-components';
 
 import { getConfig } from './Switch.config';
 

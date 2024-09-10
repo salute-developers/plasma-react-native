@@ -1,4 +1,4 @@
-import { typographyComponent } from '@salutejs-native/core-components';
+import { typographyComponent } from '@salutejs/core-components';
 
 import { getConfigBodyL, getConfigBodyM, getConfigBodyS, getConfigBodyXS, getConfigBodyXXS } from './Body.config';
 import { getConfigDisplayL, getConfigDisplayM, getConfigDisplayS } from './Display.config';
