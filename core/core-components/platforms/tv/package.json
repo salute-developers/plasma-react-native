@@ -1,7 +1,7 @@
 {
-  "version": "0.5.0",
-  "name": "@salutejs-native/core-components",
-  "description": "Core-components package for react-native on tv",
+  "version": "0.1.0",
+  "name": "@salutejs/core-components-tv",
+  "description": "Core-components package native platform on tv",
   "author": "Salute Frontend Team <salute.developers@gmail.com>",
   "license": "MIT",
   "module": "build/esm/index.js",

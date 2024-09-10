@@ -1,7 +1,7 @@
 {
-  "version": "0.5.0",
-  "name": "@salutejs-native/core-components",
-  "description": "Core-components package for react-native on mobile",
+  "version": "0.1.0",
+  "name": "@salutejs/core-components-mobile",
+  "description": "Core-components package for native platform on mobile",
   "author": "Salute Frontend Team <salute.developers@gmail.com>",
   "license": "MIT",
   "module": "build/esm/index.js",

@@ -1,7 +1,7 @@
 {
-  "version": "0.5.0",
-  "name": "@salutejs-native/plasma-b2c",
-  "description": "Plasma-b2c components library for react-native on tv",
+  "version": "0.1.0",
+  "name": "@salutejs/plasma-b2c-tv",
+  "description": "Plasma-b2c components library for native platform on tv",
   "author": "Salute Frontend Team <salute.developers@gmail.com>",
   "license": "MIT",
   "module": "build/esm/index.js",
@@ -41,8 +41,8 @@
   "dependencies": {
     "@expo/metro-runtime": "^3.2.1",
     "@expo/vector-icons": "^14.0.0",
-    "@salutejs-native/core-components": "0.5.0",
-    "@salutejs-native/plasma-themes": "0.5.0",
+    "@salutejs/core-components": "npm:@salutejs/core-components-tv@0.1.0",
+    "@salutejs/plasma-themes-native": "0.1.0",
     "@types/react": "~18.2.45",
     "expo": "^51.0.31",
     "expo-constants": "~16.0.2",
