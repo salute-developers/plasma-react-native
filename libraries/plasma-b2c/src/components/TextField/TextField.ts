@@ -1,4 +1,4 @@
-import { textFieldComponent } from '@salutejs-native/core-components';
+import { textFieldComponent } from '@salutejs/core-components';
 
 import { getConfig } from './TextField.config';
 

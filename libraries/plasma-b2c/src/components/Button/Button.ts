@@ -1,4 +1,4 @@
-import { buttonComponent } from '@salutejs-native/core-components';
+import { buttonComponent } from '@salutejs/core-components';
 
 import { getConfig } from './Button.config';
 

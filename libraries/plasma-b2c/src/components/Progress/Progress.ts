@@ -1,4 +1,4 @@
-import { progressComponent } from '@salutejs-native/core-components';
+import { progressComponent } from '@salutejs/core-components';
 
 import { getConfig } from './Progress.config';
 

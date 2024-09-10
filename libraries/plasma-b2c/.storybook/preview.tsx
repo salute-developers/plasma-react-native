@@ -2,8 +2,8 @@ import React, { useState } from 'react';
 import type { Preview, StoryFn, StoryContext } from '@storybook/react';
 import { ScrollView, Switch, Text, View, Platform } from 'react-native';
 
-import { plasma_b2c } from '@salutejs-native/plasma-themes';
-import { ThemeProvider } from '@salutejs-native/core-components';
+import { plasma_b2c } from '@salutejs/plasma-themes-native';
+import { ThemeProvider } from '@salutejs/core-components';
 
 type ThemeMode = 'light' | 'dark';
 
