@@ -1,0 +1,50 @@
+[x] - Подумать про этап проверки проекта перед тем как отправить на публикацию (что выполняются команды npm run bootstrap:mobile и npm run bootstrap:tv)
+[x] - Добавить секреты в репозиторий
+[х] - Подумать про этап билда проекта, и в какой момент это нужно 
+[ ] - Вместое модификации lerna.json попробовать переписать на npm --prefix
+[ ] - Добавить коммент в PR о том, что alpha версии опубликованы
+
+PR воркфлоу (создаются alpha версии)
+    ## Блок для подготовки и публикации под мобильную платформу 
+    [х] - С помощью скрипта меняется конфиг в lerna.json, чтобы поднять все версии вместе с транзитивными зависимостями
+        'MODE="all" npm run set-lerna-packages'
+    ## Публикация пакетов для мобильной платформы
+    [x] - Вызывается команда из рута для мобильной платформы
+        'npm run bootstrap:mobile'
+    [x] - Бампаются версии пакетов согласно semver со всеми транзитивными зависимостями
+        'npm run bump-version'
+    [ ] - (НУЖНА ТОЛЬКО ДЛЯ МАСТЕРА) Выполняется команда по обновлению package.json и package-lock.json файлов для сохранения новых версий
+        'npm run platform:mobile'
+    [x] - С помощью скрипта заменяются названия пакетов и версии пакетов в папке `libraries/*` для зависимости `@salutejs/core-components`
+        'PLATFORM="mobile" npm run replace-dependencies'
+    ## Подготовка к публикации пакетов 
+    [x] - С помощью скрипта меняется конфиг в lerna.json, чтобы опубликовать только версии, связанные с mobile платформой
+        'MODE="components" npm run set-lerna-packages'
+    [x] - Публикуются пакеты связанные с компонентами
+        'PLATFORM="mobile" npm run components-publish'
+    [x] - Через скрипт откатывается бамп версий для файлов package.json и package-lock.json для того, чтобы поднять версии в следующих шагах
+        'npm run revert-bump-version'
+
+    ## Блок для подготовки и публикации под ТВ платформу 
+    [x] - Повторяется тоже самое для ТВ платформы
+
+    ## Подготовка и публикация пакетов -themes-native
+    [x] - С помощью скрипта меняется конфиг в lerna.json, чтобы поднять версии и опубликовать только нужные библиотеки связанные с темами
+        'MODE="themes" npm run set-lerna-packages'
+    [x] - Бампаются версии пакетов согласно semver
+        'npm run bump-version'
+    [x] - Публикуются пакеты связанные с темамим
+        'npx lerna exec -- npm publish'
+    ### [ ] - Либо эти два шага можно попробовать заменить одной командой  'npx lerna publish --conventional-commits --conventional-prerelease --yes'
+
+    ## Этот блок валиден при пуше PR в мастер
+    [ ] - Убеждаемся, что в diff попадает 6 пар файлов (на текущий момент) с актуальными (alpha) версиями: 
+            1. package.json и package-lock.json в ./core-themes;
+            2. package.json и package-lock.json в ./plasma-themes;
+            3. package.json и package-lock.json в ./core-components/platform/mobile;
+            4. package.json и package-lock.json в ./core-components/platform/tv;
+            5. package.json и package-lock.json в ./plasma-b2c/platform/mobile;
+            6. package.json и package-lock.json в ./plasma-b2c/platform/tv;
+    [ ] - Отменить изменнеия файла lerna.json
+    [ ] - Комитим изменения с соотвествующим мессенджем
+
