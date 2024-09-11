@@ -10,7 +10,7 @@ concurrency:
 
 jobs:
   # check-packages:
-  #   name: Publish canary version native packages
+  #   name: Check packages for mobile and tv platform
   #   runs-on: ubuntu-latest
   #   env:
   #     GITHUB_TOKEN: ${{ secrets.gh_token }}
@@ -46,7 +46,7 @@ jobs:
       NPM_REGISTRY_TOKEN: ${{ secrets.npm_registry_token }}
     steps:
       - name: Checkout
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
         with:
           # show-progress: false
           ref: ${{ github.event.pull_request.head.ref }}
@@ -61,6 +61,10 @@ jobs:
         # https://github.com/intuit/auto/issues/1030
         run: git config --local --unset http.https://github.com/.extraheader
       
+      - name: Unset header
+        # https://github.com/intuit/auto/issues/1030
+        run: git config advice.addIgnoredFile false
+
       - name: Prepare environment
         uses: ./.github/actions/prepare-environment
 
@@ -73,7 +77,7 @@ jobs:
         run: PLATFORM="mobile" npm run bootstrap
 
       - name: Update packages version
-        run: npm run bump-version
+        run: npm run bump-version -- --preid "alpha-$(git rev-parse --short HEAD)"
 
       - name: Replace dependencies and packages name
         run: PLATFORM="mobile" npm run replace-dependencies
@@ -96,7 +100,7 @@ jobs:
         run: PLATFORM="tv" npm run bootstrap
 
       - name: Update packages version
-        run: npm run bump-version
+        run: npm run bump-version -- --preid "alpha-$(git rev-parse --short HEAD)"
 
       - name: Replace dependencies and packages name
         run: PLATFORM="tv" npm run replace-dependencies
@@ -116,7 +120,12 @@ jobs:
         run: MODE="themes" npm run set-lerna-packages
 
       - name: Update packages version
-        run: npm run bump-version
+        run: npm run bump-version -- --preid "alpha-$(git rev-parse --short HEAD)"
 
       - name: Publish themes packages
-        run: npx lerna exec -- npm publish --dry-run
+        run: npx lerna exec -- npm publish --tag alpha
+
+      # Шаг отображающий актаульное состояние package файлов
+
+      - name: Publish themes packages
+        run: git diff

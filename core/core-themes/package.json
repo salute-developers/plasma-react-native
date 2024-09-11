@@ -1,7 +1,7 @@
 {
   "version": "0.1.0",
   "name": "@salutejs/core-themes-native",
-  "description": "Core-themes package for native platform",
+  "description": "Core-themes package for native platform.",
   "author": "Salute Frontend Team <salute.developers@gmail.com>",
   "license": "MIT",
   "module": "build/esm/index.js",
