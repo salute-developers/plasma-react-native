@@ -1,6 +1,6 @@
 {
   "version": "0.1.0",
-  "name": "@salutejs/core-components-mobile",
+  "name": "@salutejs/core-components",
   "description": "Core-components package for native platform on mobile",
   "author": "Salute Frontend Team <salute.developers@gmail.com>",
   "license": "MIT",
