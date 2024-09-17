@@ -1,7 +1,9 @@
 name: Release
 
 on:
-  pull_request:
+  push:
+    branches:
+      - main
 
 concurrency:
   # New commit on branch cancels running workflows of the same branch
@@ -38,7 +40,7 @@ jobs:
         run: npm run bootstrap:tv
 
   publish-packages:
-    name: Prepare and publish alpha version for all platforms
+    name: Prepare and publish latest version for all platforms
     runs-on: ubuntu-latest
     needs: ["check-packages"]
     env:
@@ -75,7 +77,11 @@ jobs:
         run: PLATFORM="mobile" npm run bootstrap
 
       - name: Update packages version
-        run: npm run bump-version -- --conventional-prerelease --preid "alpha-$(git rev-parse --short HEAD)"
+        run: npm run bump-version
+
+      # Мастеровый шаг
+      - name: Save updated packages version
+        run: npm run platform:mobile
 
       - name: Replace dependencies and packages name
         run: PLATFORM="mobile" npm run replace-dependencies
@@ -84,13 +90,17 @@ jobs:
         run: MODE="components" npm run set-lerna-packages
 
       - name: Publish component packages
-        run: PLATFORM="mobile" TAG="alpha" npm run components-publish
+        run: PLATFORM="mobile" TAG="latest" npm run components-publish
 
       - name: Revert bump version
         run: npm run revert-bump-version
 
+      # Мастеровый шаг
+      - name: Cleanup package files
+        run: npm run remove-package-files
+
       # Подготовка и публикация пакетов с компонентами для ТВ платформы
-      
+
       - name: Update lerna config with all mode
         run: MODE="all" npm run set-lerna-packages
 
@@ -98,7 +108,11 @@ jobs:
         run: PLATFORM="tv" npm run bootstrap
 
       - name: Update packages version
-        run: npm run bump-version -- --conventional-prerelease --preid "alpha-$(git rev-parse --short HEAD)"
+        run: npm run bump-version
+
+      # Мастеровый шаг
+      - name: Save updated packages version
+        run: npm run platform:tv
 
       - name: Replace dependencies and packages name
         run: PLATFORM="tv" npm run replace-dependencies
@@ -107,10 +121,14 @@ jobs:
         run: MODE="components" npm run set-lerna-packages
 
       - name: Publish component packages
-        run: PLATFORM="tv" TAG="alpha" npm run components-publish
+        run: PLATFORM="tv" TAG="latest" npm run components-publish
 
       - name: Revert bump version
         run: npm run revert-bump-version
+
+      # Мастеровый шаг
+      - name: Cleanup package files
+        run: npm run remove-package-files
 
       # Подготовка и публикация пакетов с темами
 
@@ -118,12 +136,29 @@ jobs:
         run: MODE="themes" npm run set-lerna-packages
 
       - name: Update packages version
-        run: npm run bump-version -- --conventional-prerelease --preid "alpha-$(git rev-parse --short HEAD)"
+        run: npm run bump-version
 
       - name: Publish themes packages
-        run: npx lerna exec -- npm publish --tag alpha
+        run: npx lerna exec -- npm publish
+
+      # Мастеровый шаг
+      - name: Update lerna config with all mode
+        run: MODE="all" npm run set-lerna-packages
 
       # Шаг отображающий актаульное состояние package файлов
 
       - name: Show diff
         run: git diff
+
+      # Чтобы появились package.json файлы, иначе пре-пуш хук сломается 
+      - name: Add package files
+        run: npm run platform:mobile
+
+      - name: Commit & Push update packages
+        uses: actions-js/push@master
+        with:
+          github_token: ${{ secrets.gh_token }}
+          message: 'chore: Update packages versions'
+          branch: 'main'
+          author_name: Salute Frontend Team
+          author_email: salute.developers@gmail.com
