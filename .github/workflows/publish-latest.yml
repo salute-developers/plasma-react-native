@@ -158,7 +158,7 @@ jobs:
         uses: actions-js/push@master
         with:
           github_token: ${{ secrets.gh_token }}
-          message: 'chore: Update packages versions'
+          message: 'chore: Update packages versions [skip ci]'
           branch: 'main'
           author_name: Salute Frontend Team
           author_email: salute.developers@gmail.com
