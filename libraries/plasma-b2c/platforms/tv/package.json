@@ -1,5 +1,5 @@
 {
-  "version": "0.2.0",
+  "version": "0.3.0",
   "name": "@salutejs/plasma-b2c",
   "description": "Plasma-b2c components library for native platform on tv.",
   "author": "Salute Frontend Team <salute.developers@gmail.com>",
@@ -38,8 +38,8 @@
     }
   },
   "dependencies": {
-    "@salutejs/core-components": "0.2.0",
-    "@salutejs/plasma-themes-native": "0.2.0",
+    "@salutejs/core-components": "0.3.0",
+    "@salutejs/plasma-themes-native": "0.3.0",
     "@types/react": "~18.2.45",
     "install": "^0.13.0",
     "react": "^18.2.0",
