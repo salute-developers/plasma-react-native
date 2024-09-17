@@ -60,7 +60,7 @@ export interface FontFamily {
     [k: string]: {
         name: string;
         fonts: ReadonlyArray<{
-            fileName: string;
+            fontName: string;
             link: string;
             fontWeight: FontWeight;
             fontStyle: FontStyle;
