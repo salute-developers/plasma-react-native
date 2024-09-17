@@ -6,6 +6,8 @@ export const color = {
         textPrimaryActive: '#FFFFFFC4',
         /** Основной цвет текста */
         textPrimary: '#FFFFFFF5',
+        /** Основной цвет текста */
+        textPrimaryBrightness: '#FFFFF6FF',
         /** Вторичный цвет текста */
         textSecondaryHover: '#FFFFFFFF',
         /** Вторичный цвет текста */
@@ -78,6 +80,8 @@ export const color = {
         onDarkTextPrimaryActive: '#FFFFFFC4',
         /** Основной цвет текста на темном фоне */
         onDarkTextPrimary: '#FFFFFFF5',
+        /** Основной цвет текста на темном фоне */
+        onDarkTextPrimaryBrightness: '#FFFFF6FF',
         /** Вторичный цвет текста на темном фоне */
         onDarkTextSecondaryHover: '#FFFFFFFF',
         /** Вторичный цвет текста на темном фоне */
@@ -150,6 +154,8 @@ export const color = {
         onLightTextPrimaryActive: '#080808C4',
         /** Основной цвет текста на светлом фоне */
         onLightTextPrimary: '#080808F5',
+        /** Основной цвет текста на светлом фоне */
+        onLightTextPrimaryBrightness: '#171717FF',
         /** Вторичный цвет текста на светлом фоне */
         onLightTextSecondaryHover: '#080808FF',
         /** Вторичный цвет текста на светлом фоне */
@@ -222,6 +228,8 @@ export const color = {
         inverseTextPrimaryActive: '#080808C4',
         /** Инвертированный основной цвет текста */
         inverseTextPrimary: '#080808F5',
+        /** Инвертированный основной цвет текста */
+        inverseTextPrimaryBrightness: '#171717FF',
         /** Инвертированный вторичный цвет текста */
         inverseTextSecondaryHover: '#080808FF',
         /** Инвертированный вторичный цвет текста */
@@ -246,6 +254,8 @@ export const color = {
         surfaceSolidPrimaryActive: '#121212FF',
         /** Основной непрозрачный фон поверхности/контрола */
         surfaceSolidPrimary: '#171717',
+        /** Основной непрозрачный фон поверхности/контрола */
+        surfaceSolidPrimaryBrightness: '#252525FF',
         /** Вторичный непрозрачный фон поверхности/контрола */
         surfaceSolidSecondaryHover: '#303030FF',
         /** Вторичный непрозрачный фон поверхности/контрола */
@@ -264,6 +274,8 @@ export const color = {
         surfaceSolidCardActive: '#121212FF',
         /** Основной фон для карточек */
         surfaceSolidCard: '#171717',
+        /** Основной фон для карточек */
+        surfaceSolidCardBrightness: '#252525FF',
         /** Непрозрачный фон поверхности/контрола по умолчанию */
         surfaceSolidDefaultHover: '#FFFFFFFF',
         /** Непрозрачный фон поверхности/контрола по умолчанию */
@@ -294,6 +306,8 @@ export const color = {
         surfaceTransparentCardActive: '#FFFFFF0A',
         /** Прозрачный фон для карточек */
         surfaceTransparentCard: '#FFFFFF0F',
+        /** Прозрачный фон для карточек */
+        surfaceTransparentCardBrightness: '#FFFFFFFF',
         /** Фон поверхности/контрола без заливки */
         surfaceClearHover: '#00000000',
         /** Фон поверхности/контрола без заливки */
@@ -370,6 +384,8 @@ export const color = {
         onDarkSurfaceSolidPrimaryActive: '#121212FF',
         /** Основной непрозрачный фон поверхности/контрола на темном фоне */
         onDarkSurfaceSolidPrimary: '#171717',
+        /** Основной непрозрачный фон поверхности/контрола на темном фоне */
+        onDarkSurfaceSolidPrimaryBrightness: '#252525FF',
         /** Вторичный непрозрачный фон поверхности/контрола на темном */
         onDarkSurfaceSolidSecondaryHover: '#303030FF',
         /** Вторичный непрозрачный фон поверхности/контрола на темном */
@@ -388,6 +404,8 @@ export const color = {
         onDarkSurfaceSolidCardActive: '#121212FF',
         /** Основной фон для карточек на темном фоне */
         onDarkSurfaceSolidCard: '#171717',
+        /** Основной фон для карточек на темном фоне */
+        onDarkSurfaceSolidCardBrightness: '#252525FF',
         /** Непрозрачный фон поверхности/контрола по умолчанию на темном фоне */
         onDarkSurfaceSolidDefaultHover: '#FFFFFFFF',
         /** Непрозрачный фон поверхности/контрола по умолчанию на темном фоне */
@@ -418,6 +436,8 @@ export const color = {
         onDarkSurfaceTransparentCardActive: '#FFFFFF0A',
         /** Прозрачный фон для карточек на темном фоне */
         onDarkSurfaceTransparentCard: '#FFFFFF0F',
+        /** Прозрачный фон для карточек на темном фоне */
+        onDarkSurfaceTransparentCardBrightness: '#FFFFFFFF',
         /** Цвет фона поверхности/контрола успех на темном фоне */
         onDarkSurfacePositiveHover: '#1DAF37FF',
         /** Цвет фона поверхности/контрола успех на темном фоне */
@@ -472,6 +492,8 @@ export const color = {
         onLightSurfaceSolidPrimaryActive: '#F0F0F0FF',
         /** Основной непрозрачный фон поверхности/контрола на светлом */
         onLightSurfaceSolidPrimary: '#F5F5F5',
+        /** Основной непрозрачный фон поверхности/контрола на светлом */
+        onLightSurfaceSolidPrimaryBrightness: '#F6F6F6FF',
         /** Вторичный непрозрачный фон поверхности/контрола на светлом */
         onLightSurfaceSolidSecondaryHover: '#F7F7F7FF',
         /** Вторичный непрозрачный фон поверхности/контрола на светлом */
@@ -490,6 +512,8 @@ export const color = {
         onLightSurfaceSolidCardActive: '#FFFFFFFF',
         /** Основной фон для карточек на светлом фоне */
         onLightSurfaceSolidCard: '#FFFFFFFF',
+        /** Основной фон для карточек на светлом фоне */
+        onLightSurfaceSolidCardBrightness: '#FFFFFFFF',
         /** Непрозрачный фон поверхности/контрола по умолчанию на светлом фоне */
         onLightSurfaceSolidDefaultHover: '#0D0D0DFF',
         /** Непрозрачный фон поверхности/контрола по умолчанию на светлом фоне */
@@ -526,6 +550,8 @@ export const color = {
         onLightSurfaceTransparentCardActive: '#FFFFFFFF',
         /** Прозрачный фон для карточек на светлом фоне */
         onLightSurfaceTransparentCard: '#FFFFFFFF',
+        /** Прозрачный фон для карточек на светлом фоне */
+        onLightSurfaceTransparentCardBrightness: '#FFFFFFFF',
         /** Цвет фона поверхности/контрола успех на светлом фоне */
         onLightSurfacePositiveHover: '#1DAF37FF',
         /** Цвет фона поверхности/контрола успех на светлом фоне */
@@ -576,6 +602,8 @@ export const color = {
         onLightSurfaceAccentMain: '#1A9E32',
         /** Первичный фон */
         backgroundPrimary: '#000000FF',
+        /** Первичный фон */
+        backgroundPrimaryBrightness: '#0F0FFFFF',
         /** Вторичный фон */
         backgroundSecondary: '#171717',
         /** Цвет фона паранжи светлый на темном фоне */
@@ -592,6 +620,8 @@ export const color = {
         textPrimaryActive: '#080808C4',
         /** Основной цвет текста */
         textPrimary: '#080808F5',
+        /** Основной цвет текста */
+        textPrimaryBrightness: '#171717FF',
         /** Вторичный цвет текста */
         textSecondaryHover: '#080808FF',
         /** Вторичный цвет текста */
@@ -664,6 +694,8 @@ export const color = {
         onDarkTextPrimaryActive: '#FFFFFFC4',
         /** Основной цвет текста на темном фоне */
         onDarkTextPrimary: '#FFFFFFF5',
+        /** Основной цвет текста на темном фоне */
+        onDarkTextPrimaryBrightness: '#FFFFF6FF',
         /** Вторичный цвет текста на темном фоне */
         onDarkTextSecondaryHover: '#FFFFFFFF',
         /** Вторичный цвет текста на темном фоне */
@@ -736,6 +768,8 @@ export const color = {
         onLightTextPrimaryActive: '#080808C4',
         /** Основной цвет текста на светлом фоне */
         onLightTextPrimary: '#080808F5',
+        /** Основной цвет текста на светлом фоне */
+        onLightTextPrimaryBrightness: '#171717FF',
         /** Вторичный цвет текста на светлом фоне */
         onLightTextSecondaryHover: '#080808FF',
         /** Вторичный цвет текста на светлом фоне */
@@ -808,6 +842,8 @@ export const color = {
         inverseTextPrimaryActive: '#FFFFFFC4',
         /** Инвертированный основной цвет текста */
         inverseTextPrimary: '#FFFFFFF5',
+        /** Инвертированный основной цвет текста */
+        inverseTextPrimaryBrightness: '#FFFFF6FF',
         /** Инвертированный вторичный цвет текста */
         inverseTextSecondaryHover: '#FFFFFFFF',
         /** Инвертированный вторичный цвет текста */
@@ -832,6 +868,8 @@ export const color = {
         surfaceSolidPrimaryActive: '#F0F0F0FF',
         /** Основной непрозрачный фон поверхности/контрола */
         surfaceSolidPrimary: '#F5F5F5',
+        /** Основной непрозрачный фон поверхности/контрола */
+        surfaceSolidPrimaryBrightness: '#F6F6F6FF',
         /** Вторичный непрозрачный фон поверхности/контрола */
         surfaceSolidSecondaryHover: '#F7F7F7FF',
         /** Вторичный непрозрачный фон поверхности/контрола */
@@ -850,6 +888,8 @@ export const color = {
         surfaceSolidCardActive: '#FFFFFFFF',
         /** Основной фон для карточек */
         surfaceSolidCard: '#FFFFFFFF',
+        /** Основной фон для карточек */
+        surfaceSolidCardBrightness: '#FFFFFFFF',
         /** Непрозрачный фон поверхности/контрола по умолчанию */
         surfaceSolidDefaultHover: '#262626FF',
         /** Непрозрачный фон поверхности/контрола по умолчанию */
@@ -880,6 +920,8 @@ export const color = {
         surfaceTransparentCardActive: '#FFFFFFFF',
         /** Прозрачный фон для карточек */
         surfaceTransparentCard: '#FFFFFFFF',
+        /** Прозрачный фон для карточек */
+        surfaceTransparentCardBrightness: '#FFFFFFFF',
         /** Фон поверхности/контрола без заливки */
         surfaceClearHover: '#00000000',
         /** Фон поверхности/контрола без заливки */
@@ -956,6 +998,8 @@ export const color = {
         onDarkSurfaceSolidPrimaryActive: '#0D0D0DFF',
         /** Основной непрозрачный фон поверхности/контрола на темном фоне */
         onDarkSurfaceSolidPrimary: '#171717',
+        /** Основной непрозрачный фон поверхности/контрола на темном фоне */
+        onDarkSurfaceSolidPrimaryBrightness: '#252525FF',
         /** Вторичный непрозрачный фон поверхности/контрола на темном */
         onDarkSurfaceSolidSecondaryHover: '#3B3B3BFF',
         /** Вторичный непрозрачный фон поверхности/контрола на темном */
@@ -974,6 +1018,8 @@ export const color = {
         onDarkSurfaceSolidCardActive: '#0D0D0DFF',
         /** Основной фон для карточек на темном фоне */
         onDarkSurfaceSolidCard: '#171717',
+        /** Основной фон для карточек на темном фоне */
+        onDarkSurfaceSolidCardBrightness: '#252525FF',
         /** Непрозрачный фон поверхности/контрола по умолчанию на темном фоне */
         onDarkSurfaceSolidDefaultHover: '#FFFFFFFF',
         /** Непрозрачный фон поверхности/контрола по умолчанию на темном фоне */
@@ -1004,6 +1050,8 @@ export const color = {
         onDarkSurfaceTransparentCardActive: '#FFFFFF1A',
         /** Прозрачный фон для карточек на темном фоне */
         onDarkSurfaceTransparentCard: '#FFFFFF0F',
+        /** Прозрачный фон для карточек на темном фоне */
+        onDarkSurfaceTransparentCardBrightness: '#FFFFFFFF',
         /** Цвет успеха на темном фоне */
         onDarkSurfacePositiveHover: '#1EB83AFF',
         /** Цвет успеха на темном фоне */
@@ -1058,6 +1106,8 @@ export const color = {
         onLightSurfaceSolidPrimaryActive: '#F0F0F0FF',
         /** Основной непрозрачный фон поверхности/контрола на светлом */
         onLightSurfaceSolidPrimary: '#F5F5F5',
+        /** Основной непрозрачный фон поверхности/контрола на светлом */
+        onLightSurfaceSolidPrimaryBrightness: '#F6F6F6FF',
         /** Вторичный непрозрачный фон поверхности/контрола на светлом */
         onLightSurfaceSolidSecondaryHover: '#F7F7F7FF',
         /** Вторичный непрозрачный фон поверхности/контрола на светлом */
@@ -1076,6 +1126,8 @@ export const color = {
         onLightSurfaceSolidCardActive: '#FFFFFFFF',
         /** Основной фон для карточек на светлом фоне */
         onLightSurfaceSolidCard: '#FFFFFFFF',
+        /** Основной фон для карточек на светлом фоне */
+        onLightSurfaceSolidCardBrightness: '#FFFFFFFF',
         /** Непрозрачный фон поверхности/контрола по умолчанию на светлом фоне */
         onLightSurfaceSolidDefaultHover: '#262626FF',
         /** Непрозрачный фон поверхности/контрола по умолчанию на светлом фоне */
@@ -1112,6 +1164,8 @@ export const color = {
         onLightSurfaceTransparentCardActive: '#FFFFFFFF',
         /** Прозрачный фон для карточек на светлом фоне */
         onLightSurfaceTransparentCard: '#FFFFFFFF',
+        /** Прозрачный фон для карточек на светлом фоне */
+        onLightSurfaceTransparentCardBrightness: '#FFFFFFFF',
         /** Цвет успеха на светлом фоне */
         onLightSurfacePositiveHover: '#1EB83AFF',
         /** Цвет успеха на светлом фоне */
@@ -1162,6 +1216,8 @@ export const color = {
         onLightSurfaceAccentMain: '#1A9E32',
         /** Основной фон */
         backgroundPrimary: '#F2F2F2FF',
+        /** Основной фон */
+        backgroundPrimaryBrightness: '#F3F3F3FF',
         /** Вторичный фон */
         backgroundSecondary: '#FFFFFFFF',
         /** Цвет фона паранжи светлый на темном фоне */

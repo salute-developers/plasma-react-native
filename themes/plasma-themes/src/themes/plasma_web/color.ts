@@ -6,6 +6,8 @@ export const color = {
         textPrimaryActive: '#FFFFFFC4',
         /** Основной цвет текста */
         textPrimary: '#FFFFFFF5',
+        /** Основной цвет текста */
+        textPrimaryBrightness: '#FFFFFFF5',
         /** Вторичный цвет текста */
         textSecondaryHover: '#FFFFFFFF',
         /** Вторичный цвет текста */
@@ -25,35 +27,73 @@ export const color = {
         /** Сплошной наборный текст */
         textParagraph: '#FFFFFFCC',
         /** Акцентный цвет */
-        textAccentHover: '#90B6FEFF',
+        textAccentHover: '#A3C3FFFF',
         /** Акцентный цвет */
-        textAccentActive: '#216EFDFF',
+        textAccentActive: '#337AFFFF',
+        /** Акцентный минорный цвет */
+        textAccentMinorHover: '#FFFFFFFF',
+        /** Акцентный минорный цвет */
+        textAccentMinorActive: '#1C62E3FF',
+        /** Цвет успеха */
+        textPositiveHover: '#2ACB47FF',
+        /** Цвет успеха */
+        textPositiveActive: '#1F9835FF',
+        /** Цвет предупреждения */
+        textWarningHover: '#FF8442FF',
+        /** Цвет предупреждения */
+        textWarningActive: '#FF5D05FF',
+        /** Цвет ошибки */
+        textNegativeHover: '#FF5C6CFF',
+        /** Цвет ошибки */
+        textNegativeActive: '#FF1F35FF',
+        /** Цвет информации */
+        textInfoHover: '#A3C3FFFF',
+        /** Цвет информации */
+        textInfoActive: '#337AFFFF',
+        /** Минорный цвет успеха */
+        textPositiveMinorHover: '#0F9527FF',
+        /** Минорный цвет успеха */
+        textPositiveMinorActive: '#0C7920FF',
+        /** Минорный цвет предупреждения */
+        textWarningMinorHover: '#BB4F11FF',
+        /** Минорный цвет предупреждения */
+        textWarningMinorActive: '#9F440FFF',
+        /** Минорный цвет ошибки */
+        textNegativeMinorHover: '#B91828FF',
+        /** Минорный цвет ошибки */
+        textNegativeMinorActive: '#83111CFF',
+        /** Минорный цвет информации */
+        textInfoMinorHover: '#FFFFFFFF',
+        /** Минорный цвет информации */
+        textInfoMinorActive: '#1C62E3FF',
         /** Акцентный цвет */
-        textAccent: '#3F81FD',
+        textAccent: '#528EFF',
+        /** Акцентный минорный цвет */
+        textAccentMinor: '#1549AB',
         /** Цвет успеха */
-        textPositiveHover: '#1EB83AFF',
-        /** Цвет успеха */
-        textPositiveActive: '#15842AFF',
-        /** Цвет успеха */
-        textPositive: '#1A9E32',
+        textPositive: '#24B23E',
         /** Цвет предупреждения */
-        textWarningHover: '#FB7223FF',
-        /** Цвет предупреждения */
-        textWarningActive: '#DC5304FF',
-        /** Цвет предупреждения */
-        textWarning: '#FA5F05',
+        textWarning: '#FF7024',
         /** Цвет ошибки */
-        textNegativeHover: '#FF475AFF',
-        /** Цвет ошибки */
-        textNegativeActive: '#FF0A23FF',
-        /** Цвет ошибки */
-        textNegative: '#FF293E',
+        textNegative: '#FF3D51',
+        /** Минорный цвет успеха */
+        textPositiveMinor: '#095C18',
+        /** Минорный цвет предупреждения */
+        textWarningMinor: '#85380C',
+        /** Минорный цвет ошибки */
+        textNegativeMinor: '#9C1422',
+        /** Цвет информации */
+        textInfo: '#528EFF',
+        /** Минорный цвет информации */
+        textInfoMinor: '#1549AB',
         /** Основной цвет текста на темном фоне */
         onDarkTextPrimaryHover: '#FFFFFF93',
         /** Основной цвет текста на темном фоне */
         onDarkTextPrimaryActive: '#FFFFFFC4',
         /** Основной цвет текста на темном фоне */
         onDarkTextPrimary: '#FFFFFFF5',
+        /** Основной цвет текста на темном фоне */
+        onDarkTextPrimaryBrightness: '#FFFFFFF5',
         /** Вторичный цвет текста на темном фоне */
         onDarkTextSecondaryHover: '#FFFFFFFF',
         /** Вторичный цвет текста на темном фоне */
@@ -78,30 +118,68 @@ export const color = {
         onDarkTextAccentActive: '#216EFDFF',
         /** Акцентный цвет на темном фоне */
         onDarkTextAccent: '#3F81FD',
+        /** Акцентный минорный цвет на темном фоне */
+        onDarkTextAccentMinorHover: '#FFFFFFFF',
+        /** Акцентный минорный цвет на темном фоне */
+        onDarkTextAccentMinorActive: '#1C62E3FF',
         /** Цвет успеха на темном фоне */
-        onDarkTextPositiveHover: '#1EB83AFF',
+        onDarkTextPositiveHover: '#2ACB47FF',
         /** Цвет успеха на темном фоне */
-        onDarkTextPositiveActive: '#15842AFF',
+        onDarkTextPositiveActive: '#1F9835FF',
+        /** Цвет предупреждения на темном фоне */
+        onDarkTextWarningHover: '#FF8442FF',
+        /** Цвет предупреждения на темном фоне */
+        onDarkTextWarningActive: '#FF5D05FF',
+        /** Цвет ошибки на темном фоне */
+        onDarkTextNegativeHover: '#FF5C6CFF',
+        /** Цвет ошибки на темном фоне */
+        onDarkTextNegativeActive: '#FF1F35FF',
+        /** Цвет информации на темном фоне */
+        onDarkTextInfoHover: '#A3C3FFFF',
+        /** Цвет информации на темном фоне */
+        onDarkTextInfoActive: '#337AFFFF',
+        /** Минорный цвет успеха на темном фоне */
+        onDarkTextPositiveMinorHover: '#0F9527FF',
+        /** Минорный цвет успеха на темном фоне */
+        onDarkTextPositiveMinorActive: '#0C7920FF',
+        /** Минорный цвет предупреждения на темном фоне */
+        onDarkTextWarningMinorHover: '#BB4F11FF',
+        /** Минорный цвет предупреждения на темном фоне */
+        onDarkTextWarningMinorActive: '#9F440FFF',
+        /** Минорный цвет ошибки на темном фоне */
+        onDarkTextNegativeMinorHover: '#B91828FF',
+        /** Минорный цвет ошибки на темном фоне */
+        onDarkTextNegativeMinorActive: '#83111CFF',
+        /** Минорный цвет информации на темном фоне */
+        onDarkTextInfoMinorHover: '#FFFFFFFF',
+        /** Минорный цвет информации на темном фоне */
+        onDarkTextInfoMinorActive: '#1C62E3FF',
+        /** Акцентный минорный цвет на темном фоне */
+        onDarkTextAccentMinor: '#1549AB',
         /** Цвет успеха на темном фоне */
-        onDarkTextPositive: '#1A9E32',
+        onDarkTextPositive: '#24B23E',
         /** Цвет предупреждения на темном фоне */
-        onDarkTextWarningHover: '#FB7223FF',
-        /** Цвет предупреждения на темном фоне */
-        onDarkTextWarningActive: '#DC5304FF',
-        /** Цвет предупреждения на темном фоне */
-        onDarkTextWarning: '#FA5F05',
+        onDarkTextWarning: '#FF7024',
         /** Цвет ошибки на темном фоне */
-        onDarkTextNegativeHover: '#FF475AFF',
-        /** Цвет ошибки на темном фоне */
-        onDarkTextNegativeActive: '#FF0A23FF',
-        /** Цвет ошибки на темном фоне */
-        onDarkTextNegative: '#FF293E',
+        onDarkTextNegative: '#FF3D51',
+        /** Минорный цвет успеха на темном фоне */
+        onDarkTextPositiveMinor: '#095C18',
+        /** Минорный цвет предупреждения на темном фоне */
+        onDarkTextWarningMinor: '#85380C',
+        /** Минорный цвет ошибки на темном фоне */
+        onDarkTextNegativeMinor: '#9C1422',
+        /** Цвет информации на темном фоне */
+        onDarkTextInfo: '#528EFF',
+        /** Минорный цвет информации на темном фоне */
+        onDarkTextInfoMinor: '#1549AB',
         /** Основной цвет текста на светлом фоне */
         onLightTextPrimaryHover: '#08080893',
         /** Основной цвет текста на светлом фоне */
         onLightTextPrimaryActive: '#080808C4',
         /** Основной цвет текста на светлом фоне */
         onLightTextPrimary: '#080808F5',
+        /** Основной цвет текста на светлом фоне */
+        onLightTextPrimaryBrightness: '#080808F5',
         /** Вторичный цвет текста на светлом фоне */
         onLightTextSecondaryHover: '#080808FF',
         /** Вторичный цвет текста на светлом фоне */
@@ -126,30 +204,68 @@ export const color = {
         onLightTextAccentActive: '#0D5FF8FF',
         /** Акцентный цвет на светлом фоне */
         onLightTextAccent: '#2A72F8',
+        /** Акцентный минорный цвет на светлом фоне */
+        onLightTextAccentMinorHover: '#DCE8FEFF',
+        /** Акцентный минорный цвет на светлом фоне */
+        onLightTextAccentMinorActive: '#6FA0FBFF',
         /** Цвет успеха на светлом фоне */
-        onLightTextPositiveHover: '#1EB83AFF',
+        onLightTextPositiveHover: '#13AA2CFF',
         /** Цвет успеха на светлом фоне */
-        onLightTextPositiveActive: '#15842AFF',
-        /** Цвет успеха на светлом фоне */
-        onLightTextPositive: '#1A9E32',
+        onLightTextPositiveActive: '#0D731EFF',
         /** Цвет предупреждения на светлом фоне */
-        onLightTextWarningHover: '#FB7223FF',
+        onLightTextWarningHover: '#FD650DFF',
         /** Цвет предупреждения на светлом фоне */
-        onLightTextWarningActive: '#DC5304FF',
-        /** Цвет предупреждения на светлом фоне */
-        onLightTextWarning: '#FA5F05',
+        onLightTextWarningActive: '#CA4B02FF',
         /** Цвет ошибки на светлом фоне */
         onLightTextNegativeHover: '#F5384BFF',
         /** Цвет ошибки на светлом фоне */
         onLightTextNegativeActive: '#E40C22FF',
+        /** Цвет информации на светлом фоне */
+        onLightTextInfoHover: '#79A7FBFF',
+        /** Цвет информации на светлом фоне */
+        onLightTextInfoActive: '#0D5FF8FF',
+        /** Минорный цвет успеха на светлом фоне */
+        onLightTextPositiveMinorHover: '#3EDA5BFF',
+        /** Минорный цвет успеха на светлом фоне */
+        onLightTextPositiveMinorActive: '#23B83EFF',
+        /** Минорный цвет предупреждения на светлом фоне */
+        onLightTextWarningMinorHover: '#FDB086FF',
+        /** Минорный цвет предупреждения на светлом фоне */
+        onLightTextWarningMinorActive: '#FC884AFF',
+        /** Минорный цвет ошибки на светлом фоне */
+        onLightTextNegativeMinorHover: '#FFADB6FF',
+        /** Минорный цвет ошибки на светлом фоне */
+        onLightTextNegativeMinorActive: '#FF707EFF',
+        /** Минорный цвет информации на светлом фоне */
+        onLightTextInfoMinorHover: '#DCE8FEFF',
+        /** Минорный цвет информации на светлом фоне */
+        onLightTextInfoMinorActive: '#6FA0FBFF',
+        /** Акцентный минорный цвет на светлом фоне */
+        onLightTextAccentMinor: '#8BB2FC',
+        /** Цвет успеха на светлом фоне */
+        onLightTextPositive: '#108E26',
+        /** Цвет предупреждения на светлом фоне */
+        onLightTextWarning: '#E85702',
         /** Цвет ошибки на светлом фоне */
         onLightTextNegative: '#F31B31',
+        /** Минорный цвет успеха на светлом фоне */
+        onLightTextPositiveMinor: '#28D247',
+        /** Минорный цвет предупреждения на светлом фоне */
+        onLightTextWarningMinor: '#FD9C68',
+        /** Минорный цвет ошибки на светлом фоне */
+        onLightTextNegativeMinor: '#FF8F9A',
+        /** Цвет информации на светлом фоне */
+        onLightTextInfo: '#2A72F8',
+        /** Минорный цвет информации на светлом фоне */
+        onLightTextInfoMinor: '#8BB2FC',
         /** Инвертированный основной цвет текста */
         inverseTextPrimaryHover: '#08080893',
         /** Инвертированный основной цвет текста */
         inverseTextPrimaryActive: '#080808C4',
         /** Инвертированный основной цвет текста */
         inverseTextPrimary: '#080808F5',
+        /** Инвертированный основной цвет текста */
+        inverseTextPrimaryBrightness: '#080808F5',
         /** Инвертированный вторичный цвет текста */
         inverseTextSecondaryHover: '#080808FF',
         /** Инвертированный вторичный цвет текста */
@@ -174,6 +290,8 @@ export const color = {
         surfaceSolidPrimaryActive: '#121212FF',
         /** Основной непрозрачный фон поверхности/контрола */
         surfaceSolidPrimary: '#171717',
+        /** Основной непрозрачный фон поверхности/контрола */
+        surfaceSolidPrimaryBrightness: '#262626FF',
         /** Вторичный непрозрачный фон поверхности/контрола */
         surfaceSolidSecondaryHover: '#303030FF',
         /** Вторичный непрозрачный фон поверхности/контрола */
@@ -192,6 +310,8 @@ export const color = {
         surfaceSolidCardActive: '#121212FF',
         /** Основной фон для карточек */
         surfaceSolidCard: '#171717',
+        /** Основной фон для карточек */
+        surfaceSolidCardBrightness: '#262626FF',
         /** Непрозрачный фон поверхности/контрола по умолчанию */
         surfaceSolidDefaultHover: '#FFFFFFFF',
         /** Непрозрачный фон поверхности/контрола по умолчанию */
@@ -228,6 +348,8 @@ export const color = {
         surfaceTransparentCardActive: '#FFFFFF0F',
         /** Прозрачный фон для карточек */
         surfaceTransparentCard: '#FFFFFF1F',
+        /** Прозрачный фон для карточек */
+        surfaceTransparentCardBrightness: '#FFFFFF1F',
         /** Фон поверхности/контрола без заливки */
         surfaceClearHover: '#FFFFFF00',
         /** Фон поверхности/контрола без заливки */
@@ -240,10 +362,14 @@ export const color = {
         surfaceAccentActive: '#357BFDFF',
         /** Акцентный фон поверхности/контрола */
         surfaceAccent: '#3F81FD',
+        /** Акцентный минорный непрозрачный фон поверхности/контрола */
+        surfaceAccentMinorHover: '#0A2A67FF',
+        /** Акцентный минорный непрозрачный фон поверхности/контрола */
+        surfaceAccentMinorActive: '#071F4BFF',
         /** Прозрачный акцентный фон поверхности/контрола */
-        surfaceTransparentAccentHover: '#3F82FD3D',
+        surfaceTransparentAccentHover: '#3F82FD52',
         /** Прозрачный акцентный фон поверхности/контрола */
-        surfaceTransparentAccentActive: '#3F82FD0F',
+        surfaceTransparentAccentActive: '#3F82FD24',
         /** Цвет фона поверхности/контрола успех */
         surfacePositiveHover: '#1DAF37FF',
         /** Цвет фона поверхности/контрола успех */
@@ -262,32 +388,72 @@ export const color = {
         surfaceNegativeActive: '#FF1F35FF',
         /** Цвет фона поверхности/контрола ошибка */
         surfaceNegative: '#FF293E',
+        /** Цвет фона поверхности/контрола информация */
+        surfaceInfoHover: '#5D95FDFF',
+        /** Цвет фона поверхности/контрола информация */
+        surfaceInfoActive: '#357BFDFF',
+        /** Минорный цвет фона поверхности/контрола успех */
+        surfacePositiveMinorHover: '#0E3A16FF',
+        /** Минорный цвет фона поверхности/контрола успех */
+        surfacePositiveMinorActive: '#08210CFF',
+        /** Минорный цвет фона поверхности/контрола предупреждение */
+        surfaceWarningMinorHover: '#4F250DFF',
+        /** Минорный цвет фона поверхности/контрола предупреждение */
+        surfaceWarningMinorActive: '#351909FF',
+        /** Минорный цвет фона поверхности/контрола ошибка */
+        surfaceNegativeMinorHover: '#5B1018FF',
+        /** Минорный цвет фона поверхности/контрола ошибка */
+        surfaceNegativeMinorActive: '#410B11FF',
+        /** Минорный цвет фона поверхности/контрола информация */
+        surfaceInfoMinorHover: '#0A2A67FF',
+        /** Минорный цвет фона поверхности/контрола информация */
+        surfaceInfoMinorActive: '#071F4BFF',
         /** Прозрачный цвет фона поверхности/контрола успех */
-        surfaceTransparentPositiveHover: '#1A9E323D',
+        surfaceTransparentPositiveHover: '#1A9E3252',
         /** Прозрачный цвет фона поверхности/контрола успех */
-        surfaceTransparentPositiveActive: '#1A9E320F',
+        surfaceTransparentPositiveActive: '#1A9E3224',
         /** Прозрачный цвет фона поверхности/контрола предупреждение */
-        surfaceTransparentWarningHover: '#FA5F053D',
+        surfaceTransparentWarningHover: '#FA5F0552',
         /** Прозрачный цвет фона поверхности/контрола предупреждение */
-        surfaceTransparentWarningActive: '#FA5F050F',
+        surfaceTransparentWarningActive: '#FA5F0524',
         /** Прозрачный цвет фона поверхности/контрола предупреждение */
-        surfaceTransparentNegativeHover: '#FF293E3D',
+        surfaceTransparentNegativeHover: '#FF293E52',
         /** Прозрачный цвет фона поверхности/контрола предупреждение */
-        surfaceTransparentNegativeActive: '#FF293E0F',
+        surfaceTransparentNegativeActive: '#FF293E24',
+        /** Прозрачный цвет фона поверхности/контрола информация */
+        surfaceTransparentInfoHover: '#3F82FD52',
+        /** Прозрачный цвет фона поверхности/контрола информация */
+        surfaceTransparentInfoActive: '#3F82FD24',
+        /** Акцентный минорный непрозрачный фон поверхности/контрола */
+        surfaceAccentMinor: '#082254',
+        /** Минорный цвет фона поверхности/контрола успех */
+        surfacePositiveMinor: '#0A2B10',
+        /** Минорный цвет фона поверхности/контрола предупреждение */
+        surfaceWarningMinor: '#3D1D0A',
+        /** Минорный цвет фона поверхности/контрола ошибка */
+        surfaceNegativeMinor: '#4A0D13',
+        /** Прозрачный цвет фона поверхности/контрола успех */
+        surfaceTransparentPositive: '#1A9E3233',
+        /** Прозрачный цвет фона поверхности/контрола предупреждение */
+        surfaceTransparentWarning: '#FA5F0533',
+        /** Прозрачный цвет фона поверхности/контрола предупреждение */
+        surfaceTransparentNegative: '#FF293E33',
+        /** Цвет фона поверхности/контрола информация */
+        surfaceInfo: '#3F81FD',
+        /** Минорный цвет фона поверхности/контрола информация */
+        surfaceInfoMinor: '#082254',
         /** Прозрачный акцентный фон поверхности/контрола */
-        surfaceTransparentAccent: '#3F81FD1F',
-        /** Прозрачный цвет фона поверхности/контрола успех */
-        surfaceTransparentPositive: '#1A9E321F',
-        /** Прозрачный цвет фона поверхности/контрола предупреждение */
-        surfaceTransparentWarning: '#FA5F051F',
-        /** Прозрачный цвет фона поверхности/контрола предупреждение */
-        surfaceTransparentNegative: '#FF293E1F',
+        surfaceTransparentAccent: '#3F81FD33',
+        /** Прозрачный цвет фона поверхности/контрола информация */
+        surfaceTransparentInfo: '#3F81FD33',
         /** Осн. непрозрачный фон поверхности/контрола на темном фоне */
         onDarkSurfaceSolidPrimaryHover: '#1C1C1CFF',
         /** Осн. непрозрачный фон поверхности/контрола на темном фоне */
         onDarkSurfaceSolidPrimaryActive: '#121212FF',
         /** Осн. непрозрачный фон поверхности/контрола на темном фоне */
         onDarkSurfaceSolidPrimary: '#171717',
+        /** Осн. непрозрачный фон поверхности/контрола на темном фоне */
+        onDarkSurfaceSolidPrimaryBrightness: '#262626FF',
         /** Вторичный непр. фон поверхности/контрола на темном фоне */
         onDarkSurfaceSolidSecondaryHover: '#303030FF',
         /** Вторичный непр. фон поверхности/контрола на темном фоне */
@@ -306,6 +472,8 @@ export const color = {
         onDarkSurfaceSolidCardActive: '#121212FF',
         /** Основной фон для карточек на темном фоне */
         onDarkSurfaceSolidCard: '#171717',
+        /** Основной фон для карточек на темном фоне */
+        onDarkSurfaceSolidCardBrightness: '#262626FF',
         /** Непр. фон поверхности/контрола по умолчанию на тем. фоне */
         onDarkSurfaceSolidDefaultHover: '#FFFFFFFF',
         /** Непр. фон поверхности/контрола по умолчанию на тем. фоне */
@@ -342,12 +510,22 @@ export const color = {
         onDarkSurfaceTransparentCardActive: '#FFFFFF0F',
         /** Прозрачный фон для карточек на темном фоне */
         onDarkSurfaceTransparentCard: '#FFFFFF1F',
+        /** Прозрачный фон для карточек на темном фоне */
+        onDarkSurfaceTransparentCardBrightness: '#FFFFFF1F',
         /** Акцентный фон поверхности/контрола на темном фоне */
         onDarkSurfaceAccentHover: '#5D95FDFF',
         /** Акцентный фон поверхности/контрола на темном фоне */
         onDarkSurfaceAccentActive: '#357BFDFF',
         /** Акцентный фон поверхности/контрола на темном фоне */
         onDarkSurfaceAccent: '#3F81FD',
+        /** Акцентный минорный непрозрачный фон поверхности/контрола на темном фоне */
+        onDarkSurfaceAccentMinorHover: '#0A2A67FF',
+        /** Акцентный минорный непрозрачный фон поверхности/контрола на темном фоне */
+        onDarkSurfaceAccentMinorActive: '#071F4BFF',
+        /** Прозрачный акцентный фон поверхности/контрола на темном фоне */
+        onDarkSurfaceTransparentAccentHover: '#3F82FD52',
+        /** Прозрачный акцентный фон поверхности/контрола на темном фоне */
+        onDarkSurfaceTransparentAccentActive: '#3F82FD24',
         /** Цвет фона поверхности/контрола успех на темном фоне */
         onDarkSurfacePositiveHover: '#1DAF37FF',
         /** Цвет фона поверхности/контрола успех на темном фоне */
@@ -366,12 +544,72 @@ export const color = {
         onDarkSurfaceNegativeActive: '#FF1F35FF',
         /** Цвет фона поверхности/контрола ошибка на темном фоне */
         onDarkSurfaceNegative: '#FF293E',
+        /** Цвет фона поверхности/контрола информация на темном фоне */
+        onDarkSurfaceInfoHover: '#5D95FDFF',
+        /** Цвет фона поверхности/контрола информация на темном фоне */
+        onDarkSurfaceInfoActive: '#357BFDFF',
+        /** Минорный цвет фона поверхности/контрола успех на темном фоне */
+        onDarkSurfacePositiveMinorHover: '#0E3A16FF',
+        /** Минорный цвет фона поверхности/контрола успех на темном фоне */
+        onDarkSurfacePositiveMinorActive: '#08210CFF',
+        /** Минорный цвет фона поверхности/контрола предупреждение на темном фоне */
+        onDarkSurfaceWarningMinorHover: '#4F250DFF',
+        /** Минорный цвет фона поверхности/контрола предупреждение на темном фоне */
+        onDarkSurfaceWarningMinorActive: '#351909FF',
+        /** Минорный цвет фона поверхности/контрола ошибка на темном фоне */
+        onDarkSurfaceNegativeMinorHover: '#5B1018FF',
+        /** Минорный цвет фона поверхности/контрола ошибка на темном фоне */
+        onDarkSurfaceNegativeMinorActive: '#410B11FF',
+        /** Минорный цвет фона поверхности/контрола информация на темном фоне */
+        onDarkSurfaceInfoMinorHover: '#0A2A67FF',
+        /** Минорный цвет фона поверхности/контрола информация на темном фоне */
+        onDarkSurfaceInfoMinorActive: '#071F4BFF',
+        /** Прозрачный цвет фона поверхности/контрола успех на темном фоне */
+        onDarkSurfaceTransparentPositiveHover: '#1A9E3252',
+        /** Прозрачный цвет фона поверхности/контрола успех на темном фоне */
+        onDarkSurfaceTransparentPositiveActive: '#1A9E3224',
+        /** Прозрачный цвет фона поверхности/контрола предупреждение на темном фоне */
+        onDarkSurfaceTransparentWarningHover: '#FA5F0552',
+        /** Прозрачный цвет фона поверхности/контрола предупреждение на темном фоне */
+        onDarkSurfaceTransparentWarningActive: '#FA5F0524',
+        /** Прозрачный цвет фона поверхности/контрола предупреждение на темном фоне */
+        onDarkSurfaceTransparentNegativeHover: '#FF293E52',
+        /** Прозрачный цвет фона поверхности/контрола предупреждение на темном фоне */
+        onDarkSurfaceTransparentNegativeActive: '#FF293E24',
+        /** Прозрачный цвет фона поверхности/контрола информация на темном фоне */
+        onDarkSurfaceTransparentInfoHover: '#3F82FD52',
+        /** Прозрачный цвет фона поверхности/контрола информация на темном фоне */
+        onDarkSurfaceTransparentInfoActive: '#3F82FD24',
+        /** Акцентный минорный непрозрачный фон поверхности/контрола на темном фоне */
+        onDarkSurfaceAccentMinor: '#082254',
+        /** Прозрачный акцентный фон поверхности/контрола на темном фоне */
+        onDarkSurfaceTransparentAccent: '#3F81FD33',
+        /** Минорный цвет фона поверхности/контрола успех на темном фоне */
+        onDarkSurfacePositiveMinor: '#0A2B10',
+        /** Минорный цвет фона поверхности/контрола предупреждение на темном фоне */
+        onDarkSurfaceWarningMinor: '#3D1D0A',
+        /** Минорный цвет фона поверхности/контрола ошибка на темном фоне */
+        onDarkSurfaceNegativeMinor: '#4A0D13',
+        /** Прозрачный цвет фона поверхности/контрола успех на темном фоне */
+        onDarkSurfaceTransparentPositive: '#1A9E3233',
+        /** Прозрачный цвет фона поверхности/контрола предупреждение на темном фоне */
+        onDarkSurfaceTransparentWarning: '#FA5F0533',
+        /** Прозрачный цвет фона поверхности/контрола предупреждение на темном фоне */
+        onDarkSurfaceTransparentNegative: '#FF293E33',
+        /** Цвет фона поверхности/контрола информация на темном фоне */
+        onDarkSurfaceInfo: '#3F81FD',
+        /** Минорный цвет фона поверхности/контрола информация на темном фоне */
+        onDarkSurfaceInfoMinor: '#082254',
+        /** Прозрачный цвет фона поверхности/контрола информация на темном фоне */
+        onDarkSurfaceTransparentInfo: '#3F81FD33',
         /** Осн. непрозрачный фон поверхности/контрола на светлом фоне */
         onLightSurfaceSolidPrimaryHover: '#FAFAFAFF',
         /** Осн. непрозрачный фон поверхности/контрола на светлом фоне */
         onLightSurfaceSolidPrimaryActive: '#F0F0F0FF',
         /** Осн. непрозрачный фон поверхности/контрола на светлом фоне */
         onLightSurfaceSolidPrimary: '#F5F5F5',
+        /** Осн. непрозрачный фон поверхности/контрола на светлом фоне */
+        onLightSurfaceSolidPrimaryBrightness: '#FFFFFFFF',
         /** Втор. непрозрачный фон поверхности/контрола на светлом фоне */
         onLightSurfaceSolidSecondaryHover: '#F7F7F7FF',
         /** Втор. непрозрачный фон поверхности/контрола на светлом фоне */
@@ -390,6 +628,8 @@ export const color = {
         onLightSurfaceSolidCardActive: '#FFFFFFFF',
         /** Основной фон для карточек на светлом фоне */
         onLightSurfaceSolidCard: '#FFFFFFFF',
+        /** Основной фон для карточек на светлом фоне */
+        onLightSurfaceSolidCardBrightness: '#FFFFFFFF',
         /** Непр. фон поверхности/контрола по умолчанию на светлом фоне */
         onLightSurfaceSolidDefaultHover: '#0D0D0DFF',
         /** Непр. фон поверхности/контрола по умолчанию на светлом фоне */
@@ -426,32 +666,102 @@ export const color = {
         onLightSurfaceTransparentCardActive: '#FFFFFFFF',
         /** Прозрачный фон для карточек на светлом фоне */
         onLightSurfaceTransparentCard: '#FFFFFFFF',
+        /** Прозрачный фон для карточек на светлом фоне */
+        onLightSurfaceTransparentCardBrightness: '#FFFFFFFF',
         /** Акцентный фон поверхности/контрола на светлом фоне */
         onLightSurfaceAccentHover: '#4886F9FF',
         /** Акцентный фон поверхности/контрола на светлом фоне */
         onLightSurfaceAccentActive: '#206CF8FF',
         /** Акцентный фон поверхности/контрола на светлом фоне */
         onLightSurfaceAccent: '#2A72F8',
+        /** Акцентный минорный непрозрачный фон поверхности/контрола на светлом фоне */
+        onLightSurfaceAccentMinorHover: '#EBF1FFFF',
+        /** Акцентный минорный непрозрачный фон поверхности/контрола на светлом фоне */
+        onLightSurfaceAccentMinorActive: '#D6E4FFFF',
+        /** Прозрачный акцентный фон поверхности/контрола на светлом фоне */
+        onLightSurfaceTransparentAccentHover: '#2A72F83D',
+        /** Прозрачный акцентный фон поверхности/контрола на светлом фоне */
+        onLightSurfaceTransparentAccentActive: '#2A72F80F',
         /** Цвет фона поверхности/контрола успех на светлом фоне */
-        onLightSurfacePositiveHover: '#1DAF37FF',
+        onLightSurfacePositiveHover: '#12A12AFF',
         /** Цвет фона поверхности/контрола успех на светлом фоне */
-        onLightSurfacePositiveActive: '#18952FFF',
-        /** Цвет фона поверхности/контрола успех на светлом фоне */
-        onLightSurfacePositive: '#1A9E32',
+        onLightSurfacePositiveActive: '#0F8523FF',
         /** Цвет фона поверхн./контрола предупреждение на светлом фоне */
-        onLightSurfaceWarningHover: '#FB7223FF',
+        onLightSurfaceWarningHover: '#FC5E03FF',
         /** Цвет фона поверхн./контрола предупреждение на светлом фоне */
-        onLightSurfaceWarningActive: '#F05B05FF',
-        /** Цвет фона поверхн./контрола предупреждение на светлом фоне */
-        onLightSurfaceWarning: '#FA5F05',
+        onLightSurfaceWarningActive: '#DE5302FF',
         /** Цвет фона поверхности/контрола ошибка на светлом фоне */
         onLightSurfaceNegativeHover: '#F5384BFF',
         /** Цвет фона поверхности/контрола ошибка на светлом фоне */
         onLightSurfaceNegativeActive: '#F31228FF',
+        /** Цвет фона поверхности/контрола информация на светлом фоне */
+        onLightSurfaceInfoHover: '#4886F9FF',
+        /** Цвет фона поверхности/контрола информация на светлом фоне */
+        onLightSurfaceInfoActive: '#206CF8FF',
+        /** Минорный цвет фона поверхности/контрола успех на светлом фоне */
+        onLightSurfacePositiveMinorHover: '#B1FBBFFF',
+        /** Минорный цвет фона поверхности/контрола успех на светлом фоне */
+        onLightSurfacePositiveMinorActive: '#94F9A7FF',
+        /** Минорный цвет фона поверхности/контрола предупреждение на светлом фоне */
+        onLightSurfaceWarningMinorHover: '#FEE9DCFF',
+        /** Минорный цвет фона поверхности/контрола предупреждение на светлом фоне */
+        onLightSurfaceWarningMinorActive: '#FEDCC8FF',
+        /** Минорный цвет фона поверхности/контрола ошибка на светлом фоне */
+        onLightSurfaceNegativeMinorHover: '#FFEBEDFF',
+        /** Минорный цвет фона поверхности/контрола ошибка на светлом фоне */
+        onLightSurfaceNegativeMinorActive: '#FFD6DAFF',
+        /** Минорный цвет фона поверхности/контрола информация на светлом фоне */
+        onLightSurfaceInfoMinorHover: '#EBF1FFFF',
+        /** Минорный цвет фона поверхности/контрола информация на светлом фоне */
+        onLightSurfaceInfoMinorActive: '#D6E4FFFF',
+        /** Прозрачный цвет фона поверхности/контрола успех на светлом фоне */
+        onLightSurfaceTransparentPositiveHover: '#108E253D',
+        /** Прозрачный цвет фона поверхности/контрола успех на светлом фоне */
+        onLightSurfaceTransparentPositiveActive: '#108E250F',
+        /** Прозрачный цвет фона поверхности/контрола предупреждение на светлом фоне */
+        onLightSurfaceTransparentWarningHover: '#E857023D',
+        /** Прозрачный цвет фона поверхности/контрола предупреждение на светлом фоне */
+        onLightSurfaceTransparentWarningActive: '#E857020F',
+        /** Прозрачный цвет фона поверхности/контрола предупреждение на светлом фоне */
+        onLightSurfaceTransparentNegativeHover: '#F31B313D',
+        /** Прозрачный цвет фона поверхности/контрола предупреждение на светлом фоне */
+        onLightSurfaceTransparentNegativeActive: '#F31B310F',
+        /** Прозрачный цвет фона поверхности/контрола информация на светлом фоне */
+        onLightSurfaceTransparentInfoHover: '#2A72F83D',
+        /** Прозрачный цвет фона поверхности/контрола информация на светлом фоне */
+        onLightSurfaceTransparentInfoActive: '#2A72F80F',
+        /** Акцентный минорный непрозрачный фон поверхности/контрола на светлом фоне */
+        onLightSurfaceAccentMinor: '#DEE9FF',
+        /** Прозрачный акцентный фон поверхности/контрола на светлом фоне */
+        onLightSurfaceTransparentAccent: '#2A72F81F',
+        /** Цвет фона поверхности/контрола успех на светлом фоне */
+        onLightSurfacePositive: '#108E26',
+        /** Цвет фона поверхн./контрола предупреждение на светлом фоне */
+        onLightSurfaceWarning: '#E85702',
         /** Цвет фона поверхности/контрола ошибка на светлом фоне */
         onLightSurfaceNegative: '#F31B31',
+        /** Минорный цвет фона поверхности/контрола успех на светлом фоне */
+        onLightSurfacePositiveMinor: '#9EFAAF',
+        /** Минорный цвет фона поверхности/контрола предупреждение на светлом фоне */
+        onLightSurfaceWarningMinor: '#FEE2D2',
+        /** Минорный цвет фона поверхности/контрола ошибка на светлом фоне */
+        onLightSurfaceNegativeMinor: '#FFE0E3',
+        /** Прозрачный цвет фона поверхности/контрола успех на светлом фоне */
+        onLightSurfaceTransparentPositive: '#108E261F',
+        /** Прозрачный цвет фона поверхности/контрола предупреждение на светлом фоне */
+        onLightSurfaceTransparentWarning: '#E857021F',
+        /** Прозрачный цвет фона поверхности/контрола предупреждение на светлом фоне */
+        onLightSurfaceTransparentNegative: '#F31B311F',
+        /** Цвет фона поверхности/контрола информация на светлом фоне */
+        onLightSurfaceInfo: '#2A72F8',
+        /** Минорный цвет фона поверхности/контрола информация на светлом фоне */
+        onLightSurfaceInfoMinor: '#DEE9FF',
+        /** Прозрачный цвет фона поверхности/контрола информация на светлом фоне */
+        onLightSurfaceTransparentInfo: '#2A72F81F',
         /** Основной фон */
         backgroundPrimary: '#080808',
+        /** Основной фон */
+        backgroundPrimaryBrightness: '#171717FF',
         /** Основной фон на темном фоне */
         darkBackgroundPrimary: '#080808',
         /** Основной фон на светлом фоне */
@@ -474,6 +784,408 @@ export const color = {
         onLightOverlayHard: '#F9F9F9F5',
         /** dark overlay onLight overlayBlur */
         onLightOverlayBlur: '#F9F9F947',
+        /** Основной непрозрачный цвет обводки */
+        outlineSolidPrimaryHover: '#303030FF',
+        /** Основной непрозрачный цвет обводки */
+        outlineSolidPrimaryActive: '#212121FF',
+        /** Вторичный непрозрачный цвет обводки */
+        outlineSolidSecondaryHover: '#595959FF',
+        /** Вторичный непрозрачный цвет обводки */
+        outlineSolidSecondaryActive: '#4A4A4AFF',
+        /** Третичный непрозрачный цвет обводки */
+        outlineSolidTertiaryHover: '#7A7A7AFF',
+        /** Третичный непрозрачный цвет обводки */
+        outlineSolidTertiaryActive: '#6B6B6BFF',
+        /** Основной прозрачный цвет обводки */
+        outlineTransparentPrimaryHover: '#FFFFFF3D',
+        /** Основной прозрачный цвет обводки */
+        outlineTransparentPrimaryActive: '#FFFFFF0F',
+        /** Вторичный прозрачный цвет обводки */
+        outlineTransparentSecondaryHover: '#FFFFFF52',
+        /** Вторичный прозрачный цвет обводки */
+        outlineTransparentSecondaryActive: '#FFFFFF24',
+        /** Третичный прозрачный цвет обводки */
+        outlineTransparentTertiaryHover: '#FFFFFF85',
+        /** Третичный прозрачный цвет обводки */
+        outlineTransparentTertiaryActive: '#FFFFFF57',
+        /** Бесцветная обводка */
+        outlineClearHover: '#FFFFFF00',
+        /** Бесцветная обводка */
+        outlineClearActive: '#FFFFFF00',
+        /** Акцентный цвет обводки */
+        outlineAccentHover: '#5D95FDFF',
+        /** Акцентный цвет обводки */
+        outlineAccentActive: '#357BFDFF',
+        /** Акцентный минорный непрозрачный цвет обводки */
+        outlineAccentMinorHover: '#1852BFFF',
+        /** Акцентный минорный непрозрачный цвет обводки */
+        outlineAccentMinorActive: '#1446A3FF',
+        /** Прозрачный акцентный цвет обводки */
+        outlineTransparentAccentHover: '#528EFF66',
+        /** Прозрачный акцентный цвет обводки */
+        outlineTransparentAccentActive: '#528EFF38',
+        /** Цвет обводки успех */
+        outlinePositiveHover: '#28C344FF',
+        /** Цвет обводки успех */
+        outlinePositiveActive: '#23A93BFF',
+        /** Цвет обводки предупреждение */
+        outlineWarningHover: '#FF8442FF',
+        /** Цвет обводки предупреждение */
+        outlineWarningActive: '#FF6A1AFF',
+        /** Цвет обводки ошибка */
+        outlineNegativeHover: '#FF5C6CFF',
+        /** Цвет обводки ошибка */
+        outlineNegativeActive: '#FF3347FF',
+        /** Цвет обводки информация */
+        outlineInfoHover: '#70A2FFFF',
+        /** Цвет обводки информация */
+        outlineInfoActive: '#4788FFFF',
+        /** Минорный цвет обводки успех */
+        outlinePositiveMinorHover: '#0B6F1DFF',
+        /** Минорный цвет обводки успех */
+        outlinePositiveMinorActive: '#085416FF',
+        /** Минорный цвет обводки предупреждение */
+        outlineWarningMinorHover: '#95400EFF',
+        /** Минорный цвет обводки предупреждение */
+        outlineWarningMinorActive: '#79340BFF',
+        /** Минорный цвет обводки ошибка */
+        outlineNegativeMinorHover: '#B01726FF',
+        /** Минорный цвет обводки ошибка */
+        outlineNegativeMinorActive: '#951320FF',
+        /** Минорный цвет обводки информация */
+        outlineInfoMinorHover: '#1852BFFF',
+        /** Минорный цвет обводки информация */
+        outlineInfoMinorActive: '#1446A3FF',
+        /** Прозрачный цвет обводки успех */
+        outlineTransparentPositiveHover: '#24B23E66',
+        /** Прозрачный цвет обводки успех */
+        outlineTransparentPositiveActive: '#24B23E38',
+        /** Прозрачный цвет обводки предупреждение */
+        outlineTransparentWarningHover: '#FF702466',
+        /** Прозрачный цвет обводки предупреждение */
+        outlineTransparentWarningActive: '#FF702438',
+        /** Прозрачный цвет обводки предупреждение */
+        outlineTransparentNegativeHover: '#FF3D5166',
+        /** Прозрачный цвет обводки предупреждение */
+        outlineTransparentNegativeActive: '#FF3D5138',
+        /** Прозрачный цвет обводки информация */
+        outlineTransparentInfoHover: '#528EFF66',
+        /** Прозрачный цвет обводки информация */
+        outlineTransparentInfoActive: '#528EFF38',
+        /** Основной непрозрачный цвет обводки */
+        outlineSolidPrimary: '#262626',
+        /** Вторичный непрозрачный цвет обводки */
+        outlineSolidSecondary: '#4E4E4E',
+        /** Третичный непрозрачный цвет обводки */
+        outlineSolidTertiary: '#707070',
+        /** dark outline default outlineDefault */
+        outlineDefault: '#F9F9F9',
+        /** dark outline default outlineDefaultHover */
+        outlineDefaultHover: '#FFFFFFFF',
+        /** dark outline default outlineDefaultActive */
+        outlineDefaultActive: '#F5F5F5FF',
+        /** Основной прозрачный цвет обводки */
+        outlineTransparentPrimary: '#FFFFFF1F',
+        /** Вторичный прозрачный цвет обводки */
+        outlineTransparentSecondary: '#FFFFFF33',
+        /** Третичный прозрачный цвет обводки */
+        outlineTransparentTertiary: '#FFFFFF66',
+        /** Бесцветная обводка */
+        outlineClear: '#FFFFFF00',
+        /** Акцентный цвет обводки */
+        outlineAccent: '#3F81FD',
+        /** Акцентный минорный непрозрачный цвет обводки */
+        outlineAccentMinor: '#1549AB',
+        /** Прозрачный акцентный цвет обводки */
+        outlineTransparentAccent: '#528EFF47',
+        /** Цвет обводки успех */
+        outlinePositive: '#24B23E',
+        /** Цвет обводки предупреждение */
+        outlineWarning: '#FF7024',
+        /** Цвет обводки ошибка */
+        outlineNegative: '#FF3D51',
+        /** Минорный цвет обводки успех */
+        outlinePositiveMinor: '#095C18',
+        /** Минорный цвет обводки предупреждение */
+        outlineWarningMinor: '#85380C',
+        /** Минорный цвет обводки ошибка */
+        outlineNegativeMinor: '#9C1422',
+        /** Прозрачный цвет обводки успех */
+        outlineTransparentPositive: '#24B23E47',
+        /** Прозрачный цвет обводки предупреждение */
+        outlineTransparentWarning: '#FF702447',
+        /** Прозрачный цвет обводки предупреждение */
+        outlineTransparentNegative: '#FF3D5147',
+        /** Цвет обводки информация */
+        outlineInfo: '#528EFF',
+        /** Минорный цвет обводки информация */
+        outlineInfoMinor: '#1549AB',
+        /** Прозрачный цвет обводки информация */
+        outlineTransparentInfo: '#528EFF47',
+        /** Основной непрозрачный цвет обводки на темном фоне */
+        onDarkOutlineSolidPrimaryHover: '#303030FF',
+        /** Основной непрозрачный цвет обводки на темном фоне */
+        onDarkOutlineSolidPrimaryActive: '#212121FF',
+        /** Вторичный непрозрачный цвет обводки на темном фоне */
+        onDarkOutlineSolidSecondaryHover: '#595959FF',
+        /** Вторичный непрозрачный цвет обводки на темном фоне */
+        onDarkOutlineSolidSecondaryActive: '#4A4A4AFF',
+        /** Третичный непрозрачный цвет обводки на темном фоне */
+        onDarkOutlineSolidTertiaryHover: '#7A7A7AFF',
+        /** Третичный непрозрачный цвет обводки на темном фоне */
+        onDarkOutlineSolidTertiaryActive: '#6B6B6BFF',
+        /** Основной прозрачный цвет обводки на темном фоне */
+        onDarkOutlineTransparentPrimaryHover: '#FFFFFF3D',
+        /** Основной прозрачный цвет обводки на темном фоне */
+        onDarkOutlineTransparentPrimaryActive: '#FFFFFF0F',
+        /** Вторичный прозрачный цвет обводки на темном фоне */
+        onDarkOutlineTransparentSecondaryHover: '#FFFFFF52',
+        /** Вторичный прозрачный цвет обводки на темном фоне */
+        onDarkOutlineTransparentSecondaryActive: '#FFFFFF24',
+        /** Третичный прозрачный цвет обводки на темном фоне */
+        onDarkOutlineTransparentTertiaryHover: '#FFFFFF85',
+        /** Третичный прозрачный цвет обводки на темном фоне */
+        onDarkOutlineTransparentTertiaryActive: '#FFFFFF57',
+        /** Акцентный цвет обводки на темном фоне */
+        onDarkOutlineAccentHover: '#5D95FDFF',
+        /** Акцентный цвет обводки на темном фоне */
+        onDarkOutlineAccentActive: '#357BFDFF',
+        /** Акцентный минорный непрозрачный цвет обводки на темном фоне */
+        onDarkOutlineAccentMinorHover: '#1852BFFF',
+        /** Акцентный минорный непрозрачный цвет обводки на темном фоне */
+        onDarkOutlineAccentMinorActive: '#1446A3FF',
+        /** Прозрачный акцентный цвет обводки на темном фоне */
+        onDarkOutlineTransparentAccentHover: '#528EFF66',
+        /** Прозрачный акцентный цвет обводки на темном фоне */
+        onDarkOutlineTransparentAccentActive: '#528EFF38',
+        /** Цвет обводки успех на темном фоне */
+        onDarkOutlinePositiveHover: '#28C344FF',
+        /** Цвет обводки успех на темном фоне */
+        onDarkOutlinePositiveActive: '#23A93BFF',
+        /** Цвет обводки предупреждение на темном фоне */
+        onDarkOutlineWarningHover: '#FF8442FF',
+        /** Цвет обводки предупреждение на темном фоне */
+        onDarkOutlineWarningActive: '#FF6A1AFF',
+        /** Цвет обводки ошибка на темном фоне */
+        onDarkOutlineNegativeHover: '#FF5C6CFF',
+        /** Цвет обводки ошибка на темном фоне */
+        onDarkOutlineNegativeActive: '#FF3347FF',
+        /** Цвет обводки информация на темном фоне */
+        onDarkOutlineInfoHover: '#70A2FFFF',
+        /** Цвет обводки информация на темном фоне */
+        onDarkOutlineInfoActive: '#4788FFFF',
+        /** Минорный цвет обводки успех на темном фоне */
+        onDarkOutlinePositiveMinorHover: '#0B6F1DFF',
+        /** Минорный цвет обводки успех на темном фоне */
+        onDarkOutlinePositiveMinorActive: '#085416FF',
+        /** Минорный цвет обводки предупреждение на темном фоне */
+        onDarkOutlineWarningMinorHover: '#95400EFF',
+        /** Минорный цвет обводки предупреждение на темном фоне */
+        onDarkOutlineWarningMinorActive: '#79340BFF',
+        /** Минорный цвет обводки ошибка на темном фоне */
+        onDarkOutlineNegativeMinorHover: '#B01726FF',
+        /** Минорный цвет обводки ошибка на темном фоне */
+        onDarkOutlineNegativeMinorActive: '#951320FF',
+        /** Минорный цвет обводки информация на темном фоне */
+        onDarkOutlineInfoMinorHover: '#1852BFFF',
+        /** Минорный цвет обводки информация на темном фоне */
+        onDarkOutlineInfoMinorActive: '#1446A3FF',
+        /** Прозрачный цвет обводки успех на темном фоне */
+        onDarkOutlineTransparentPositiveHover: '#24B23E66',
+        /** Прозрачный цвет обводки успех на темном фоне */
+        onDarkOutlineTransparentPositiveActive: '#24B23E38',
+        /** Прозрачный цвет обводки предупреждение на темном фоне */
+        onDarkOutlineTransparentWarningHover: '#FF702466',
+        /** Прозрачный цвет обводки предупреждение на темном фоне */
+        onDarkOutlineTransparentWarningActive: '#FF702438',
+        /** Прозрачный цвет обводки предупреждение на темном фоне */
+        onDarkOutlineTransparentNegativeHover: '#FF3D5166',
+        /** Прозрачный цвет обводки предупреждение на темном фоне */
+        onDarkOutlineTransparentNegativeActive: '#FF3D5138',
+        /** Прозрачный цвет обводки информация на темном фоне */
+        onDarkOutlineTransparentInfoHover: '#528EFF66',
+        /** Прозрачный цвет обводки информация на темном фоне */
+        onDarkOutlineTransparentInfoActive: '#528EFF38',
+        /** dark outline onDark outlineDefaultHover */
+        onDarkOutlineDefaultHover: '#FFFFFFFF',
+        /** dark outline onDark outlineDefaultActive */
+        onDarkOutlineDefaultActive: '#F5F5F5FF',
+        /** Основной непрозрачный цвет обводки на темном фоне */
+        onDarkOutlineSolidPrimary: '#262626',
+        /** Вторичный непрозрачный цвет обводки на темном фоне */
+        onDarkOutlineSolidSecondary: '#4E4E4E',
+        /** Третичный непрозрачный цвет обводки на темном фоне */
+        onDarkOutlineSolidTertiary: '#707070',
+        /** dark outline onDark outlineDefault */
+        onDarkOutlineDefault: '#F9F9F9',
+        /** Основной прозрачный цвет обводки на темном фоне */
+        onDarkOutlineTransparentPrimary: '#FFFFFF1F',
+        /** Вторичный прозрачный цвет обводки на темном фоне */
+        onDarkOutlineTransparentSecondary: '#FFFFFF33',
+        /** Третичный прозрачный цвет обводки на темном фоне */
+        onDarkOutlineTransparentTertiary: '#FFFFFF66',
+        /** Акцентный цвет обводки на темном фоне */
+        onDarkOutlineAccent: '#3F81FD',
+        /** Акцентный минорный непрозрачный цвет обводки на темном фоне */
+        onDarkOutlineAccentMinor: '#1549AB',
+        /** Прозрачный акцентный цвет обводки на темном фоне */
+        onDarkOutlineTransparentAccent: '#528EFF47',
+        /** Цвет обводки успех на темном фоне */
+        onDarkOutlinePositive: '#24B23E',
+        /** Цвет обводки предупреждение на темном фоне */
+        onDarkOutlineWarning: '#FF7024',
+        /** Цвет обводки ошибка на темном фоне */
+        onDarkOutlineNegative: '#FF3D51',
+        /** Минорный цвет обводки успех на темном фоне */
+        onDarkOutlinePositiveMinor: '#095C18',
+        /** Минорный цвет обводки предупреждение на темном фоне */
+        onDarkOutlineWarningMinor: '#85380C',
+        /** Минорный цвет обводки ошибка на темном фоне */
+        onDarkOutlineNegativeMinor: '#9C1422',
+        /** Прозрачный цвет обводки успех на темном фоне */
+        onDarkOutlineTransparentPositive: '#24B23E47',
+        /** Прозрачный цвет обводки предупреждение на темном фоне */
+        onDarkOutlineTransparentWarning: '#FF702447',
+        /** Прозрачный цвет обводки предупреждение на темном фоне */
+        onDarkOutlineTransparentNegative: '#FF3D5147',
+        /** Цвет обводки информация на темном фоне */
+        onDarkOutlineInfo: '#528EFF',
+        /** Минорный цвет обводки информация на темном фоне */
+        onDarkOutlineInfoMinor: '#1549AB',
+        /** Прозрачный цвет обводки информация на темном фоне */
+        onDarkOutlineTransparentInfo: '#528EFF47',
+        /** Основной непрозрачный цвет обводки на светлом фоне */
+        onLightOutlineSolidPrimaryHover: '#E8E8E8FF',
+        /** Основной непрозрачный цвет обводки на светлом фоне */
+        onLightOutlineSolidPrimaryActive: '#D9D9D9FF',
+        /** Вторичный непрозрачный цвет обводки на светлом фоне */
+        onLightOutlineSolidSecondaryHover: '#9E9E9EFF',
+        /** Вторичный непрозрачный цвет обводки на светлом фоне */
+        onLightOutlineSolidSecondaryActive: '#8F8F8FFF',
+        /** Третичный непрозрачный цвет обводки на светлом фоне */
+        onLightOutlineSolidTertiaryHover: '#7A7A7AFF',
+        /** Третичный непрозрачный цвет обводки на светлом фоне */
+        onLightOutlineSolidTertiaryActive: '#6B6B6BFF',
+        /** Основной прозрачный цвет обводки на светлом фоне */
+        onLightOutlineTransparentPrimaryHover: '#08080852',
+        /** Основной прозрачный цвет обводки на светлом фоне */
+        onLightOutlineTransparentPrimaryActive: '#08080824',
+        /** Вторичный прозрачный цвет обводки на светлом фоне */
+        onLightOutlineTransparentSecondaryHover: '#08080885',
+        /** Вторичный прозрачный цвет обводки на светлом фоне */
+        onLightOutlineTransparentSecondaryActive: '#08080857',
+        /** Третичный прозрачный цвет обводки на светлом фоне */
+        onLightOutlineTransparentTertiaryHover: '#080808AD',
+        /** Третичный прозрачный цвет обводки на светлом фоне */
+        onLightOutlineTransparentTertiaryActive: '#08080880',
+        /** Акцентный цвет обводки на светлом фоне */
+        onLightOutlineAccentHover: '#4886F9FF',
+        /** Акцентный цвет обводки на светлом фоне */
+        onLightOutlineAccentActive: '#206CF8FF',
+        /** Акцентный минорный непрозрачный цвет обводки на светлом фоне */
+        onLightOutlineAccentMinorHover: '#A1C1FDFF',
+        /** Акцентный минорный непрозрачный цвет обводки на светлом фоне */
+        onLightOutlineAccentMinorActive: '#83ADFCFF',
+        /** Прозрачный акцентный цвет обводки на светлом фоне */
+        onLightOutlineTransparentAccentHover: '#2A72F852',
+        /** Прозрачный акцентный цвет обводки на светлом фоне */
+        onLightOutlineTransparentAccentActive: '#2A72F824',
+        /** Цвет обводки успех на светлом фоне */
+        onLightOutlinePositiveHover: '#12A12AFF',
+        /** Цвет обводки успех на светлом фоне */
+        onLightOutlinePositiveActive: '#0F8523FF',
+        /** Цвет обводки предупреждение на светлом фоне */
+        onLightOutlineWarningHover: '#FC5E03FF',
+        /** Цвет обводки предупреждение на светлом фоне */
+        onLightOutlineWarningActive: '#DE5302FF',
+        /** Цвет обводки ошибка на светлом фоне */
+        onLightOutlineNegativeHover: '#F5384BFF',
+        /** Цвет обводки ошибка на светлом фоне */
+        onLightOutlineNegativeActive: '#F31228FF',
+        /** Цвет обводки информация на светлом фоне */
+        onLightOutlineInfoHover: '#4886F9FF',
+        /** Цвет обводки информация на светлом фоне */
+        onLightOutlineInfoActive: '#206CF8FF',
+        /** Минорный цвет обводки успех на светлом фоне */
+        onLightOutlinePositiveMinorHover: '#36D954FF',
+        /** Минорный цвет обводки успех на светлом фоне */
+        onLightOutlinePositiveMinorActive: '#26C944FF',
+        /** Минорный цвет обводки предупреждение на светлом фоне */
+        onLightOutlineWarningMinorHover: '#FDA97CFF',
+        /** Минорный цвет обводки предупреждение на светлом фоне */
+        onLightOutlineWarningMinorActive: '#FD965EFF',
+        /** Минорный цвет обводки ошибка на светлом фоне */
+        onLightOutlineNegativeMinorHover: '#FFA3ACFF',
+        /** Минорный цвет обводки ошибка на светлом фоне */
+        onLightOutlineNegativeMinorActive: '#FF8591FF',
+        /** Минорный цвет обводки информация на светлом фоне */
+        onLightOutlineInfoMinorHover: '#A1C1FDFF',
+        /** Минорный цвет обводки информация на светлом фоне */
+        onLightOutlineInfoMinorActive: '#83ADFCFF',
+        /** Прозрачный цвет обводки успех на светлом фоне */
+        onLightOutlineTransparentPositiveHover: '#108E2552',
+        /** Прозрачный цвет обводки успех на светлом фоне */
+        onLightOutlineTransparentPositiveActive: '#108E2524',
+        /** Прозрачный цвет обводки предупреждение на светлом фоне */
+        onLightOutlineTransparentWarningHover: '#E8570252',
+        /** Прозрачный цвет обводки предупреждение на светлом фоне */
+        onLightOutlineTransparentWarningActive: '#E8570224',
+        /** Прозрачный цвет обводки предупреждение на светлом фоне */
+        onLightOutlineTransparentNegativeHover: '#F31B3152',
+        /** Прозрачный цвет обводки предупреждение на светлом фоне */
+        onLightOutlineTransparentNegativeActive: '#F31B3124',
+        /** Прозрачный цвет обводки информация на светлом фоне */
+        onLightOutlineTransparentInfoHover: '#2A72F852',
+        /** Прозрачный цвет обводки информация на светлом фоне */
+        onLightOutlineTransparentInfoActive: '#2A72F824',
+        /** dark outline onLight outlineDefaultHover */
+        onLightOutlineDefaultHover: '#0D0D0DFF',
+        /** dark outline onLight outlineDefaultActive */
+        onLightOutlineDefaultActive: '#030303FF',
+        /** Основной непрозрачный цвет обводки на светлом фоне */
+        onLightOutlineSolidPrimary: '#DDDDDD',
+        /** Вторичный непрозрачный цвет обводки на светлом фоне */
+        onLightOutlineSolidSecondary: '#949494',
+        /** Третичный непрозрачный цвет обводки на светлом фоне */
+        onLightOutlineSolidTertiary: '#707070',
+        /** dark outline onLight outlineDefault */
+        onLightOutlineDefault: '#080808',
+        /** Основной прозрачный цвет обводки на светлом фоне */
+        onLightOutlineTransparentPrimary: '#08080833',
+        /** Вторичный прозрачный цвет обводки на светлом фоне */
+        onLightOutlineTransparentSecondary: '#08080866',
+        /** Третичный прозрачный цвет обводки на светлом фоне */
+        onLightOutlineTransparentTertiary: '#0808088F',
+        /** Акцентный цвет обводки на светлом фоне */
+        onLightOutlineAccent: '#2A72F8',
+        /** Акцентный минорный непрозрачный цвет обводки на светлом фоне */
+        onLightOutlineAccentMinor: '#8BB2FC',
+        /** Прозрачный акцентный цвет обводки на светлом фоне */
+        onLightOutlineTransparentAccent: '#2A72F833',
+        /** Цвет обводки успех на светлом фоне */
+        onLightOutlinePositive: '#108E26',
+        /** Цвет обводки предупреждение на светлом фоне */
+        onLightOutlineWarning: '#E85702',
+        /** Цвет обводки ошибка на светлом фоне */
+        onLightOutlineNegative: '#F31B31',
+        /** Минорный цвет обводки успех на светлом фоне */
+        onLightOutlinePositiveMinor: '#28D247',
+        /** Минорный цвет обводки предупреждение на светлом фоне */
+        onLightOutlineWarningMinor: '#FD9C68',
+        /** Минорный цвет обводки ошибка на светлом фоне */
+        onLightOutlineNegativeMinor: '#FF8F9A',
+        /** Прозрачный цвет обводки успех на светлом фоне */
+        onLightOutlineTransparentPositive: '#108E2633',
+        /** Прозрачный цвет обводки предупреждение на светлом фоне */
+        onLightOutlineTransparentWarning: '#E8570233',
+        /** Прозрачный цвет обводки предупреждение на светлом фоне */
+        onLightOutlineTransparentNegative: '#F31B3133',
+        /** Цвет обводки информация на светлом фоне */
+        onLightOutlineInfo: '#2A72F8',
+        /** Минорный цвет обводки информация на светлом фоне */
+        onLightOutlineInfoMinor: '#8BB2FC',
+        /** Прозрачный цвет обводки информация на светлом фоне */
+        onLightOutlineTransparentInfo: '#2A72F833',
     },
     light: {
         /** Основной цвет текста */
@@ -482,6 +1194,8 @@ export const color = {
         textPrimaryActive: '#080808C4',
         /** Основной цвет текста */
         textPrimary: '#080808F5',
+        /** Основной цвет текста */
+        textPrimaryBrightness: '#080808F5',
         /** Вторичный цвет текста */
         textSecondaryHover: '#080808FF',
         /** Вторичный цвет текста */
@@ -506,30 +1220,68 @@ export const color = {
         textAccentActive: '#075AF2FF',
         /** Акцентный цвет */
         textAccent: '#2A72F8',
+        /** Акцентный минорный цвет */
+        textAccentMinorHover: '#B4CEFDFF',
+        /** Акцентный минорный цвет */
+        textAccentMinorActive: '#6599FBFF',
         /** Цвет успеха */
-        textPositiveHover: '#1FC13DFF',
+        textPositiveHover: '#14B32EFF',
         /** Цвет успеха */
-        textPositiveActive: '#147B27FF',
-        /** Цвет успеха */
-        textPositive: '#1A9E32',
+        textPositiveActive: '#0C6A1BFF',
         /** Цвет предупреждения */
-        textWarningHover: '#FB782DFF',
+        textWarningHover: '#FD6B17FF',
         /** Цвет предупреждения */
-        textWarningActive: '#D25004FF',
-        /** Цвет предупреждения */
-        textWarning: '#FA5F05',
+        textWarningActive: '#C04802FF',
         /** Цвет ошибки */
         textNegativeHover: '#F54254FF',
         /** Цвет ошибки */
         textNegativeActive: '#DA0B20FF',
+        /** Цвет информации */
+        textInfoHover: '#528DFAFF',
+        /** Цвет информации */
+        textInfoActive: '#075AF2FF',
+        /** Минорный цвет успеха */
+        textPositiveMinorHover: '#47DC62FF',
+        /** Минорный цвет успеха */
+        textPositiveMinorActive: '#21B03CFF',
+        /** Минорный цвет предупреждения */
+        textWarningMinorHover: '#FDB790FF',
+        /** Минорный цвет предупреждения */
+        textWarningMinorActive: '#FC8240FF',
+        /** Минорный цвет ошибки */
+        textNegativeMinorHover: '#FFB8BFFF',
+        /** Минорный цвет ошибки */
+        textNegativeMinorActive: '#FF6675FF',
+        /** Минорный цвет информации */
+        textInfoMinorHover: '#B4CEFDFF',
+        /** Минорный цвет информации */
+        textInfoMinorActive: '#6599FBFF',
+        /** Акцентный минорный цвет */
+        textAccentMinor: '#8BB2FC',
+        /** Цвет успеха */
+        textPositive: '#108E26',
+        /** Цвет предупреждения */
+        textWarning: '#E85702',
         /** Цвет ошибки */
         textNegative: '#F31B31',
+        /** Минорный цвет успеха */
+        textPositiveMinor: '#28D247',
+        /** Минорный цвет предупреждения */
+        textWarningMinor: '#FD9C68',
+        /** Минорный цвет ошибки */
+        textNegativeMinor: '#FF8F9A',
+        /** Цвет информации */
+        textInfo: '#2A72F8',
+        /** Минорный цвет информации */
+        textInfoMinor: '#8BB2FC',
         /** Основной цвет текста на темном фоне */
         onDarkTextPrimaryHover: '#FFFFFF93',
         /** Основной цвет текста на темном фоне */
         onDarkTextPrimaryActive: '#FFFFFFC4',
         /** Основной цвет текста на темном фоне */
         onDarkTextPrimary: '#FFFFFFF5',
+        /** Основной цвет текста на темном фоне */
+        onDarkTextPrimaryBrightness: '#FFFFFFF5',
         /** Вторичный цвет текста на темном фоне */
         onDarkTextSecondaryHover: '#FFFFFFFF',
         /** Вторичный цвет текста на темном фоне */
@@ -554,30 +1306,68 @@ export const color = {
         onDarkTextAccentActive: '#1767FDFF',
         /** Акцентный цвет на темном фоне */
         onDarkTextAccent: '#3F81FD',
+        /** Акцентный минорный цвет на темном фоне */
+        onDarkTextAccentMinorHover: '#000000FF',
+        /** Акцентный минорный цвет на темном фоне */
+        onDarkTextAccentMinorActive: '#113B88FF',
         /** Цвет успеха на темном фоне */
-        onDarkTextPositiveHover: '#1FC13DFF',
+        onDarkTextPositiveHover: '#2BD44AFF',
         /** Цвет успеха на темном фоне */
-        onDarkTextPositiveActive: '#147B27FF',
+        onDarkTextPositiveActive: '#1D9032FF',
+        /** Цвет предупреждения на темном фоне */
+        onDarkTextWarningHover: '#FF8B4DFF',
+        /** Цвет предупреждения на темном фоне */
+        onDarkTextWarningActive: '#FA5700FF',
+        /** Цвет ошибки на темном фоне */
+        onDarkTextNegativeHover: '#FF6675FF',
+        /** Цвет ошибки на темном фоне */
+        onDarkTextNegativeActive: '#FF142CFF',
+        /** Цвет информации на темном фоне */
+        onDarkTextInfoHover: '#7AA9FFFF',
+        /** Цвет информации на темном фоне */
+        onDarkTextInfoActive: '#2974FFFF',
+        /** Минорный цвет успеха на темном фоне */
+        onDarkTextPositiveMinorHover: '#11A72CFF',
+        /** Минорный цвет успеха на темном фоне */
+        onDarkTextPositiveMinorActive: '#0D8222FF',
+        /** Минорный цвет предупреждения на темном фоне */
+        onDarkTextWarningMinorHover: '#CD5713FF',
+        /** Минорный цвет предупреждения на темном фоне */
+        onDarkTextWarningMinorActive: '#A84710FF',
+        /** Минорный цвет ошибки на темном фоне */
+        onDarkTextNegativeMinorHover: '#C2192AFF',
+        /** Минорный цвет ошибки на темном фоне */
+        onDarkTextNegativeMinorActive: '#7A101AFF',
+        /** Минорный цвет информации на темном фоне */
+        onDarkTextInfoMinorHover: '#000000FF',
+        /** Минорный цвет информации на темном фоне */
+        onDarkTextInfoMinorActive: '#113B88FF',
+        /** Акцентный минорный цвет на темном фоне */
+        onDarkTextAccentMinor: '#1549AB',
         /** Цвет успеха на темном фоне */
-        onDarkTextPositive: '#1A9E32',
+        onDarkTextPositive: '#24B23E',
         /** Цвет предупреждения на темном фоне */
-        onDarkTextWarningHover: '#FB782DFF',
-        /** Цвет предупреждения на темном фоне */
-        onDarkTextWarningActive: '#D25004FF',
-        /** Цвет предупреждения на темном фоне */
-        onDarkTextWarning: '#FA5F05',
+        onDarkTextWarning: '#FF7024',
         /** Цвет ошибки на темном фоне */
-        onDarkTextNegativeHover: '#FF5263FF',
-        /** Цвет ошибки на темном фоне */
-        onDarkTextNegativeActive: '#FF001AFF',
-        /** Цвет ошибки на темном фоне */
-        onDarkTextNegative: '#FF293E',
+        onDarkTextNegative: '#FF3D51',
+        /** Минорный цвет успеха на темном фоне */
+        onDarkTextPositiveMinor: '#095C18',
+        /** Минорный цвет предупреждения на темном фоне */
+        onDarkTextWarningMinor: '#85380C',
+        /** Минорный цвет ошибки на темном фоне */
+        onDarkTextNegativeMinor: '#9C1422',
+        /** Цвет информации на темном фоне */
+        onDarkTextInfo: '#528EFF',
+        /** Минорный цвет информации на темном фоне */
+        onDarkTextInfoMinor: '#1549AB',
         /** Основной цвет текста на светлом фоне */
         onLightTextPrimaryHover: '#08080893',
         /** Основной цвет текста на светлом фоне */
         onLightTextPrimaryActive: '#080808C4',
         /** Основной цвет текста на светлом фоне */
         onLightTextPrimary: '#080808F5',
+        /** Основной цвет текста на светлом фоне */
+        onLightTextPrimaryBrightness: '#080808F5',
         /** Вторичный цвет текста на светлом фоне */
         onLightTextSecondaryHover: '#080808FF',
         /** Вторичный цвет текста на светлом фоне */
@@ -602,30 +1392,68 @@ export const color = {
         onLightTextAccentActive: '#075AF2FF',
         /** Акцентный цвет на светлом фоне */
         onLightTextAccent: '#2A72F8',
+        /** Акцентный минорный цвет на светлом фоне */
+        onLightTextAccentMinorHover: '#B4CEFDFF',
+        /** Акцентный минорный цвет на светлом фоне */
+        onLightTextAccentMinorActive: '#6599FBFF',
         /** Цвет успеха на светлом фоне */
-        onLightTextPositiveHover: '#1FC13DFF',
+        onLightTextPositiveHover: '#14B32EFF',
         /** Цвет успеха на светлом фоне */
-        onLightTextPositiveActive: '#147B27FF',
-        /** Цвет успеха на светлом фоне */
-        onLightTextPositive: '#1A9E32',
+        onLightTextPositiveActive: '#0C6A1BFF',
         /** Цвет предупреждения на светлом фоне */
-        onLightTextWarningHover: '#FB782DFF',
+        onLightTextWarningHover: '#FD6B17FF',
         /** Цвет предупреждения на светлом фоне */
-        onLightTextWarningActive: '#D25004FF',
-        /** Цвет предупреждения на светлом фоне */
-        onLightTextWarning: '#FA5F05',
+        onLightTextWarningActive: '#C04802FF',
         /** Цвет ошибки на светлом фоне */
         onLightTextNegativeHover: '#F54254FF',
         /** Цвет ошибки на светлом фоне */
         onLightTextNegativeActive: '#DA0B20FF',
+        /** Цвет информации на светлом фоне */
+        onLightTextInfoHover: '#528DFAFF',
+        /** Цвет информации на светлом фоне */
+        onLightTextInfoActive: '#075AF2FF',
+        /** Минорный цвет успеха на светлом фоне */
+        onLightTextPositiveMinorHover: '#47DC62FF',
+        /** Минорный цвет успеха на светлом фоне */
+        onLightTextPositiveMinorActive: '#21B03CFF',
+        /** Минорный цвет предупреждения на светлом фоне */
+        onLightTextWarningMinorHover: '#FDB790FF',
+        /** Минорный цвет предупреждения на светлом фоне */
+        onLightTextWarningMinorActive: '#FC8240FF',
+        /** Минорный цвет ошибки на светлом фоне */
+        onLightTextNegativeMinorHover: '#FFB8BFFF',
+        /** Минорный цвет ошибки на светлом фоне */
+        onLightTextNegativeMinorActive: '#FF6675FF',
+        /** light text onLight textInfoMinorHover */
+        onLightTextInfoMinorHover: '#B4CEFDFF',
+        /** light text onLight textInfoMinorActive */
+        onLightTextInfoMinorActive: '#6599FBFF',
+        /** Акцентный минорный цвет на светлом фоне */
+        onLightTextAccentMinor: '#8BB2FC',
+        /** Цвет успеха на светлом фоне */
+        onLightTextPositive: '#108E26',
+        /** Цвет предупреждения на светлом фоне */
+        onLightTextWarning: '#E85702',
         /** Цвет ошибки на светлом фоне */
         onLightTextNegative: '#F31B31',
+        /** Минорный цвет успеха на светлом фоне */
+        onLightTextPositiveMinor: '#28D247',
+        /** Минорный цвет предупреждения на светлом фоне */
+        onLightTextWarningMinor: '#FD9C68',
+        /** Минорный цвет ошибки на светлом фоне */
+        onLightTextNegativeMinor: '#FF8F9A',
+        /** light text onLight textInfoMinor */
+        onLightTextInfoMinor: '#8BB2FC',
+        /** Цвет информации на светлом фоне */
+        onLightTextInfo: '#2A72F8',
         /** Инвертированный основной цвет текста */
         inverseTextPrimaryHover: '#FFFFFF93',
         /** Инвертированный основной цвет текста */
         inverseTextPrimaryActive: '#FFFFFFC4',
         /** Инвертированный основной цвет текста */
         inverseTextPrimary: '#FFFFFFF5',
+        /** Инвертированный основной цвет текста */
+        inverseTextPrimaryBrightness: '#FFFFFFF5',
         /** Инвертированный вторичный цвет текста */
         inverseTextSecondaryHover: '#FFFFFFFF',
         /** Инвертированный вторичный цвет текста */
@@ -650,6 +1478,8 @@ export const color = {
         surfaceSolidPrimaryActive: '#F0F0F0FF',
         /** Основной непрозрачный фон поверхности/контрола */
         surfaceSolidPrimary: '#F5F5F5',
+        /** Основной непрозрачный фон поверхности/контрола */
+        surfaceSolidPrimaryBrightness: '#FFFFFFFF',
         /** Вторичный непрозрачный фон поверхности/контрола */
         surfaceSolidSecondaryHover: '#F7F7F7FF',
         /** Вторичный непрозрачный фон поверхности/контрола */
@@ -668,6 +1498,8 @@ export const color = {
         surfaceSolidCardActive: '#FFFFFFFF',
         /** Основной фон для карточек */
         surfaceSolidCard: '#FFFFFFFF',
+        /** Основной фон для карточек */
+        surfaceSolidCardBrightness: '#FFFFFFFF',
         /** Непрозрачный фон поверхности/контрола по умолчанию */
         surfaceSolidDefaultHover: '#262626FF',
         /** Непрозрачный фон поверхности/контрола по умолчанию */
@@ -704,6 +1536,8 @@ export const color = {
         surfaceTransparentCardActive: '#FFFFFFFF',
         /** Прозрачный фон для карточек */
         surfaceTransparentCard: '#FFFFFFFF',
+        /** Прозрачный фон для карточек */
+        surfaceTransparentCardBrightness: '#FFFFFFFF',
         /** Фон поверхности/контрола без заливки */
         surfaceClearHover: '#FFFFFF00',
         /** Фон поверхности/контрола без заливки */
@@ -716,54 +1550,98 @@ export const color = {
         surfaceAccentActive: '#1665F8FF',
         /** Акцентный фон поверхности/контрола */
         surfaceAccent: '#2A72F8',
-        /** Прозрачный акцентный фон поверхности/контрола */
-        surfaceTransparentAccentHover: '#2A72F805',
-        /** Прозрачный акцентный фон поверхности/контрола */
-        surfaceTransparentAccentActive: '#2A72F81A',
+        /** Акцентный минорный непрозрачный фон поверхности/контрола */
+        surfaceAccentMinorHover: '#F5F8FFFF',
+        /** Акцентный минорный непрозрачный фон поверхности/контрола */
+        surfaceAccentMinorActive: '#D6E4FFFF',
+        /** light surface default surfaceTransparentAccentHover */
+        surfaceTransparentAccentHover: '#2A72F80A',
+        /** light surface default surfaceTransparentAccentActive */
+        surfaceTransparentAccentActive: '#2A72F829',
         /** Цвет успеха */
-        surfacePositiveHover: '#1EB83AFF',
+        surfacePositiveHover: '#12A12AFF',
         /** Цвет успеха */
-        surfacePositiveActive: '#178C2CFF',
-        /** Цвет успеха */
-        surfacePositive: '#1A9E32',
+        surfacePositiveActive: '#0E7C20FF',
         /** Цвет фона поверхности/контрола предупреждение */
-        surfaceWarningHover: '#FB782DFF',
+        surfaceWarningHover: '#FC5E03FF',
         /** Цвет фона поверхности/контрола предупреждение */
-        surfaceWarningActive: '#E65705FF',
-        /** Цвет фона поверхности/контрола предупреждение */
-        surfaceWarning: '#FA5F05',
+        surfaceWarningActive: '#D44F02FF',
         /** Цвет фона поверхности/контрола ошибка */
         surfaceNegativeHover: '#F54254FF',
         /** Цвет фона поверхности/контрола ошибка */
         surfaceNegativeActive: '#ED0C23FF',
+        /** Цвет фона поверхности/контрола информация */
+        surfaceInfoHover: '#528DFAFF',
+        /** Цвет фона поверхности/контрола информация */
+        surfaceInfoActive: '#1665F8FF',
+        /** Минорный цвет фона поверхности/контрола успех */
+        surfacePositiveMinorHover: '#B1FBBFFF',
+        /** Минорный цвет фона поверхности/контрола успех */
+        surfacePositiveMinorActive: '#8BF99FFF',
+        /** Минорный цвет фона поверхности/контрола предупреждение */
+        surfaceWarningMinorHover: '#FEEFE6FF',
+        /** Минорный цвет фона поверхности/контрола предупреждение */
+        surfaceWarningMinorActive: '#FEDCC8FF',
+        /** Минорный цвет фона поверхности/контрола ошибка */
+        surfaceNegativeMinorHover: '#FFF5F6FF',
+        /** Минорный цвет фона поверхности/контрола ошибка */
+        surfaceNegativeMinorActive: '#FFD6DAFF',
+        /** Минорный цвет фона поверхности/контрола информация */
+        surfaceInfoMinorHover: '#F5F8FFFF',
+        /** Минорный цвет фона поверхности/контрола информация */
+        surfaceInfoMinorActive: '#D6E4FFFF',
+        /** Прозрачный цвет фона поверхности/контрола успех */
+        surfaceTransparentPositiveHover: '#108E250A',
+        /** Прозрачный цвет фона поверхности/контрола успех */
+        surfaceTransparentPositiveActive: '#108E2529',
+        /** Прозрачный цвет фона поверхности/контрола предупреждение */
+        surfaceTransparentWarningHover: '#E857020A',
+        /** Прозрачный цвет фона поверхности/контрола предупреждение */
+        surfaceTransparentWarningActive: '#E8570229',
+        /** Прозрачный цвет фона поверхности/контрола предупреждение */
+        surfaceTransparentNegativeHover: '#F31B310A',
+        /** Прозрачный цвет фона поверхности/контрола предупреждение */
+        surfaceTransparentNegativeActive: '#F31B3129',
+        /** Прозрачный цвет фона поверхности/контрола информация */
+        surfaceTransparentInfoHover: '#2A72F80A',
+        /** Прозрачный цвет фона поверхности/контрола информация */
+        surfaceTransparentInfoActive: '#2A72F829',
+        /** light surface default surfaceTransparentAccent */
+        surfaceTransparentAccent: '#2A72F81F',
+        /** Акцентный минорный непрозрачный фон поверхности/контрола */
+        surfaceAccentMinor: '#DEE9FF',
+        /** Цвет успеха */
+        surfacePositive: '#108E26',
+        /** Цвет фона поверхности/контрола предупреждение */
+        surfaceWarning: '#E85702',
         /** Цвет фона поверхности/контрола ошибка */
         surfaceNegative: '#F31B31',
+        /** Минорный цвет фона поверхности/контрола успех */
+        surfacePositiveMinor: '#9EFAAF',
+        /** Минорный цвет фона поверхности/контрола предупреждение */
+        surfaceWarningMinor: '#FEE2D2',
+        /** Минорный цвет фона поверхности/контрола ошибка */
+        surfaceNegativeMinor: '#FFE0E3',
         /** Прозрачный цвет фона поверхности/контрола успех */
-        surfaceTransparentPositiveHover: '#1A9E3205',
-        /** Прозрачный цвет фона поверхности/контрола успех */
-        surfaceTransparentPositiveActive: '#1A9E321A',
+        surfaceTransparentPositive: '#108E261F',
         /** Прозрачный цвет фона поверхности/контрола предупреждение */
-        surfaceTransparentWarningHover: '#FA5F0505',
+        surfaceTransparentWarning: '#E857021F',
         /** Прозрачный цвет фона поверхности/контрола предупреждение */
-        surfaceTransparentWarningActive: '#FA5F051A',
-        /** Прозрачный цвет фона поверхности/контрола предупреждение */
-        surfaceTransparentNegativeHover: '#F31B3105',
-        /** Прозрачный цвет фона поверхности/контрола предупреждение */
-        surfaceTransparentNegativeActive: '#F31B311A',
-        /** Прозрачный акцентный фон поверхности/контрола */
-        surfaceTransparentAccent: '#2A72F80F',
-        /** Прозрачный цвет фона поверхности/контрола успех */
-        surfaceTransparentPositive: '#1A9E320F',
-        /** Прозрачный цвет фона поверхности/контрола предупреждение */
-        surfaceTransparentWarning: '#FA5F050F',
-        /** Прозрачный цвет фона поверхности/контрола предупреждение */
-        surfaceTransparentNegative: '#F31B310F',
+        surfaceTransparentNegative: '#F31B311F',
+        /** Цвет фона поверхности/контрола информация */
+        surfaceInfo: '#2A72F8',
+        /** Минорный цвет фона поверхности/контрола информация */
+        surfaceInfoMinor: '#DEE9FF',
+        /** Прозрачный цвет фона поверхности/контрола информация */
+        surfaceTransparentInfo: '#2A72F81F',
         /** Осн. непрозрачный фон поверхности/контрола на темном фоне */
         onDarkSurfaceSolidPrimaryHover: '#363636FF',
         /** Осн. непрозрачный фон поверхности/контрола на темном фоне */
         onDarkSurfaceSolidPrimaryActive: '#0D0D0DFF',
         /** Осн. непрозрачный фон поверхности/контрола на темном фоне */
         onDarkSurfaceSolidPrimary: '#171717',
+        /** Осн. непрозрачный фон поверхности/контрола на темном фоне */
+        onDarkSurfaceSolidPrimaryBrightness: '#262626FF',
         /** Втор. непрозрачный фон поверхности/контрола на темном фоне */
         onDarkSurfaceSolidSecondaryHover: '#3B3B3BFF',
         /** Втор. непрозрачный фон поверхности/контрола на темном фоне */
@@ -782,6 +1660,8 @@ export const color = {
         onDarkSurfaceSolidCardActive: '#0D0D0DFF',
         /** Основной фон для карточек на темном фоне */
         onDarkSurfaceSolidCard: '#171717',
+        /** Основной фон для карточек на темном фоне */
+        onDarkSurfaceSolidCardBrightness: '#262626FF',
         /** Непр. фон поверхности/контрола по умолчанию на темном фоне */
         onDarkSurfaceSolidDefaultHover: '#FFFFFFFF',
         /** Непр. фон поверхности/контрола по умолчанию на темном фоне */
@@ -818,12 +1698,22 @@ export const color = {
         onDarkSurfaceTransparentCardActive: '#FFFFFF29',
         /** Прозрачный фон для карточек на темном фоне */
         onDarkSurfaceTransparentCard: '#FFFFFF1F',
+        /** Прозрачный фон для карточек на темном фоне */
+        onDarkSurfaceTransparentCardBrightness: '#FFFFFF1F',
         /** Акцентный фон поверхности/контрола на темном фоне */
         onDarkSurfaceAccentHover: '#689CFDFF',
         /** Акцентный фон поверхности/контрола на темном фоне */
         onDarkSurfaceAccentActive: '#2B74FDFF',
         /** Акцентный фон поверхности/контрола на темном фоне */
         onDarkSurfaceAccent: '#3F81FD',
+        /** Акцентный минорный непрозрачный фон поверхности/контрола на темном фоне */
+        onDarkSurfaceAccentMinorHover: '#0A2A67FF',
+        /** Акцентный минорный непрозрачный фон поверхности/контрола на темном фоне */
+        onDarkSurfaceAccentMinorActive: '#061B41FF',
+        /** Прозрачный акцентный фон поверхности/контрола на темном фоне */
+        onDarkSurfaceTransparentAccentHover: '#3F82FD1F',
+        /** Прозрачный акцентный фон поверхности/контрола на темном фоне */
+        onDarkSurfaceTransparentAccentActive: '#3F82FD3D',
         /** Цвет успеха на темном фоне */
         onDarkSurfacePositiveHover: '#1EB83AFF',
         /** Цвет успеха на темном фоне */
@@ -842,12 +1732,72 @@ export const color = {
         onDarkSurfaceNegativeActive: '#FF142CFF',
         /** Цвет фона поверхности/контрола ошибка на темном фоне */
         onDarkSurfaceNegative: '#FF293E',
+        /** Цвет фона поверхности/контрола информация на темном фоне */
+        onDarkSurfaceInfoHover: '#689CFDFF',
+        /** Цвет фона поверхности/контрола информация на темном фоне */
+        onDarkSurfaceInfoActive: '#2B74FDFF',
+        /** Минорный цвет фона поверхности/контрола успех на темном фоне */
+        onDarkSurfacePositiveMinorHover: '#0B6F1DFF',
+        /** Минорный цвет фона поверхности/контрола успех на темном фоне */
+        onDarkSurfacePositiveMinorActive: '#074A14FF',
+        /** Минорный цвет фона поверхности/контрола предупреждение на темном фоне */
+        onDarkSurfaceWarningMinorHover: '#95400EFF',
+        /** Минорный цвет фона поверхности/контрола предупреждение на темном фоне */
+        onDarkSurfaceWarningMinorActive: '#70300AFF',
+        /** Минорный цвет фона поверхности/контрола ошибка на темном фоне */
+        onDarkSurfaceNegativeMinorHover: '#B91828FF',
+        /** Минорный цвет фона поверхности/контрола ошибка на темном фоне */
+        onDarkSurfaceNegativeMinorActive: '#8C121EFF',
+        /** Минорный цвет фона поверхности/контрола информация на темном фоне */
+        onDarkSurfaceInfoMinorHover: '#1956C8FF',
+        /** Минорный цвет фона поверхности/контрола информация на темном фоне */
+        onDarkSurfaceInfoMinorActive: '#13429AFF',
+        /** Прозрачный цвет фона поверхности/контрола успех на темном фоне */
+        onDarkSurfaceTransparentPositiveHover: '#1A9E321F',
+        /** Прозрачный цвет фона поверхности/контрола успех на темном фоне */
+        onDarkSurfaceTransparentPositiveActive: '#1A9E323D',
+        /** Прозрачный цвет фона поверхности/контрола предупреждение на темном фоне */
+        onDarkSurfaceTransparentWarningHover: '#FA5F051F',
+        /** Прозрачный цвет фона поверхности/контрола предупреждение на темном фоне */
+        onDarkSurfaceTransparentWarningActive: '#FA5F053D',
+        /** Прозрачный цвет фона поверхности/контрола предупреждение на темном фоне */
+        onDarkSurfaceTransparentNegativeHover: '#FF293E1F',
+        /** Прозрачный цвет фона поверхности/контрола предупреждение на темном фоне */
+        onDarkSurfaceTransparentNegativeActive: '#FF293E3D',
+        /** Прозрачный цвет фона поверхности/контрола информация на темном фоне */
+        onDarkSurfaceTransparentInfoHover: '#3F82FD1F',
+        /** Прозрачный цвет фона поверхности/контрола информация на темном фоне */
+        onDarkSurfaceTransparentInfoActive: '#3F82FD3D',
+        /** Акцентный минорный непрозрачный фон поверхности/контрола на темном фоне */
+        onDarkSurfaceAccentMinor: '#082254',
+        /** Прозрачный акцентный фон поверхности/контрола на темном фоне */
+        onDarkSurfaceTransparentAccent: '#3F81FD33',
+        /** Минорный цвет фона поверхности/контрола успех на темном фоне */
+        onDarkSurfacePositiveMinor: '#095C18',
+        /** Минорный цвет фона поверхности/контрола предупреждение на темном фоне */
+        onDarkSurfaceWarningMinor: '#85380C',
+        /** Минорный цвет фона поверхности/контрола ошибка на темном фоне */
+        onDarkSurfaceNegativeMinor: '#9C1422',
+        /** Прозрачный цвет фона поверхности/контрола успех на темном фоне */
+        onDarkSurfaceTransparentPositive: '#1A9E3233',
+        /** Прозрачный цвет фона поверхности/контрола предупреждение на темном фоне */
+        onDarkSurfaceTransparentWarning: '#FA5F0533',
+        /** Прозрачный цвет фона поверхности/контрола предупреждение на темном фоне */
+        onDarkSurfaceTransparentNegative: '#FF293E33',
+        /** Цвет фона поверхности/контрола информация на темном фоне */
+        onDarkSurfaceInfo: '#3F81FD',
+        /** Минорный цвет фона поверхности/контрола информация на темном фоне */
+        onDarkSurfaceInfoMinor: '#1549AB',
+        /** Прозрачный цвет фона поверхности/контрола информация на темном фоне */
+        onDarkSurfaceTransparentInfo: '#3F81FD33',
         /** Осн. непрозрачный фон поверхности/контрола на светлом фоне */
         onLightSurfaceSolidPrimaryHover: '#FAFAFAFF',
         /** Осн. непрозрачный фон поверхности/контрола на светлом фоне */
         onLightSurfaceSolidPrimaryActive: '#F0F0F0FF',
         /** Осн. непрозрачный фон поверхности/контрола на светлом фоне */
         onLightSurfaceSolidPrimary: '#F5F5F5',
+        /** Осн. непрозрачный фон поверхности/контрола на светлом фоне */
+        onLightSurfaceSolidPrimaryBrightness: '#FFFFFFFF',
         /** Втор. непрозрачный фон поверхности/контрола на светлом фоне */
         onLightSurfaceSolidSecondaryHover: '#F7F7F7FF',
         /** Втор. непрозрачный фон поверхности/контрола на светлом фоне */
@@ -866,6 +1816,8 @@ export const color = {
         onLightSurfaceSolidCardActive: '#FFFFFFFF',
         /** Основной фон для карточек на светлом фоне */
         onLightSurfaceSolidCard: '#FFFFFFFF',
+        /** Основной фон для карточек на светлом фоне */
+        onLightSurfaceSolidCardBrightness: '#FFFFFFFF',
         /** Непр. фон поверхности/контрола по умолчанию на светлом фоне */
         onLightSurfaceSolidDefaultHover: '#262626FF',
         /** Непр. фон поверхности/контрола по умолчанию на светлом фоне */
@@ -902,32 +1854,102 @@ export const color = {
         onLightSurfaceTransparentCardActive: '#FFFFFFFF',
         /** Прозрачный фон для карточек на светлом фоне */
         onLightSurfaceTransparentCard: '#FFFFFFFF',
+        /** Прозрачный фон для карточек на светлом фоне */
+        onLightSurfaceTransparentCardBrightness: '#FFFFFFFF',
         /** Акцентный фон поверхности/контрола на светлом фоне */
         onLightSurfaceAccentHover: '#528DFAFF',
         /** Акцентный фон поверхности/контрола на светлом фоне */
         onLightSurfaceAccentActive: '#1665F8FF',
         /** Акцентный фон поверхности/контрола на светлом фоне */
         onLightSurfaceAccent: '#2A72F8',
+        /** Акцентный минорный непрозрачный фон поверхности/контрола на светлом фоне */
+        onLightSurfaceAccentMinorHover: '#F5F8FFFF',
+        /** Акцентный минорный непрозрачный фон поверхности/контрола на светлом фоне */
+        onLightSurfaceAccentMinorActive: '#D6E4FFFF',
+        /** Прозрачный акцентный фон поверхности/контрола на светлом фоне */
+        onLightSurfaceTransparentAccentHover: '#2A72F80A',
+        /** Прозрачный акцентный фон поверхности/контрола на светлом фоне */
+        onLightSurfaceTransparentAccentActive: '#2A72F829',
         /** Цвет успеха на светлом фоне */
-        onLightSurfacePositiveHover: '#1EB83AFF',
+        onLightSurfacePositiveHover: '#12A12AFF',
         /** Цвет успеха на светлом фоне */
-        onLightSurfacePositiveActive: '#178C2CFF',
-        /** Цвет успеха на светлом фоне */
-        onLightSurfacePositive: '#1A9E32',
+        onLightSurfacePositiveActive: '#0E7C20FF',
         /** Цвет фона поверхн./контрола предупреждение на светлом фоне */
-        onLightSurfaceWarningHover: '#FB782DFF',
+        onLightSurfaceWarningHover: '#FC5E03FF',
         /** Цвет фона поверхн./контрола предупреждение на светлом фоне */
-        onLightSurfaceWarningActive: '#E65705FF',
-        /** Цвет фона поверхн./контрола предупреждение на светлом фоне */
-        onLightSurfaceWarning: '#FA5F05',
+        onLightSurfaceWarningActive: '#D44F02FF',
         /** Цвет фона поверхности/контрола ошибка на светлом фоне */
         onLightSurfaceNegativeHover: '#F54254FF',
         /** Цвет фона поверхности/контрола ошибка на светлом фоне */
         onLightSurfaceNegativeActive: '#ED0C23FF',
+        /** Цвет фона поверхности/контрола информация на светлом фоне */
+        onLightSurfaceInfoHover: '#528DFAFF',
+        /** Цвет фона поверхности/контрола информация на светлом фоне */
+        onLightSurfaceInfoActive: '#1665F8FF',
+        /** Минорный цвет фона поверхности/контрола успех на светлом фоне */
+        onLightSurfacePositiveMinorHover: '#B1FBBFFF',
+        /** Минорный цвет фона поверхности/контрола успех на светлом фоне */
+        onLightSurfacePositiveMinorActive: '#8BF99FFF',
+        /** Минорный цвет фона поверхности/контрола предупреждение на светлом фоне */
+        onLightSurfaceWarningMinorHover: '#FEEFE6FF',
+        /** Минорный цвет фона поверхности/контрола предупреждение на светлом фоне */
+        onLightSurfaceWarningMinorActive: '#FEDCC8FF',
+        /** Минорный цвет фона поверхности/контрола ошибка на светлом фоне */
+        onLightSurfaceNegativeMinorHover: '#FFF5F6FF',
+        /** Минорный цвет фона поверхности/контрола ошибка на светлом фоне */
+        onLightSurfaceNegativeMinorActive: '#FFD6DAFF',
+        /** Минорный цвет фона поверхности/контрола информация на светлом фоне */
+        onLightSurfaceInfoMinorHover: '#F5F8FFFF',
+        /** Минорный цвет фона поверхности/контрола информация на светлом фоне */
+        onLightSurfaceInfoMinorActive: '#D6E4FFFF',
+        /** Прозрачный цвет фона поверхности/контрола успех на светлом фоне */
+        onLightSurfaceTransparentPositiveHover: '#108E250A',
+        /** Прозрачный цвет фона поверхности/контрола успех на светлом фоне */
+        onLightSurfaceTransparentPositiveActive: '#108E2529',
+        /** Прозрачный цвет фона поверхности/контрола предупреждение на светлом фоне */
+        onLightSurfaceTransparentWarningHover: '#E857020A',
+        /** Прозрачный цвет фона поверхности/контрола предупреждение на светлом фоне */
+        onLightSurfaceTransparentWarningActive: '#E8570229',
+        /** Прозрачный цвет фона поверхности/контрола предупреждение на светлом фоне */
+        onLightSurfaceTransparentNegativeHover: '#F31B310A',
+        /** Прозрачный цвет фона поверхности/контрола предупреждение на светлом фоне */
+        onLightSurfaceTransparentNegativeActive: '#F31B3129',
+        /** Прозрачный цвет фона поверхности/контрола информация на светлом фоне */
+        onLightSurfaceTransparentInfoHover: '#2A72F80A',
+        /** Прозрачный цвет фона поверхности/контрола информация на светлом фоне */
+        onLightSurfaceTransparentInfoActive: '#2A72F829',
+        /** Акцентный минорный непрозрачный фон поверхности/контрола на светлом фоне */
+        onLightSurfaceAccentMinor: '#DEE9FF',
+        /** Прозрачный акцентный фон поверхности/контрола на светлом фоне */
+        onLightSurfaceTransparentAccent: '#2A72F81F',
+        /** Цвет успеха на светлом фоне */
+        onLightSurfacePositive: '#108E26',
+        /** Цвет фона поверхн./контрола предупреждение на светлом фоне */
+        onLightSurfaceWarning: '#E85702',
         /** Цвет фона поверхности/контрола ошибка на светлом фоне */
         onLightSurfaceNegative: '#F31B31',
+        /** Минорный цвет фона поверхности/контрола успех на светлом фоне */
+        onLightSurfacePositiveMinor: '#9EFAAF',
+        /** Минорный цвет фона поверхности/контрола предупреждение на светлом фоне */
+        onLightSurfaceWarningMinor: '#FEE2D2',
+        /** Минорный цвет фона поверхности/контрола ошибка на светлом фоне */
+        onLightSurfaceNegativeMinor: '#FFE0E3',
+        /** Минорный цвет фона поверхности/контрола информация на светлом фоне */
+        onLightSurfaceInfoMinor: '#DEE9FF',
+        /** Прозрачный цвет фона поверхности/контрола успех на светлом фоне */
+        onLightSurfaceTransparentPositive: '#108E261F',
+        /** Прозрачный цвет фона поверхности/контрола предупреждение на светлом фоне */
+        onLightSurfaceTransparentWarning: '#E857021F',
+        /** Прозрачный цвет фона поверхности/контрола предупреждение на светлом фоне */
+        onLightSurfaceTransparentNegative: '#F31B311F',
+        /** Цвет фона поверхности/контрола информация на светлом фоне */
+        onLightSurfaceInfo: '#2A72F8',
+        /** Прозрачный цвет фона поверхности/контрола информация на светлом фоне */
+        onLightSurfaceTransparentInfo: '#2A72F81F',
         /** Основной фон */
         backgroundPrimary: '#F9F9F9',
+        /** Основной фон */
+        backgroundPrimaryBrightness: '#F9F9F9FF',
         /** Основной фон на темном фоне */
         darkBackgroundPrimary: '#080808',
         /** Основной фон на светлом фоне */
@@ -950,5 +1972,407 @@ export const color = {
         onLightOverlayHard: '#F9F9F9F5',
         /** light overlay onLight overlayBlur */
         onLightOverlayBlur: '#F9F9F947',
+        /** Основной непрозрачный цвет обводки */
+        outlineSolidPrimaryHover: '#EDEDEDFF',
+        /** Основной непрозрачный цвет обводки */
+        outlineSolidPrimaryActive: '#D4D4D4FF',
+        /** Вторичный непрозрачный цвет обводки */
+        outlineSolidSecondaryHover: '#A3A3A3FF',
+        /** Вторичный непрозрачный цвет обводки */
+        outlineSolidSecondaryActive: '#8A8A8AFF',
+        /** Третичный непрозрачный цвет обводки */
+        outlineSolidTertiaryHover: '#858585FF',
+        /** Третичный непрозрачный цвет обводки */
+        outlineSolidTertiaryActive: '#666666FF',
+        /** Основной прозрачный цвет обводки */
+        outlineTransparentPrimaryHover: '#0808081F',
+        /** Основной прозрачный цвет обводки */
+        outlineTransparentPrimaryActive: '#0808083D',
+        /** Вторичный прозрачный цвет обводки */
+        outlineTransparentSecondaryHover: '#08080852',
+        /** Вторичный прозрачный цвет обводки */
+        outlineTransparentSecondaryActive: '#08080870',
+        /** Третичный прозрачный цвет обводки */
+        outlineTransparentTertiaryHover: '#0808087A',
+        /** Третичный прозрачный цвет обводки */
+        outlineTransparentTertiaryActive: '#08080899',
+        /** Бесцветная обводка */
+        outlineClearHover: '#FFFFFF00',
+        /** Бесцветная обводка */
+        outlineClearActive: '#FFFFFF00',
+        /** Акцентный цвет обводки */
+        outlineAccentHover: '#528DFAFF',
+        /** Акцентный цвет обводки */
+        outlineAccentActive: '#1665F8FF',
+        /** Акцентный минорный непрозрачный цвет обводки */
+        outlineAccentMinorHover: '#A1C1FDFF',
+        /** Акцентный минорный непрозрачный цвет обводки */
+        outlineAccentMinorActive: '#79A7FCFF',
+        /** Прозрачный акцентный цвет обводки */
+        outlineTransparentAccentHover: '#2A72F81F',
+        /** Прозрачный акцентный цвет обводки */
+        outlineTransparentAccentActive: '#2A72F83D',
+        /** Цвет обводки успех */
+        outlinePositiveHover: '#12A12AFF',
+        /** Цвет обводки успех */
+        outlinePositiveActive: '#0E7C20FF',
+        /** Цвет обводки предупреждение */
+        outlineWarningHover: '#FC5E03FF',
+        /** Цвет обводки предупреждение */
+        outlineWarningActive: '#D44F02FF',
+        /** Цвет обводки ошибка */
+        outlineNegativeHover: '#F54254FF',
+        /** Цвет обводки ошибка */
+        outlineNegativeActive: '#ED0C23FF',
+        /** Цвет обводки информация */
+        outlineInfoHover: '#528DFAFF',
+        /** Цвет обводки информация */
+        outlineInfoActive: '#1665F8FF',
+        /** Минорный цвет обводки успех */
+        outlinePositiveMinorHover: '#36D954FF',
+        /** Минорный цвет обводки успех */
+        outlinePositiveMinorActive: '#25C141FF',
+        /** Минорный цвет обводки предупреждение */
+        outlineWarningMinorHover: '#FDA97CFF',
+        /** Минорный цвет обводки предупреждение */
+        outlineWarningMinorActive: '#FC8F54FF',
+        /** Минорный цвет обводки ошибка */
+        outlineNegativeMinorHover: '#FFA3ACFF',
+        /** Минорный цвет обводки ошибка */
+        outlineNegativeMinorActive: '#FF7A88FF',
+        /** Минорный цвет обводки информация */
+        outlineInfoMinorHover: '#A1C1FDFF',
+        /** Минорный цвет обводки информация */
+        outlineInfoMinorActive: '#79A7FCFF',
+        /** Прозрачный цвет обводки успех */
+        outlineTransparentPositiveHover: '#108E251F',
+        /** Прозрачный цвет обводки успех */
+        outlineTransparentPositiveActive: '#108E253D',
+        /** Прозрачный цвет обводки предупреждение */
+        outlineTransparentWarningHover: '#E857021F',
+        /** Прозрачный цвет обводки предупреждение */
+        outlineTransparentWarningActive: '#E857023D',
+        /** Прозрачный цвет обводки предупреждение */
+        outlineTransparentNegativeHover: '#F31B311F',
+        /** Прозрачный цвет обводки предупреждение */
+        outlineTransparentNegativeActive: '#F31B313D',
+        /** Прозрачный цвет обводки информация */
+        outlineTransparentInfoHover: '#2A72F81F',
+        /** Прозрачный цвет обводки информация */
+        outlineTransparentInfoActive: '#2A72F83D',
+        /** light outline default outlineDefaultHover */
+        outlineDefaultHover: '#262626FF',
+        /** light outline default outlineDefaultActive */
+        outlineDefaultActive: '#030303FF',
+        /** Основной непрозрачный цвет обводки */
+        outlineSolidPrimary: '#DDDDDD',
+        /** Вторичный непрозрачный цвет обводки */
+        outlineSolidSecondary: '#949494',
+        /** Третичный непрозрачный цвет обводки */
+        outlineSolidTertiary: '#707070',
+        /** Основной прозрачный цвет обводки */
+        outlineTransparentPrimary: '#08080833',
+        /** Вторичный прозрачный цвет обводки */
+        outlineTransparentSecondary: '#08080866',
+        /** Третичный прозрачный цвет обводки */
+        outlineTransparentTertiary: '#0808088F',
+        /** Бесцветная обводка */
+        outlineClear: '#FFFFFF00',
+        /** light outline default outlineDefault */
+        outlineDefault: '#080808',
+        /** Акцентный цвет обводки */
+        outlineAccent: '#2A72F8',
+        /** Акцентный минорный непрозрачный цвет обводки */
+        outlineAccentMinor: '#8BB2FC',
+        /** Прозрачный акцентный цвет обводки */
+        outlineTransparentAccent: '#2A72F833',
+        /** Цвет обводки успех */
+        outlinePositive: '#108E26',
+        /** Цвет обводки предупреждение */
+        outlineWarning: '#E85702',
+        /** Цвет обводки ошибка */
+        outlineNegative: '#F31B31',
+        /** Минорный цвет обводки успех */
+        outlinePositiveMinor: '#28D247',
+        /** Минорный цвет обводки предупреждение */
+        outlineWarningMinor: '#FD9C68',
+        /** Минорный цвет обводки ошибка */
+        outlineNegativeMinor: '#FF8F9A',
+        /** Прозрачный цвет обводки успех */
+        outlineTransparentPositive: '#108E2633',
+        /** Прозрачный цвет обводки предупреждение */
+        outlineTransparentWarning: '#E8570233',
+        /** Прозрачный цвет обводки предупреждение */
+        outlineTransparentNegative: '#F31B3133',
+        /** Цвет обводки информация */
+        outlineInfo: '#2A72F8',
+        /** Минорный цвет обводки информация */
+        outlineInfoMinor: '#8BB2FC',
+        /** Прозрачный цвет обводки информация */
+        outlineTransparentInfo: '#2A72F833',
+        /** Основной непрозрачный цвет обводки на темном фоне */
+        onDarkOutlineSolidPrimaryHover: '#3B3B3BFF',
+        /** Основной непрозрачный цвет обводки на темном фоне */
+        onDarkOutlineSolidPrimaryActive: '#1C1C1CFF',
+        /** Вторичный непрозрачный цвет обводки на темном фоне */
+        onDarkOutlineSolidSecondaryHover: '#636363FF',
+        /** Вторичный непрозрачный цвет обводки на темном фоне */
+        onDarkOutlineSolidSecondaryActive: '#454545FF',
+        /** Третичный непрозрачный цвет обводки на темном фоне */
+        onDarkOutlineSolidTertiaryHover: '#858585FF',
+        /** Третичный непрозрачный цвет обводки на темном фоне */
+        onDarkOutlineSolidTertiaryActive: '#666666FF',
+        /** Основной прозрачный цвет обводки на темном фоне */
+        onDarkOutlineTransparentPrimaryHover: '#FFFFFF0A',
+        /** Основной прозрачный цвет обводки на темном фоне */
+        onDarkOutlineTransparentPrimaryActive: '#FFFFFF29',
+        /** Вторичный прозрачный цвет обводки на темном фоне */
+        onDarkOutlineTransparentSecondaryHover: '#FFFFFF1F',
+        /** Вторичный прозрачный цвет обводки на темном фоне */
+        onDarkOutlineTransparentSecondaryActive: '#FFFFFF3D',
+        /** Третичный прозрачный цвет обводки на темном фоне */
+        onDarkOutlineTransparentTertiaryHover: '#FFFFFF52',
+        /** Третичный прозрачный цвет обводки на темном фоне */
+        onDarkOutlineTransparentTertiaryActive: '#FFFFFF70',
+        /** Акцентный цвет обводки на темном фоне */
+        onDarkOutlineAccentHover: '#689CFDFF',
+        /** Акцентный цвет обводки на темном фоне */
+        onDarkOutlineAccentActive: '#2B74FDFF',
+        /** Акцентный минорный непрозрачный цвет обводки на темном фоне */
+        onDarkOutlineAccentMinorHover: '#1956C8FF',
+        /** Акцентный минорный непрозрачный цвет обводки на темном фоне */
+        onDarkOutlineAccentMinorActive: '#13429AFF',
+        /** Прозрачный акцентный цвет обводки на темном фоне */
+        onDarkOutlineTransparentAccentHover: '#528EFF33',
+        /** Прозрачный акцентный цвет обводки на темном фоне */
+        onDarkOutlineTransparentAccentActive: '#528EFF52',
+        /** Цвет обводки успех на темном фоне */
+        onDarkOutlinePositiveHover: '#28C344FF',
+        /** Цвет обводки успех на темном фоне */
+        onDarkOutlinePositiveActive: '#21A138FF',
+        /** Цвет обводки предупреждение на темном фоне */
+        onDarkOutlineWarningHover: '#FF8B4DFF',
+        /** Цвет обводки предупреждение на темном фоне */
+        onDarkOutlineWarningActive: '#FF630FFF',
+        /** Цвет обводки ошибка на темном фоне */
+        onDarkOutlineNegativeHover: '#FF6675FF',
+        /** Цвет обводки ошибка на темном фоне */
+        onDarkOutlineNegativeActive: '#FF293EFF',
+        /** Цвет обводки информация на темном фоне */
+        onDarkOutlineInfoHover: '#7AA9FFFF',
+        /** Цвет обводки информация на темном фоне */
+        onDarkOutlineInfoActive: '#3D81FFFF',
+        /** Минорный цвет обводки успех на темном фоне */
+        onDarkOutlinePositiveMinorHover: '#0B6F1DFF',
+        /** Минорный цвет обводки успех на темном фоне */
+        onDarkOutlinePositiveMinorActive: '#074A14FF',
+        /** Минорный цвет обводки предупреждение на темном фоне */
+        onDarkOutlineWarningMinorHover: '#95400EFF',
+        /** Минорный цвет обводки предупреждение на темном фоне */
+        onDarkOutlineWarningMinorActive: '#70300AFF',
+        /** Минорный цвет обводки ошибка на темном фоне */
+        onDarkOutlineNegativeMinorHover: '#B91828FF',
+        /** Минорный цвет обводки ошибка на темном фоне */
+        onDarkOutlineNegativeMinorActive: '#8C121EFF',
+        /** Минорный цвет обводки информация на темном фоне */
+        onDarkOutlineInfoMinorHover: '#1956C8FF',
+        /** Минорный цвет обводки информация на темном фоне */
+        onDarkOutlineInfoMinorActive: '#13429AFF',
+        /** Прозрачный цвет обводки успех на темном фоне */
+        onDarkOutlineTransparentPositiveHover: '#24B23E33',
+        /** Прозрачный цвет обводки успех на темном фоне */
+        onDarkOutlineTransparentPositiveActive: '#24B23E52',
+        /** Прозрачный цвет обводки предупреждение на темном фоне */
+        onDarkOutlineTransparentWarningHover: '#FF702433',
+        /** Прозрачный цвет обводки предупреждение на темном фоне */
+        onDarkOutlineTransparentWarningActive: '#FF702452',
+        /** Прозрачный цвет обводки предупреждение на темном фоне */
+        onDarkOutlineTransparentNegativeHover: '#FF3D5133',
+        /** Прозрачный цвет обводки предупреждение на темном фоне */
+        onDarkOutlineTransparentNegativeActive: '#FF3D5152',
+        /** Прозрачный цвет обводки информация на темном фоне */
+        onDarkOutlineTransparentInfoHover: '#528EFF33',
+        /** Прозрачный цвет обводки информация на темном фоне */
+        onDarkOutlineTransparentInfoActive: '#528EFF52',
+        /** Основной непрозрачный цвет обводки на темном фоне */
+        onDarkOutlineSolidPrimary: '#262626',
+        /** Вторичный непрозрачный цвет обводки на темном фоне */
+        onDarkOutlineSolidSecondary: '#4E4E4E',
+        /** Третичный непрозрачный цвет обводки на темном фоне */
+        onDarkOutlineSolidTertiary: '#707070',
+        /** light outline onDark outlineDefault */
+        onDarkOutlineDefault: '#F9F9F9',
+        /** light outline onDark outlineDefaultHover */
+        onDarkOutlineDefaultHover: '#FFFFFFFF',
+        /** light outline onDark outlineDefaultActive */
+        onDarkOutlineDefaultActive: '#F5F5F5FF',
+        /** Основной прозрачный цвет обводки на темном фоне */
+        onDarkOutlineTransparentPrimary: '#FFFFFF1F',
+        /** Вторичный прозрачный цвет обводки на темном фоне */
+        onDarkOutlineTransparentSecondary: '#FFFFFF33',
+        /** Третичный прозрачный цвет обводки на темном фоне */
+        onDarkOutlineTransparentTertiary: '#FFFFFF66',
+        /** Акцентный цвет обводки на темном фоне */
+        onDarkOutlineAccent: '#3F81FD',
+        /** Акцентный минорный непрозрачный цвет обводки на темном фоне */
+        onDarkOutlineAccentMinor: '#1549AB',
+        /** Прозрачный акцентный цвет обводки на темном фоне */
+        onDarkOutlineTransparentAccent: '#528EFF47',
+        /** Цвет обводки успех на темном фоне */
+        onDarkOutlinePositive: '#24B23E',
+        /** Цвет обводки предупреждение на темном фоне */
+        onDarkOutlineWarning: '#FF7024',
+        /** Цвет обводки ошибка на темном фоне */
+        onDarkOutlineNegative: '#FF3D51',
+        /** Минорный цвет обводки успех на темном фоне */
+        onDarkOutlinePositiveMinor: '#095C18',
+        /** Минорный цвет обводки предупреждение на темном фоне */
+        onDarkOutlineWarningMinor: '#85380C',
+        /** Минорный цвет обводки ошибка на темном фоне */
+        onDarkOutlineNegativeMinor: '#9C1422',
+        /** Прозрачный цвет обводки успех на темном фоне */
+        onDarkOutlineTransparentPositive: '#24B23E47',
+        /** Прозрачный цвет обводки предупреждение на темном фоне */
+        onDarkOutlineTransparentWarning: '#FF702447',
+        /** Прозрачный цвет обводки предупреждение на темном фоне */
+        onDarkOutlineTransparentNegative: '#FF3D5147',
+        /** Цвет обводки информация на темном фоне */
+        onDarkOutlineInfo: '#528EFF',
+        /** Минорный цвет обводки информация на темном фоне */
+        onDarkOutlineInfoMinor: '#1549AB',
+        /** Прозрачный цвет обводки информация на темном фоне */
+        onDarkOutlineTransparentInfo: '#528EFF47',
+        /** Основной непрозрачный цвет обводки на светлом фоне */
+        onLightOutlineSolidPrimaryHover: '#EDEDEDFF',
+        /** Основной непрозрачный цвет обводки на светлом фоне */
+        onLightOutlineSolidPrimaryActive: '#D4D4D4FF',
+        /** Вторичный непрозрачный цвет обводки на светлом фоне */
+        onLightOutlineSolidSecondaryHover: '#A3A3A3FF',
+        /** Вторичный непрозрачный цвет обводки на светлом фоне */
+        onLightOutlineSolidSecondaryActive: '#8A8A8AFF',
+        /** Третичный непрозрачный цвет обводки на светлом фоне */
+        onLightOutlineSolidTertiaryHover: '#858585FF',
+        /** Третичный непрозрачный цвет обводки на светлом фоне */
+        onLightOutlineSolidTertiaryActive: '#666666FF',
+        /** Основной прозрачный цвет обводки на светлом фоне */
+        onLightOutlineTransparentPrimaryHover: '#0808081F',
+        /** Основной прозрачный цвет обводки на светлом фоне */
+        onLightOutlineTransparentPrimaryActive: '#0808083D',
+        /** Вторичный прозрачный цвет обводки на светлом фоне */
+        onLightOutlineTransparentSecondaryHover: '#08080852',
+        /** Вторичный прозрачный цвет обводки на светлом фоне */
+        onLightOutlineTransparentSecondaryActive: '#08080870',
+        /** Третичный прозрачный цвет обводки на светлом фоне */
+        onLightOutlineTransparentTertiaryHover: '#0808087A',
+        /** Третичный прозрачный цвет обводки на светлом фоне */
+        onLightOutlineTransparentTertiaryActive: '#08080899',
+        /** Акцентный цвет обводки на светлом фоне */
+        onLightOutlineAccentHover: '#528DFAFF',
+        /** Акцентный цвет обводки на светлом фоне */
+        onLightOutlineAccentActive: '#1665F8FF',
+        /** Акцентный минорный непрозрачный цвет обводки на светлом фоне */
+        onLightOutlineAccentMinorHover: '#A1C1FDFF',
+        /** Акцентный минорный непрозрачный цвет обводки на светлом фоне */
+        onLightOutlineAccentMinorActive: '#79A7FCFF',
+        /** Прозрачный акцентный цвет обводки на светлом фоне */
+        onLightOutlineTransparentAccentHover: '#2A72F81F',
+        /** Прозрачный акцентный цвет обводки на светлом фоне */
+        onLightOutlineTransparentAccentActive: '#2A72F83D',
+        /** Цвет обводки успех на светлом фоне */
+        onLightOutlinePositiveHover: '#12A12AFF',
+        /** Цвет обводки успех на светлом фоне */
+        onLightOutlinePositiveActive: '#0E7C20FF',
+        /** Цвет обводки предупреждение на светлом фоне */
+        onLightOutlineWarningHover: '#FC5E03FF',
+        /** Цвет обводки предупреждение на светлом фоне */
+        onLightOutlineWarningActive: '#D44F02FF',
+        /** Цвет обводки ошибка на светлом фоне */
+        onLightOutlineNegativeHover: '#F54254FF',
+        /** Цвет обводки ошибка на светлом фоне */
+        onLightOutlineNegativeActive: '#ED0C23FF',
+        /** Цвет обводки информация на светлом фоне */
+        onLightOutlineInfoHover: '#528DFAFF',
+        /** Цвет обводки информация на светлом фоне */
+        onLightOutlineInfoActive: '#1665F8FF',
+        /** Минорный цвет обводки успех на светлом фоне */
+        onLightOutlinePositiveMinorHover: '#36D954FF',
+        /** Минорный цвет обводки успех на светлом фоне */
+        onLightOutlinePositiveMinorActive: '#25C141FF',
+        /** Минорный цвет обводки предупреждение на светлом фоне */
+        onLightOutlineWarningMinorHover: '#FDA97CFF',
+        /** Минорный цвет обводки предупреждение на светлом фоне */
+        onLightOutlineWarningMinorActive: '#FC8F54FF',
+        /** Минорный цвет обводки ошибка на светлом фоне */
+        onLightOutlineNegativeMinorHover: '#FFA3ACFF',
+        /** Минорный цвет обводки ошибка на светлом фоне */
+        onLightOutlineNegativeMinorActive: '#FF7A88FF',
+        /** Минорный цвет обводки информация на светлом фоне */
+        onLightOutlineInfoMinorHover: '#A1C1FDFF',
+        /** Минорный цвет обводки информация на светлом фоне */
+        onLightOutlineInfoMinorActive: '#79A7FCFF',
+        /** Прозрачный цвет обводки успех на светлом фоне */
+        onLightOutlineTransparentPositiveHover: '#108E251F',
+        /** Прозрачный цвет обводки успех на светлом фоне */
+        onLightOutlineTransparentPositiveActive: '#108E253D',
+        /** Прозрачный цвет обводки предупреждение на светлом фоне */
+        onLightOutlineTransparentWarningHover: '#E857021F',
+        /** Прозрачный цвет обводки предупреждение на светлом фоне */
+        onLightOutlineTransparentWarningActive: '#E857023D',
+        /** Прозрачный цвет обводки предупреждение на светлом фоне */
+        onLightOutlineTransparentNegativeHover: '#F31B311F',
+        /** Прозрачный цвет обводки предупреждение на светлом фоне */
+        onLightOutlineTransparentNegativeActive: '#F31B313D',
+        /** Прозрачный цвет обводки информация на светлом фоне */
+        onLightOutlineTransparentInfoHover: '#2A72F81F',
+        /** Прозрачный цвет обводки информация на светлом фоне */
+        onLightOutlineTransparentInfoActive: '#2A72F83D',
+        /** Основной непрозрачный цвет обводки на светлом фоне */
+        onLightOutlineSolidPrimary: '#DDDDDD',
+        /** Вторичный непрозрачный цвет обводки на светлом фоне */
+        onLightOutlineSolidSecondary: '#949494',
+        /** Третичный непрозрачный цвет обводки на светлом фоне */
+        onLightOutlineSolidTertiary: '#707070',
+        /** light outline onLight outlineDefault */
+        onLightOutlineDefault: '#080808',
+        /** light outline onLight outlineDefaultHover */
+        onLightOutlineDefaultHover: '#262626FF',
+        /** light outline onLight outlineDefaultActive */
+        onLightOutlineDefaultActive: '#030303FF',
+        /** Основной прозрачный цвет обводки на светлом фоне */
+        onLightOutlineTransparentPrimary: '#08080833',
+        /** Вторичный прозрачный цвет обводки на светлом фоне */
+        onLightOutlineTransparentSecondary: '#08080866',
+        /** Третичный прозрачный цвет обводки на светлом фоне */
+        onLightOutlineTransparentTertiary: '#0808088F',
+        /** Акцентный цвет обводки на светлом фоне */
+        onLightOutlineAccent: '#2A72F8',
+        /** Акцентный минорный непрозрачный цвет обводки на светлом фоне */
+        onLightOutlineAccentMinor: '#8BB2FC',
+        /** Прозрачный акцентный цвет обводки на светлом фоне */
+        onLightOutlineTransparentAccent: '#2A72F833',
+        /** Цвет обводки успех на светлом фоне */
+        onLightOutlinePositive: '#108E26',
+        /** Цвет обводки предупреждение на светлом фоне */
+        onLightOutlineWarning: '#E85702',
+        /** Цвет обводки ошибка на светлом фоне */
+        onLightOutlineNegative: '#F31B31',
+        /** Минорный цвет обводки успех на светлом фоне */
+        onLightOutlinePositiveMinor: '#28D247',
+        /** Минорный цвет обводки предупреждение на светлом фоне */
+        onLightOutlineWarningMinor: '#FD9C68',
+        /** Минорный цвет обводки ошибка на светлом фоне */
+        onLightOutlineNegativeMinor: '#FF8F9A',
+        /** Прозрачный цвет обводки успех на светлом фоне */
+        onLightOutlineTransparentPositive: '#108E2633',
+        /** Прозрачный цвет обводки предупреждение на светлом фоне */
+        onLightOutlineTransparentWarning: '#E8570233',
+        /** Прозрачный цвет обводки предупреждение на светлом фоне */
+        onLightOutlineTransparentNegative: '#F31B3133',
+        /** Цвет обводки информация на светлом фоне */
+        onLightOutlineInfo: '#2A72F8',
+        /** Минорный цвет обводки информация на светлом фоне */
+        onLightOutlineInfoMinor: '#8BB2FC',
+        /** Прозрачный цвет обводки информация на светлом фоне */
+        onLightOutlineTransparentInfo: '#2A72F833',
     },
 } as const;
