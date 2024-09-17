@@ -10,9 +10,16 @@ const getFontFamily = (fontFamily: any, tokens: TokenType[], kind: 'display' | '
             const tokenName = kebabToCamel(rest.join('-'));
 
             const fonts = value.fonts.map((font: any) => {
-                const fileName = font.link.match(/0.2.0\/(.*).otf/im)[1];
+                const name = font.link.match(/0.2.0\/(.*).otf/im)[1] as string;
+                const fontName = name
+                    .replace(/([A-Z]+)([A-Z][a-z])/g, '$1 $2')
+                    .replace(/([a-z])([A-Z])/g, '$1 $2')
+                    .replace(/-/g, ' ')
+                    .replace(/Regular/g, '')
+                    .trim();
+
                 return {
-                    fileName,
+                    fontName,
                     ...font,
                 };
             });

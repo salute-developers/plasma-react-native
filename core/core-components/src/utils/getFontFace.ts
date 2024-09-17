@@ -23,7 +23,7 @@ export const getFontFace = (fontFamilyRef: string, fontStyle: string, fontWeight
     }
 
     return {
-        fontFamily: result.fileName,
+        fontFamily: result.fontName,
         fontWeight,
         fontStyle,
     } as FontFace;
