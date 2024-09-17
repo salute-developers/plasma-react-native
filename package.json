@@ -12,11 +12,11 @@
     "bootstrap": "test \"$PLATFORM\" = 'mobile' && npm run bootstrap:mobile || { test \"$PLATFORM\" = 'tv' && npm run bootstrap:tv; }",
     "bootstrap:tv": "npm run platform:tv && npx lerna bootstrap",
     "bootstrap:mobile": "npm run platform:mobile && npx lerna bootstrap",
-    "bump-version": "lerna version --conventional-commits --conventional-prerelease --no-changelog --yes",
+    "bump-version": "lerna version --conventional-commits --conventional-prerelease --no-git-tag-version --no-changelog --yes",
     "replace-dependencies": "./scripts/replace-dependencies.sh $PLATFORM",
     "revert-bump-version": "./scripts/revert-bump-version.sh",
     "set-lerna-packages": "./scripts/set-lerna-packages.sh $MODE",
-    "components-publish": "./scripts/components-publish.sh $PLATFORM"
+    "components-publish": "./scripts/components-publish.sh $PLATFORM $TAG"
   },
   "devDependencies": {
     "@actions/core": "1.2.7",
@@ -52,6 +52,7 @@
     "husky": "^8.0.0",
     "lerna": "6.5.1",
     "lint-staged": "13.1.2",
+    "patch-package": "8.0.0",
     "prettier": "2.0.5",
     "typescript": "4.2.4"
   },
