@@ -1,11 +1,13 @@
 import { ReactNode } from 'react';
 import { TextInputProps } from 'react-native';
 
+import { Focusable } from '../FocusableWrapper';
+
 import { Style } from './TextField.styles';
 
 export type LabelPlacement = 'inner' | 'outer';
 
-interface CustomTextFieldProps extends Omit<TextInputProps, 'style'> {
+interface CustomTextFieldProps extends Omit<TextInputProps, 'style' | 'onBlur' | 'onFocus' | 'onPress'>, Focusable {
     /**
      * Объект для стилизации компонента
      */
@@ -43,10 +45,6 @@ interface CustomTextFieldProps extends Omit<TextInputProps, 'style'> {
      */
     readOnly?: boolean;
     /**
-     * Может ли фокусироваться текстовое поле
-     */
-    focused?: boolean;
-    /**
      * Текстовое поле неактивно
      */
     disabled?: boolean;
@@ -70,7 +68,6 @@ export interface TextFieldConfig {
     defaults: {
         view: string;
         size: string;
-        focused: string;
     };
     variations: {
         view: {
@@ -147,11 +144,6 @@ export interface TextFieldConfig {
         disabled: {
             [x: string]: {
                 disabledOpacity: number;
-            };
-        };
-        focused: {
-            [x: string]: {
-                focusColor: string;
             };
         };
     };

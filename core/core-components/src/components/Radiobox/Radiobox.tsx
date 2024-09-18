@@ -1,14 +1,16 @@
-import { Pressable, Text, View } from 'react-native';
-import { useMemo } from 'react';
+import { GestureResponderEvent, NativeSyntheticEvent, Platform, TargetedEvent, Text, View } from 'react-native';
+import { useMemo, useState } from 'react';
 
 import { Theme, withTheme } from '../ThemeProvider';
 import { PropsType } from '../../types';
+import { FocusableWrapper } from '../FocusableWrapper';
 
 import { RadioboxConfig, RadioboxProps } from './Radiobox.types';
 import { getStyle } from './Radiobox.styles';
 
 export const radioboxCore = <T extends RadioboxConfig>(config?: T, theme?: Theme) => (
     props: RadioboxProps & PropsType<T['variations']>,
+    externalRef: React.ForwardedRef<View>,
 ) => {
     const {
         view = '',
@@ -20,9 +22,21 @@ export const radioboxCore = <T extends RadioboxConfig>(config?: T, theme?: Theme
         checked = false,
         style: externalStyle,
         onValueChange,
-        // focused, TODO: Придумать общую реализацию фокусной рамки
+        onPress,
+        onBlur,
+        onFocus,
+        //
+        focusable,
+        hasTVPreferredFocus,
+        nextFocusDown,
+        nextFocusForward,
+        nextFocusLeft,
+        nextFocusRight,
+        nextFocusUp,
         ...rest
     } = props;
+
+    const [focused, setFocused] = useState(false);
 
     const viewStyle = config?.variations.view[view];
     const sizeStyle = config?.variations.size[size];
@@ -37,14 +51,62 @@ export const radioboxCore = <T extends RadioboxConfig>(config?: T, theme?: Theme
         [view, size, label, checked, description, disabled, theme?.mode],
     );
 
-    const onPress = () => {
+    const navigationProps = {
+        focusable,
+        hasTVPreferredFocus,
+        nextFocusDown,
+        nextFocusForward,
+        nextFocusLeft,
+        nextFocusRight,
+        nextFocusUp,
+    };
+
+    const onWrapperPress = (event: GestureResponderEvent) => {
         if (onValueChange) {
             onValueChange(checked);
         }
+
+        if (onPress) {
+            onPress(event);
+        }
+    };
+
+    const onWrapperFocus = (event: NativeSyntheticEvent<TargetedEvent>) => {
+        if (onFocus) {
+            onFocus(event);
+        }
+
+        setFocused(true);
+    };
+
+    const onWrapperBlur = (event: NativeSyntheticEvent<TargetedEvent>) => {
+        if (onBlur) {
+            onBlur(event);
+        }
+
+        setFocused(false);
     };
 
     return (
-        <Pressable style={style.root} disabled={disabled} onPress={onPress} {...rest}>
+        <FocusableWrapper
+            style={{
+                root: style.root,
+                focus: {
+                    borderColor: theme?.data.color[theme?.mode].textPrimary,
+                    borderRadius: (sizeStyle?.triggerBorderRadius || 0) - 4,
+                    borderWidth: 2,
+                },
+            }}
+            hasFocus={Platform.isTV}
+            focused={focused}
+            disabled={disabled}
+            ref={externalRef}
+            onFocus={onWrapperFocus}
+            onBlur={onWrapperBlur}
+            onPress={onWrapperPress}
+            {...navigationProps}
+            {...rest}
+        >
             <View style={style.wrapper}>
                 <View style={style.trigger} />
                 {hasContent && (
@@ -62,7 +124,7 @@ export const radioboxCore = <T extends RadioboxConfig>(config?: T, theme?: Theme
                     </View>
                 )}
             </View>
-        </Pressable>
+        </FocusableWrapper>
     );
 };
 

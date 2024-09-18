@@ -1,8 +1,10 @@
 import { ViewProps } from 'react-native';
 
+import { Focusable } from '../FocusableWrapper';
+
 import { Style } from './Checkbox.styles';
 
-interface CustomCheckboxProps extends Omit<ViewProps, 'style'> {
+interface CustomCheckboxProps extends Omit<ViewProps, 'style'>, Focusable {
     /**
      * Объект для стилизации компонента
      */
@@ -40,10 +42,6 @@ interface CustomCheckboxProps extends Omit<ViewProps, 'style'> {
      */
     indeterminate?: boolean;
     /**
-     * Может ли фокусироваться чекбокс
-     */
-    focused?: boolean;
-    /**
      * Чекбокс неактивен
      */
     disabled?: boolean;
@@ -67,7 +65,6 @@ export interface CheckboxConfig {
     defaults: {
         view: string;
         size: string;
-        focused: string;
     };
     variations: {
         view: {
@@ -107,11 +104,6 @@ export interface CheckboxConfig {
         disabled: {
             [x: string]: {
                 disabledOpacity: number;
-            };
-        };
-        focused: {
-            [x: string]: {
-                focusColor: string;
             };
         };
     };

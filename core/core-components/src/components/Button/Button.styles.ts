@@ -8,6 +8,7 @@ import { getWidthSize, getRoundnessMatrix, Pin } from './utils';
 
 export interface Style {
     root?: ViewStyle;
+    container?: ViewStyle;
     wrapper?: ViewStyle;
     loader?: ViewStyle;
     text?: TextStyle;
@@ -18,6 +19,7 @@ export const getStyle = (
     disabledOpacity?: number,
     viewStyle?: ButtonConfig['variations']['view'][string],
     sizeStyle?: ButtonConfig['variations']['size'][string],
+    pressed?: boolean,
     stretching?: Stretching,
     pin?: Pin,
     isLoading?: boolean,
@@ -26,6 +28,7 @@ export const getStyle = (
     if (!viewStyle || !sizeStyle || !pin || !theme) {
         return {
             root: {},
+            container: {},
             wrapper: {},
             loader: {},
             text: {},
@@ -37,19 +40,22 @@ export const getStyle = (
     const fontFace = getFontFace(sizeStyle.fontFamilyRef, sizeStyle.fontStyle, sizeStyle.fontWeight, theme);
 
     return StyleSheet.create({
-        root: (({ pressed }: { pressed: boolean }) => ({
+        root: {
             opacity: disabledOpacity,
+            ...externalStyle?.root,
+        },
+        container: {
             alignItems: 'center',
             justifyContent: 'center',
-            height: sizeStyle.height,
-            backgroundColor: pressed ? viewStyle.backgroundColorActive : viewStyle.backgroundColor,
             borderRadius: sizeStyle.radius,
             paddingLeft: sizeStyle.padding,
             paddingRight: sizeStyle.padding,
+            backgroundColor: pressed ? viewStyle.backgroundColorActive : viewStyle.backgroundColor,
+            height: sizeStyle.height,
             ...widthSize,
             ...buttonBorderRadius,
-            ...externalStyle?.root,
-        })) as ViewStyle,
+            ...externalStyle?.container,
+        },
         wrapper: {
             width: '100%',
             gap: sizeStyle.contentGap,
