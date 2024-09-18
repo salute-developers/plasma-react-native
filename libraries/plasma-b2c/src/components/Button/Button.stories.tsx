@@ -36,7 +36,6 @@ const meta: Meta<StoryButtonProps> = {
         size: 'm',
         pin: 'square-square',
         disabled: false,
-        focused: true,
         stretching: 'auto',
         isLoading: false,
         // INFO: кастомные свойства для стори

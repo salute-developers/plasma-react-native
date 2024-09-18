@@ -29,7 +29,6 @@ const meta: Meta<StorySwitchProps> = {
         view: 'default',
         size: 'm',
         disabled: false,
-        focused: true,
     },
     argTypes: {
         size: {
