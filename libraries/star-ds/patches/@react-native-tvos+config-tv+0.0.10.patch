@@ -1,0 +1,13 @@
+diff --git a/node_modules/@react-native-tvos/config-tv/build/withTVAndroidRemoveFlipper.js b/node_modules/@react-native-tvos/config-tv/build/withTVAndroidRemoveFlipper.js
+index f5e1e8d..6490fcc 100644
+--- a/node_modules/@react-native-tvos/config-tv/build/withTVAndroidRemoveFlipper.js
++++ b/node_modules/@react-native-tvos/config-tv/build/withTVAndroidRemoveFlipper.js
+@@ -44,7 +44,7 @@ const withTVAndroidRemoveFlipper = (c, params = {}) => {
+ };
+ exports.withTVAndroidRemoveFlipper = withTVAndroidRemoveFlipper;
+ const mainApplicationFilePath = (androidRoot) => {
+-    const paths = glob_1.default.sync(`${androidRoot}/**/MainApplication.*`);
++    const paths = glob_1.sync(`${androidRoot}/**/MainApplication.*`);
+     if (paths.length > 0) {
+         return paths[0];
+     }

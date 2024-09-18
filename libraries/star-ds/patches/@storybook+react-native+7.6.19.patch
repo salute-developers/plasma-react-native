@@ -1,0 +1,13 @@
+diff --git a/node_modules/@storybook/react-native/dist/index.js b/node_modules/@storybook/react-native/dist/index.js
+index 0a4a8e4..684aca8 100644
+--- a/node_modules/@storybook/react-native/dist/index.js
++++ b/node_modules/@storybook/react-native/dist/index.js
+@@ -1136,7 +1136,7 @@ var ListItem = ({
+   );
+ };
+ var styles = import_react_native2.StyleSheet.create({
+-  sectionList: { flex: 1 },
++  sectionList: { height: "100%" },
+   sectionListContentContainer: { paddingBottom: 6 }
+ });
+ function keyExtractor(item, index) {
