@@ -10,3 +10,4 @@ export * from './components/Radiobox';
 export * from './components/TextField';
 export * from './components/Typography';
 export * from './components/ThemeProvider';
+export * from './components/FocusableWrapper';
