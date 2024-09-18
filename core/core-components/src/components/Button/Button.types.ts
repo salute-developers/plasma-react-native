@@ -1,12 +1,14 @@
 import { ButtonProps as ButtonPropsNative } from 'react-native';
 import { ReactNode } from 'react';
 
+import { Focusable } from '../FocusableWrapper';
+
 import { Pin } from './utils';
 import { Style } from './Button.styles';
 
 export type Stretching = 'fixed' | 'filled' | 'auto';
 
-interface CustomButtonProps extends Omit<ButtonPropsNative, 'title'> {
+interface CustomButtonProps extends Omit<ButtonPropsNative, 'onPress' | 'title'>, Focusable {
     /**
      * Объект для стилизации компонента
      */
@@ -45,10 +47,6 @@ interface CustomButtonProps extends Omit<ButtonPropsNative, 'title'> {
      */
     stretching?: Stretching;
     /**
-     * Может ли фокусироваться кнопка
-     */
-    focused?: boolean;
-    /**
      * Кнопка неактивна
      */
     disabled?: boolean;
@@ -72,7 +70,6 @@ export interface ButtonConfig {
     defaults: {
         view: string;
         size: string;
-        focused: string;
     };
     variations: {
         view: {
@@ -103,11 +100,6 @@ export interface ButtonConfig {
         disabled: {
             [x: string]: {
                 disabledOpacity: number;
-            };
-        };
-        focused: {
-            [x: string]: {
-                focusColor: string;
             };
         };
     };

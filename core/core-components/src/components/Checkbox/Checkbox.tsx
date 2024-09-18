@@ -1,8 +1,9 @@
-import { Pressable, Text, View } from 'react-native';
-import { useMemo } from 'react';
+import { GestureResponderEvent, NativeSyntheticEvent, Platform, TargetedEvent, Text, View } from 'react-native';
+import { useMemo, useState } from 'react';
 
 import { Theme, withTheme } from '../ThemeProvider';
 import { PropsType } from '../../types';
+import { FocusableWrapper } from '../FocusableWrapper';
 
 import { CheckboxConfig, CheckboxProps } from './Checkbox.types';
 import { getStyle } from './Checkbox.styles';
@@ -10,6 +11,7 @@ import { Done, Indeterminate } from './IconsSvg';
 
 export const checkboxCore = <T extends CheckboxConfig>(config?: T, theme?: Theme) => (
     props: CheckboxProps & PropsType<T['variations']>,
+    externalRef: React.ForwardedRef<View>,
 ) => {
     const {
         view = '',
@@ -22,9 +24,21 @@ export const checkboxCore = <T extends CheckboxConfig>(config?: T, theme?: Theme
         checked = false,
         style: externalStyle,
         onValueChange,
-        // focused, TODO: Придумать общую реализацию фокусной рамки
+        onPress,
+        onBlur,
+        onFocus,
+        //
+        focusable,
+        hasTVPreferredFocus,
+        nextFocusDown,
+        nextFocusForward,
+        nextFocusLeft,
+        nextFocusRight,
+        nextFocusUp,
         ...rest
     } = props;
+
+    const [focused, setFocused] = useState(false);
 
     const viewStyle = config?.variations.view[view];
     const sizeStyle = config?.variations.size[size];
@@ -49,14 +63,62 @@ export const checkboxCore = <T extends CheckboxConfig>(config?: T, theme?: Theme
         [view, size, label, checked, indeterminate, description, disabled, theme?.mode],
     );
 
-    const onPress = () => {
+    const navigationProps = {
+        focusable,
+        hasTVPreferredFocus,
+        nextFocusDown,
+        nextFocusForward,
+        nextFocusLeft,
+        nextFocusRight,
+        nextFocusUp,
+    };
+
+    const onWrapperPress = (event: GestureResponderEvent) => {
         if (onValueChange) {
             onValueChange(checked);
         }
+
+        if (onPress) {
+            onPress(event);
+        }
+    };
+
+    const onWrapperFocus = (event: NativeSyntheticEvent<TargetedEvent>) => {
+        if (onFocus) {
+            onFocus(event);
+        }
+
+        setFocused(true);
+    };
+
+    const onWrapperBlur = (event: NativeSyntheticEvent<TargetedEvent>) => {
+        if (onBlur) {
+            onBlur(event);
+        }
+
+        setFocused(false);
     };
 
     return (
-        <Pressable style={style.root} disabled={disabled} onPress={onPress} {...rest}>
+        <FocusableWrapper
+            style={{
+                root: style.root,
+                focus: {
+                    borderColor: theme?.data.color[theme?.mode].textPrimary,
+                    borderRadius: sizeStyle?.triggerBorderRadius,
+                    borderWidth: 2,
+                },
+            }}
+            hasFocus={Platform.isTV}
+            focused={focused}
+            disabled={disabled}
+            ref={externalRef}
+            onFocus={onWrapperFocus}
+            onBlur={onWrapperBlur}
+            onPress={onWrapperPress}
+            {...navigationProps}
+            {...rest}
+        >
             <View style={style.wrapper}>
                 <View style={style.trigger}>
                     {indeterminate ? (
@@ -80,7 +142,7 @@ export const checkboxCore = <T extends CheckboxConfig>(config?: T, theme?: Theme
                     </View>
                 )}
             </View>
-        </Pressable>
+        </FocusableWrapper>
     );
 };
 

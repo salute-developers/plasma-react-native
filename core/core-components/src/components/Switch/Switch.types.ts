@@ -1,10 +1,11 @@
 import { ViewProps } from 'react-native';
 
 import { Shadow } from '../ThemeProvider';
+import { Focusable } from '../FocusableWrapper';
 
 import { Style } from './Switch.styles';
 
-interface CustomSwitchProps extends Omit<ViewProps, 'style'> {
+interface CustomSwitchProps extends Omit<ViewProps, 'style'>, Focusable {
     /**
      * Объект для стилизации компонента
      */
@@ -30,10 +31,6 @@ interface CustomSwitchProps extends Omit<ViewProps, 'style'> {
      */
     description?: React.ReactNode;
     /**
-     * Может ли фокусироваться свитч
-     */
-    focused?: boolean;
-    /**
      * Свитч неактивен
      */
     disabled?: boolean;
@@ -57,7 +54,6 @@ export interface SwitchConfig {
     defaults: {
         view: string;
         size: string;
-        focused: string;
     };
     variations: {
         view: {
@@ -98,11 +94,6 @@ export interface SwitchConfig {
         disabled: {
             [x: string]: {
                 disabledOpacity: number;
-            };
-        };
-        focused: {
-            [x: string]: {
-                focusColor: string;
             };
         };
     };
