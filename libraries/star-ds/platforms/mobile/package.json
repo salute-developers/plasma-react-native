@@ -1,7 +1,7 @@
 {
-  "version": "0.3.0",
-  "name": "@salutejs/plasma-b2c",
-  "description": "Plasma-b2c components library for native platform on mobile.",
+  "version": "0.1.0",
+  "name": "@salutejs/star-ds",
+  "description": "Star-ds components library for native platform on mobile.",
   "author": "Salute Frontend Team <salute.developers@gmail.com>",
   "license": "MIT",
   "module": "build/esm/index.js",
