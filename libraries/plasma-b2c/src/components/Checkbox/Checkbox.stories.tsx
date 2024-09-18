@@ -29,7 +29,6 @@ const meta: Meta<StoryCheckboxProps> = {
         view: 'accent',
         size: 'm',
         disabled: false,
-        focused: true,
         singleLine: true,
     },
     argTypes: {

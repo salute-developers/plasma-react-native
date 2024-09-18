@@ -16,7 +16,6 @@ export const getConfig = ({ data, mode, screenSize }: Theme<PlasmaB2CTheme>) => 
     defaults: {
         view: 'default',
         size: 'm',
-        focused: 'true',
     },
     variations: {
         view: {
@@ -103,11 +102,6 @@ export const getConfig = ({ data, mode, screenSize }: Theme<PlasmaB2CTheme>) => 
         disabled: {
             true: {
                 disabledOpacity: 0.4,
-            },
-        },
-        focused: {
-            true: {
-                focusColor: data.color[mode].surfaceAccent,
             },
         },
     },

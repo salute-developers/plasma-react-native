@@ -38,7 +38,6 @@ const meta: Meta<StoryTextFieldProps> = {
         view: 'default',
         size: 'm',
         disabled: false,
-        focused: true,
         label: 'Label',
         labelPlacement: 'outer',
         textBefore: 'TB',
