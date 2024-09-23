@@ -1,10 +1,9 @@
-import { ViewProps } from 'react-native';
-
-import { Focusable } from '../FocusableWrapper';
+import { PressableProps } from 'react-native';
+import { ReactNode } from 'react';
 
 import { Style } from './Checkbox.styles';
 
-interface CustomCheckboxProps extends Omit<ViewProps, 'style'>, Focusable {
+interface CustomCheckboxProps extends Omit<PressableProps, 'style'> {
     /**
      * Объект для стилизации компонента
      */
@@ -28,11 +27,11 @@ interface CustomCheckboxProps extends Omit<ViewProps, 'style'>, Focusable {
     /**
      * Метка-подпись к элементу
      */
-    label?: React.ReactNode;
+    label?: ReactNode;
     /**
      * Описание элемента
      */
-    description?: React.ReactNode;
+    description?: ReactNode;
     /**
      * Label и description в одну строку или с переносом строк
      */
@@ -45,6 +44,10 @@ interface CustomCheckboxProps extends Omit<ViewProps, 'style'>, Focusable {
      * Чекбокс неактивен
      */
     disabled?: boolean;
+    /**
+     * Компонент находится в фокусе
+     */
+    focused?: boolean;
     /**
      * Вид чекбокса
      */
@@ -104,6 +107,15 @@ export interface CheckboxConfig {
         disabled: {
             [x: string]: {
                 disabledOpacity: number;
+            };
+        };
+        focused: {
+            true: {
+                fillColor: string;
+                iconColor: string;
+                labelColor: string;
+                descriptionColor: string;
+                triggerBorderColor: string;
             };
         };
     };
