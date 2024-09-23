@@ -1,6 +1,6 @@
-import { ButtonProps } from '../Button.types';
+export type Stretching = 'fixed' | 'filled' | 'auto';
 
-export const getWidthSize = (stretching: ButtonProps['stretching'], width: number) => {
+export const getWidthSize = (stretching?: Stretching, width?: number) => {
     if (stretching === 'auto') {
         return {
             alignSelf: 'flex-start',

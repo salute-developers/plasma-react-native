@@ -1,10 +1,10 @@
-import { NativeSyntheticEvent, Platform, TargetedEvent, Text, View } from 'react-native';
+import { NativeSyntheticEvent, Pressable, TargetedEvent, Text, View } from 'react-native';
 import { useMemo, useState } from 'react';
 
 import { spinnerComponent } from '../Spinner';
 import { Theme, withTheme } from '../ThemeProvider';
 import { PropsType } from '../../types';
-import { FocusableWrapper } from '../FocusableWrapper/FocusableWrapper';
+import { FocusableWrapper } from '../FocusableWrapper';
 
 import { ButtonConfig, ButtonProps } from './Button.types';
 import { getStyle } from './Button.styles';
@@ -30,14 +30,6 @@ export const buttonCore = <T extends ButtonConfig>(config?: T, theme?: Theme) =>
         style: externalStyle,
         onBlur,
         onFocus,
-        //
-        focusable,
-        hasTVPreferredFocus,
-        nextFocusDown,
-        nextFocusForward,
-        nextFocusLeft,
-        nextFocusRight,
-        nextFocusUp,
         ...rest
     } = props;
 
@@ -46,25 +38,15 @@ export const buttonCore = <T extends ButtonConfig>(config?: T, theme?: Theme) =>
 
     const txt = typeof children === 'string' ? children : text;
 
-    const viewStyle = config?.variations.view[view];
+    const viewStyle = focused ? config?.variations.focused.true : config?.variations.view[view];
     const sizeStyle = config?.variations.size[size];
     const disabledOpacity = disabled ? config?.variations.disabled.true.disabledOpacity : 1;
 
     const style = useMemo(
         () =>
             getStyle(theme, disabledOpacity, viewStyle, sizeStyle, pressed, stretching, pin, isLoading, externalStyle),
-        [view, size, pressed, disabled, stretching, pin, theme?.mode],
+        [view, size, pressed, disabled, focused, stretching, isLoading, pin, theme?.mode],
     );
-
-    const navigationProps = {
-        focusable,
-        hasTVPreferredFocus,
-        nextFocusDown,
-        nextFocusForward,
-        nextFocusLeft,
-        nextFocusRight,
-        nextFocusUp,
-    };
 
     const onWrapperFocus = (event: NativeSyntheticEvent<TargetedEvent>) => {
         if (onFocus) {
@@ -91,31 +73,25 @@ export const buttonCore = <T extends ButtonConfig>(config?: T, theme?: Theme) =>
     };
 
     return (
-        <FocusableWrapper
-            style={{
-                root: style.root,
-                focus: {
-                    borderColor: theme?.data.color[theme?.mode].textPrimary,
-                    borderRadius: sizeStyle?.radius,
-                    borderWidth: 2,
-                },
-            }}
-            hasFocus={Platform.isTV}
-            focused={focused}
+        <Pressable
             disabled={disabled}
             ref={externalRef}
             onFocus={onWrapperFocus}
             onBlur={onWrapperBlur}
             onPressIn={onPressIn}
             onPressOut={onPressOut}
-            {...navigationProps}
             {...rest}
         >
-            <View style={style.container}>
+            <View style={style.root}>
+                <View style={style.background} />
                 <View style={style.wrapper}>
-                    {contentLeft}
+                    {contentLeft && (
+                        <FocusableWrapper iconColor={viewStyle?.contentLeftIconColor}>{contentLeft}</FocusableWrapper>
+                    )}
                     {txt ? <Text style={style.text}>{txt}</Text> : children}
-                    {contentRight}
+                    {contentRight && (
+                        <FocusableWrapper iconColor={viewStyle?.contentRightIconColor}>{contentRight}</FocusableWrapper>
+                    )}
                 </View>
                 {isLoading && (
                     <View style={style.loader}>
@@ -129,7 +105,7 @@ export const buttonCore = <T extends ButtonConfig>(config?: T, theme?: Theme) =>
                     </View>
                 )}
             </View>
-        </FocusableWrapper>
+        </Pressable>
     );
 };
 
