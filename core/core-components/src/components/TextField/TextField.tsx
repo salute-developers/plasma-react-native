@@ -3,6 +3,7 @@ import {
     GestureResponderEvent,
     NativeSyntheticEvent,
     Platform,
+    Pressable,
     TargetedEvent,
     Text,
     TextInput,
@@ -10,11 +11,11 @@ import {
     TextStyle,
     View,
 } from 'react-native';
-import { useMemo, useRef, useState } from 'react';
+import React, { useMemo, useRef, useState } from 'react';
 
 import { Theme, withTheme } from '../ThemeProvider';
 import { PropsType } from '../../types';
-import { FocusableWrapper } from '../FocusableWrapper/FocusableWrapper';
+import { FocusableWrapper } from '../FocusableWrapper';
 
 import { TextFieldConfig, TextFieldProps } from './TextField.types';
 import { getStyle } from './TextField.styles';
@@ -41,12 +42,11 @@ export const textFieldCore = <T extends TextFieldConfig>(config?: T, theme?: The
         disabled = false,
         maxLength,
         style: externalStyle,
-        onValueChange,
-        onChangeText,
         onPress,
         onBlur,
         onFocus,
-        //
+        onValueChange,
+        onChangeText,
         focusable,
         hasTVPreferredFocus,
         nextFocusDown,
@@ -60,10 +60,21 @@ export const textFieldCore = <T extends TextFieldConfig>(config?: T, theme?: The
     const ref = useRef<TextInput>(null);
 
     const [focused, setFocused] = useState(false);
+    // TODO: Можно ли обойтись одним состоянием
+    const [focusedAfterInput, setFocusedAfterInput] = useState<undefined | boolean>(hasTVPreferredFocus);
 
-    const viewStyle = config?.variations.view[view];
+    const viewStyle = focused ? config?.variations.focused.true : config?.variations.view[view];
     const sizeStyle = config?.variations.size[size];
     const disabledOpacity = disabled ? config?.variations.disabled.true.disabledOpacity : 1;
+
+    const navigationProps = {
+        focusable,
+        nextFocusDown,
+        nextFocusForward,
+        nextFocusLeft,
+        nextFocusRight,
+        nextFocusUp,
+    };
 
     const [isFocused, inputWrapperStyleAnimate, labelStyleAnimate, onFocusInput, onBlurInput] = useInnerLabelAnimation(
         value,
@@ -87,7 +98,7 @@ export const textFieldCore = <T extends TextFieldConfig>(config?: T, theme?: The
                 sizeStyle,
                 externalStyle,
             ),
-        [value, view, size, disabled, readOnly, labelPlacement, theme?.mode],
+        [value, view, focused, size, disabled, focused, readOnly, labelPlacement, theme?.mode],
     );
 
     const hideLabel = size === 'xs' && labelPlacement === 'inner';
@@ -122,11 +133,17 @@ export const textFieldCore = <T extends TextFieldConfig>(config?: T, theme?: The
     const handleFocus = (event: NativeSyntheticEvent<TextInputFocusEventData>) => {
         onFocus?.(event);
         onFocusInput();
+
+        setFocused(false);
+        setFocusedAfterInput(false);
     };
 
     const handleBlur = (event: NativeSyntheticEvent<TextInputFocusEventData>) => {
         onBlur?.(event);
         onBlurInput();
+
+        setFocused(true);
+        setFocusedAfterInput(true);
     };
 
     const onWrapperPress = (event: GestureResponderEvent) => {
@@ -137,19 +154,13 @@ export const textFieldCore = <T extends TextFieldConfig>(config?: T, theme?: The
         ref.current?.focus();
     };
 
-    const navigationProps = {
-        focusable,
-        hasTVPreferredFocus,
-        nextFocusDown,
-        nextFocusForward,
-        nextFocusLeft,
-        nextFocusRight,
-        nextFocusUp,
-    };
-
     const onWrapperFocus = (event: NativeSyntheticEvent<TargetedEvent>) => {
         if (onFocus) {
             onFocus(event);
+        }
+
+        if (ref.current?.isFocused()) {
+            return;
         }
 
         setFocused(true);
@@ -166,24 +177,22 @@ export const textFieldCore = <T extends TextFieldConfig>(config?: T, theme?: The
     return (
         <View style={style.root}>
             {labelInside || (innerLabelValue && <Text style={style.label}>{innerLabelValue}</Text>)}
-            <FocusableWrapper
-                style={{
-                    focus: {
-                        borderColor: theme?.data.color[theme?.mode].textPrimary,
-                        borderRadius: sizeStyle?.borderRadius,
-                        borderWidth: 2,
-                    },
-                }}
-                hasFocus={Platform.isTV}
-                focused={focused}
+            <Pressable
                 ref={externalRef}
                 onPress={onWrapperPress}
                 onFocus={onWrapperFocus}
                 onBlur={onWrapperBlur}
+                hasTVPreferredFocus={focusedAfterInput}
                 {...navigationProps}
             >
                 <Animated.View style={[style.inputWrapper, inputWrapperStyleAnimate]}>
-                    {contentLeft && <View style={style.contentLeft}>{contentLeft}</View>}
+                    {contentLeft && (
+                        <View style={style.contentLeft}>
+                            <FocusableWrapper iconColor={viewStyle?.contentLeftIconColor}>
+                                {contentLeft}
+                            </FocusableWrapper>
+                        </View>
+                    )}
                     <View style={style.inputLabelWrapper}>
                         {textBefore && additionalTextVisible && <Text style={style.textBefore}>{textBefore}</Text>}
                         <TextInput
@@ -210,9 +219,15 @@ export const textFieldCore = <T extends TextFieldConfig>(config?: T, theme?: The
                         )}
                         {textAfter && additionalTextVisible && <Text style={style.textAfter}>{textAfter}</Text>}
                     </View>
-                    {contentRight && <View style={style.contentRight}>{contentRight}</View>}
+                    {contentRight && (
+                        <View style={style.contentRight}>
+                            <FocusableWrapper iconColor={viewStyle?.contentRightIconColor}>
+                                {contentRight}
+                            </FocusableWrapper>
+                        </View>
+                    )}
                 </Animated.View>
-            </FocusableWrapper>
+            </Pressable>
             {captionLeft && <Text style={style.captionLeft}>{captionLeft}</Text>}
         </View>
     );

@@ -1,11 +1,23 @@
 import { ReactNode } from 'react';
-import { TextInputProps } from 'react-native';
-
-import { Focusable } from '../FocusableWrapper';
+import { PressableProps, TextInputProps } from 'react-native';
 
 import { Style } from './TextField.styles';
 
 export type LabelPlacement = 'inner' | 'outer';
+
+export interface Focusable {
+    focusable?: PressableProps['focusable'];
+    hasTVPreferredFocus?: PressableProps['hasTVPreferredFocus'];
+    nextFocusUp?: number;
+    nextFocusDown?: number;
+    nextFocusRight?: number;
+    nextFocusLeft?: number;
+    nextFocusForward?: number;
+    onFocus?: PressableProps['onFocus'];
+    onBlur?: PressableProps['onBlur'];
+    onPress?: PressableProps['onPress'];
+    onLongPress?: PressableProps['onLongPress'];
+}
 
 interface CustomTextFieldProps extends Omit<TextInputProps, 'style' | 'onBlur' | 'onFocus' | 'onPress'>, Focusable {
     /**
@@ -74,9 +86,9 @@ export interface TextFieldConfig {
             [x: string]: {
                 color: string;
                 backgroundColor?: string;
-                backgroundColorFocus?: string;
+                backgroundColorActive?: string;
                 borderColor?: string;
-                borderColorFocus?: string;
+                borderColorActive?: string;
                 colorReadOnly: string;
                 backgroundColorReadOnly?: string;
                 borderColorReadOnly?: string;
@@ -89,6 +101,8 @@ export interface TextFieldConfig {
                 captionLeftColorReadOnly: string;
                 textBeforeColor: string;
                 textAfterColor: string;
+                contentLeftIconColor: string;
+                contentRightIconColor: string;
             };
         };
         size: {
@@ -144,6 +158,29 @@ export interface TextFieldConfig {
         disabled: {
             [x: string]: {
                 disabledOpacity: number;
+            };
+        };
+        focused: {
+            true: {
+                color: string;
+                backgroundColor?: string;
+                backgroundColorActive?: string;
+                borderColor?: string;
+                borderColorActive?: string;
+                colorReadOnly: string;
+                backgroundColorReadOnly?: string;
+                borderColorReadOnly?: string;
+                placeholderColorReadOnly: string;
+                caretColor: string;
+                placeholderColor: string;
+                labelColor: string;
+                labelColorReadOnly: string;
+                captionLeftColor: string;
+                captionLeftColorReadOnly: string;
+                textBeforeColor: string;
+                textAfterColor: string;
+                contentLeftIconColor: string;
+                contentRightIconColor: string;
             };
         };
     };

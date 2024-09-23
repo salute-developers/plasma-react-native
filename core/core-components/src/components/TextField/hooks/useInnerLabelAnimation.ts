@@ -50,12 +50,13 @@ export const useInnerLabelAnimation = (
                     toValue: 1,
                     ...animatedSetting,
                 }),
-                Animated.timing(backgroundColorValue, {
-                    toValue: 1,
-                    ...animatedSetting,
-                }),
             ]).start();
         }
+
+        Animated.timing(backgroundColorValue, {
+            toValue: 1,
+            ...animatedSetting,
+        }).start();
 
         setIsFocused(true);
     };
@@ -87,18 +88,16 @@ export const useInnerLabelAnimation = (
             ]).start();
         }
 
-        if (labelPlacement === 'inner') {
-            Animated.timing(backgroundColorValue, {
-                toValue: 0,
-                ...animatedSetting,
-            }).start();
-        }
+        Animated.timing(backgroundColorValue, {
+            toValue: 0,
+            ...animatedSetting,
+        }).start();
 
         setIsFocused(false);
     };
 
     const backgroundColor = readOnly ? viewStyle?.backgroundColorReadOnly || '' : viewStyle?.backgroundColor || '';
-    const backgroundColorFocused = viewStyle?.backgroundColorFocus || '';
+    const backgroundColorFocused = viewStyle?.backgroundColorActive || '';
     const labelFontSize = sizeStyle?.labelFontSize || 0;
     const labelInnerFontSize = sizeStyle?.labelInnerFontSize || 0;
     const positionFrom = ((sizeStyle?.height || 0) - (sizeStyle?.labelLineHeight || 0)) / 2;

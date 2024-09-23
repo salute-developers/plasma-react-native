@@ -1,4 +1,4 @@
-import { TextStyle, ViewStyle } from 'react-native';
+import { TextStyle } from 'react-native';
 
 import { LabelPlacement, TextFieldConfig } from '../../TextField.types';
 import { getFontFace } from '../../../../utils';
@@ -36,8 +36,9 @@ export const getStyleForDynamicLabel = (
                 fontSize: value ? sizeStyle.labelInnerFontSize : sizeStyle.labelFontSize,
                 letterSpacing: value ? sizeStyle.labelInnerLetterSpacing : sizeStyle.labelLetterSpacing,
                 lineHeight: value ? sizeStyle.labelInnerLineHeight : sizeStyle.labelLineHeight,
-            } as ViewStyle,
+            } as TextStyle,
             text: {
+                color: viewStyle.color,
                 paddingTop: sizeStyle.contentLabelInnerPaddingTop,
                 paddingRight: sizeStyle.contentLabelInnerPaddingRight,
                 paddingBottom: sizeStyle.contentLabelInnerPaddingBottom,
