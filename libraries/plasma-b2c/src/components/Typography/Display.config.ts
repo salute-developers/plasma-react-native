@@ -24,6 +24,11 @@ export const getConfigDisplayL = ({ data, mode, screenSize }: Theme<PlasmaB2CThe
                 lineHeight: data.typography[screenSize].displayLNormal.lineHeight,
             },
         },
+        focused: {
+            true: {
+                color: data.color[mode].onLightTextPrimary,
+            },
+        },
     },
 });
 
@@ -49,6 +54,11 @@ export const getConfigDisplayM = ({ data, mode, screenSize }: Theme<PlasmaB2CThe
                 lineHeight: data.typography[screenSize].displayMNormal.lineHeight,
             },
         },
+        focused: {
+            true: {
+                color: data.color[mode].onLightTextPrimary,
+            },
+        },
     },
 });
 
@@ -72,6 +82,11 @@ export const getConfigDisplayS = ({ data, mode, screenSize }: Theme<PlasmaB2CThe
                 fontSize: data.typography[screenSize].displaySNormal.fontSize,
                 letterSpacing: data.typography[screenSize].displaySNormal.letterSpacing,
                 lineHeight: data.typography[screenSize].displaySNormal.lineHeight,
+            },
+        },
+        focused: {
+            true: {
+                color: data.color[mode].onLightTextPrimary,
             },
         },
     },

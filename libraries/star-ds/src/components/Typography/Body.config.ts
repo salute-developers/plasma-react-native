@@ -24,6 +24,11 @@ export const getConfigBodyL = ({ data, mode, screenSize }: Theme<StylesSaluteThe
                 lineHeight: data.typography[screenSize].bodyLNormal.lineHeight,
             },
         },
+        focused: {
+            true: {
+                color: data.color[mode].onLightTextPrimary,
+            },
+        },
     },
 });
 
@@ -47,6 +52,11 @@ export const getConfigBodyM = ({ data, mode, screenSize }: Theme<StylesSaluteThe
                 fontSize: data.typography[screenSize].bodyMNormal.fontSize,
                 letterSpacing: data.typography[screenSize].bodyMNormal.letterSpacing,
                 lineHeight: data.typography[screenSize].bodyMNormal.lineHeight,
+            },
+        },
+        focused: {
+            true: {
+                color: data.color[mode].onLightTextPrimary,
             },
         },
     },
@@ -74,6 +84,11 @@ export const getConfigBodyS = ({ data, mode, screenSize }: Theme<StylesSaluteThe
                 lineHeight: data.typography[screenSize].bodySNormal.lineHeight,
             },
         },
+        focused: {
+            true: {
+                color: data.color[mode].onLightTextPrimary,
+            },
+        },
     },
 });
 
@@ -99,6 +114,11 @@ export const getConfigBodyXS = ({ data, mode, screenSize }: Theme<StylesSaluteTh
                 lineHeight: data.typography[screenSize].bodyXsNormal.lineHeight,
             },
         },
+        focused: {
+            true: {
+                color: data.color[mode].onLightTextPrimary,
+            },
+        },
     },
 });
 
@@ -122,6 +142,11 @@ export const getConfigBodyXXS = ({ data, mode, screenSize }: Theme<StylesSaluteT
                 fontSize: data.typography[screenSize].bodyXxsNormal.fontSize,
                 letterSpacing: data.typography[screenSize].bodyXxsNormal.letterSpacing,
                 lineHeight: data.typography[screenSize].bodyXxsNormal.lineHeight,
+            },
+        },
+        focused: {
+            true: {
+                color: data.color[mode].onLightTextPrimary,
             },
         },
     },
