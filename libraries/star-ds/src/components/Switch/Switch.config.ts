@@ -23,7 +23,7 @@ export const getConfig = ({ data, mode, screenSize }: Theme<StylesSaluteTheme>) 
                 thumbBackgroundColor: data.color[mode].onDarkSurfaceSolidDefault,
                 thumbShadow: shadow,
                 trackBackgroundColorOn: data.color[mode].surfaceAccentMain,
-                trackBackgroundColorOff: data.color[mode].surfaceTransparentTertiaryActive,
+                trackBackgroundColorOff: data.color[mode].surfaceTransparentTertiary,
                 labelColor: data.color[mode].textPrimary,
                 descriptionColor: data.color[mode].textSecondary,
             },
@@ -102,6 +102,16 @@ export const getConfig = ({ data, mode, screenSize }: Theme<StylesSaluteTheme>) 
         disabled: {
             true: {
                 disabledOpacity: 0.4,
+            },
+        },
+        focused: {
+            true: {
+                thumbBackgroundColor: data.color[mode].onDarkSurfaceSolidDefault,
+                thumbShadow: shadow,
+                trackBackgroundColorOn: data.color[mode].onLightSurfaceAccentMain,
+                trackBackgroundColorOff: data.color[mode].onLightSurfaceTransparentTertiary,
+                labelColor: data.color[mode].onLightTextPrimary,
+                descriptionColor: data.color[mode].onLightTextSecondary,
             },
         },
     },

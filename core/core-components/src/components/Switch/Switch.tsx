@@ -1,17 +1,8 @@
-import {
-    Animated,
-    GestureResponderEvent,
-    NativeSyntheticEvent,
-    Platform,
-    TargetedEvent,
-    Text,
-    View,
-} from 'react-native';
-import { useMemo, useState } from 'react';
+import { Animated, GestureResponderEvent, Pressable, Text, View } from 'react-native';
+import { useMemo } from 'react';
 
 import { Theme, withTheme } from '../ThemeProvider';
 import { PropsType } from '../../types';
-import { FocusableWrapper } from '../FocusableWrapper';
 
 import { SwitchConfig, SwitchProps } from './Switch.types';
 import { getStyle } from './Switch.styles';
@@ -29,28 +20,17 @@ export const switchCore = <T extends SwitchConfig>(config?: T, theme?: Theme) =>
         disabled,
         checked = false,
         style: externalStyle,
-        onValueChange,
+        focused,
         onPress,
-        onBlur,
-        onFocus,
-        //
-        focusable,
-        hasTVPreferredFocus,
-        nextFocusDown,
-        nextFocusForward,
-        nextFocusLeft,
-        nextFocusRight,
-        nextFocusUp,
+        onValueChange,
         ...rest
     } = props;
 
-    const [focused, setFocused] = useState(false);
-
-    const viewStyle = config?.variations.view[view];
+    const viewStyle = focused ? config?.variations.focused.true : config?.variations.view[view];
     const sizeStyle = config?.variations.size[size];
     const disabledOpacity = disabled ? config?.variations.disabled.true.disabledOpacity : 1;
 
-    const [trackStyleAnimate, triggerStyleAnimate, onPressIn, onPressOut, onShortPress] = useToggleAnimation(
+    const [trackStyleAnimate, triggerStyleAnimate, onPressIn, onPressOut] = useToggleAnimation(
         checked,
         viewStyle,
         sizeStyle,
@@ -60,68 +40,29 @@ export const switchCore = <T extends SwitchConfig>(config?: T, theme?: Theme) =>
         view,
         size,
         label,
+        focused,
         disabled,
         theme?.mode,
     ]);
 
-    const navigationProps = {
-        focusable,
-        hasTVPreferredFocus,
-        nextFocusDown,
-        nextFocusForward,
-        nextFocusLeft,
-        nextFocusRight,
-        nextFocusUp,
-    };
-
     const onWrapperPress = (event: GestureResponderEvent) => {
-        if (onValueChange) {
-            onValueChange(checked);
-        }
-
         if (onPress) {
             onPress(event);
         }
 
-        onShortPress();
-    };
-
-    const onWrapperFocus = (event: NativeSyntheticEvent<TargetedEvent>) => {
-        if (onFocus) {
-            onFocus(event);
+        if (onValueChange) {
+            onValueChange(checked);
         }
-
-        setFocused(true);
-    };
-
-    const onWrapperBlur = (event: NativeSyntheticEvent<TargetedEvent>) => {
-        if (onBlur) {
-            onBlur(event);
-        }
-
-        setFocused(false);
     };
 
     return (
-        <FocusableWrapper
-            style={{
-                root: style.root,
-                focus: {
-                    borderColor: theme?.data.color[theme?.mode].textPrimary,
-                    borderRadius: sizeStyle?.trackBorderRadius,
-                    borderWidth: 2,
-                },
-            }}
-            hasFocus={Platform.isTV}
-            focused={focused}
+        <Pressable
+            style={style.root}
             disabled={disabled}
             ref={externalRef}
-            onFocus={onWrapperFocus}
-            onBlur={onWrapperBlur}
             onPress={onWrapperPress}
             onPressIn={onPressIn}
             onPressOut={onPressOut}
-            {...navigationProps}
             {...rest}
         >
             <View style={style.wrapper}>
@@ -139,7 +80,7 @@ export const switchCore = <T extends SwitchConfig>(config?: T, theme?: Theme) =>
                     {description}
                 </Text>
             )}
-        </FocusableWrapper>
+        </Pressable>
     );
 };
 
