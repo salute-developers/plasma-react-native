@@ -117,5 +117,14 @@ export const getConfig = ({ data, mode, screenSize }: Theme<PlasmaB2CTheme>) => 
                 disabledOpacity: 0.4,
             },
         },
+        focused: {
+            true: {
+                fillColor: data.color[mode].onLightTextAccent,
+                iconColor: data.color[mode].onDarkTextPrimary,
+                labelColor: data.color[mode].onLightTextPrimary,
+                descriptionColor: data.color[mode].onLightTextSecondary,
+                triggerBorderColor: data.color[mode].onLightTextSecondary,
+            },
+        },
     },
 });
