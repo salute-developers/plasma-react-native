@@ -15,6 +15,8 @@ export const getConfig = ({ data, mode, screenSize }: Theme<StylesSaluteTheme>) 
                 colorActive: data.color[mode].textPrimary,
                 backgroundColorActive: data.color[mode].surfaceTransparentSecondaryActive,
                 spinnerColor: data.color[mode].textPrimary,
+                contentLeftIconColor: data.color[mode].textPrimary,
+                contentRightIconColor: data.color[mode].textPrimary,
             },
         },
         size: {
@@ -92,6 +94,18 @@ export const getConfig = ({ data, mode, screenSize }: Theme<StylesSaluteTheme>) 
         disabled: {
             true: {
                 disabledOpacity: 0.4,
+            },
+        },
+        focused: {
+            true: {
+                color: data.color[mode].onLightTextPrimary,
+                backgroundColor: data.color[mode].onDarkSurfaceSolidDefault,
+                colorActive: data.color[mode].onLightTextPrimary,
+                backgroundColorActive: data.color[mode].onLightSurfaceTransparentSecondaryActive,
+                spinnerColor: data.color[mode].onLightTextPrimary,
+                contentLeftIconColor: data.color[mode].onLightTextPrimary,
+                contentRightIconColor: data.color[mode].onLightTextPrimary,
+                scale: 1.05,
             },
         },
     },

@@ -1,14 +1,14 @@
 import { StyleSheet, TextStyle, ViewStyle } from 'react-native';
 
 import { Theme } from '../ThemeProvider';
-import { getFontFace } from '../../utils';
+import { getFontFace, getWidthSize, Stretching } from '../../utils';
 
-import { ButtonConfig, Stretching } from './Button.types';
-import { getWidthSize, getRoundnessMatrix, Pin } from './utils';
+import { ButtonConfig } from './Button.types';
+import { getRoundnessMatrix, Pin } from './utils';
 
 export interface Style {
     root?: ViewStyle;
-    container?: ViewStyle;
+    background?: ViewStyle;
     wrapper?: ViewStyle;
     loader?: ViewStyle;
     text?: TextStyle;
@@ -28,7 +28,7 @@ export const getStyle = (
     if (!viewStyle || !sizeStyle || !pin || !theme) {
         return {
             root: {},
-            container: {},
+            background: {},
             wrapper: {},
             loader: {},
             text: {},
@@ -42,19 +42,29 @@ export const getStyle = (
     return StyleSheet.create({
         root: {
             opacity: disabledOpacity,
-            ...externalStyle?.root,
-        },
-        container: {
+            position: 'relative',
             alignItems: 'center',
             justifyContent: 'center',
-            borderRadius: sizeStyle.radius,
             paddingLeft: sizeStyle.padding,
             paddingRight: sizeStyle.padding,
-            backgroundColor: pressed ? viewStyle.backgroundColorActive : viewStyle.backgroundColor,
             height: sizeStyle.height,
             ...widthSize,
+            ...externalStyle?.root,
+        },
+        background: {
+            position: 'absolute',
+            top: 0,
+            bottom: 0,
+            left: 0,
+            right: 0,
+            backgroundColor: pressed ? viewStyle.backgroundColorActive : viewStyle.backgroundColor,
+            transform: [
+                {
+                    scale: viewStyle.scale ?? 1,
+                },
+            ],
             ...buttonBorderRadius,
-            ...externalStyle?.container,
+            ...externalStyle?.background,
         },
         wrapper: {
             width: '100%',
