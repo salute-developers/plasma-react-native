@@ -24,6 +24,11 @@ export const getConfigH1 = ({ data, mode, screenSize }: Theme<StylesSaluteTheme>
                 lineHeight: data.typography[screenSize].headerH1Normal.lineHeight,
             },
         },
+        focused: {
+            true: {
+                color: data.color[mode].onLightTextPrimary,
+            },
+        },
     },
 });
 
@@ -47,6 +52,11 @@ export const getConfigH2 = ({ data, mode, screenSize }: Theme<StylesSaluteTheme>
                 fontSize: data.typography[screenSize].headerH2Normal.fontSize,
                 letterSpacing: data.typography[screenSize].headerH2Normal.letterSpacing,
                 lineHeight: data.typography[screenSize].headerH2Normal.lineHeight,
+            },
+        },
+        focused: {
+            true: {
+                color: data.color[mode].onLightTextPrimary,
             },
         },
     },
@@ -74,6 +84,11 @@ export const getConfigH3 = ({ data, mode, screenSize }: Theme<StylesSaluteTheme>
                 lineHeight: data.typography[screenSize].headerH3Normal.lineHeight,
             },
         },
+        focused: {
+            true: {
+                color: data.color[mode].onLightTextPrimary,
+            },
+        },
     },
 });
 
@@ -99,6 +114,11 @@ export const getConfigH4 = ({ data, mode, screenSize }: Theme<StylesSaluteTheme>
                 lineHeight: data.typography[screenSize].headerH4Normal.lineHeight,
             },
         },
+        focused: {
+            true: {
+                color: data.color[mode].onLightTextPrimary,
+            },
+        },
     },
 });
 
@@ -122,6 +142,11 @@ export const getConfigH5 = ({ data, mode, screenSize }: Theme<StylesSaluteTheme>
                 fontSize: data.typography[screenSize].headerH5Normal.fontSize,
                 letterSpacing: data.typography[screenSize].headerH5Normal.letterSpacing,
                 lineHeight: data.typography[screenSize].headerH5Normal.lineHeight,
+            },
+        },
+        focused: {
+            true: {
+                color: data.color[mode].onLightTextPrimary,
             },
         },
     },

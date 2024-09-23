@@ -17,6 +17,10 @@ export interface TypographyProps extends Omit<TextProps, 'style'> {
      */
     bold?: boolean;
     /**
+     * Компонент находится в фокусе
+     */
+    focused?: boolean;
+    /**
      * Вид компонента
      */
     view?: string;
@@ -46,6 +50,11 @@ export interface TypographyConfig {
                 fontSize: number;
                 letterSpacing: number;
                 lineHeight: number;
+            };
+        };
+        focused: {
+            true: {
+                color: string;
             };
         };
     };

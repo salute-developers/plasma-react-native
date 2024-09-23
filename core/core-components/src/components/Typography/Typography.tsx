@@ -10,15 +10,16 @@ import { getStyle } from './Typography.styles';
 export const typographyCore = <T extends TypographyConfig>(config?: T, theme?: Theme) => (
     props: TypographyProps & PropsType<T['variations']>,
 ) => {
-    const { view = '', size = '', children, bold = false, style: externalStyle, ...rest } = props;
+    const { view = '', size = '', children, bold = false, focused, style: externalStyle, ...rest } = props;
 
-    const viewStyle = config?.variations.view[view];
+    const viewStyle = focused ? config?.variations.focused.true : config?.variations.view[view];
     const sizeStyle = config?.variations.size[size];
 
     const style = useMemo(() => getStyle(theme, bold, viewStyle, sizeStyle, externalStyle), [
         view,
         size,
         bold,
+        focused,
         theme?.mode,
     ]);
 
