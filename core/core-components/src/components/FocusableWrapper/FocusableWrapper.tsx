@@ -1,18 +1,15 @@
-import { forwardRef, useMemo } from 'react';
-import { Pressable, View } from 'react-native';
+import { cloneElement, ReactElement } from 'react';
 
 import { FocusableWrapperProps } from './FocusableWrapper.types';
-import { getStyle } from './FocusableWrapper.style';
 
-export const FocusableWrapper = forwardRef<View, FocusableWrapperProps>((props, ref) => {
-    const { children, focused, style: externalStyle, hasFocus = true } = props;
+export const FocusableWrapper = ({ children, iconColor, style, focused }: FocusableWrapperProps) => {
+    if (!children) {
+        return null;
+    }
 
-    const style = useMemo(() => getStyle(externalStyle, focused), [externalStyle, focused]);
-
-    return (
-        <Pressable {...props} style={style.root} ref={ref}>
-            {children}
-            {hasFocus && <View style={style.focus} />}
-        </Pressable>
-    );
-});
+    return cloneElement(children as ReactElement, {
+        focused,
+        style: [(children as ReactElement)?.props?.style, style],
+        color: iconColor,
+    });
+};
