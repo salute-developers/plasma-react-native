@@ -1,11 +1,11 @@
-import { ViewProps } from 'react-native';
+import { PressableProps } from 'react-native';
+import { ReactNode } from 'react';
 
 import { Shadow } from '../ThemeProvider';
-import { Focusable } from '../FocusableWrapper';
 
 import { Style } from './Switch.styles';
 
-interface CustomSwitchProps extends Omit<ViewProps, 'style'>, Focusable {
+interface CustomSwitchProps extends Omit<PressableProps, 'style'> {
     /**
      * Объект для стилизации компонента
      */
@@ -29,11 +29,15 @@ interface CustomSwitchProps extends Omit<ViewProps, 'style'>, Focusable {
     /**
      * Описание элемента
      */
-    description?: React.ReactNode;
+    description?: ReactNode;
     /**
      * Свитч неактивен
      */
     disabled?: boolean;
+    /**
+     * Компонент находится в фокусе
+     */
+    focused?: boolean;
     /**
      * Вид свитча
      */
@@ -94,6 +98,16 @@ export interface SwitchConfig {
         disabled: {
             [x: string]: {
                 disabledOpacity: number;
+            };
+        };
+        focused: {
+            true: {
+                thumbBackgroundColor: string;
+                thumbShadow: Shadow[string][string];
+                trackBackgroundColorOn: string;
+                trackBackgroundColorOff: string;
+                labelColor: string;
+                descriptionColor: string;
             };
         };
     };

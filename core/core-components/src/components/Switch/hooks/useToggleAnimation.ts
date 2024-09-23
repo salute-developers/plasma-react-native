@@ -1,5 +1,5 @@
 import { Platform, Animated, Easing, ViewStyle } from 'react-native';
-import { useRef, useState } from 'react';
+import { useEffect, useRef, useState } from 'react';
 
 import { SwitchConfig } from '../Switch.types';
 
@@ -35,21 +35,21 @@ export const useToggleAnimation = (
         }).start();
     };
 
-    const onShortPress = () => {
+    useEffect(() => {
         Animated.parallel([
             Animated.timing(backgroundColorValue, {
-                toValue: checked ? 0 : 1,
+                toValue: checked ? 1 : 0,
                 ...animatedSetting,
             }),
             Animated.timing(positionValue, {
-                toValue: checked ? 0 : 1,
+                toValue: checked ? 1 : 0,
                 ...animatedSetting,
             }),
         ]).start(() => {
-            setRightPosition(checked ? 'auto' : 0);
-            setLeftPosition(checked ? 0 : 'auto');
+            setRightPosition(checked ? 0 : 'auto');
+            setLeftPosition(checked ? 'auto' : 0);
         });
-    };
+    }, [checked]);
 
     const trackBackgroundColorOn = viewStyle?.trackBackgroundColorOn || '';
     const trackBackgroundColorOff = viewStyle?.trackBackgroundColorOff || '';
@@ -88,5 +88,5 @@ export const useToggleAnimation = (
                   }),
     } as ViewStyle;
 
-    return [trackStyleAnimate, triggerStyleAnimate, onPressIn, onPressOut, onShortPress] as const;
+    return [trackStyleAnimate, triggerStyleAnimate, onPressIn, onPressOut] as const;
 };
