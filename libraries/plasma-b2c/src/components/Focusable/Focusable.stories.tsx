@@ -1,27 +1,40 @@
-import { View } from 'react-native';
-import React from 'react';
+import { View, Text } from 'react-native';
+import React, { useState } from 'react';
 import { Path, Svg } from 'react-native-svg';
 import type { StoryObj, Meta } from '@storybook/react';
 
 import { Button } from '../Button';
+import { Checkbox } from '../Checkbox';
 import { Progress } from '../Progress';
+import { Radiobox } from '../Radiobox';
 import { LineSkeleton } from '../Skeleton';
+import { Switch } from '../Switch';
 import { Spinner } from '../Spinner';
 import { TextField } from '../TextField';
 import { BodyL } from '../Typography';
+import { Cell } from '../Cell';
+import { List } from '../List';
 
 interface IconSvgProps {
     size?: number;
     color?: string;
 }
 
-export const Done: React.FC<IconSvgProps> = ({ size = 18, color }) => (
-    <Svg viewBox="0 0 18 18" fill="none" width={size} height={size} color={color}>
+// TODO: перенести для примеров в другое место
+const PlasmaIcon: React.FC<IconSvgProps> = ({ size = 24, color }) => (
+    <Svg viewBox="0 0 24 24" fill="none" width={size} height={size} color={color}>
         <Path
+            fillRule="evenodd"
+            clipRule="evenodd"
+            d="M12 3.5C7.30558 3.5 3.5 7.30558 3.5 12C3.5 14.0957 4.25846 16.0143 5.51587 17.4963C5.23619 16.745 5.08333 15.932 5.08333 15.0833C5.08333 11.2634 8.18003 8.16667 12 8.16667C15.82 8.16667 18.9167 11.2634 18.9167 15.0833C18.9167 15.932 18.7638 16.745 18.4841 17.4963C19.7415 16.0143 20.5 14.0957 20.5 12C20.5 7.30558 16.6944 3.5 12 3.5ZM15.7427 18.999C16.7742 18.0128 17.4167 16.6231 17.4167 15.0833C17.4167 12.0918 14.9915 9.66667 12 9.66667C9.00846 9.66667 6.58333 12.0918 6.58333 15.0833C6.58333 16.6231 7.2258 18.0128 8.25728 18.999C8.19795 18.731 8.16667 18.4525 8.16667 18.1667C8.16667 16.0496 9.88291 14.3333 12 14.3333C14.1171 14.3333 15.8333 16.0496 15.8333 18.1667C15.8333 18.4525 15.802 18.731 15.7427 18.999ZM12 20.5C13.2887 20.5 14.3333 19.4553 14.3333 18.1667C14.3333 16.878 13.2887 15.8333 12 15.8333C10.7113 15.8333 9.66667 16.878 9.66667 18.1667C9.66667 19.4553 10.7113 20.5 12 20.5ZM12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22Z"
             fill="currentColor"
-            d="m5.70711,8.15582c-0.39053,-0.39052 -1.02369,-0.39052 -1.41422,0c-0.39052,0.39053 -0.39052,1.02369 0,1.41422l3.70666,3.70666l6.71095,-6.70248c0.3908,-0.39027 0.3912,-1.02344 0.0009,-1.41421c-0.3903,-0.39077 -1.02344,-0.39117 -1.41421,-0.00089l-5.29674,5.29004l-2.29334,-2.29334z"
         />
     </Svg>
+);
+
+// TODO: перенести для примеров в другое место
+const ContentLeft = () => (
+    <View style={{ backgroundColor: 'red', opacity: 0.25, width: 22, height: 22, borderRadius: 50 }} />
 );
 
 const meta: Meta = {
@@ -31,21 +44,125 @@ const meta: Meta = {
 export default meta;
 
 const StoryDefault = () => {
+    const [selectedItemIndex, setSelectedItemIndex] = useState<undefined | number>(undefined);
+
     return (
-        <View style={{ display: 'flex', gap: 10, padding: 20, width: '50%' }}>
-            <TextField label="Label" captionLeft="Caption" value="Textfield value" />
+        <View style={{ display: 'flex', gap: 10, padding: 50, width: '50%' }}>
+            <Button text="Button 2" contentLeft={<PlasmaIcon />} />
             <Progress value={50} />
+            <List
+                selectedItemIndex={selectedItemIndex}
+                onItemSelect={(index) => {
+                    setSelectedItemIndex(selectedItemIndex === index ? undefined : index);
+                }}
+                renderItem={({
+                    contentLeft,
+                    contentRight,
+                    label,
+                    subtitle,
+                    title,
+                    disclosureText,
+                    hasDisclosure,
+                    exampleWithDisclosure,
+                }) => {
+                    if (exampleWithDisclosure) {
+                        return (
+                            <Cell
+                                contentLeft={contentLeft}
+                                label={label}
+                                title={title}
+                                subtitle={subtitle}
+                                hasDisclosure={hasDisclosure}
+                                disclosureText={disclosureText}
+                            />
+                        );
+                    }
+
+                    return (
+                        <Cell
+                            contentLeft={contentLeft}
+                            contentRight={contentRight}
+                            label={label}
+                            title={title}
+                            subtitle={subtitle}
+                        />
+                    );
+                }}
+                items={[
+                    {
+                        exampleWithDisclosure: true,
+                        label: 'Label',
+                        title: 'Title',
+                        subtitle: 'Subtitle',
+                        contentLeft: <ContentLeft />,
+                        hasDisclosure: true,
+                    },
+                    {
+                        exampleWithDisclosure: true,
+                        label: 'Label',
+                        title: 'Title',
+                        subtitle: 'Subtitle',
+                        contentLeft: <ContentLeft />,
+                        disclosureText: 'Disclosure',
+                        hasDisclosure: true,
+                    },
+                    {
+                        label: 'Label',
+                        title: 'Title',
+                        subtitle: 'Subtitle',
+                        contentLeft: <ContentLeft />,
+                        contentRight: <Checkbox checked />,
+                    },
+                    {
+                        label: 'Label',
+                        title: 'Title',
+                        subtitle: 'Subtitle',
+                        contentLeft: <ContentLeft />,
+                        contentRight: <Radiobox />,
+                    },
+                    {
+                        label: 'Label',
+                        title: 'Title',
+                        subtitle: 'Subtitle',
+                        contentLeft: <ContentLeft />,
+                        contentRight: <Switch checked />,
+                    },
+                    {
+                        label: 'Label',
+                        title: 'Title',
+                        subtitle: 'Subtitle',
+                        contentLeft: <ContentLeft />,
+                        contentRight: <PlasmaIcon />,
+                    },
+                    {
+                        label: 'Label',
+                        title: 'Title',
+                        subtitle: 'Subtitle',
+                        contentLeft: <ContentLeft />,
+                        contentRight: <BodyL>Hello</BodyL>,
+                    },
+                    {
+                        label: 'Label',
+                        title: 'Title',
+                        subtitle: 'Subtitle',
+                        contentLeft: <ContentLeft />,
+                        contentRight: <Text>Plain text</Text>,
+                    },
+                ]}
+            />
             <LineSkeleton size="bodyL" />
-            <Button value="Value" text="Button 1" contentLeft={<Done />} />
-            <Button value="Value" text="Button 1" />
-            <Button spacing="space-between" text="Button 1" contentLeft={<Done />} />
             <Spinner size="l" />
+            <BodyL>Hello</BodyL>
+            <TextField
+                label="Label"
+                contentLeft={<PlasmaIcon />}
+                captionLeft="Caption"
+                labelPlacement="inner"
+                value="Textfield value"
+            />
             <BodyL>Example BodyL</BodyL>
-            <Button spacing="space-between" stretching="filled" value="Value" text="Button 2" contentLeft={<Done />} />
-            <Button stretching="filled" value="Value" text="Button 2" />
-            <BodyL>Example BodyL</BodyL>
-            <Button spacing="space-between" stretching="fixed" value="Value" text="Button 2" contentLeft={<Done />} />
-            <Button spacing="space-between" stretching="fixed" value="Value" text="Button 2" />
+            <TextField label="Label" contentLeft={<PlasmaIcon />} captionLeft="Caption" value="Textfield value" />
+            <Button text="Button 2" value="Value" spacing="space-between" stretching="filled" />
         </View>
     );
 };
