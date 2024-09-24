@@ -6,11 +6,21 @@ import { Stretching } from '../../utils/getWidthSize';
 import { Pin } from './utils';
 import { Style } from './Button.styles';
 
+export type Spacing = 'packed' | 'space-between';
+
 interface CustomButtonProps extends Omit<PressableProps, 'style'> {
     /**
      * Объект для стилизации компонента
      */
     style?: Style;
+    /**
+     * Расположение контента внутри кнопки
+     */
+    spacing?: Spacing;
+    /**
+     * Значение кнопки
+     */
+    value?: string;
     /**
      * Контент кнопки
      */
@@ -89,6 +99,7 @@ export interface ButtonConfig {
                 padding: number;
                 radius: number;
                 contentGap: number;
+                valueGap: number;
                 fontFamilyRef: string;
                 fontWeight: string;
                 fontStyle: string;

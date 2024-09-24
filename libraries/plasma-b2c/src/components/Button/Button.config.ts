@@ -106,6 +106,7 @@ export const getConfig = ({ data, mode, screenSize }: Theme<PlasmaB2CTheme>) => 
                 width: 200,
                 padding: 24,
                 contentGap: 8,
+                valueGap: 4,
                 spinnerSize: 22,
                 radius: data.shape.round.s + 2, // TODO: Узнать почему нет этих значений в теме
                 fontFamilyRef: data.typography[screenSize].bodyLNormal.fontFamilyRef,
@@ -120,6 +121,7 @@ export const getConfig = ({ data, mode, screenSize }: Theme<PlasmaB2CTheme>) => 
                 width: 180,
                 padding: 20,
                 contentGap: 6,
+                valueGap: 4,
                 spinnerSize: 22,
                 radius: data.shape.round.s,
                 fontFamilyRef: data.typography[screenSize].bodyMNormal.fontFamilyRef,
@@ -134,6 +136,7 @@ export const getConfig = ({ data, mode, screenSize }: Theme<PlasmaB2CTheme>) => 
                 width: 180,
                 padding: 16,
                 contentGap: 4,
+                valueGap: 4,
                 spinnerSize: 22,
                 radius: data.shape.round.xs + 2, // TODO: Узнать почему нет этих значений в теме
                 fontFamilyRef: data.typography[screenSize].bodySNormal.fontFamilyRef,
@@ -148,6 +151,7 @@ export const getConfig = ({ data, mode, screenSize }: Theme<PlasmaB2CTheme>) => 
                 width: 160,
                 padding: 12,
                 contentGap: 4,
+                valueGap: 2,
                 spinnerSize: 16,
                 radius: data.shape.round.xs,
                 fontFamilyRef: data.typography[screenSize].bodyXsNormal.fontFamilyRef,
@@ -162,6 +166,7 @@ export const getConfig = ({ data, mode, screenSize }: Theme<PlasmaB2CTheme>) => 
                 width: 140,
                 padding: 10,
                 contentGap: 4,
+                valueGap: 2,
                 spinnerSize: 12,
                 radius: data.shape.round.xxs + 2, // TODO: Узнать почему нет этих значений в теме
                 fontFamilyRef: data.typography[screenSize].bodyXsNormal.fontFamilyRef,
