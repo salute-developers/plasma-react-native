@@ -97,6 +97,7 @@ export const getStyle = (
         contentWrapper: {
             display: 'flex',
             flexDirection: 'row',
+            alignItems: 'center',
             ...externalStyle?.contentWrapper,
         },
         contentLeft: {

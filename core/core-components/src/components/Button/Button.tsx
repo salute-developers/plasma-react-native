@@ -106,7 +106,13 @@ export const buttonCore = <T extends ButtonConfig>(config?: T, theme?: Theme) =>
                                 </FocusableWrapper>
                             </View>
                         )}
-                        {txt ? <Text style={style.text}>{txt}</Text> : children}
+                        {txt ? (
+                            <Text style={style.text}>{txt}</Text>
+                        ) : (
+                            <FocusableWrapper iconColor={viewStyle?.contentLeftIconColor} style={style.text}>
+                                {children}
+                            </FocusableWrapper>
+                        )}
                     </View>
                     <View style={style.contentWrapper}>
                         {!contentRight && value && <Text style={style.value}>{value}</Text>}

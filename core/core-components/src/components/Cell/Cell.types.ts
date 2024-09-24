@@ -1,3 +1,4 @@
+import { ViewProps } from 'react-native';
 import { ReactNode } from 'react';
 
 import { Stretching } from '../../utils';
@@ -37,14 +38,14 @@ export type CellWithDisclosure = {
     /**
      * Отображать стрелку
      */
-    hasDisclosure?: true;
+    hasDisclosure?: boolean;
     /**
      * Поясняющий текст
      */
     disclosureText?: string;
 };
 
-export interface CellPropsBase {
+export interface CellPropsBase extends Omit<ViewProps, 'style'> {
     /**
      * Объект для стилизации компонента
      */
