@@ -28,6 +28,7 @@ export const cellCore = <T extends CellConfig>(config?: T, theme?: Theme) => (
         hasDisclosure,
         disclosureText,
         style: externalStyle,
+        ...rest
     } = props;
 
     const viewStyle = focused ? config?.variations.focused.true : config?.variations.view[view];
@@ -39,7 +40,7 @@ export const cellCore = <T extends CellConfig>(config?: T, theme?: Theme) => (
     );
 
     return (
-        <View ref={externalRef} style={style.root}>
+        <View ref={externalRef} style={style.root} {...rest}>
             {contentLeft && (
                 <View style={style.contentLeft}>
                     <FocusableWrapper iconColor={viewStyle?.contentIconColor}>{contentLeft}</FocusableWrapper>

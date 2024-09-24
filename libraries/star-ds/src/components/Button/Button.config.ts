@@ -18,6 +18,24 @@ export const getConfig = ({ data, mode, screenSize }: Theme<StylesSaluteTheme>) 
                 contentLeftIconColor: data.color[mode].textPrimary,
                 contentRightIconColor: data.color[mode].textPrimary,
             },
+            accent: {
+                color: data.color[mode].onDarkTextPrimary,
+                backgroundColor: data.color[mode].surfaceAccentMain,
+                colorActive: data.color[mode].onDarkTextPrimary,
+                backgroundColorActive: data.color[mode].surfaceAccentMainActive,
+                spinnerColor: data.color[mode].onDarkTextPrimary,
+                contentLeftIconColor: data.color[mode].textPrimary,
+                contentRightIconColor: data.color[mode].textPrimary,
+            },
+            clear: {
+                color: data.color[mode].textPrimary,
+                backgroundColor: data.color[mode].surfaceClear,
+                colorActive: data.color[mode].textPrimaryActive,
+                backgroundColorActive: data.color[mode].surfaceClear,
+                spinnerColor: data.color[mode].textPrimary,
+                contentLeftIconColor: data.color[mode].textPrimary,
+                contentRightIconColor: data.color[mode].textPrimary,
+            },
         },
         size: {
             l: {
