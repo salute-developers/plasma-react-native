@@ -3,6 +3,7 @@ export * from './utils';
 export * from './components/Button';
 export * from './components/Cell';
 export * from './components/Checkbox';
+export * from './components/List';
 export * from './components/Skeleton';
 export * from './components/Spinner';
 export * from './components/Switch';
