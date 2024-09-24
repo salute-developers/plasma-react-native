@@ -15,10 +15,12 @@ const notes = `
 | **Control** | **Description**                | **Default**     |
 | ----------- | ------------------------------ | --------------- |
 | text        | Текстовая надпись              |                 |
+| value       | Значение кнопки                |                 |
 | view        | Вид кнопки                     | 'default'       |
 | size        | Размер кнопки                  | 'm'             |
 | pin         | Скругление border-radius       | 'square-square' |
 | stretching  | Поведение ширины кнопки        | 'auto'          |
+| spacing     | Поведение ширины кнопки        | 'packed'        |
 | focused     | Может ли фокусироваться кнопка | true            |
 | disabled    | Кнопка неактивна               | false           |
 | isLoading   | Состояние загрузки             | false           |
@@ -32,11 +34,13 @@ const meta: Meta<StoryButtonProps> = {
     },
     args: {
         text: 'Hello',
+        value: 'Value',
         view: 'default',
         size: 'm',
         pin: 'square-square',
         disabled: false,
         stretching: 'auto',
+        spacing: 'packed',
         isLoading: false,
         // INFO: кастомные свойства для стори
         showLeftContent: false,
@@ -58,7 +62,7 @@ const meta: Meta<StoryButtonProps> = {
             },
         },
         size: {
-            options: ['xxs', 'xs', 's', 'm', 'l'],
+            options: ['xs', 's', 'm', 'l'],
             control: {
                 type: 'select',
             },
@@ -71,6 +75,12 @@ const meta: Meta<StoryButtonProps> = {
         },
         stretching: {
             options: ['auto', 'filled', 'fixed'],
+            control: {
+                type: 'select',
+            },
+        },
+        spacing: {
+            options: ['packed', 'space-between'],
             control: {
                 type: 'select',
             },

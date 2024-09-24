@@ -20,7 +20,9 @@ export const buttonCore = <T extends ButtonConfig>(config?: T, theme?: Theme) =>
         size = '',
         pin = 'square-square',
         stretching = 'auto',
+        spacing = 'packed',
         children,
+        value,
         text,
         contentLeft,
         contentRight,
@@ -44,8 +46,19 @@ export const buttonCore = <T extends ButtonConfig>(config?: T, theme?: Theme) =>
 
     const style = useMemo(
         () =>
-            getStyle(theme, disabledOpacity, viewStyle, sizeStyle, pressed, stretching, pin, isLoading, externalStyle),
-        [view, size, pressed, disabled, focused, stretching, isLoading, pin, theme?.mode],
+            getStyle(
+                theme,
+                disabledOpacity,
+                viewStyle,
+                sizeStyle,
+                pressed,
+                spacing,
+                stretching,
+                pin,
+                isLoading,
+                externalStyle,
+            ),
+        [view, size, pressed, disabled, focused, spacing, stretching, isLoading, pin, theme?.mode],
     );
 
     const onWrapperFocus = (event: NativeSyntheticEvent<TargetedEvent>) => {
@@ -85,13 +98,26 @@ export const buttonCore = <T extends ButtonConfig>(config?: T, theme?: Theme) =>
             <View style={style.root}>
                 <View style={style.background} />
                 <View style={style.wrapper}>
-                    {contentLeft && (
-                        <FocusableWrapper iconColor={viewStyle?.contentLeftIconColor}>{contentLeft}</FocusableWrapper>
-                    )}
-                    {txt ? <Text style={style.text}>{txt}</Text> : children}
-                    {contentRight && (
-                        <FocusableWrapper iconColor={viewStyle?.contentRightIconColor}>{contentRight}</FocusableWrapper>
-                    )}
+                    <View style={style.contentWrapper}>
+                        {contentLeft && (
+                            <View style={style.contentLeft}>
+                                <FocusableWrapper iconColor={viewStyle?.contentLeftIconColor}>
+                                    {contentLeft}
+                                </FocusableWrapper>
+                            </View>
+                        )}
+                        {txt ? <Text style={style.text}>{txt}</Text> : children}
+                    </View>
+                    <View style={style.contentWrapper}>
+                        {!contentRight && value && <Text style={style.value}>{value}</Text>}
+                        {contentRight && !value && (
+                            <View style={style.contentRight}>
+                                <FocusableWrapper iconColor={viewStyle?.contentRightIconColor}>
+                                    {contentRight}
+                                </FocusableWrapper>
+                            </View>
+                        )}
+                    </View>
                 </View>
                 {isLoading && (
                     <View style={style.loader}>
