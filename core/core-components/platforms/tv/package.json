@@ -23,10 +23,10 @@
     "build"
   ],
   "dependencies": {
-    "@types/react": "~18.2.45",
+    "@types/react": "18.2.45",
     "react": "18.2.0",
     "react-dom": "18.2.0",
-    "react-native": "npm:react-native-tvos@0.74.5-0",
+    "react-native": "npm:react-native-tvos@0.72.5-0",
     "react-native-svg": "^15.3.0"
   },
   "devDependencies": {
