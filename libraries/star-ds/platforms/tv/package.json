@@ -40,11 +40,11 @@
   "dependencies": {
     "@salutejs/core-components": "0.6.0",
     "@salutejs/plasma-themes-native": "0.6.0",
-    "@types/react": "~18.2.45",
+    "@types/react": "18.2.45",
     "install": "^0.13.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
-    "react-native": "npm:react-native-tvos@0.74.5-0",
+    "react-native": "npm:react-native-tvos@0.72.5-0",
     "react-native-svg": "15.2.0",
     "react-native-web": "^0.19.10"
   },
