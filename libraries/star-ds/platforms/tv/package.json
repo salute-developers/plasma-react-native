@@ -1,5 +1,5 @@
 {
-  "version": "0.2.0",
+  "version": "0.3.0",
   "name": "@salutejs/star-ds",
   "description": "Star-ds components library for native platform on tv.",
   "author": "Salute Frontend Team <salute.developers@gmail.com>",
@@ -38,8 +38,8 @@
     }
   },
   "dependencies": {
-    "@salutejs/core-components": "0.4.0",
-    "@salutejs/plasma-themes-native": "0.4.0",
+    "@salutejs/core-components": "0.5.0",
+    "@salutejs/plasma-themes-native": "0.5.0",
     "@types/react": "~18.2.45",
     "install": "^0.13.0",
     "react": "^18.2.0",
