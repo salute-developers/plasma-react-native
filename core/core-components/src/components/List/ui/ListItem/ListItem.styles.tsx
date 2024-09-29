@@ -10,8 +10,6 @@ export interface Style {
 export const getStyle = (
     viewStyle?: ListConfig['variations']['view'][string],
     sizeStyle?: ListConfig['variations']['size'][string],
-    focused?: boolean,
-    selected?: boolean,
     externalStyle?: Style,
 ): Style => {
     if (!viewStyle || !sizeStyle) {
@@ -20,8 +18,6 @@ export const getStyle = (
             background: {},
         };
     }
-
-    const backgroundColor = selected ? viewStyle?.itemBackgroundColorSelect : 'transparent';
 
     return StyleSheet.create({
         root: {
@@ -39,12 +35,6 @@ export const getStyle = (
             bottom: 0,
             right: 0,
             borderRadius: sizeStyle?.itemBorderRadius,
-            backgroundColor: focused ? viewStyle?.itemBackgroundColorFocus : backgroundColor,
-            transform: [
-                {
-                    scale: focused ? viewStyle?.itemScale : 1,
-                },
-            ],
             ...externalStyle?.background,
         },
     });

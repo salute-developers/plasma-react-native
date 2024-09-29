@@ -13,7 +13,7 @@ import { Cell } from '../Cell';
 import { List } from './List';
 
 type ListProps = ComponentProps<typeof List>;
-type StoryListProps = Omit<ComponentProps<typeof List>, 'items' | 'renderItem'>;
+type StoryListProps = Omit<ListProps, 'items' | 'renderItem'>;
 
 const notes = `
 | **Control**       | **Description**                           | **Default** |

@@ -1,5 +1,5 @@
-import { Platform, View } from 'react-native';
-import React, { ReactNode, useMemo, useState } from 'react';
+import { View } from 'react-native';
+import React, { ReactNode, useMemo } from 'react';
 
 import { PropsType } from '../../types';
 import { Theme, withTheme } from '../ThemeProvider';
@@ -12,17 +12,22 @@ export const listCore = <T extends ListConfig, K extends Item>(config?: T, theme
     props: ListProps<K> & PropsType<T['variations']>,
     externalRef: React.ForwardedRef<View>,
 ) => {
-    const { view = '', size = '', selectedItemIndex, items, renderItem, style: externalStyle, onItemSelect } = props;
-
-    const [focusedItemIndex, setFocusedItemIndex] = useState<number | undefined>(undefined);
-
+    const {
+        view = '',
+        size = '',
+        selectedItemIndex,
+        items,
+        renderItem,
+        style: externalStyle,
+        onItemSelect,
+        onItemFocus,
+    } = props;
     const viewStyle = config?.variations.view[view];
     const sizeStyle = config?.variations.size[size];
 
     const style = useMemo(() => getStyle(theme, viewStyle, sizeStyle, externalStyle), [
         view,
         size,
-        focusedItemIndex,
         selectedItemIndex,
         theme?.mode,
     ]);
@@ -37,22 +42,9 @@ export const listCore = <T extends ListConfig, K extends Item>(config?: T, theme
         }
     };
 
-    const handleFocus = (index: number) => {
-        setFocusedItemIndex(index);
-    };
-
-    const handleBlur = (index: number) => {
-        if (focusedItemIndex === undefined) {
-            return;
-        }
-
-        // INFO: На ios навигация ведёт себя по-другому
-        if (
-            (Platform.isTV && Platform.OS === 'android') ||
-            (index === 0 && index === focusedItemIndex) ||
-            (index === items.length - 1 && index === focusedItemIndex)
-        ) {
-            setFocusedItemIndex(undefined);
+    const handleFocus = (index: number, item: K) => {
+        if (onItemFocus) {
+            onItemFocus(index, item);
         }
     };
 
@@ -63,14 +55,12 @@ export const listCore = <T extends ListConfig, K extends Item>(config?: T, theme
                     key={`cell-${index}`}
                     index={index}
                     item={item}
-                    focused={index === focusedItemIndex}
                     selected={index === selectedItemIndex}
                     viewStyle={viewStyle}
                     sizeStyle={sizeStyle}
                     renderItem={renderItem}
                     onPress={handlePress}
                     onFocus={handleFocus}
-                    onBlur={handleBlur}
                 />
             ))}
         </View>

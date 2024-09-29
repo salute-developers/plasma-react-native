@@ -7,13 +7,11 @@ import { Style } from './ListItem.styles';
 export interface ListItemProps<T extends Item> {
     style?: Style;
     index: number;
-    focused?: boolean;
     selected?: boolean;
     viewStyle?: ListConfig['variations']['view'][string];
     sizeStyle?: ListConfig['variations']['size'][string];
     item: T;
     renderItem: (item: T) => ReactNode;
     onPress?: (index: number, item: T) => void;
-    onFocus: (index: number) => void;
-    onBlur: (index: number) => void;
+    onFocus: (index: number, item: T) => void;
 }
