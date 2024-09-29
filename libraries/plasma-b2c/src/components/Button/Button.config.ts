@@ -10,11 +10,11 @@ export const getConfig = ({ data, mode, screenSize }: Theme<PlasmaB2CTheme>) => 
     variations: {
         view: {
             default: {
-                color: data.color[mode].inverseTextPrimary,
-                backgroundColor: data.color[mode].surfaceSolidDefault,
-                colorActive: data.color[mode].inverseTextPrimary,
-                backgroundColorActive: data.color[mode].surfaceSolidDefaultActive,
-                spinnerColor: data.color[mode].inverseTextPrimary,
+                color: data.color[mode].textPrimary,
+                backgroundColor: data.color[mode].surfaceTransparentSecondary,
+                colorActive: data.color[mode].textPrimary,
+                backgroundColorActive: data.color[mode].surfaceTransparentSecondaryActive,
+                spinnerColor: data.color[mode].textPrimary,
                 contentLeftIconColor: data.color[mode].textPrimary,
                 contentRightIconColor: data.color[mode].textPrimary,
             },
