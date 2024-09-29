@@ -31,17 +31,21 @@ export interface ListProps<T extends Item = Item> {
      */
     size?: string;
     /**
-     * Размер ячейки
+     * Список элементов
      */
     items: T[];
     /**
-     * Размер ячейки
+     * Функция для отображения элемента
      */
     renderItem: (item: T) => ReactNode;
     /**
      * Обработчик выбора элемента
      */
     onItemSelect?: (index: number, item: T) => void;
+    /**
+     * Обработчик фокуса на элемент
+     */
+    onItemFocus?: (index: number, item: T) => void;
 }
 
 export interface ListConfig {
