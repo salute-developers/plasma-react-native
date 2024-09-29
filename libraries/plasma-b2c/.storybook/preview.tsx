@@ -99,7 +99,7 @@ const preview: Preview = {
     globalTypes: {
         theme: {
             name: 'Theme',
-            defaultValue: 'light',
+            defaultValue: 'dark',
         },
     },
 };
