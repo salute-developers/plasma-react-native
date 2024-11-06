@@ -11,10 +11,11 @@ import { LineSkeleton } from '../Skeleton';
 import { Switch } from '../Switch';
 import { Spinner } from '../Spinner';
 import { TextField } from '../TextField';
-import { BodyL } from '../Typography';
+import { BodyL, BodyM, H2 } from '../Typography';
 import { Cell } from '../Cell';
 import { List } from '../List';
 import { IconButton } from '../IconButton';
+import { FocusContainer } from '../FocusContainer';
 
 interface IconSvgProps {
     size?: number;
@@ -49,6 +50,44 @@ const StoryDefault = () => {
 
     return (
         <View style={{ display: 'flex', gap: 10, padding: 50, width: '50%' }}>
+            <FocusContainer unfocusedBackgroundColor="#ffffff1f" unfocusedTextColor="lightblue">
+                {({ focusedBackgroundColor, focused, focusedScale, focusedTextColor }) => {
+                    const styles = {
+                        root: {
+                            width: 300,
+                            height: 150,
+                            padding: 16,
+                        },
+                        background: {
+                            position: 'absolute',
+                            top: 0,
+                            left: 0,
+                            bottom: 0,
+                            right: 0,
+                            borderRadius: 16,
+                            backgroundColor: focusedBackgroundColor,
+                            transform: [
+                                {
+                                    scale: focusedScale,
+                                },
+                            ],
+                        } as any,
+                        text: {
+                            color: focusedTextColor,
+                        },
+                    };
+
+                    return (
+                        <View style={styles.root}>
+                            <View style={styles.background} />
+                            <Text style={styles.text}>Text</Text>
+                            <Checkbox label="Label" focused={focused} />
+                            <H2 focused={focused}>Title</H2>
+                            <BodyM focused={focused}>Subtitle</BodyM>
+                        </View>
+                    );
+                }}
+            </FocusContainer>
             <Button text="Button 2" contentLeft={<PlasmaIcon />} />
             <IconButton>
                 <PlasmaIcon />
