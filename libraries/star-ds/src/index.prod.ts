@@ -2,6 +2,7 @@ export * from './components/Button';
 export * from './components/Carousel';
 export * from './components/Cell';
 export * from './components/Checkbox';
+export * from './components/FocusContainer';
 export * from './components/List';
 export * from './components/IconButton';
 export * from './components/Skeleton';
