@@ -5,6 +5,7 @@ export * from './components/Carousel';
 export * from './components/Cell';
 export * from './components/Checkbox';
 export * from './components/List';
+export * from './components/IconButton';
 export * from './components/Skeleton';
 export * from './components/Spinner';
 export * from './components/Switch';
