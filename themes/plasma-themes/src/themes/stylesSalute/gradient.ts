@@ -118,6 +118,58 @@ export const gradient = {
         ],
         /** Градиент на светлом фоне */
         onLightTextGradientMain: [{ kind: 'linear', locations: [0, 1], colors: ['#24B23EFF', '#00A4D1FF'], angle: 0 }],
+        /** dark text inverse textGradientMainHover */
+        inverseTextGradientMainHover: [
+            { kind: 'linear', locations: [0, 1], colors: ['#FFFFFF', '#000000'], angle: 90 },
+        ],
+        /** dark text inverse textGradientMainActive */
+        inverseTextGradientMainActive: [
+            { kind: 'linear', locations: [0, 1], colors: ['#FFFFFF', '#000000'], angle: 90 },
+        ],
+        /** dark text inverse textGradientAthenaHover */
+        inverseTextGradientAthenaHover: [
+            { kind: 'linear', locations: [0, 1], colors: ['#FFFFFF', '#000000'], angle: 90 },
+        ],
+        /** dark text inverse textGradientAthenaActive */
+        inverseTextGradientAthenaActive: [
+            { kind: 'linear', locations: [0, 1], colors: ['#FFFFFF', '#000000'], angle: 90 },
+        ],
+        /** dark text inverse textGradientJoyHover */
+        inverseTextGradientJoyHover: [{ kind: 'linear', locations: [0, 1], colors: ['#FFFFFF', '#000000'], angle: 90 }],
+        /** dark text inverse textGradientJoyActive */
+        inverseTextGradientJoyActive: [
+            { kind: 'linear', locations: [0, 1], colors: ['#FFFFFF', '#000000'], angle: 90 },
+        ],
+        /** dark text inverse textGradientBrandHover */
+        inverseTextGradientBrandHover: [
+            { kind: 'linear', locations: [0, 1], colors: ['#FFFFFF', '#000000'], angle: 90 },
+        ],
+        /** dark text inverse textGradientBrandActive */
+        inverseTextGradientBrandActive: [
+            { kind: 'linear', locations: [0, 1], colors: ['#FFFFFF', '#000000'], angle: 90 },
+        ],
+        /** dark text inverse textGradientB2EHover */
+        inverseTextGradientB2EHover: [{ kind: 'linear', locations: [0, 1], colors: ['#FFFFFF', '#000000'], angle: 90 }],
+        /** dark text inverse textGradientB2EActive */
+        inverseTextGradientB2EActive: [
+            { kind: 'linear', locations: [0, 1], colors: ['#FFFFFF', '#000000'], angle: 90 },
+        ],
+        /** dark text inverse textGradientMain */
+        inverseTextGradientMain: [
+            { kind: 'linear', locations: [0, 1], colors: ['#24B23EFF', '#00A4D1FF'], angle: 357.71 },
+        ],
+        /** dark text inverse textGradientAthena */
+        inverseTextGradientAthena: [
+            { kind: 'linear', locations: [0, 1], colors: ['#118CDFFF', '#7A7AFFFF'], angle: 0 },
+        ],
+        /** dark text inverse textGradientJoy */
+        inverseTextGradientJoy: [{ kind: 'linear', locations: [0, 1], colors: ['#FCA349FF', '#FF52C5FF'], angle: 0 }],
+        /** dark text inverse textGradientB2E */
+        inverseTextGradientB2E: [{ kind: 'linear', locations: [0, 1], colors: ['#24B23EFF', '#00A4D1FF'], angle: 0 }],
+        /** dark text inverse textGradientBrand */
+        inverseTextGradientBrand: [
+            { kind: 'linear', locations: [0.06, 0.94], colors: ['#3E79F0FF', '#27C6E5FF'], angle: 4.57 },
+        ],
         /** Фон для скелетона */
         surfaceSkeleton: [
             {
@@ -342,6 +394,18 @@ export const gradient = {
         /** Яркий фон для скелетона */
         onLightSurfaceSkeletonDeepGradientActive: [
             { kind: 'linear', locations: [0, 1], colors: ['#FFFFFF', '#000000'], angle: 90 },
+        ],
+        /** dark surface inverse surfaceGradientMainHover */
+        inverseSurfaceGradientMainHover: [
+            { kind: 'linear', locations: [0, 1], colors: ['#FFFFFF', '#000000'], angle: 90 },
+        ],
+        /** dark surface inverse surfaceGradientMainActive */
+        inverseSurfaceGradientMainActive: [
+            { kind: 'linear', locations: [0, 1], colors: ['#FFFFFF', '#000000'], angle: 90 },
+        ],
+        /** dark surface inverse surfaceGradientMain */
+        inverseSurfaceGradientMain: [
+            { kind: 'linear', locations: [0, 1], colors: ['#24B23EFF', '#00A4D1FF'], angle: 357.71 },
         ],
         /** Фон для скелетона */
         inverseSurfaceSkeletonGradient: [
@@ -605,6 +669,56 @@ export const gradient = {
         ],
         /** Градиент на светлом фоне */
         onLightTextGradientMain: [{ kind: 'linear', locations: [0, 1], colors: ['#24B23EFF', '#00A6C7FF'], angle: 0 }],
+        /** light text inverse textGradientMainHover */
+        inverseTextGradientMainHover: [
+            { kind: 'linear', locations: [0, 1], colors: ['#FFFFFF', '#000000'], angle: 90 },
+        ],
+        /** light text inverse textGradientMainActive */
+        inverseTextGradientMainActive: [
+            { kind: 'linear', locations: [0, 1], colors: ['#FFFFFF', '#000000'], angle: 90 },
+        ],
+        /** light text inverse textGradientAthenaHover */
+        inverseTextGradientAthenaHover: [
+            { kind: 'linear', locations: [0, 1], colors: ['#FFFFFF', '#000000'], angle: 90 },
+        ],
+        /** light text inverse textGradientAthenaActive */
+        inverseTextGradientAthenaActive: [
+            { kind: 'linear', locations: [0, 1], colors: ['#FFFFFF', '#000000'], angle: 90 },
+        ],
+        /** light text inverse textGradientJoyHover */
+        inverseTextGradientJoyHover: [{ kind: 'linear', locations: [0, 1], colors: ['#FFFFFF', '#000000'], angle: 90 }],
+        /** light text inverse textGradientJoyActive */
+        inverseTextGradientJoyActive: [
+            { kind: 'linear', locations: [0, 1], colors: ['#FFFFFF', '#000000'], angle: 90 },
+        ],
+        /** light text inverse textGradientBrandHover */
+        inverseTextGradientBrandHover: [
+            { kind: 'linear', locations: [0, 1], colors: ['#FFFFFF', '#000000'], angle: 90 },
+        ],
+        /** light text inverse textGradientBrandActive */
+        inverseTextGradientBrandActive: [
+            { kind: 'linear', locations: [0, 1], colors: ['#FFFFFF', '#000000'], angle: 90 },
+        ],
+        /** light text inverse textGradientB2EHover */
+        inverseTextGradientB2EHover: [{ kind: 'linear', locations: [0, 1], colors: ['#FFFFFF', '#000000'], angle: 90 }],
+        /** light text inverse textGradientB2EActive */
+        inverseTextGradientB2EActive: [
+            { kind: 'linear', locations: [0, 1], colors: ['#FFFFFF', '#000000'], angle: 90 },
+        ],
+        /** light text inverse textGradientMain */
+        inverseTextGradientMain: [{ kind: 'linear', locations: [0, 1], colors: ['#24B23EFF', '#05C1F5FF'], angle: 0 }],
+        /** light text inverse textGradientAthena */
+        inverseTextGradientAthena: [
+            { kind: 'linear', locations: [0.06, 0.94], colors: ['#52BAFFFF', '#ADADFFFF'], angle: 4.57 },
+        ],
+        /** light text inverse textGradientJoy */
+        inverseTextGradientJoy: [
+            { kind: 'linear', locations: [0.06, 0.94], colors: ['#FD9C68FF', '#F391E2FF'], angle: 4.57 },
+        ],
+        /** light text inverse textGradientB2E */
+        inverseTextGradientB2E: [{ kind: 'linear', locations: [0, 1], colors: ['#24B23EFF', '#05C1F5FF'], angle: 0 }],
+        /** light text inverse textGradientBrand */
+        inverseTextGradientBrand: [{ kind: 'linear', locations: [0, 1], colors: ['#528EFFFF', '#04C6C9FF'], angle: 0 }],
         /** Фон для скелетона */
         surfaceSkeleton: [
             {
@@ -829,6 +943,18 @@ export const gradient = {
         /** Яркий фон для скелетона */
         onLightSurfaceSkeletonDeepGradientActive: [
             { kind: 'linear', locations: [0, 1], colors: ['#FFFFFF', '#000000'], angle: 90 },
+        ],
+        /** light surface inverse surfaceGradientMainHover */
+        inverseSurfaceGradientMainHover: [
+            { kind: 'linear', locations: [0, 1], colors: ['#FFFFFF', '#000000'], angle: 90 },
+        ],
+        /** light surface inverse surfaceGradientMainActive */
+        inverseSurfaceGradientMainActive: [
+            { kind: 'linear', locations: [0, 1], colors: ['#FFFFFF', '#000000'], angle: 90 },
+        ],
+        /** light surface inverse surfaceGradientMain */
+        inverseSurfaceGradientMain: [
+            { kind: 'linear', locations: [0, 1], colors: ['#24B23EFF', '#00A4D1FF'], angle: 357.71 },
         ],
         /** Фон для скелетона */
         inverseSurfaceSkeletonGradient: [
