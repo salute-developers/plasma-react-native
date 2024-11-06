@@ -14,6 +14,7 @@ import { TextField } from '../TextField';
 import { BodyL } from '../Typography';
 import { Cell } from '../Cell';
 import { List } from '../List';
+import { IconButton } from '../IconButton';
 
 interface IconSvgProps {
     size?: number;
@@ -49,6 +50,9 @@ const StoryDefault = () => {
     return (
         <View style={{ display: 'flex', gap: 10, padding: 50, width: '50%' }}>
             <Button text="Button 2" contentLeft={<PlasmaIcon />} />
+            <IconButton>
+                <PlasmaIcon />
+            </IconButton>
             <Progress value={50} />
             <List
                 selectedItemIndex={selectedItemIndex}
