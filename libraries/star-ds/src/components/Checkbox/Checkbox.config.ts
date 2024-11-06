@@ -44,7 +44,7 @@ export const getConfig = ({ data, mode, screenSize }: Theme<StylesSaluteTheme>) 
                 margin: 0,
                 triggerMargin: 2,
                 triggerSize: 20,
-                triggerBorderRadius: data.shape.round.xxs + 2, // TODO: Узнать почему нет этих значений в теме
+                triggerBorderRadius: data.shape.round.xs,
                 triggerBorderWidth: 2,
                 contentTopOffset: 2,
                 contentLeftOffset: 12,

@@ -32,11 +32,11 @@ export const getConfig = ({ data, mode, screenSize }: Theme<StylesSaluteTheme>) 
             l: {
                 trackWidth: 44,
                 trackHeight: 28,
-                trackBorderRadius: data.shape.round.s + 2, // TODO: Узнать почему нет этих значений в теме
+                trackBorderRadius: data.shape.round.m + 2, // TODO: Узнать почему нет этих значений в теме
                 thumbOffset: 2,
                 thumbPressScale: 1.25,
                 thumbSize: 24,
-                thumbBorderRadius: data.shape.round.s, // TODO: Узнать почему нет этих значений в теме
+                thumbBorderRadius: data.shape.round.m, // TODO: Узнать почему нет этих значений в теме
                 labelOffset: 12,
                 labelFontFamilyRef: data.typography[screenSize].bodyLNormal.fontFamilyRef,
                 labelFontWeight: data.typography[screenSize].bodyLNormal.fontWeight,
@@ -55,11 +55,11 @@ export const getConfig = ({ data, mode, screenSize }: Theme<StylesSaluteTheme>) 
             m: {
                 trackWidth: 44,
                 trackHeight: 28,
-                trackBorderRadius: data.shape.round.s + 2, // TODO: Узнать почему нет этих значений в теме
+                trackBorderRadius: data.shape.round.m + 2, // TODO: Узнать почему нет этих значений в теме
                 thumbOffset: 2,
                 thumbPressScale: 1.25,
                 thumbSize: 24,
-                thumbBorderRadius: data.shape.round.s, // TODO: Узнать почему нет этих значений в теме
+                thumbBorderRadius: data.shape.round.m, // TODO: Узнать почему нет этих значений в теме
                 labelOffset: 12,
                 labelFontFamilyRef: data.typography[screenSize].bodyMNormal.fontFamilyRef,
                 labelFontWeight: data.typography[screenSize].bodyMNormal.fontWeight,
@@ -78,11 +78,11 @@ export const getConfig = ({ data, mode, screenSize }: Theme<StylesSaluteTheme>) 
             s: {
                 trackWidth: 44,
                 trackHeight: 28,
-                trackBorderRadius: data.shape.round.s + 2, // TODO: Узнать почему нет этих значений в теме
+                trackBorderRadius: data.shape.round.m + 2, // TODO: Узнать почему нет этих значений в теме
                 thumbOffset: 2,
                 thumbPressScale: 1.25,
                 thumbSize: 24,
-                thumbBorderRadius: data.shape.round.s, // TODO: Узнать почему нет этих значений в теме
+                thumbBorderRadius: data.shape.round.m, // TODO: Узнать почему нет этих значений в теме
                 labelOffset: 12,
                 labelFontFamilyRef: data.typography[screenSize].bodySNormal.fontFamilyRef,
                 labelFontWeight: data.typography[screenSize].bodySNormal.fontWeight,
