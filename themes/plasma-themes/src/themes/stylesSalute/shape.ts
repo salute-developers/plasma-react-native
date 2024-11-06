@@ -3,15 +3,15 @@ export const shape = {
         /** borderRadius xxs */
         xxs: 4,
         /** borderRadius xs */
-        xs: 8,
+        xs: 6,
         /** borderRadius s */
-        s: 12,
+        s: 8,
         /** borderRadius m */
-        m: 16,
+        m: 12,
         /** borderRadius l */
-        l: 20,
+        l: 16,
         /** borderRadius xl */
-        xl: 24,
+        xl: 20,
         /** borderRadius xxl */
         xxl: 32,
     },

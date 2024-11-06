@@ -89,6 +89,7 @@ export interface ButtonConfig {
                 spinnerColor: string;
                 contentLeftIconColor: string;
                 contentRightIconColor: string;
+                contentIconColor: string;
                 scale?: number;
             };
         };
@@ -123,6 +124,7 @@ export interface ButtonConfig {
                 spinnerColor: string;
                 contentLeftIconColor: string;
                 contentRightIconColor: string;
+                contentIconColor: string;
                 scale: number;
             };
         };

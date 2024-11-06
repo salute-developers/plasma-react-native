@@ -17,6 +17,7 @@ export const getConfig = ({ data, mode, screenSize }: Theme<PlasmaB2CTheme>) => 
                 spinnerColor: data.color[mode].textPrimary,
                 contentLeftIconColor: data.color[mode].textPrimary,
                 contentRightIconColor: data.color[mode].textPrimary,
+                contentIconColor: data.color[mode].textPrimary,
             },
             accent: {
                 color: data.color[mode].onDarkTextPrimary,
@@ -26,6 +27,7 @@ export const getConfig = ({ data, mode, screenSize }: Theme<PlasmaB2CTheme>) => 
                 spinnerColor: data.color[mode].onDarkTextPrimary,
                 contentLeftIconColor: data.color[mode].textPrimary,
                 contentRightIconColor: data.color[mode].textPrimary,
+                contentIconColor: data.color[mode].textPrimary,
             },
             secondary: {
                 color: data.color[mode].textPrimary,
@@ -35,6 +37,7 @@ export const getConfig = ({ data, mode, screenSize }: Theme<PlasmaB2CTheme>) => 
                 spinnerColor: data.color[mode].textPrimary,
                 contentLeftIconColor: data.color[mode].textPrimary,
                 contentRightIconColor: data.color[mode].textPrimary,
+                contentIconColor: data.color[mode].textPrimary,
             },
             clear: {
                 color: data.color[mode].textPrimary,
@@ -44,6 +47,7 @@ export const getConfig = ({ data, mode, screenSize }: Theme<PlasmaB2CTheme>) => 
                 spinnerColor: data.color[mode].textPrimary,
                 contentLeftIconColor: data.color[mode].textPrimary,
                 contentRightIconColor: data.color[mode].textPrimary,
+                contentIconColor: data.color[mode].textPrimary,
             },
             positive: {
                 color: data.color[mode].onDarkTextPrimary,
@@ -53,6 +57,7 @@ export const getConfig = ({ data, mode, screenSize }: Theme<PlasmaB2CTheme>) => 
                 spinnerColor: data.color[mode].onDarkTextPrimary,
                 contentLeftIconColor: data.color[mode].textPrimary,
                 contentRightIconColor: data.color[mode].textPrimary,
+                contentIconColor: data.color[mode].textPrimary,
             },
             warning: {
                 color: data.color[mode].onDarkTextPrimary,
@@ -62,6 +67,7 @@ export const getConfig = ({ data, mode, screenSize }: Theme<PlasmaB2CTheme>) => 
                 spinnerColor: data.color[mode].onDarkTextPrimary,
                 contentLeftIconColor: data.color[mode].textPrimary,
                 contentRightIconColor: data.color[mode].textPrimary,
+                contentIconColor: data.color[mode].textPrimary,
             },
             negative: {
                 color: data.color[mode].onDarkTextPrimary,
@@ -71,6 +77,7 @@ export const getConfig = ({ data, mode, screenSize }: Theme<PlasmaB2CTheme>) => 
                 spinnerColor: data.color[mode].onDarkTextPrimary,
                 contentLeftIconColor: data.color[mode].textPrimary,
                 contentRightIconColor: data.color[mode].textPrimary,
+                contentIconColor: data.color[mode].textPrimary,
             },
             dark: {
                 color: data.color[mode].onDarkTextPrimary,
@@ -80,6 +87,7 @@ export const getConfig = ({ data, mode, screenSize }: Theme<PlasmaB2CTheme>) => 
                 spinnerColor: data.color[mode].onDarkTextPrimary,
                 contentLeftIconColor: data.color[mode].textPrimary,
                 contentRightIconColor: data.color[mode].textPrimary,
+                contentIconColor: data.color[mode].textPrimary,
             },
             black: {
                 color: data.color[mode].onDarkTextPrimary,
@@ -89,6 +97,7 @@ export const getConfig = ({ data, mode, screenSize }: Theme<PlasmaB2CTheme>) => 
                 spinnerColor: data.color[mode].onDarkTextPrimary,
                 contentLeftIconColor: data.color[mode].textPrimary,
                 contentRightIconColor: data.color[mode].textPrimary,
+                contentIconColor: data.color[mode].textPrimary,
             },
             white: {
                 color: data.color[mode].onLightTextPrimary,
@@ -98,6 +107,7 @@ export const getConfig = ({ data, mode, screenSize }: Theme<PlasmaB2CTheme>) => 
                 spinnerColor: data.color[mode].onLightTextPrimary,
                 contentLeftIconColor: data.color[mode].textPrimary,
                 contentRightIconColor: data.color[mode].textPrimary,
+                contentIconColor: data.color[mode].textPrimary,
             },
         },
         size: {
@@ -191,6 +201,7 @@ export const getConfig = ({ data, mode, screenSize }: Theme<PlasmaB2CTheme>) => 
                 spinnerColor: data.color[mode].onLightTextPrimary,
                 contentLeftIconColor: data.color[mode].onLightTextPrimary,
                 contentRightIconColor: data.color[mode].onLightTextPrimary,
+                contentIconColor: data.color[mode].textPrimary,
                 scale: 1.05,
             },
         },

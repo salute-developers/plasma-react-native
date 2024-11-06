@@ -109,7 +109,7 @@ export const buttonCore = <T extends ButtonConfig>(config?: T, theme?: Theme) =>
                         {txt ? (
                             <Text style={style.text}>{txt}</Text>
                         ) : (
-                            <FocusableWrapper iconColor={viewStyle?.contentLeftIconColor} style={style.text}>
+                            <FocusableWrapper iconColor={viewStyle?.contentIconColor} style={style.text}>
                                 {children}
                             </FocusableWrapper>
                         )}

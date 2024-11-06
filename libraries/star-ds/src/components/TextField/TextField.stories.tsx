@@ -51,13 +51,13 @@ const meta: Meta<StoryTextFieldProps> = {
     },
     argTypes: {
         size: {
-            options: ['xs', 's', 'm', 'l'],
+            options: ['xs', 's', 'm'],
             control: {
                 type: 'select',
             },
         },
         view: {
-            options: ['default', 'positive', 'warning', 'negative'],
+            options: ['default', 'negative'],
             control: {
                 type: 'select',
             },

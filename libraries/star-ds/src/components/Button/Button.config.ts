@@ -17,6 +17,7 @@ export const getConfig = ({ data, mode, screenSize }: Theme<StylesSaluteTheme>) 
                 spinnerColor: data.color[mode].textPrimary,
                 contentLeftIconColor: data.color[mode].textPrimary,
                 contentRightIconColor: data.color[mode].textPrimary,
+                contentIconColor: data.color[mode].textPrimary,
             },
             accent: {
                 color: data.color[mode].onDarkTextPrimary,
@@ -26,6 +27,7 @@ export const getConfig = ({ data, mode, screenSize }: Theme<StylesSaluteTheme>) 
                 spinnerColor: data.color[mode].onDarkTextPrimary,
                 contentLeftIconColor: data.color[mode].textPrimary,
                 contentRightIconColor: data.color[mode].textPrimary,
+                contentIconColor: data.color[mode].textPrimary,
             },
             clear: {
                 color: data.color[mode].textPrimary,
@@ -35,6 +37,7 @@ export const getConfig = ({ data, mode, screenSize }: Theme<StylesSaluteTheme>) 
                 spinnerColor: data.color[mode].textPrimary,
                 contentLeftIconColor: data.color[mode].textPrimary,
                 contentRightIconColor: data.color[mode].textPrimary,
+                contentIconColor: data.color[mode].textPrimary,
             },
         },
         size: {
@@ -45,7 +48,7 @@ export const getConfig = ({ data, mode, screenSize }: Theme<StylesSaluteTheme>) 
                 contentGap: 8,
                 valueGap: 4,
                 spinnerSize: 22,
-                radius: data.shape.round.s + 2, // TODO: Узнать почему нет этих значений в теме
+                radius: data.shape.round.m + 2, // TODO: Узнать почему нет этих значений в теме
                 fontFamilyRef: data.typography[screenSize].bodyLNormal.fontFamilyRef,
                 fontWeight: data.typography[screenSize].bodyLBold.fontWeight,
                 fontStyle: data.typography[screenSize].bodyLNormal.fontStyle,
@@ -60,7 +63,7 @@ export const getConfig = ({ data, mode, screenSize }: Theme<StylesSaluteTheme>) 
                 contentGap: 6,
                 valueGap: 4,
                 spinnerSize: 22,
-                radius: data.shape.round.s,
+                radius: data.shape.round.m,
                 fontFamilyRef: data.typography[screenSize].bodyMNormal.fontFamilyRef,
                 fontWeight: data.typography[screenSize].bodyMBold.fontWeight,
                 fontStyle: data.typography[screenSize].bodyMNormal.fontStyle,
@@ -75,7 +78,7 @@ export const getConfig = ({ data, mode, screenSize }: Theme<StylesSaluteTheme>) 
                 contentGap: 4,
                 valueGap: 4,
                 spinnerSize: 22,
-                radius: data.shape.round.xs + 2, // TODO: Узнать почему нет этих значений в теме
+                radius: data.shape.round.s + 2, // TODO: Узнать почему нет этих значений в теме
                 fontFamilyRef: data.typography[screenSize].bodySNormal.fontFamilyRef,
                 fontWeight: data.typography[screenSize].bodySBold.fontWeight,
                 fontStyle: data.typography[screenSize].bodySNormal.fontStyle,
@@ -90,7 +93,7 @@ export const getConfig = ({ data, mode, screenSize }: Theme<StylesSaluteTheme>) 
                 contentGap: 4,
                 valueGap: 2,
                 spinnerSize: 16,
-                radius: data.shape.round.xs,
+                radius: data.shape.round.s,
                 fontFamilyRef: data.typography[screenSize].bodyXsNormal.fontFamilyRef,
                 fontWeight: data.typography[screenSize].bodyXsNormal.fontWeight,
                 fontStyle: data.typography[screenSize].bodyXsNormal.fontStyle,
@@ -113,6 +116,7 @@ export const getConfig = ({ data, mode, screenSize }: Theme<StylesSaluteTheme>) 
                 spinnerColor: data.color[mode].onLightTextPrimary,
                 contentLeftIconColor: data.color[mode].onLightTextPrimary,
                 contentRightIconColor: data.color[mode].onLightTextPrimary,
+                contentIconColor: data.color[mode].onLightTextPrimary,
                 scale: 1.05,
             },
         },

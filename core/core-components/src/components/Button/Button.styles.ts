@@ -46,7 +46,9 @@ export const getStyle = (
 
     const widthSize = getWidthSize(stretching, sizeStyle.width);
     const buttonBorderRadius = getRoundnessMatrix(pin, sizeStyle.radius, sizeStyle.height);
-    const fontFace = getFontFace(sizeStyle.fontFamilyRef, sizeStyle.fontStyle, sizeStyle.fontWeight, theme);
+    const fontFace = sizeStyle.fontFamilyRef
+        ? getFontFace(sizeStyle.fontFamilyRef, sizeStyle.fontStyle, sizeStyle.fontWeight, theme)
+        : undefined;
 
     const spacingMap: Record<Spacing, 'space-between' | 'center'> = {
         packed: 'center',
