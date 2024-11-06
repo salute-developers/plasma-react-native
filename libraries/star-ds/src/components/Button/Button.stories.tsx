@@ -68,7 +68,7 @@ const meta: Meta<StoryButtonProps> = {
             },
         },
         view: {
-            options: ['default'],
+            options: ['default', 'clear'],
             control: {
                 type: 'select',
             },
