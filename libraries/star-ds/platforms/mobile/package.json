@@ -50,6 +50,7 @@
     "@react-native-community/datetimepicker": "8.0.1",
     "@react-native-community/slider": "4.5.2",
     "@react-native-tvos/config-tv": "^0.0.10",
+    "@salutejs/plasma-icons-native": "0.1.0",
     "@storybook/addon-ondevice-actions": "^7.6.16",
     "@storybook/addon-ondevice-controls": "^7.6.16",
     "@storybook/addon-ondevice-notes": "^7.6.19",
