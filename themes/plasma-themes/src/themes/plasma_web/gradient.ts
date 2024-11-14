@@ -5,7 +5,7 @@ export const gradient = {
         /** Акцентный цвет с градиентом */
         textAccentGradientActive: [{ kind: 'linear', locations: [0, 1], colors: ['#FFFFFF', '#000000'], angle: 90 }],
         /** Акцентный цвет с градиентом */
-        textAccentGradient: [{ kind: 'linear', locations: [0, 1], colors: ['#FFFFFF', '#000000'], angle: 90 }],
+        textAccentGradient: [{ kind: 'linear', locations: [0, 1], colors: ['#5E94FFFF', '#43DBFAFF'], angle: 89.83 }],
         /** Акцентный цвет с градиентом на темном фоне */
         onDarkTextAccentGradientHover: [
             { kind: 'linear', locations: [0, 1], colors: ['#FFFFFF', '#000000'], angle: 90 },
@@ -15,7 +15,9 @@ export const gradient = {
             { kind: 'linear', locations: [0, 1], colors: ['#FFFFFF', '#000000'], angle: 90 },
         ],
         /** Акцентный цвет с градиентом на темном фоне */
-        onDarkTextAccentGradient: [{ kind: 'linear', locations: [0, 1], colors: ['#FFFFFF', '#000000'], angle: 90 }],
+        onDarkTextAccentGradient: [
+            { kind: 'linear', locations: [0, 1], colors: ['#5E94FFFF', '#43DBFAFF'], angle: 89.83 },
+        ],
         /** Акцентный цвет с градиентом на светлом фоне */
         onLightTextAccentGradientHover: [
             { kind: 'linear', locations: [0, 1], colors: ['#FFFFFF', '#000000'], angle: 90 },
@@ -25,13 +27,30 @@ export const gradient = {
             { kind: 'linear', locations: [0, 1], colors: ['#FFFFFF', '#000000'], angle: 90 },
         ],
         /** Акцентный цвет с градиентом на светлом фоне */
-        onLightTextAccentGradient: [{ kind: 'linear', locations: [0, 1], colors: ['#FFFFFF', '#000000'], angle: 90 }],
+        onLightTextAccentGradient: [
+            { kind: 'linear', locations: [0.0649, 0.9351], colors: ['#3E79F0FF', '#27C6E5FF'], angle: 93.97 },
+        ],
+        /** Инвертированный акцентный цвет с градиентом */
+        inverseTextAccentGradientHover: [
+            { kind: 'linear', locations: [0, 1], colors: ['#FFFFFF', '#000000'], angle: 90 },
+        ],
+        /** Инвертированный акцентный цвет с градиентом */
+        inverseTextAccentGradientActive: [
+            { kind: 'linear', locations: [0, 1], colors: ['#FFFFFF', '#000000'], angle: 90 },
+        ],
+        /** Инвертированный акцентный цвет с градиентом */
+        inverseTextAccentGradient: [
+            { kind: 'linear', locations: [0.06, 0.94], colors: ['#3E79F0FF', '#27C6E5FF'], angle: 4.57 },
+        ],
         /** Акцентный фон поверхности/контрола с градиентом */
         surfaceAccentGradientHover: [{ kind: 'linear', locations: [0, 1], colors: ['#FFFFFF', '#000000'], angle: 90 }],
         /** Акцентный фон поверхности/контрола с градиентом */
         surfaceAccentGradientActive: [{ kind: 'linear', locations: [0, 1], colors: ['#FFFFFF', '#000000'], angle: 90 }],
         /** Акцентный фон поверхности/контрола с градиентом */
-        surfaceAccentGradient: [{ kind: 'linear', locations: [0, 1], colors: ['#FFFFFF', '#000000'], angle: 90 }],
+        surfaceAccentGradient: [
+            { kind: 'linear', locations: [0.0649, 0.9351], colors: ['#3E79F0FF', '#27C6E5FF'], angle: 93.97 },
+            { kind: 'linear', locations: [0, 1], colors: ['#5E94FFFF', '#43DBFAFF'], angle: 89.83 },
+        ],
         /** Фон для скелетона */
         surfaceSkeletonGradient: [
             {
@@ -103,7 +122,9 @@ export const gradient = {
             { kind: 'linear', locations: [0, 1], colors: ['#FFFFFF', '#000000'], angle: 90 },
         ],
         /** Акцентный фон поверхн./контрола с градиентом на темном фоне */
-        onDarkSurfaceAccentGradient: [{ kind: 'linear', locations: [0, 1], colors: ['#FFFFFF', '#000000'], angle: 90 }],
+        onDarkSurfaceAccentGradient: [
+            { kind: 'linear', locations: [0.0649, 0.9351], colors: ['#3E79F0FF', '#27C6E5FF'], angle: 93.97 },
+        ],
         /** Фон для скелетона */
         onDarkSurfaceSkeletonGradient: [
             {
@@ -176,7 +197,7 @@ export const gradient = {
         ],
         /** Акцент. фон поверхн./контрола с градиентом на светлом фоне */
         onLightSurfaceAccentGradient: [
-            { kind: 'linear', locations: [0, 1], colors: ['#FFFFFF', '#000000'], angle: 90 },
+            { kind: 'linear', locations: [0.0649, 0.9351], colors: ['#3E79F0FF', '#27C6E5FF'], angle: 93.97 },
         ],
         /** Фон для скелетона */
         onLightSurfaceSkeletonGradient: [
@@ -239,6 +260,18 @@ export const gradient = {
         /** Яркий фон для скелетона */
         onLightSurfaceSkeletonDeepGradientActive: [
             { kind: 'linear', locations: [0, 1], colors: ['#FFFFFF', '#000000'], angle: 90 },
+        ],
+        /** Инвертированный акцентный фон поверхности/контрола с градиентом */
+        inverseSurfaceAccentGradientHover: [
+            { kind: 'linear', locations: [0, 1], colors: ['#FFFFFF', '#000000'], angle: 90 },
+        ],
+        /** Инвертированный акцентный фон поверхности/контрола с градиентом */
+        inverseSurfaceAccentGradientActive: [
+            { kind: 'linear', locations: [0, 1], colors: ['#FFFFFF', '#000000'], angle: 90 },
+        ],
+        /** Инвертированный акцентный фон поверхности/контрола с градиентом */
+        inverseSurfaceAccentGradient: [
+            { kind: 'linear', locations: [0.06, 0.94], colors: ['#3E79F0FF', '#27C6E5FF'], angle: 4.57 },
         ],
         /** Фон для скелетона */
         inverseSurfaceSkeletonGradient: [
@@ -309,7 +342,9 @@ export const gradient = {
         /** Акцентный цвет с градиентом */
         textAccentGradientActive: [{ kind: 'linear', locations: [0, 1], colors: ['#FFFFFF', '#000000'], angle: 90 }],
         /** Акцентный цвет с градиентом */
-        textAccentGradient: [{ kind: 'linear', locations: [0, 1], colors: ['#FFFFFF', '#000000'], angle: 90 }],
+        textAccentGradient: [
+            { kind: 'linear', locations: [0.0649, 0.9351], colors: ['#3E79F0FF', '#27C6E5FF'], angle: 93.97 },
+        ],
         /** Акцентный цвет с градиентом на темном фоне */
         onDarkTextAccentGradientHover: [
             { kind: 'linear', locations: [0, 1], colors: ['#FFFFFF', '#000000'], angle: 90 },
@@ -319,7 +354,9 @@ export const gradient = {
             { kind: 'linear', locations: [0, 1], colors: ['#FFFFFF', '#000000'], angle: 90 },
         ],
         /** Акцентный цвет с градиентом на темном фоне */
-        onDarkTextAccentGradient: [{ kind: 'linear', locations: [0, 1], colors: ['#FFFFFF', '#000000'], angle: 90 }],
+        onDarkTextAccentGradient: [
+            { kind: 'linear', locations: [0, 1], colors: ['#5E94FFFF', '#43DBFAFF'], angle: 89.83 },
+        ],
         /** Акцентный цвет с градиентом на светлом фоне */
         onLightTextAccentGradientHover: [
             { kind: 'linear', locations: [0, 1], colors: ['#FFFFFF', '#000000'], angle: 90 },
@@ -329,13 +366,29 @@ export const gradient = {
             { kind: 'linear', locations: [0, 1], colors: ['#FFFFFF', '#000000'], angle: 90 },
         ],
         /** Акцентный цвет с градиентом на светлом фоне */
-        onLightTextAccentGradient: [{ kind: 'linear', locations: [0, 1], colors: ['#FFFFFF', '#000000'], angle: 90 }],
+        onLightTextAccentGradient: [
+            { kind: 'linear', locations: [0.0649, 0.9351], colors: ['#3E79F0FF', '#27C6E5FF'], angle: 93.97 },
+        ],
+        /** Инвертированный акцентный цвет с градиентом */
+        inverseTextAccentGradientHover: [
+            { kind: 'linear', locations: [0, 1], colors: ['#FFFFFF', '#000000'], angle: 90 },
+        ],
+        /** Инвертированный акцентный цвет с градиентом */
+        inverseTextAccentGradientActive: [
+            { kind: 'linear', locations: [0, 1], colors: ['#FFFFFF', '#000000'], angle: 90 },
+        ],
+        /** Инвертированный акцентный цвет с градиентом */
+        inverseTextAccentGradient: [
+            { kind: 'linear', locations: [0, 1], colors: ['#5E94FFFF', '#43DBFAFF'], angle: 0 },
+        ],
         /** Акцентный фон поверхности/контрола с градиентом */
         surfaceAccentGradientHover: [{ kind: 'linear', locations: [0, 1], colors: ['#FFFFFF', '#000000'], angle: 90 }],
         /** Акцентный фон поверхности/контрола с градиентом */
         surfaceAccentGradientActive: [{ kind: 'linear', locations: [0, 1], colors: ['#FFFFFF', '#000000'], angle: 90 }],
         /** Акцентный фон поверхности/контрола с градиентом */
-        surfaceAccentGradient: [{ kind: 'linear', locations: [0, 1], colors: ['#FFFFFF', '#000000'], angle: 90 }],
+        surfaceAccentGradient: [
+            { kind: 'linear', locations: [0.0649, 0.9351], colors: ['#3E79F0FF', '#27C6E5FF'], angle: 93.97 },
+        ],
         /** Фон для скелетона */
         surfaceSkeletonGradient: [
             {
@@ -407,7 +460,9 @@ export const gradient = {
             { kind: 'linear', locations: [0, 1], colors: ['#FFFFFF', '#000000'], angle: 90 },
         ],
         /** Акц. фон поверхности/контрола с градиентом на темном фоне */
-        onDarkSurfaceAccentGradient: [{ kind: 'linear', locations: [0, 1], colors: ['#FFFFFF', '#000000'], angle: 90 }],
+        onDarkSurfaceAccentGradient: [
+            { kind: 'linear', locations: [0.0649, 0.9351], colors: ['#3E79F0FF', '#27C6E5FF'], angle: 93.97 },
+        ],
         /** Фон для скелетона */
         onDarkSurfaceSkeletonGradient: [
             {
@@ -480,7 +535,7 @@ export const gradient = {
         ],
         /** Акц. фон поверхности/контрола с градиентом на светлом фоне */
         onLightSurfaceAccentGradient: [
-            { kind: 'linear', locations: [0, 1], colors: ['#FFFFFF', '#000000'], angle: 90 },
+            { kind: 'linear', locations: [0.0649, 0.9351], colors: ['#3E79F0FF', '#27C6E5FF'], angle: 93.97 },
         ],
         /** Фон для скелетона */
         onLightSurfaceSkeletonGradient: [
@@ -543,6 +598,18 @@ export const gradient = {
         /** Яркий фон для скелетона */
         onLightSurfaceSkeletonDeepGradientActive: [
             { kind: 'linear', locations: [0, 1], colors: ['#FFFFFF', '#000000'], angle: 90 },
+        ],
+        /** Инвертированный акцентный фон поверхности/контрола с градиентом */
+        inverseSurfaceAccentGradientHover: [
+            { kind: 'linear', locations: [0, 1], colors: ['#FFFFFF', '#000000'], angle: 90 },
+        ],
+        /** Инвертированный акцентный фон поверхности/контрола с градиентом */
+        inverseSurfaceAccentGradientActive: [
+            { kind: 'linear', locations: [0, 1], colors: ['#FFFFFF', '#000000'], angle: 90 },
+        ],
+        /** Инвертированный акцентный фон поверхности/контрола с градиентом */
+        inverseSurfaceAccentGradient: [
+            { kind: 'linear', locations: [0.06, 0.94], colors: ['#3E79F0FF', '#27C6E5FF'], angle: 4.57 },
         ],
         /** Фон для скелетона */
         inverseSurfaceSkeletonGradient: [

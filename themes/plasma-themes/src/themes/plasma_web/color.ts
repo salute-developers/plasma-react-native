@@ -284,6 +284,66 @@ export const color = {
         inverseTextParagraphActive: '#080808A3',
         /** Инвертированный cплошной наборный текст */
         inverseTextParagraph: '#080808CC',
+        /** Инвертированный акцентный цвет */
+        inverseTextAccentHover: '#79A7FBFF',
+        /** Инвертированный акцентный цвет */
+        inverseTextAccentActive: '#0D5FF8FF',
+        /** Инвертированный минорный акцентный цвет */
+        inverseTextAccentMinorHover: '#DCE8FEFF',
+        /** Инвертированный минорный акцентный цвет */
+        inverseTextAccentMinorActive: '#6FA0FBFF',
+        /** Инвертированный цвет успеха */
+        inverseTextPositiveHover: '#13AA2CFF',
+        /** Инвертированный цвет успеха */
+        inverseTextPositiveActive: '#0D731EFF',
+        /** Инвертированный цвет предупреждения */
+        inverseTextWarningHover: '#FD650DFF',
+        /** Инвертированный цвет предупреждения */
+        inverseTextWarningActive: '#CA4B02FF',
+        /** Инвертированный цвет ошибки */
+        inverseTextNegativeHover: '#F5384BFF',
+        /** Инвертированный цвет ошибки */
+        inverseTextNegativeActive: '#E40C22FF',
+        /** Инвертированный цвет информации */
+        inverseTextInfoHover: '#79A7FBFF',
+        /** Инвертированный цвет информации */
+        inverseTextInfoActive: '#0D5FF8FF',
+        /** Инвертированный минорный цвет успеха */
+        inverseTextPositiveMinorHover: '#3EDA5BFF',
+        /** Инвертированный минорный цвет успеха */
+        inverseTextPositiveMinorActive: '#23B83EFF',
+        /** Инвертированный минорный цвет предупреждения */
+        inverseTextWarningMinorHover: '#FDB086FF',
+        /** Инвертированный минорный цвет предупреждения */
+        inverseTextWarningMinorActive: '#FC884AFF',
+        /** Инвертированный минорный цвет ошибки */
+        inverseTextNegativeMinorHover: '#FFADB6FF',
+        /** Инвертированный минорный цвет ошибки */
+        inverseTextNegativeMinorActive: '#FF707EFF',
+        /** Инвертированный минорный цвет информации */
+        inverseTextInfoMinorHover: '#DCE8FEFF',
+        /** Инвертированный минорный цвет информации */
+        inverseTextInfoMinorActive: '#6FA0FBFF',
+        /** Инвертированный акцентный цвет */
+        inverseTextAccent: '#2A72F8',
+        /** Инвертированный минорный акцентный цвет */
+        inverseTextAccentMinor: '#8BB2FC',
+        /** Инвертированный цвет успеха */
+        inverseTextPositive: '#108E26',
+        /** Инвертированный цвет предупреждения */
+        inverseTextWarning: '#E85702',
+        /** Инвертированный цвет ошибки */
+        inverseTextNegative: '#F31B31',
+        /** Инвертированный цвет информации */
+        inverseTextInfo: '#2A72F8',
+        /** Инвертированный минорный цвет успеха */
+        inverseTextPositiveMinor: '#28D247',
+        /** Инвертированный минорный цвет предупреждения */
+        inverseTextWarningMinor: '#FD9C68',
+        /** Инвертированный минорный цвет ошибки */
+        inverseTextNegativeMinor: '#FF8F9A',
+        /** Инвертированный минорный цвет информации */
+        inverseTextInfoMinor: '#8BB2FC',
         /** Основной непрозрачный фон поверхности/контрола */
         surfaceSolidPrimaryHover: '#1C1C1CFF',
         /** Основной непрозрачный фон поверхности/контрола */
@@ -758,6 +818,168 @@ export const color = {
         onLightSurfaceInfoMinor: '#DEE9FF',
         /** Прозрачный цвет фона поверхности/контрола информация на светлом фоне */
         onLightSurfaceTransparentInfo: '#2A72F81F',
+        /** Инвертированный осн. непрозрачный фон поверхности/контрола */
+        inverseSurfaceSolidPrimaryHover: '#FAFAFAFF',
+        /** Инвертированный осн. непрозрачный фон поверхности/контрола */
+        inverseSurfaceSolidPrimaryActive: '#F0F0F0FF',
+        /** Инвертированный осн. непрозрачный фон поверхности/контрола */
+        inverseSurfaceSolidPrimaryBrightness: '#FFFFFFFF',
+        /** Инвертированный втор. непрозрачный фон поверхности/контрола */
+        inverseSurfaceSolidSecondaryHover: '#F7F7F7FF',
+        /** Инвертированный втор. непрозрачный фон поверхности/контрола */
+        inverseSurfaceSolidSecondaryActive: '#E8E8E8FF',
+        /** Инвертированный трет.непрозрачный фон поверхности/контрола */
+        inverseSurfaceSolidTertiaryHover: '#E8E8E8FF',
+        /** Инвертированный трет.непрозрачный фон поверхности/контрола */
+        inverseSurfaceSolidTertiaryActive: '#D9D9D9FF',
+        /** Инвертированный основной фон для карточек */
+        inverseSurfaceSolidCardHover: '#FFFFFFFF',
+        /** Инвертированный основной фон для карточек */
+        inverseSurfaceSolidCardActive: '#FFFFFFFF',
+        /** Инвертированный основной фон для карточек */
+        inverseSurfaceSolidCardBrightness: '#FFFFFFFF',
+        /** Инвертированный непрозрачный фон поверхности/контрола по умолчанию */
+        inverseSurfaceSolidDefaultHover: '#0D0D0DFF',
+        /** Инвертированный непрозрачный фон поверхности/контрола по умолчанию */
+        inverseSurfaceSolidDefaultActive: '#030303FF',
+        /** Инвертированный основной прозрачный фон поверхности/контрола */
+        inverseSurfaceTransparentPrimaryHover: '#08080812',
+        /** Инвертированный основной прозрачный фон поверхности/контрола */
+        inverseSurfaceTransparentPrimaryActive: '#08080803',
+        /** Инвертированный вторичный прозрачный фон поверхности/контрола */
+        inverseSurfaceTransparentSecondaryHover: '#0808081F',
+        /** Инвертированный вторичный прозрачный фон поверхности/контрола */
+        inverseSurfaceTransparentSecondaryActive: '#0808080A',
+        /** Инвертированный третичный прозрачный фон поверхности/контрола */
+        inverseSurfaceTransparentTertiaryHover: '#0808083D',
+        /** Инвертированный третичный прозрачный фон поверхности/контрола */
+        inverseSurfaceTransparentTertiaryActive: '#0808080F',
+        /** Инвертированный глубокий прозрачный фон поверхности/контрола */
+        inverseSurfaceTransparentDeepHover: '#080808C2',
+        /** Инвертированный глубокий прозрачный фон поверхности/контрола */
+        inverseSurfaceTransparentDeepActive: '#08080894',
+        /** Инвертированный прозрачный фон для карточек */
+        inverseSurfaceTransparentCardHover: '#FFFFFFFF',
+        /** Инвертированный прозрачный фон для карточек */
+        inverseSurfaceTransparentCardActive: '#FFFFFFFF',
+        /** Инвертированный прозрачный фон для карточек */
+        inverseSurfaceTransparentCardBrightness: '#FFFFFFFF',
+        /** Инвертированный фон поверхности/контрола без заливки */
+        inverseSurfaceClearHover: '#FFFFFFFF',
+        /** Инвертированный фон поверхности/контрола без заливки */
+        inverseSurfaceClearActive: '#FFFFFFFF',
+        /** Инвертированный акцентный фон поверхности/контрола */
+        inverseSurfaceAccentHover: '#4886F9FF',
+        /** Инвертированный акцентный фон поверхности/контрола */
+        inverseSurfaceAccentActive: '#206CF8FF',
+        /** Инвертированный акцентный минорный непрозрачный фон поверхности/контрола */
+        inverseSurfaceAccentMinorHover: '#EBF1FFFF',
+        /** Инвертированный акцентный минорный непрозрачный фон поверхности/контрола */
+        inverseSurfaceAccentMinorActive: '#D6E4FFFF',
+        /** Прозрачный инвертированный акцентный фон поверхности/контрола */
+        inverseSurfaceTransparentAccentHover: '#2A72F83D',
+        /** Прозрачный инвертированный акцентный фон поверхности/контрола */
+        inverseSurfaceTransparentAccentActive: '#2A72F80F',
+        /** Инвертированный цвет фона поверхности/контрола успех */
+        inverseSurfacePositiveHover: '#12A12AFF',
+        /** Инвертированный цвет фона поверхности/контрола успех */
+        inverseSurfacePositiveActive: '#0F8523FF',
+        /** Инвертированный цвет фона поверхности/контрола предупреждение */
+        inverseSurfaceWarningHover: '#FC5E03FF',
+        /** Инвертированный цвет фона поверхности/контрола предупреждение */
+        inverseSurfaceWarningActive: '#DE5302FF',
+        /** Инвертированный цвет фона поверхности/контрола ошибка */
+        inverseSurfaceNegativeHover: '#F5384BFF',
+        /** Инвертированный цвет фона поверхности/контрола ошибка */
+        inverseSurfaceNegativeActive: '#F31228FF',
+        /** Инвертированный цвет фона поверхности/контрола информация */
+        inverseSurfaceInfoHover: '#4886F9FF',
+        /** Инвертированный цвет фона поверхности/контрола информация */
+        inverseSurfaceInfoActive: '#206CF8FF',
+        /** Инвертированный минорный цвет фона поверхности/контрола успех */
+        inverseSurfacePositiveMinorHover: '#B1FBBFFF',
+        /** Инвертированный минорный цвет фона поверхности/контрола успех */
+        inverseSurfacePositiveMinorActive: '#94F9A7FF',
+        /** Инвертированный минорный цвет фона поверхности/контрола предупреждение */
+        inverseSurfaceWarningMinorHover: '#FEE9DCFF',
+        /** Инвертированный минорный цвет фона поверхности/контрола предупреждение */
+        inverseSurfaceWarningMinorActive: '#FEDCC8FF',
+        /** Инвертированный минорный цвет фона поверхности/контрола ошибка */
+        inverseSurfaceNegativeMinorHover: '#FFEBEDFF',
+        /** Инвертированный минорный цвет фона поверхности/контрола ошибка */
+        inverseSurfaceNegativeMinorActive: '#FFD6DAFF',
+        /** Инвертированный минорный цвет фона поверхности/контрола информация */
+        inverseSurfaceInfoMinorHover: '#EBF1FFFF',
+        /** Инвертированный минорный цвет фона поверхности/контрола информация */
+        inverseSurfaceInfoMinorActive: '#D6E4FFFF',
+        /** Прозрачный инвертированный цвет фона поверхности/контрола успех */
+        inverseSurfaceTransparentPositiveHover: '#108E253D',
+        /** Прозрачный инвертированный цвет фона поверхности/контрола успех */
+        inverseSurfaceTransparentPositiveActive: '#108E250F',
+        /** Прозрачный инвертированный цвет фона поверхности/контрола предупреждение */
+        inverseSurfaceTransparentWarningHover: '#E857023D',
+        /** Прозрачный инвертированный цвет фона поверхности/контрола предупреждение */
+        inverseSurfaceTransparentWarningActive: '#E857020F',
+        /** Прозрачный инвертированный цвет фона поверхности/контрола предупреждение */
+        inverseSurfaceTransparentNegativeHover: '#F31B313D',
+        /** Прозрачный инвертированный цвет фона поверхности/контрола предупреждение */
+        inverseSurfaceTransparentNegativeActive: '#F31B310F',
+        /** Прозрачный инвертированный цвет фона поверхности/контрола информация */
+        inverseSurfaceTransparentInfoHover: '#2A72F83D',
+        /** Прозрачный инвертированный цвет фона поверхности/контрола информация */
+        inverseSurfaceTransparentInfoActive: '#2A72F80F',
+        /** Инвертированный основной фон для карточек */
+        inverseSurfaceSolidCard: '#FFFFFFFF',
+        /** Инвертированный осн. непрозрачный фон поверхности/контрола */
+        inverseSurfaceSolidPrimary: '#F5F5F5',
+        /** Инвертированный втор. непрозрачный фон поверхности/контрола */
+        inverseSurfaceSolidSecondary: '#ECECEC',
+        /** Инвертированный трет.непрозрачный фон поверхности/контрола */
+        inverseSurfaceSolidTertiary: '#DDDDDD',
+        /** Инвертированный непрозрачный фон поверхности/контрола по умолчанию */
+        inverseSurfaceSolidDefault: '#080808',
+        /** Инвертированный прозрачный фон для карточек */
+        inverseSurfaceTransparentCard: '#FFFFFFFF',
+        /** Инвертированный основной прозрачный фон поверхности/контрола */
+        inverseSurfaceTransparentPrimary: '#08080808',
+        /** Инвертированный вторичный прозрачный фон поверхности/контрола */
+        inverseSurfaceTransparentSecondary: '#0808080F',
+        /** Инвертированный третичный прозрачный фон поверхности/контрола */
+        inverseSurfaceTransparentTertiary: '#0808081F',
+        /** Инвертированный глубокий прозрачный фон поверхности/контрола */
+        inverseSurfaceTransparentDeep: '#080808A3',
+        /** Инвертированный фон поверхности/контрола без заливки */
+        inverseSurfaceClear: '#FFFFFF00',
+        /** Инвертированный акцентный фон поверхности/контрола */
+        inverseSurfaceAccent: '#2A72F8',
+        /** Инвертированный акцентный минорный непрозрачный фон поверхности/контрола */
+        inverseSurfaceAccentMinor: '#DEE9FF',
+        /** Прозрачный инвертированный акцентный фон поверхности/контрола */
+        inverseSurfaceTransparentAccent: '#2A72F81F',
+        /** Инвертированный цвет фона поверхности/контрола успех */
+        inverseSurfacePositive: '#108E26',
+        /** Инвертированный цвет фона поверхности/контрола предупреждение */
+        inverseSurfaceWarning: '#E85702',
+        /** Инвертированный цвет фона поверхности/контрола ошибка */
+        inverseSurfaceNegative: '#F31B31',
+        /** Инвертированный цвет фона поверхности/контрола информация */
+        inverseSurfaceInfo: '#2A72F8',
+        /** Инвертированный минорный цвет фона поверхности/контрола успех */
+        inverseSurfacePositiveMinor: '#9EFAAF',
+        /** Инвертированный минорный цвет фона поверхности/контрола предупреждение */
+        inverseSurfaceWarningMinor: '#FEE2D2',
+        /** Инвертированный минорный цвет фона поверхности/контрола ошибка */
+        inverseSurfaceNegativeMinor: '#FFE0E3',
+        /** Инвертированный минорный цвет фона поверхности/контрола информация */
+        inverseSurfaceInfoMinor: '#DEE9FF',
+        /** Прозрачный инвертированный цвет фона поверхности/контрола успех */
+        inverseSurfaceTransparentPositive: '#108E261F',
+        /** Прозрачный инвертированный цвет фона поверхности/контрола предупреждение */
+        inverseSurfaceTransparentWarning: '#E857021F',
+        /** Прозрачный инвертированный цвет фона поверхности/контрола предупреждение */
+        inverseSurfaceTransparentNegative: '#F31B311F',
+        /** Прозрачный инвертированный цвет фона поверхности/контрола информация */
+        inverseSurfaceTransparentInfo: '#2A72F81F',
         /** Основной фон */
         backgroundPrimary: '#080808',
         /** Основной фон */
@@ -766,6 +988,10 @@ export const color = {
         darkBackgroundPrimary: '#080808',
         /** Основной фон на светлом фоне */
         lightBackgroundPrimary: '#F9F9F9',
+        /** Инвертированный основной фон */
+        inverseBackgroundPrimaryBrightness: '#FFFFFFFF',
+        /** Инвертированный основной фон */
+        inverseBackgroundPrimary: '#F9F9F9',
         /** Цвет фона паранжи светлый */
         overlaySoft: '#0808088F',
         /** Цвет фона паранжи темный */
@@ -784,6 +1010,12 @@ export const color = {
         onLightOverlayHard: '#F9F9F9F5',
         /** dark overlay onLight overlayBlur */
         onLightOverlayBlur: '#F9F9F947',
+        /** Инвертированный цвет фона паранжи светлый */
+        inverseOverlaySoft: '#F9F9F98F',
+        /** Инвертированный цвет фона паранжи темный */
+        inverseOverlayHard: '#F9F9F9F5',
+        /** Инвертированный цвет фона паранжи размытый */
+        inverseOverlayBlur: '#F9F9F947',
         /** Основной непрозрачный цвет обводки */
         outlineSolidPrimaryHover: '#303030FF',
         /** Основной непрозрачный цвет обводки */
@@ -1186,6 +1418,144 @@ export const color = {
         onLightOutlineInfoMinor: '#8BB2FC',
         /** Прозрачный цвет обводки информация на светлом фоне */
         onLightOutlineTransparentInfo: '#2A72F833',
+        /** Инвертированный основной непрозрачный цвет обводки */
+        inverseOutlineSolidPrimaryHover: '#ABABABFF',
+        /** Инвертированный основной непрозрачный цвет обводки */
+        inverseOutlineSolidPrimaryActive: '#C4C4C4FF',
+        /** Инвертированный вторичный непрозрачный цвет обводки */
+        inverseOutlineSolidSecondaryHover: '#FFFFFFFF',
+        /** Инвертированный вторичный непрозрачный цвет обводки */
+        inverseOutlineSolidSecondaryActive: '#575757FF',
+        /** Инвертированный третичный непрозрачный цвет обводки */
+        inverseOutlineSolidTertiaryHover: '#FFFFFFFF',
+        /** Инвертированный третичный непрозрачный цвет обводки */
+        inverseOutlineSolidTertiaryActive: '#737373FF',
+        /** Инвертированный основной прозрачный цвет обводки */
+        inverseOutlineTransparentPrimaryHover: '#080808FF',
+        /** Инвертированный основной прозрачный цвет обводки */
+        inverseOutlineTransparentPrimaryActive: '#0808083D',
+        /** Инвертированный вторичный прозрачный цвет обводки */
+        inverseOutlineTransparentSecondaryHover: '#080808FF',
+        /** Инвертированный вторичный прозрачный цвет обводки */
+        inverseOutlineTransparentSecondaryActive: '#0808087A',
+        /** Инвертированный третичный прозрачный цвет обводки */
+        inverseOutlineTransparentTertiaryHover: '#080808FF',
+        /** Инвертированный третичный прозрачный цвет обводки */
+        inverseOutlineTransparentTertiaryActive: '#080808AB',
+        /** Инвертированная бесцветная обводка */
+        inverseOutlineClearHover: '#FFFFFFFF',
+        /** Инвертированная бесцветная обводка */
+        inverseOutlineClearActive: '#FFFFFFFF',
+        /** Инвертированный акцентный цвет обводки */
+        inverseOutlineAccentHover: '#79A7FBFF',
+        /** Инвертированный акцентный цвет обводки */
+        inverseOutlineAccentActive: '#0D5FF8FF',
+        /** Инвертированный акцентный минорный непрозрачный цвет обводки */
+        inverseOutlineAccentMinorHover: '#DCE8FEFF',
+        /** Инвертированный акцентный минорный непрозрачный цвет обводки */
+        inverseOutlineAccentMinorActive: '#6FA0FBFF',
+        /** Прозрачный инвертированный акцентный цвет обводки */
+        inverseOutlineTransparentAccentHover: '#2A72F8FF',
+        /** Прозрачный инвертированный акцентный цвет обводки */
+        inverseOutlineTransparentAccentActive: '#2A72F83D',
+        /** Инвертированный цвет обводки успех */
+        inverseOutlinePositiveHover: '#13AA2CFF',
+        /** Инвертированный цвет обводки успех */
+        inverseOutlinePositiveActive: '#0D731EFF',
+        /** Инвертированный цвет обводки предупреждение */
+        inverseOutlineWarningHover: '#FD650DFF',
+        /** Инвертированный цвет обводки предупреждение */
+        inverseOutlineWarningActive: '#CA4B02FF',
+        /** Инвертированный цвет обводки ошибка */
+        inverseOutlineNegativeHover: '#F5384BFF',
+        /** Инвертированный цвет обводки ошибка */
+        inverseOutlineNegativeActive: '#E40C22FF',
+        /** Инвертированный цвет обводки информация */
+        inverseOutlineInfoHover: '#79A7FBFF',
+        /** Инвертированный цвет обводки информация */
+        inverseOutlineInfoActive: '#0D5FF8FF',
+        /** Инвертированный минорный цвет обводки успех */
+        inverseOutlinePositiveMinorHover: '#3EDA5BFF',
+        /** Инвертированный минорный цвет обводки успех */
+        inverseOutlinePositiveMinorActive: '#23B83EFF',
+        /** Инвертированный минорный цвет обводки предупреждение */
+        inverseOutlineWarningMinorHover: '#FDB086FF',
+        /** Инвертированный минорный цвет обводки предупреждение */
+        inverseOutlineWarningMinorActive: '#FC884AFF',
+        /** Инвертированный минорный цвет обводки ошибка */
+        inverseOutlineNegativeMinorHover: '#FFADB6FF',
+        /** Инвертированный минорный цвет обводки ошибка */
+        inverseOutlineNegativeMinorActive: '#FF707EFF',
+        /** Инвертированный минорный цвет обводки информация */
+        inverseOutlineInfoMinorHover: '#DCE8FEFF',
+        /** Инвертированный минорный цвет обводки информация */
+        inverseOutlineInfoMinorActive: '#6FA0FBFF',
+        /** Прозрачный инвертированный цвет обводки успех */
+        inverseOutlineTransparentPositiveHover: '#108E25FF',
+        /** Прозрачный инвертированный цвет обводки успех */
+        inverseOutlineTransparentPositiveActive: '#108E253D',
+        /** Прозрачный инвертированный цвет обводки предупреждение */
+        inverseOutlineTransparentWarningHover: '#E85702FF',
+        /** Прозрачный инвертированный цвет обводки предупреждение */
+        inverseOutlineTransparentWarningActive: '#E857023D',
+        /** Прозрачный инвертированный цвет обводки предупреждение */
+        inverseOutlineTransparentNegativeHover: '#F31B31FF',
+        /** Прозрачный инвертированный цвет обводки предупреждение */
+        inverseOutlineTransparentNegativeActive: '#F31B313D',
+        /** Прозрачный инвертированный цвет обводки информация */
+        inverseOutlineTransparentInfoHover: '#2A72F8FF',
+        /** Прозрачный инвертированный цвет обводки информация */
+        inverseOutlineTransparentInfoActive: '#2A72F83D',
+        /** Инвертированный основной непрозрачный цвет обводки */
+        inverseOutlineSolidPrimary: '#DDDDDD',
+        /** Инвертированный вторичный непрозрачный цвет обводки */
+        inverseOutlineSolidSecondary: '#949494',
+        /** Инвертированный третичный непрозрачный цвет обводки */
+        inverseOutlineSolidTertiary: '#707070',
+        /** Инвертированный основной прозрачный цвет обводки */
+        inverseOutlineTransparentPrimary: '#08080833',
+        /** Инвертированный вторичный прозрачный цвет обводки */
+        inverseOutlineTransparentSecondary: '#08080866',
+        /** Инвертированный третичный прозрачный цвет обводки */
+        inverseOutlineTransparentTertiary: '#0808088F',
+        /** Инвертированная бесцветная обводка */
+        inverseOutlineClear: '#FFFFFF00',
+        /** dark outline inverse outlineDefault */
+        inverseOutlineDefault: '#080808',
+        /** dark outline inverse outlineDefaultHover */
+        inverseOutlineDefaultHover: '#FFFFFFFF',
+        /** dark outline inverse outlineDefaultActive */
+        inverseOutlineDefaultActive: '#C7C7C7FF',
+        /** Инвертированный акцентный цвет обводки */
+        inverseOutlineAccent: '#2A72F8',
+        /** Инвертированный акцентный минорный непрозрачный цвет обводки */
+        inverseOutlineAccentMinor: '#8BB2FC',
+        /** Прозрачный инвертированный акцентный цвет обводки */
+        inverseOutlineTransparentAccent: '#2A72F833',
+        /** Инвертированный цвет обводки успех */
+        inverseOutlinePositive: '#108E26',
+        /** Инвертированный цвет обводки предупреждение */
+        inverseOutlineWarning: '#E85702',
+        /** Инвертированный цвет обводки ошибка */
+        inverseOutlineNegative: '#F31B31',
+        /** Инвертированный цвет обводки информация */
+        inverseOutlineInfo: '#2A72F8',
+        /** Инвертированный минорный цвет обводки успех */
+        inverseOutlinePositiveMinor: '#28D247',
+        /** Инвертированный минорный цвет обводки предупреждение */
+        inverseOutlineWarningMinor: '#FD9C68',
+        /** Инвертированный минорный цвет обводки ошибка */
+        inverseOutlineNegativeMinor: '#FF8F9A',
+        /** Инвертированный минорный цвет обводки информация */
+        inverseOutlineInfoMinor: '#8BB2FC',
+        /** Прозрачный инвертированный цвет обводки успех */
+        inverseOutlineTransparentPositive: '#108E2633',
+        /** Прозрачный инвертированный цвет обводки предупреждение */
+        inverseOutlineTransparentWarning: '#E8570233',
+        /** Прозрачный инвертированный цвет обводки предупреждение */
+        inverseOutlineTransparentNegative: '#F31B3133',
+        /** Прозрачный инвертированный цвет обводки информация */
+        inverseOutlineTransparentInfo: '#2A72F833',
     },
     light: {
         /** Основной цвет текста */
@@ -1472,6 +1842,66 @@ export const color = {
         inverseTextParagraphActive: '#FFFFFFA3',
         /** Инвертированный cплошной наборный текст */
         inverseTextParagraph: '#FFFFFFCC',
+        /** Инвертированный акцентный цвет */
+        inverseTextAccentHover: '#7AA9FFFF',
+        /** Инвертированный акцентный цвет */
+        inverseTextAccentActive: '#2974FFFF',
+        /** Инвертированный минорный акцентный цвет */
+        inverseTextAccentMinorHover: '#FFFFFFFF',
+        /** Инвертированный минорный акцентный цвет */
+        inverseTextAccentMinorActive: '#113B88FF',
+        /** Инвертированный цвет успеха */
+        inverseTextPositiveHover: '#2BD44AFF',
+        /** Инвертированный цвет успеха */
+        inverseTextPositiveActive: '#1D9032FF',
+        /** Инвертированный цвет предупреждения */
+        inverseTextWarningHover: '#FF8B4DFF',
+        /** Инвертированный цвет предупреждения */
+        inverseTextWarningActive: '#FA5700FF',
+        /** Инвертированный цвет ошибки */
+        inverseTextNegativeHover: '#FF6675FF',
+        /** Инвертированный цвет ошибки */
+        inverseTextNegativeActive: '#FF142CFF',
+        /** Инвертированный цвет информации */
+        inverseTextInfoHover: '#7AA9FFFF',
+        /** Инвертированный цвет информации */
+        inverseTextInfoActive: '#2974FFFF',
+        /** Инвертированный минорный цвет успеха */
+        inverseTextPositiveMinorHover: '#11A72CFF',
+        /** Инвертированный минорный цвет успеха */
+        inverseTextPositiveMinorActive: '#0D8222FF',
+        /** Инвертированный минорный цвет предупреждения */
+        inverseTextWarningMinorHover: '#CD5713FF',
+        /** Инвертированный минорный цвет предупреждения */
+        inverseTextWarningMinorActive: '#A84710FF',
+        /** Инвертированный минорный цвет ошибки */
+        inverseTextNegativeMinorHover: '#C2192AFF',
+        /** Инвертированный минорный цвет ошибки */
+        inverseTextNegativeMinorActive: '#7A101AFF',
+        /** Инвертированный минорный цвет информации */
+        inverseTextInfoMinorHover: '#FFFFFFFF',
+        /** Инвертированный минорный цвет информации */
+        inverseTextInfoMinorActive: '#113B88FF',
+        /** Инвертированный акцентный цвет */
+        inverseTextAccent: '#528EFF',
+        /** Инвертированный минорный акцентный цвет */
+        inverseTextAccentMinor: '#1549AB',
+        /** Инвертированный цвет успеха */
+        inverseTextPositive: '#24B23E',
+        /** Инвертированный цвет предупреждения */
+        inverseTextWarning: '#FF7024',
+        /** Инвертированный цвет ошибки */
+        inverseTextNegative: '#FF3D51',
+        /** Инвертированный цвет информации */
+        inverseTextInfo: '#528EFF',
+        /** Инвертированный минорный цвет успеха */
+        inverseTextPositiveMinor: '#095C18',
+        /** Инвертированный минорный цвет предупреждения */
+        inverseTextWarningMinor: '#85380C',
+        /** Инвертированный минорный цвет ошибки */
+        inverseTextNegativeMinor: '#9C1422',
+        /** Инвертированный минорный цвет информации */
+        inverseTextInfoMinor: '#1549AB',
         /** Основной непрозрачный фон поверхности/контрола */
         surfaceSolidPrimaryHover: '#FAFAFAFF',
         /** Основной непрозрачный фон поверхности/контрола */
@@ -1946,6 +2376,168 @@ export const color = {
         onLightSurfaceInfo: '#2A72F8',
         /** Прозрачный цвет фона поверхности/контрола информация на светлом фоне */
         onLightSurfaceTransparentInfo: '#2A72F81F',
+        /** Инвертированный основной непрозрачный фон поверхности/контрола */
+        inverseSurfaceSolidPrimaryHover: '#363636FF',
+        /** Инвертированный основной непрозрачный фон поверхности/контрола */
+        inverseSurfaceSolidPrimaryActive: '#0D0D0DFF',
+        /** Инвертированный основной непрозрачный фон поверхности/контрола */
+        inverseSurfaceSolidPrimaryBrightness: '#262626FF',
+        /** Инвертированный вторичный непрозрачный фон поверхности/контрола */
+        inverseSurfaceSolidSecondaryHover: '#3B3B3BFF',
+        /** Инвертированный вторичный непрозрачный фон поверхности/контрола */
+        inverseSurfaceSolidSecondaryActive: '#1C1C1CFF',
+        /** Инвертированный третичный непрозрачный фон поверхности/контрола */
+        inverseSurfaceSolidTertiaryHover: '#4A4A4AFF',
+        /** Инвертированный третичный непрозрачный фон поверхности/контрола */
+        inverseSurfaceSolidTertiaryActive: '#2B2B2BFF',
+        /** Инвертированный основной фон для карточек */
+        inverseSurfaceSolidCardHover: '#363636FF',
+        /** Инвертированный основной фон для карточек */
+        inverseSurfaceSolidCardActive: '#0D0D0DFF',
+        /** Инвертированный основной фон для карточек */
+        inverseSurfaceSolidCardBrightness: '#262626FF',
+        /** Инвертированный непрозрачный фон поверхности/контрола по умолчанию */
+        inverseSurfaceSolidDefaultHover: '#FFFFFFFF',
+        /** Инвертированный непрозрачный фон поверхности/контрола по умолчанию */
+        inverseSurfaceSolidDefaultActive: '#F5F5F5FF',
+        /** Инвертированный основной прозрачный фон поверхности/контрола */
+        inverseSurfaceTransparentPrimaryHover: '#FFFFFF05',
+        /** Инвертированный основной прозрачный фон поверхности/контрола */
+        inverseSurfaceTransparentPrimaryActive: '#FFFFFF1A',
+        /** Инвертированный вторичный прозрачный фон поверхности/контрола */
+        inverseSurfaceTransparentSecondaryHover: '#FFFFFF0A',
+        /** Инвертированный вторичный прозрачный фон поверхности/контрола */
+        inverseSurfaceTransparentSecondaryActive: '#FFFFFF29',
+        /** Инвертированный третичный прозрачный фон поверхности/контрола */
+        inverseSurfaceTransparentTertiaryHover: '#FFFFFF1F',
+        /** Инвертированный третичный прозрачный фон поверхности/контрола */
+        inverseSurfaceTransparentTertiaryActive: '#FFFFFF3D',
+        /** Инвертированный глубокий прозрачный фон поверхности/контрола */
+        inverseSurfaceTransparentDeepHover: '#FFFFFF8F',
+        /** Инвертированный глубокий прозрачный фон поверхности/контрола */
+        inverseSurfaceTransparentDeepActive: '#FFFFFFAD',
+        /** Инвертированный прозрачный фон для карточек */
+        inverseSurfaceTransparentCardHover: '#FFFFFF0A',
+        /** Инвертированный прозрачный фон для карточек */
+        inverseSurfaceTransparentCardActive: '#FFFFFF29',
+        /** Инвертированный прозрачный фон для карточек */
+        inverseSurfaceTransparentCardBrightness: '#FFFFFF1F',
+        /** Инвертированный фон поверхности/контрола без заливки */
+        inverseSurfaceClearHover: '#FFFFFFFF',
+        /** Инвертированный фон поверхности/контрола без заливки */
+        inverseSurfaceClearActive: '#FFFFFFFF',
+        /** Инвертированный акцентный фон поверхности/контрола */
+        inverseSurfaceAccentHover: '#689CFDFF',
+        /** Инвертированный акцентный фон поверхности/контрола */
+        inverseSurfaceAccentActive: '#2B74FDFF',
+        /** Инвертированный акцентный минорный непрозрачный фон поверхности/контрола */
+        inverseSurfaceAccentMinorHover: '#0A2A67FF',
+        /** Инвертированный акцентный минорный непрозрачный фон поверхности/контрола */
+        inverseSurfaceAccentMinorActive: '#061B41FF',
+        /** Прозрачный инвертированный акцентный фон поверхности/контрола */
+        inverseSurfaceTransparentAccentHover: '#FFFFFFFF',
+        /** Прозрачный инвертированный акцентный фон поверхности/контрола */
+        inverseSurfaceTransparentAccentActive: '#FFFFFFFF',
+        /** Инвертированный цвет успеха */
+        inverseSurfacePositiveHover: '#1EB83AFF',
+        /** Инвертированный цвет успеха */
+        inverseSurfacePositiveActive: '#178C2CFF',
+        /** Инвертированный цвет фона поверхности/контрола предупреждение */
+        inverseSurfaceWarningHover: '#FB782DFF',
+        /** Инвертированный цвет фона поверхности/контрола предупреждение */
+        inverseSurfaceWarningActive: '#E65705FF',
+        /** Инвертированный цвет фона поверхности/контрола ошибка */
+        inverseSurfaceNegativeHover: '#FF5263FF',
+        /** Инвертированный цвет фона поверхности/контрола ошибка */
+        inverseSurfaceNegativeActive: '#FF142CFF',
+        /** Инвертированный цвет фона поверхности/контрола информация */
+        inverseSurfaceInfoHover: '#689CFDFF',
+        /** Инвертированный цвет фона поверхности/контрола информация */
+        inverseSurfaceInfoActive: '#2B74FDFF',
+        /** Инвертированный минорный цвет фона поверхности/контрола успех */
+        inverseSurfacePositiveMinorHover: '#0E3A16FF',
+        /** Инвертированный минорный цвет фона поверхности/контрола успех */
+        inverseSurfacePositiveMinorActive: '#061909FF',
+        /** Инвертированный минорный цвет фона поверхности/контрола предупреждение */
+        inverseSurfaceWarningMinorHover: '#58290EFF',
+        /** Инвертированный минорный цвет фона поверхности/контрола предупреждение */
+        inverseSurfaceWarningMinorActive: '#2C1507FF',
+        /** Инвертированный минорный цвет фона поверхности/контрола ошибка */
+        inverseSurfaceNegativeMinorHover: '#64121AFF',
+        /** Инвертированный минорный цвет фона поверхности/контрола ошибка */
+        inverseSurfaceNegativeMinorActive: '#380A0FFF',
+        /** Инвертированный минорный цвет фона поверхности/контрола информация */
+        inverseSurfaceInfoMinorHover: '#0A2A67FF',
+        /** Инвертированный минорный цвет фона поверхности/контрола информация */
+        inverseSurfaceInfoMinorActive: '#061B41FF',
+        /** Прозрачный инвертированный цвет фона поверхности/контрола успех */
+        inverseSurfaceTransparentPositiveHover: '#1A9E321F',
+        /** Прозрачный инвертированный цвет фона поверхности/контрола успех */
+        inverseSurfaceTransparentPositiveActive: '#1A9E323D',
+        /** Прозрачный инвертированный цвет фона поверхности/контрола предупреждение */
+        inverseSurfaceTransparentWarningHover: '#FA5F051F',
+        /** Прозрачный инвертированный цвет фона поверхности/контрола предупреждение */
+        inverseSurfaceTransparentWarningActive: '#FA5F053D',
+        /** Прозрачный инвертированный цвет фона поверхности/контрола предупреждение */
+        inverseSurfaceTransparentNegativeHover: '#FF293E1F',
+        /** Прозрачный инвертированный цвет фона поверхности/контрола предупреждение */
+        inverseSurfaceTransparentNegativeActive: '#FF293E3D',
+        /** Прозрачный инвертированный цвет фона поверхности/контрола информация */
+        inverseSurfaceTransparentInfoHover: '#3F82FD1F',
+        /** Прозрачный инвертированный цвет фона поверхности/контрола информация */
+        inverseSurfaceTransparentInfoActive: '#3F82FD3D',
+        /** Инвертированный основной фон для карточек */
+        inverseSurfaceSolidCard: '#171717',
+        /** Инвертированный основной непрозрачный фон поверхности/контрола */
+        inverseSurfaceSolidPrimary: '#171717',
+        /** Инвертированный вторичный непрозрачный фон поверхности/контрола */
+        inverseSurfaceSolidSecondary: '#262626',
+        /** Инвертированный третичный непрозрачный фон поверхности/контрола */
+        inverseSurfaceSolidTertiary: '#363636',
+        /** Инвертированный непрозрачный фон поверхности/контрола по умолчанию */
+        inverseSurfaceSolidDefault: '#F9F9F9',
+        /** Инвертированный основной прозрачный фон поверхности/контрола */
+        inverseSurfaceTransparentPrimary: '#FFFFFF0F',
+        /** Инвертированный прозрачный фон для карточек */
+        inverseSurfaceTransparentCard: '#FFFFFF1F',
+        /** Инвертированный вторичный прозрачный фон поверхности/контрола */
+        inverseSurfaceTransparentSecondary: '#FFFFFF1F',
+        /** Инвертированный третичный прозрачный фон поверхности/контрола */
+        inverseSurfaceTransparentTertiary: '#FFFFFF33',
+        /** Инвертированный глубокий прозрачный фон поверхности/контрола */
+        inverseSurfaceTransparentDeep: '#FFFFFFA3',
+        /** Инвертированный фон поверхности/контрола без заливки */
+        inverseSurfaceClear: '#FFFFFF00',
+        /** Инвертированный акцентный фон поверхности/контрола */
+        inverseSurfaceAccent: '#3F81FD',
+        /** Инвертированный акцентный минорный непрозрачный фон поверхности/контрола */
+        inverseSurfaceAccentMinor: '#082254',
+        /** Прозрачный инвертированный акцентный фон поверхности/контрола */
+        inverseSurfaceTransparentAccent: '#3F81FD33',
+        /** Инвертированный цвет успеха */
+        inverseSurfacePositive: '#1A9E32',
+        /** Инвертированный цвет фона поверхности/контрола предупреждение */
+        inverseSurfaceWarning: '#FA5F05',
+        /** Инвертированный цвет фона поверхности/контрола ошибка */
+        inverseSurfaceNegative: '#FF293E',
+        /** Инвертированный цвет фона поверхности/контрола информация */
+        inverseSurfaceInfo: '#3F81FD',
+        /** Инвертированный минорный цвет фона поверхности/контрола успех */
+        inverseSurfacePositiveMinor: '#0A2B10',
+        /** Инвертированный минорный цвет фона поверхности/контрола предупреждение */
+        inverseSurfaceWarningMinor: '#3D1D0A',
+        /** Инвертированный минорный цвет фона поверхности/контрола ошибка */
+        inverseSurfaceNegativeMinor: '#4A0D13',
+        /** Инвертированный минорный цвет фона поверхности/контрола информация */
+        inverseSurfaceInfoMinor: '#082254',
+        /** Прозрачный инвертированный цвет фона поверхности/контрола успех */
+        inverseSurfaceTransparentPositive: '#1A9E3233',
+        /** Прозрачный инвертированный цвет фона поверхности/контрола предупреждение */
+        inverseSurfaceTransparentWarning: '#FA5F0533',
+        /** Прозрачный инвертированный цвет фона поверхности/контрола предупреждение */
+        inverseSurfaceTransparentNegative: '#FF293E33',
+        /** Прозрачный инвертированный цвет фона поверхности/контрола информация */
+        inverseSurfaceTransparentInfo: '#3F81FD33',
         /** Основной фон */
         backgroundPrimary: '#F9F9F9',
         /** Основной фон */
@@ -1954,6 +2546,10 @@ export const color = {
         darkBackgroundPrimary: '#080808',
         /** Основной фон на светлом фоне */
         lightBackgroundPrimary: '#F9F9F9',
+        /** Инвертированный основной фон */
+        inverseBackgroundPrimaryBrightness: '#0F0F0FFF',
+        /** Инвертированный основной фон */
+        inverseBackgroundPrimary: '#080808',
         /** Цвет фона паранжи светлый */
         overlaySoft: '#F9F9F98F',
         /** Цвет фона паранжи темный */
@@ -1972,6 +2568,12 @@ export const color = {
         onLightOverlayHard: '#F9F9F9F5',
         /** light overlay onLight overlayBlur */
         onLightOverlayBlur: '#F9F9F947',
+        /** Инвертированный цвет фона паранжи светлый */
+        inverseOverlaySoft: '#0808088F',
+        /** Инвертированный цвет фона паранжи темный */
+        inverseOverlayHard: '#080808F5',
+        /** Инвертированный цвет фона паранжи размытый */
+        inverseOverlayBlur: '#08080847',
         /** Основной непрозрачный цвет обводки */
         outlineSolidPrimaryHover: '#EDEDEDFF',
         /** Основной непрозрачный цвет обводки */
@@ -2374,5 +2976,143 @@ export const color = {
         onLightOutlineInfoMinor: '#8BB2FC',
         /** Прозрачный цвет обводки информация на светлом фоне */
         onLightOutlineTransparentInfo: '#2A72F833',
+        /** Инвертированный основной непрозрачный цвет обводки */
+        inverseOutlineSolidPrimaryHover: '#787878FF',
+        /** Инвертированный основной непрозрачный цвет обводки */
+        inverseOutlineSolidPrimaryActive: '#4F4F4FFF',
+        /** Инвертированный вторичный непрозрачный цвет обводки */
+        inverseOutlineSolidSecondaryHover: '#FFFFFFFF',
+        /** Инвертированный вторичный непрозрачный цвет обводки */
+        inverseOutlineSolidSecondaryActive: '#404040FF',
+        /** Инвертированный третичный непрозрачный цвет обводки */
+        inverseOutlineSolidTertiaryHover: '#FFFFFFFF',
+        /** Инвертированный третичный непрозрачный цвет обводки */
+        inverseOutlineSolidTertiaryActive: '#595959FF',
+        /** Инвертированный основной прозрачный цвет обводки */
+        inverseOutlineTransparentPrimaryHover: '#FFFFFFFF',
+        /** Инвертированный основной прозрачный цвет обводки */
+        inverseOutlineTransparentPrimaryActive: '#FFFFFF25',
+        /** Инвертированный вторичный прозрачный цвет обводки */
+        inverseOutlineTransparentSecondaryHover: '#FFFFFFFF',
+        /** Инвертированный вторичный прозрачный цвет обводки */
+        inverseOutlineTransparentSecondaryActive: '#FFFFFF25',
+        /** Инвертированный третичный прозрачный цвет обводки */
+        inverseOutlineTransparentTertiaryHover: '#FFFFFFFF',
+        /** Инвертированный третичный прозрачный цвет обводки */
+        inverseOutlineTransparentTertiaryActive: '#FFFFFF7A',
+        /** Инвертированная бесцветная обводка */
+        inverseOutlineClearHover: '#FFFFFFFF',
+        /** Инвертированная бесцветная обводка */
+        inverseOutlineClearActive: '#FFFFFFFF',
+        /** Инвертированный акцентный цвет обводки */
+        inverseOutlineAccentHover: '#689CFDFF',
+        /** Инвертированный акцентный цвет обводки */
+        inverseOutlineAccentActive: '#1767FDFF',
+        /** Инвертированный акцентный минорный непрозрачный цвет обводки */
+        inverseOutlineAccentMinorHover: '#FFFFFFFF',
+        /** Инвертированный акцентный минорный непрозрачный цвет обводки */
+        inverseOutlineAccentMinorActive: '#113B88FF',
+        /** Прозрачный инвертированный акцентный цвет обводки */
+        inverseOutlineTransparentAccentHover: '#528EFFFF',
+        /** Прозрачный инвертированный акцентный цвет обводки */
+        inverseOutlineTransparentAccentActive: '#528EFF56',
+        /** Инвертированный цвет обводки успех */
+        inverseOutlinePositiveHover: '#2BD44AFF',
+        /** Инвертированный цвет обводки успех */
+        inverseOutlinePositiveActive: '#1D9032FF',
+        /** Инвертированный цвет обводки предупреждение */
+        inverseOutlineWarningHover: '#FF8B4DFF',
+        /** Инвертированный цвет обводки предупреждение */
+        inverseOutlineWarningActive: '#FA5700FF',
+        /** Инвертированный цвет обводки ошибка */
+        inverseOutlineNegativeHover: '#FF6675FF',
+        /** Инвертированный цвет обводки ошибка */
+        inverseOutlineNegativeActive: '#FF142CFF',
+        /** Инвертированный цвет обводки информация */
+        inverseOutlineInfoHover: '#7AA9FFFF',
+        /** Инвертированный цвет обводки информация */
+        inverseOutlineInfoActive: '#2974FFFF',
+        /** Инвертированный минорный цвет обводки успех */
+        inverseOutlinePositiveMinorHover: '#11A72CFF',
+        /** Инвертированный минорный цвет обводки успех */
+        inverseOutlinePositiveMinorActive: '#0D8222FF',
+        /** Инвертированный минорный цвет обводки предупреждение */
+        inverseOutlineWarningMinorHover: '#CD5713FF',
+        /** Инвертированный минорный цвет обводки предупреждение */
+        inverseOutlineWarningMinorActive: '#A84710FF',
+        /** Инвертированный минорный цвет обводки ошибка */
+        inverseOutlineNegativeMinorHover: '#C2192AFF',
+        /** Инвертированный минорный цвет обводки ошибка */
+        inverseOutlineNegativeMinorActive: '#7A101AFF',
+        /** Инвертированный минорный цвет обводки информация */
+        inverseOutlineInfoMinorHover: '#FFFFFFFF',
+        /** Инвертированный минорный цвет обводки информация */
+        inverseOutlineInfoMinorActive: '#113B88FF',
+        /** Прозрачный инвертированный цвет обводки успех */
+        inverseOutlineTransparentPositiveHover: '#24B23EFF',
+        /** Прозрачный инвертированный цвет обводки успех */
+        inverseOutlineTransparentPositiveActive: '#24B23E56',
+        /** Прозрачный инвертированный цвет обводки предупреждение */
+        inverseOutlineTransparentWarningHover: '#FF7024FF',
+        /** Прозрачный инвертированный цвет обводки предупреждение */
+        inverseOutlineTransparentWarningActive: '#FF702456',
+        /** Прозрачный инвертированный цвет обводки предупреждение */
+        inverseOutlineTransparentNegativeHover: '#FF3D51FF',
+        /** Прозрачный инвертированный цвет обводки предупреждение */
+        inverseOutlineTransparentNegativeActive: '#FF3D5156',
+        /** Прозрачный инвертированный цвет обводки информация */
+        inverseOutlineTransparentInfoHover: '#528EFFFF',
+        /** Прозрачный инвертированный цвет обводки информация */
+        inverseOutlineTransparentInfoActive: '#528EFF56',
+        /** light outline inverse outlineDefaultHover */
+        inverseOutlineDefaultHover: '#FFFFFFFF',
+        /** light outline inverse outlineDefaultActive */
+        inverseOutlineDefaultActive: '#C7C7C7FF',
+        /** Инвертированный основной непрозрачный цвет обводки */
+        inverseOutlineSolidPrimary: '#262626',
+        /** Инвертированный вторичный непрозрачный цвет обводки */
+        inverseOutlineSolidSecondary: '#4E4E4E',
+        /** Инвертированный третичный непрозрачный цвет обводки */
+        inverseOutlineSolidTertiary: '#707070',
+        /** Инвертированный основной прозрачный цвет обводки */
+        inverseOutlineTransparentPrimary: '#FFFFFF1F',
+        /** Инвертированный третичный прозрачный цвет обводки */
+        inverseOutlineTransparentTertiary: '#FFFFFF66',
+        /** Инвертированная бесцветная обводка */
+        inverseOutlineClear: '#FFFFFF00',
+        /** light outline inverse outlineDefault */
+        inverseOutlineDefault: '#F9F9F9',
+        /** Инвертированный акцентный цвет обводки */
+        inverseOutlineAccent: '#3F81FD',
+        /** Инвертированный акцентный минорный непрозрачный цвет обводки */
+        inverseOutlineAccentMinor: '#1549AB',
+        /** Прозрачный инвертированный акцентный цвет обводки */
+        inverseOutlineTransparentAccent: '#528EFF47',
+        /** Инвертированный цвет обводки успех */
+        inverseOutlinePositive: '#24B23E',
+        /** Инвертированный цвет обводки предупреждение */
+        inverseOutlineWarning: '#FF7024',
+        /** Инвертированный цвет обводки ошибка */
+        inverseOutlineNegative: '#FF3D51',
+        /** Инвертированный цвет обводки информация */
+        inverseOutlineInfo: '#528EFF',
+        /** Инвертированный минорный цвет обводки успех */
+        inverseOutlinePositiveMinor: '#095C18',
+        /** Инвертированный минорный цвет обводки предупреждение */
+        inverseOutlineWarningMinor: '#85380C',
+        /** Инвертированный минорный цвет обводки ошибка */
+        inverseOutlineNegativeMinor: '#9C1422',
+        /** Инвертированный минорный цвет обводки информация */
+        inverseOutlineInfoMinor: '#1549AB',
+        /** Прозрачный инвертированный цвет обводки успех */
+        inverseOutlineTransparentPositive: '#24B23E47',
+        /** Прозрачный инвертированный цвет обводки предупреждение */
+        inverseOutlineTransparentWarning: '#FF702447',
+        /** Прозрачный инвертированный цвет обводки предупреждение */
+        inverseOutlineTransparentNegative: '#FF3D5147',
+        /** Прозрачный инвертированный цвет обводки информация */
+        inverseOutlineTransparentInfo: '#528EFF47',
+        /** Инвертированный вторичный прозрачный цвет обводки */
+        inverseOutlineTransparentSecondary: '#FFFFFF1F',
     },
 } as const;
