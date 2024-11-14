@@ -1,7 +1,7 @@
-import { View } from 'react-native';
 import { useState } from 'react';
 import type { ComponentProps } from 'react';
 import type { StoryObj, Meta } from '@storybook/react';
+import { IconScribbleDiagonal, IconShazam } from '@salutejs/plasma-icons-native';
 
 import { TextField } from './TextField';
 
@@ -85,18 +85,8 @@ const StoryDefault = (props: StoryTextFieldProps) => {
             {...props}
             value={value}
             onValueChange={onValueChange}
-            contentLeft={
-                props.showLeftContent && (
-                    <View style={{ backgroundColor: 'red', opacity: 0.25, width: 22, height: 22, borderRadius: 50 }} />
-                )
-            }
-            contentRight={
-                props.showRightContent && (
-                    <View
-                        style={{ backgroundColor: 'green', opacity: 0.25, width: 22, height: 22, borderRadius: 50 }}
-                    />
-                )
-            }
+            contentLeft={props.showLeftContent && <IconScribbleDiagonal />}
+            contentRight={props.showRightContent && <IconShazam />}
         />
     );
 };

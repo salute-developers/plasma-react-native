@@ -1,6 +1,6 @@
 import type { ComponentProps } from 'react';
 import type { StoryObj, Meta } from '@storybook/react';
-import { Text } from 'react-native';
+import { IconPlasma } from '@salutejs/plasma-icons-native';
 
 import { Button } from './Button';
 
@@ -110,8 +110,8 @@ const StoryDefault = (props: StoryButtonProps) => {
         <Button
             {...props}
             onPress={onPress}
-            contentLeft={props.showLeftContent && <Text style={{ color: 'red' }}>Left Content</Text>}
-            contentRight={props.showRightContent && <Text style={{ color: 'green' }}>Right Content</Text>}
+            contentLeft={props.showLeftContent && <IconPlasma />}
+            contentRight={props.showRightContent && <IconPlasma />}
         />
     );
 };
