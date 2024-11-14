@@ -125,6 +125,17 @@ jobs:
       - name: Publish themes packages
         run: npx lerna exec -- npm publish --tag alpha
 
+      # Подготовка и публикация пакетов с иконками
+
+      - name: Update lerna config with icons mode
+        run: MODE="icons" npm run set-lerna-packages
+
+      - name: Update packages version
+        run: npm run bump-version -- --conventional-prerelease --preid "alpha-$(git rev-parse --short HEAD)"
+
+      - name: Publish icons packages
+        run: npx lerna exec -- npm publish --tag alpha
+
       # Шаг отображающий актаульное состояние package файлов
 
       - name: Show diff
