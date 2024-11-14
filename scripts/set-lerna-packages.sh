@@ -5,6 +5,7 @@ FILE_PATH="./lerna.json"
 ALL_PACKAGES='"packages": ["core/*", "libraries/*", "packages/*", "themes/*"],'
 THEME_PACKAGES='"packages": ["core/core-themes", "themes/*"],'
 COMPONENT_PACKAGES='"packages": ["core/core-components", "libraries/*"],'
+ICONS_PACKAGES='"packages": ["packages/plasma-icons"],'
 
 TARGET_REGEX='"packages": \[.*\]'
 
@@ -18,6 +19,9 @@ case $1 in
     ;;
   "components")
     REPLACEMENT=$COMPONENT_PACKAGES
+    ;;
+  "icons")
+    REPLACEMENT=$ICONS_PACKAGES
     ;;
   *)
     echo "Invalid option."
