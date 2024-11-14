@@ -284,6 +284,66 @@ export const color = {
         inverseTextParagraphHover: '#0808087A',
         /** Инвертированный cплошной наборный текст */
         inverseTextParagraphActive: '#080808A3',
+        /** Инвертированный акцентный цвет */
+        inverseTextAccentHover: '#79A7FBFF',
+        /** Инвертированный акцентный цвет */
+        inverseTextAccentActive: '#0D5FF8FF',
+        /** Инвертированный цвет успеха */
+        inverseTextPositiveHover: '#1EB83AFF',
+        /** Инвертированный цвет успеха */
+        inverseTextPositiveActive: '#15842AFF',
+        /** Инвертированный цвет предупреждения */
+        inverseTextWarningHover: '#FB7223FF',
+        /** Инвертированный цвет предупреждения */
+        inverseTextWarningActive: '#DC5304FF',
+        /** Инвертированный цвет ошибки */
+        inverseTextNegativeHover: '#F5384BFF',
+        /** Инвертированный цвет ошибки */
+        inverseTextNegativeActive: '#E40C22FF',
+        /** dark text inverse textAccentMinorHover */
+        inverseTextAccentMinorHover: '#DCE8FEFF',
+        /** dark text inverse textAccentMinorActive */
+        inverseTextAccentMinorActive: '#6FA0FBFF',
+        /** Инвертированный акцентный цвет */
+        inverseTextAccent: '#2A72F8',
+        /** dark text inverse textAccentMinor */
+        inverseTextAccentMinor: '#8BB2FC',
+        /** Инвертированный цвет успеха */
+        inverseTextPositive: '#1A9E32',
+        /** Инвертированный цвет предупреждения */
+        inverseTextWarning: '#FA5F05',
+        /** Инвертированный цвет ошибки */
+        inverseTextNegative: '#F31B31',
+        /** dark text inverse textInfo */
+        inverseTextInfo: '#2A72F8',
+        /** dark text inverse textInfoHover */
+        inverseTextInfoHover: '#79A7FBFF',
+        /** dark text inverse textInfoActive */
+        inverseTextInfoActive: '#0D5FF8FF',
+        /** dark text inverse textPositiveMinor */
+        inverseTextPositiveMinor: '#28D247',
+        /** dark text inverse textPositiveMinorHover */
+        inverseTextPositiveMinorHover: '#3EDA5BFF',
+        /** dark text inverse textPositiveMinorActive */
+        inverseTextPositiveMinorActive: '#23B83EFF',
+        /** dark text inverse textWarningMinor */
+        inverseTextWarningMinor: '#FD9C68',
+        /** dark text inverse textWarningMinorHover */
+        inverseTextWarningMinorHover: '#FDB086FF',
+        /** dark text inverse textWarningMinorActive */
+        inverseTextWarningMinorActive: '#FC884AFF',
+        /** dark text inverse textNegativeMinor */
+        inverseTextNegativeMinor: '#FF8F9A',
+        /** dark text inverse textNegativeMinorHover */
+        inverseTextNegativeMinorHover: '#FFADB6FF',
+        /** dark text inverse textNegativeMinorActive */
+        inverseTextNegativeMinorActive: '#FF707EFF',
+        /** dark text inverse textInfoMinor */
+        inverseTextInfoMinor: '#8BB2FC',
+        /** dark text inverse textInfoMinorHover */
+        inverseTextInfoMinorHover: '#DCE8FEFF',
+        /** dark text inverse textInfoMinorActive */
+        inverseTextInfoMinorActive: '#6FA0FBFF',
         /** Основной непрозрачный фон поверхности/контрола */
         surfaceSolidPrimary: '#171717',
         /** Основной непрозрачный фон поверхности/контрола */
@@ -758,6 +818,168 @@ export const color = {
         onLightSurfaceTransparentDeepHover: '#080808C2',
         /** dark surface onLight surfaceTransparentDeepActive */
         onLightSurfaceTransparentDeepActive: '#08080894',
+        /** Инвертированный осн. непрозрачный фон поверхности/контрола */
+        inverseSurfaceSolidPrimaryBrightness: '#FFFFFFFF',
+        /** Инвертированный основной фон для карточек */
+        inverseSurfaceSolidCardBrightness: '#FFFFFFFF',
+        /** Инвертированный прозрачный фон для карточек */
+        inverseSurfaceTransparentCardBrightness: '#FFFFFFFF',
+        /** dark surface inverse surfacePositive */
+        inverseSurfacePositive: '#1A9E32',
+        /** dark surface inverse surfaceWarning */
+        inverseSurfaceWarning: '#FA5F05',
+        /** dark surface inverse surfaceNegative */
+        inverseSurfaceNegative: '#F31B31',
+        /** Инвертированный непрозрачный фон поверхности/контрола по умолчанию */
+        inverseSurfaceSolidDefaultHover: '#0D0D0DFF',
+        /** Инвертированный непрозрачный фон поверхности/контрола по умолчанию */
+        inverseSurfaceSolidDefaultActive: '#030303FF',
+        /** Инвертированный осн. непрозрачный фон поверхности/контрола */
+        inverseSurfaceSolidPrimaryHover: '#FAFAFAFF',
+        /** Инвертированный осн. непрозрачный фон поверхности/контрола */
+        inverseSurfaceSolidPrimaryActive: '#F0F0F0FF',
+        /** Инвертированный втор. непрозрачный фон поверхности/контрола */
+        inverseSurfaceSolidSecondaryHover: '#F7F7F7FF',
+        /** Инвертированный втор. непрозрачный фон поверхности/контрола */
+        inverseSurfaceSolidSecondaryActive: '#E8E8E8FF',
+        /** Инвертированный трет.непрозрачный фон поверхности/контрола */
+        inverseSurfaceSolidTertiaryHover: '#E8E8E8FF',
+        /** Инвертированный трет.непрозрачный фон поверхности/контрола */
+        inverseSurfaceSolidTertiaryActive: '#D9D9D9FF',
+        /** Инвертированный основной фон для карточек */
+        inverseSurfaceSolidCardHover: '#FFFFFFFF',
+        /** Инвертированный основной фон для карточек */
+        inverseSurfaceSolidCardActive: '#FFFFFFFF',
+        /** Инвертированный основной прозрачный фон поверхности/контрола */
+        inverseSurfaceTransparentPrimaryHover: '#08080812',
+        /** Инвертированный основной прозрачный фон поверхности/контрола */
+        inverseSurfaceTransparentPrimaryActive: '#08080803',
+        /** Инвертированный вторичный прозрачный фон поверхности/контрола */
+        inverseSurfaceTransparentSecondaryHover: '#0808081F',
+        /** Инвертированный вторичный прозрачный фон поверхности/контрола */
+        inverseSurfaceTransparentSecondaryActive: '#0808080A',
+        /** Инвертированный третичный прозрачный фон поверхности/контрола */
+        inverseSurfaceTransparentTertiaryHover: '#0808083D',
+        /** Инвертированный третичный прозрачный фон поверхности/контрола */
+        inverseSurfaceTransparentTertiaryActive: '#0808080F',
+        /** Инвертированный прозрачный фон для карточек */
+        inverseSurfaceTransparentCardHover: '#FFFFFFFF',
+        /** Инвертированный прозрачный фон для карточек */
+        inverseSurfaceTransparentCardActive: '#FFFFFFFF',
+        /** Инвертированный акцентный фон поверхности/контрола */
+        inverseSurfaceAccentHover: '#4886F9FF',
+        /** Инвертированный акцентный фон поверхности/контрола */
+        inverseSurfaceAccentActive: '#206CF8FF',
+        /** dark surface inverse surfacePositiveHover */
+        inverseSurfacePositiveHover: '#1DAF37FF',
+        /** dark surface inverse surfacePositiveActive */
+        inverseSurfacePositiveActive: '#18952FFF',
+        /** dark surface inverse surfaceWarningHover */
+        inverseSurfaceWarningHover: '#FB7223FF',
+        /** dark surface inverse surfaceWarningActive */
+        inverseSurfaceWarningActive: '#F05B05FF',
+        /** dark surface inverse surfaceNegativeHover */
+        inverseSurfaceNegativeHover: '#F5384BFF',
+        /** dark surface inverse surfaceNegativeActive */
+        inverseSurfaceNegativeActive: '#F31228FF',
+        /** Инвертированный фон поверхности/контрола без заливки */
+        inverseSurfaceClearHover: '#FFFFFFFF',
+        /** Инвертированный фон поверхности/контрола без заливки */
+        inverseSurfaceClearActive: '#FFFFFFFF',
+        /** Инвертированный основной фон для карточек */
+        inverseSurfaceSolidCard: '#FFFFFFFF',
+        /** Инвертированный осн. непрозрачный фон поверхности/контрола */
+        inverseSurfaceSolidPrimary: '#F5F5F5',
+        /** Инвертированный втор. непрозрачный фон поверхности/контрола */
+        inverseSurfaceSolidSecondary: '#ECECEC',
+        /** Инвертированный трет.непрозрачный фон поверхности/контрола */
+        inverseSurfaceSolidTertiary: '#DDDDDD',
+        /** Инвертированный непрозрачный фон поверхности/контрола по умолчанию */
+        inverseSurfaceSolidDefault: '#080808',
+        /** Инвертированный прозрачный фон для карточек */
+        inverseSurfaceTransparentCard: '#FFFFFFFF',
+        /** Инвертированный основной прозрачный фон поверхности/контрола */
+        inverseSurfaceTransparentPrimary: '#08080808',
+        /** Инвертированный вторичный прозрачный фон поверхности/контрола */
+        inverseSurfaceTransparentSecondary: '#0808080F',
+        /** Инвертированный третичный прозрачный фон поверхности/контрола */
+        inverseSurfaceTransparentTertiary: '#0808081F',
+        /** dark surface inverse surfaceTransparentDeep */
+        inverseSurfaceTransparentDeep: '#080808A3',
+        /** dark surface inverse surfaceTransparentDeepHover */
+        inverseSurfaceTransparentDeepHover: '#080808C2',
+        /** dark surface inverse surfaceTransparentDeepActive */
+        inverseSurfaceTransparentDeepActive: '#08080894',
+        /** Инвертированный фон поверхности/контрола без заливки */
+        inverseSurfaceClear: '#00000000',
+        /** Инвертированный акцентный фон поверхности/контрола */
+        inverseSurfaceAccent: '#2A72F8',
+        /** dark surface inverse surfaceAccentMinor */
+        inverseSurfaceAccentMinor: '#DEE9FF',
+        /** dark surface inverse surfaceAccentMinorHover */
+        inverseSurfaceAccentMinorHover: '#EBF1FFFF',
+        /** dark surface inverse surfaceAccentMinorActive */
+        inverseSurfaceAccentMinorActive: '#D6E4FFFF',
+        /** dark surface inverse surfaceTransparentAccent */
+        inverseSurfaceTransparentAccent: '#2A72F81F',
+        /** dark surface inverse surfaceTransparentAccentHover */
+        inverseSurfaceTransparentAccentHover: '#2A72F83D',
+        /** dark surface inverse surfaceTransparentAccentActive */
+        inverseSurfaceTransparentAccentActive: '#2A72F80F',
+        /** dark surface inverse surfaceInfo */
+        inverseSurfaceInfo: '#2A72F8',
+        /** dark surface inverse surfaceInfoHover */
+        inverseSurfaceInfoHover: '#4886F9FF',
+        /** dark surface inverse surfaceInfoActive */
+        inverseSurfaceInfoActive: '#206CF8FF',
+        /** dark surface inverse surfacePositiveMinor */
+        inverseSurfacePositiveMinor: '#9EFAAF',
+        /** dark surface inverse surfacePositiveMinorHover */
+        inverseSurfacePositiveMinorHover: '#B1FBBFFF',
+        /** dark surface inverse surfacePositiveMinorActive */
+        inverseSurfacePositiveMinorActive: '#94F9A7FF',
+        /** dark surface inverse surfaceWarningMinor */
+        inverseSurfaceWarningMinor: '#FEE2D2',
+        /** dark surface inverse surfaceWarningMinorHover */
+        inverseSurfaceWarningMinorHover: '#FEE9DCFF',
+        /** dark surface inverse surfaceWarningMinorActive */
+        inverseSurfaceWarningMinorActive: '#FEDCC8FF',
+        /** dark surface inverse surfaceNegativeMinor */
+        inverseSurfaceNegativeMinor: '#FFE0E3',
+        /** dark surface inverse surfaceNegativeMinorHover */
+        inverseSurfaceNegativeMinorHover: '#FFEBEDFF',
+        /** dark surface inverse surfaceNegativeMinorActive */
+        inverseSurfaceNegativeMinorActive: '#FFD6DAFF',
+        /** dark surface inverse surfaceInfoMinor */
+        inverseSurfaceInfoMinor: '#DEE9FF',
+        /** dark surface inverse surfaceInfoMinorHover */
+        inverseSurfaceInfoMinorHover: '#EBF1FFFF',
+        /** dark surface inverse surfaceInfoMinorActive */
+        inverseSurfaceInfoMinorActive: '#D6E4FFFF',
+        /** dark surface inverse surfaceTransparentPositive */
+        inverseSurfaceTransparentPositive: '#1A9E321F',
+        /** dark surface inverse surfaceTransparentPositiveHover */
+        inverseSurfaceTransparentPositiveHover: '#1A9E323D',
+        /** dark surface inverse surfaceTransparentPositiveActive */
+        inverseSurfaceTransparentPositiveActive: '#1A9E320F',
+        /** dark surface inverse surfaceTransparentWarning */
+        inverseSurfaceTransparentWarning: '#FA5F051F',
+        /** dark surface inverse surfaceTransparentWarningHover */
+        inverseSurfaceTransparentWarningHover: '#FA5F053D',
+        /** dark surface inverse surfaceTransparentWarningActive */
+        inverseSurfaceTransparentWarningActive: '#FA5F050F',
+        /** dark surface inverse surfaceTransparentNegative */
+        inverseSurfaceTransparentNegative: '#F31B311F',
+        /** dark surface inverse surfaceTransparentNegativeHover */
+        inverseSurfaceTransparentNegativeHover: '#F31B313D',
+        /** dark surface inverse surfaceTransparentNegativeActive */
+        inverseSurfaceTransparentNegativeActive: '#F31B310F',
+        /** dark surface inverse surfaceTransparentInfo */
+        inverseSurfaceTransparentInfo: '#2A72F81F',
+        /** dark surface inverse surfaceTransparentInfoHover */
+        inverseSurfaceTransparentInfoHover: '#2A72F83D',
+        /** dark surface inverse surfaceTransparentInfoActive */
+        inverseSurfaceTransparentInfoActive: '#2A72F80F',
         /** Основной фон */
         backgroundPrimary: '#080808',
         /** Основной фон */
@@ -766,6 +988,10 @@ export const color = {
         darkBackgroundPrimary: '#080808',
         /** Основной фон на светлом фоне */
         lightBackgroundPrimary: '#F9F9F9',
+        /** Инвертированный основной фон */
+        inverseBackgroundPrimaryBrightness: '#FFFFFFFF',
+        /** Инвертированный основной фон */
+        inverseBackgroundPrimary: '#F9F9F9',
         /** Цвет фона паранжи светлый */
         overlaySoft: '#0808088F',
         /** Цвет фона паранжи темный */
@@ -784,6 +1010,12 @@ export const color = {
         onLightOverlayHard: '#F9F9F9F5',
         /** dark overlay onLight overlayBlur */
         onLightOverlayBlur: '#F9F9F947',
+        /** Инвертированный цвет фона паранжи светлый */
+        inverseOverlaySoft: '#F9F9F98F',
+        /** Инвертированный цвет фона паранжи темный */
+        inverseOverlayHard: '#F9F9F9F5',
+        /** dark overlay inverse overlayBlur */
+        inverseOverlayBlur: '#F9F9F947',
         /** dark outline default outlinePrimary */
         outlinePrimary: '#262626',
         /** dark outline default outlinePrimaryHover */
@@ -1191,9 +1423,143 @@ export const color = {
         /** dark outline onLight outlineTransparentInfo */
         onLightOutlineTransparentInfo: '#2A72F833',
         /** dark outline inverse outlinePrimaryHover */
-        inverseOutlinePrimaryHover: '#CCCCCCFF',
+        inverseOutlinePrimaryHover: '#ABABABFF',
         /** dark outline inverse outlinePrimaryActive */
-        inverseOutlinePrimaryActive: '#E6E6E6FF',
+        inverseOutlinePrimaryActive: '#C4C4C4FF',
+        /** dark outline inverse outlinePrimary */
+        inverseOutlinePrimary: '#DDDDDD',
+        /** dark outline inverse outlineSecondary */
+        inverseOutlineSecondary: '#949494',
+        /** dark outline inverse outlineSecondaryHover */
+        inverseOutlineSecondaryHover: '#FFFFFFFF',
+        /** dark outline inverse outlineSecondaryActive */
+        inverseOutlineSecondaryActive: '#575757FF',
+        /** dark outline inverse outlineTertiary */
+        inverseOutlineTertiary: '#707070',
+        /** dark outline inverse outlineTertiaryHover */
+        inverseOutlineTertiaryHover: '#FFFFFFFF',
+        /** dark outline inverse outlineTertiaryActive */
+        inverseOutlineTertiaryActive: '#737373FF',
+        /** dark outline inverse outlineDefault */
+        inverseOutlineDefault: '#080808',
+        /** dark outline inverse outlineDefaultHover */
+        inverseOutlineDefaultHover: '#FFFFFFFF',
+        /** dark outline inverse outlineDefaultActive */
+        inverseOutlineDefaultActive: '#C7C7C7FF',
+        /** dark outline inverse outlineTransparentPrimary */
+        inverseOutlineTransparentPrimary: '#08080833',
+        /** dark outline inverse outlineTransparentPrimaryHover */
+        inverseOutlineTransparentPrimaryHover: '#080808FF',
+        /** dark outline inverse outlineTransparentPrimaryActive */
+        inverseOutlineTransparentPrimaryActive: '#0808083D',
+        /** dark outline inverse outlineTransparentSecondary */
+        inverseOutlineTransparentSecondary: '#08080866',
+        /** dark outline inverse outlineTransparentSecondaryHover */
+        inverseOutlineTransparentSecondaryHover: '#080808FF',
+        /** dark outline inverse outlineTransparentSecondaryActive */
+        inverseOutlineTransparentSecondaryActive: '#0808087A',
+        /** dark outline inverse outlineTransparentTertiary */
+        inverseOutlineTransparentTertiary: '#0808088F',
+        /** dark outline inverse outlineTransparentTertiaryHover */
+        inverseOutlineTransparentTertiaryHover: '#080808FF',
+        /** dark outline inverse outlineTransparentTertiaryActive */
+        inverseOutlineTransparentTertiaryActive: '#080808AB',
+        /** dark outline inverse outlineTransparentClear */
+        inverseOutlineTransparentClear: '#FFFFFF00',
+        /** dark outline inverse outlineTransparentClearHover */
+        inverseOutlineTransparentClearHover: '#FFFFFFFF',
+        /** dark outline inverse outlineTransparentClearActive */
+        inverseOutlineTransparentClearActive: '#FFFFFFFF',
+        /** dark outline inverse outlineAccent */
+        inverseOutlineAccent: '#2A72F8',
+        /** dark outline inverse outlineAccentHover */
+        inverseOutlineAccentHover: '#79A7FBFF',
+        /** dark outline inverse outlineAccentActive */
+        inverseOutlineAccentActive: '#0D5FF8FF',
+        /** dark outline inverse outlineAccentMinor */
+        inverseOutlineAccentMinor: '#8BB2FC',
+        /** dark outline inverse outlineAccentMinorHover */
+        inverseOutlineAccentMinorHover: '#DCE8FEFF',
+        /** dark outline inverse outlineAccentMinorActive */
+        inverseOutlineAccentMinorActive: '#6FA0FBFF',
+        /** dark outline inverse outlineTransparentAccent */
+        inverseOutlineTransparentAccent: '#2A72F833',
+        /** dark outline inverse outlineTransparentAccentHover */
+        inverseOutlineTransparentAccentHover: '#2A72F8FF',
+        /** dark outline inverse outlineTransparentAccentActive */
+        inverseOutlineTransparentAccentActive: '#2A72F83D',
+        /** dark outline inverse outlinePositive */
+        inverseOutlinePositive: '#1A9E32',
+        /** dark outline inverse outlinePositiveHover */
+        inverseOutlinePositiveHover: '#1EB83AFF',
+        /** dark outline inverse outlinePositiveActive */
+        inverseOutlinePositiveActive: '#15842AFF',
+        /** dark outline inverse outlineWarning */
+        inverseOutlineWarning: '#FA5F05',
+        /** dark outline inverse outlineWarningHover */
+        inverseOutlineWarningHover: '#FB7223FF',
+        /** dark outline inverse outlineWarningActive */
+        inverseOutlineWarningActive: '#DC5304FF',
+        /** dark outline inverse outlineNegative */
+        inverseOutlineNegative: '#F31B31',
+        /** dark outline inverse outlineNegativeHover */
+        inverseOutlineNegativeHover: '#F5384BFF',
+        /** dark outline inverse outlineNegativeActive */
+        inverseOutlineNegativeActive: '#E40C22FF',
+        /** dark outline inverse outlineInfo */
+        inverseOutlineInfo: '#2A72F8',
+        /** dark outline inverse outlineInfoHover */
+        inverseOutlineInfoHover: '#79A7FBFF',
+        /** dark outline inverse outlineInfoActive */
+        inverseOutlineInfoActive: '#0D5FF8FF',
+        /** dark outline inverse outlinePositiveMinor */
+        inverseOutlinePositiveMinor: '#28D247',
+        /** dark outline inverse outlinePositiveMinorHover */
+        inverseOutlinePositiveMinorHover: '#3EDA5BFF',
+        /** dark outline inverse outlinePositiveMinorActive */
+        inverseOutlinePositiveMinorActive: '#23B83EFF',
+        /** dark outline inverse outlineWarningMinor */
+        inverseOutlineWarningMinor: '#FD9C68',
+        /** dark outline inverse outlineWarningMinorHover */
+        inverseOutlineWarningMinorHover: '#FDB086FF',
+        /** dark outline inverse outlineWarningMinorActive */
+        inverseOutlineWarningMinorActive: '#FC884AFF',
+        /** dark outline inverse outlineNegativeMinor */
+        inverseOutlineNegativeMinor: '#FF8F9A',
+        /** dark outline inverse outlineNegativeMinorHover */
+        inverseOutlineNegativeMinorHover: '#FFADB6FF',
+        /** dark outline inverse outlineNegativeMinorActive */
+        inverseOutlineNegativeMinorActive: '#FF707EFF',
+        /** dark outline inverse outlineInfoMinor */
+        inverseOutlineInfoMinor: '#8BB2FC',
+        /** dark outline inverse outlineInfoMinorHover */
+        inverseOutlineInfoMinorHover: '#DCE8FEFF',
+        /** dark outline inverse outlineInfoMinorActive */
+        inverseOutlineInfoMinorActive: '#6FA0FBFF',
+        /** dark outline inverse outlineTransparentPositive */
+        inverseOutlineTransparentPositive: '#1A9E3233',
+        /** dark outline inverse outlineTransparentPositiveHover */
+        inverseOutlineTransparentPositiveHover: '#1A9E32FF',
+        /** dark outline inverse outlineTransparentPositiveActive */
+        inverseOutlineTransparentPositiveActive: '#1A9E323D',
+        /** dark outline inverse outlineTransparentWarning */
+        inverseOutlineTransparentWarning: '#FA5F0533',
+        /** dark outline inverse outlineTransparentWarningHover */
+        inverseOutlineTransparentWarningHover: '#FA5F05FF',
+        /** dark outline inverse outlineTransparentWarningActive */
+        inverseOutlineTransparentWarningActive: '#FA5F053D',
+        /** dark outline inverse outlineTransparentNegative */
+        inverseOutlineTransparentNegative: '#F31B3133',
+        /** dark outline inverse outlineTransparentNegativeHover */
+        inverseOutlineTransparentNegativeHover: '#F31B31FF',
+        /** dark outline inverse outlineTransparentNegativeActive */
+        inverseOutlineTransparentNegativeActive: '#F31B313D',
+        /** dark outline inverse outlineTransparentInfo */
+        inverseOutlineTransparentInfo: '#2A72F833',
+        /** dark outline inverse outlineTransparentInfoHover */
+        inverseOutlineTransparentInfoHover: '#2A72F8FF',
+        /** dark outline inverse outlineTransparentInfoActive */
+        inverseOutlineTransparentInfoActive: '#2A72F83D',
     },
     light: {
         /** Основной цвет текста */
@@ -1464,6 +1830,12 @@ export const color = {
         inverseTextTertiary: '#FFFFFF47',
         /** Инвертированный cплошной наборный текст */
         inverseTextParagraph: '#FFFFFFCC',
+        /** Инвертированный цвет успеха */
+        inverseTextPositive: '#1A9E32',
+        /** Инвертированный цвет предупреждения */
+        inverseTextWarning: '#FA5F05',
+        /** Инвертированный цвет ошибки */
+        inverseTextNegative: '#FF293E',
         /** Инвертированный основной цвет текста */
         inverseTextPrimaryHover: '#FFFFFF93',
         /** Инвертированный основной цвет текста */
@@ -1480,6 +1852,60 @@ export const color = {
         inverseTextParagraphHover: '#FFFFFF7A',
         /** Инвертированный cплошной наборный текст */
         inverseTextParagraphActive: '#FFFFFFA3',
+        /** Инвертированный акцентный цвет */
+        inverseTextAccentHover: '#689CFDFF',
+        /** Инвертированный акцентный цвет */
+        inverseTextAccentActive: '#1767FDFF',
+        /** Инвертированный цвет успеха */
+        inverseTextPositiveHover: '#1FC13DFF',
+        /** Инвертированный цвет успеха */
+        inverseTextPositiveActive: '#147B27FF',
+        /** Инвертированный цвет предупреждения */
+        inverseTextWarningHover: '#FB782DFF',
+        /** Инвертированный цвет предупреждения */
+        inverseTextWarningActive: '#D25004FF',
+        /** Инвертированный цвет ошибки */
+        inverseTextNegativeHover: '#FF5263FF',
+        /** Инвертированный цвет ошибки */
+        inverseTextNegativeActive: '#FF001AFF',
+        /** light text inverse textAccentMinor */
+        inverseTextAccentMinor: '#1549AB',
+        /** light text inverse textAccentMinorHover */
+        inverseTextAccentMinorHover: '#FFFFFFFF',
+        /** light text inverse textAccentMinorActive */
+        inverseTextAccentMinorActive: '#113B88FF',
+        /** light text inverse textInfoHover */
+        inverseTextInfoHover: '#689CFDFF',
+        /** light text inverse textInfoActive */
+        inverseTextInfoActive: '#1767FDFF',
+        /** light text inverse textPositiveMinorHover */
+        inverseTextPositiveMinorHover: '#11A72CFF',
+        /** light text inverse textPositiveMinorActive */
+        inverseTextPositiveMinorActive: '#0D8222FF',
+        /** light text inverse textWarningMinorHover */
+        inverseTextWarningMinorHover: '#CD5713FF',
+        /** light text inverse textWarningMinorActive */
+        inverseTextWarningMinorActive: '#A84710FF',
+        /** light text inverse textNegativeMinorHover */
+        inverseTextNegativeMinorHover: '#C2192AFF',
+        /** light text inverse textNegativeMinorActive */
+        inverseTextNegativeMinorActive: '#7A101AFF',
+        /** light text inverse textInfoMinorHover */
+        inverseTextInfoMinorHover: '#FFFFFFFF',
+        /** light text inverse textInfoMinorActive */
+        inverseTextInfoMinorActive: '#113B88FF',
+        /** Инвертированный акцентный цвет */
+        inverseTextAccent: '#3F81FD',
+        /** light text inverse textInfo */
+        inverseTextInfo: '#3F81FD',
+        /** light text inverse textPositiveMinor */
+        inverseTextPositiveMinor: '#095C18',
+        /** light text inverse textWarningMinor */
+        inverseTextWarningMinor: '#85380C',
+        /** light text inverse textNegativeMinor */
+        inverseTextNegativeMinor: '#9C1422',
+        /** light text inverse textInfoMinor */
+        inverseTextInfoMinor: '#1549AB',
         /** Непрозрачный фон поверхности/контрола по умолчанию */
         surfaceSolidDefault: '#080808',
         /** Основной непрозрачный фон поверхности/контрола */
@@ -1954,6 +2380,156 @@ export const color = {
         onLightSurfaceTransparentDeepHover: '#0808088F',
         /** light surface onLight surfaceTransparentDeepActive */
         onLightSurfaceTransparentDeepActive: '#080808AD',
+        /** Инвертированный непрозрачный фон поверхности/контрола по умолчанию */
+        inverseSurfaceSolidDefault: '#FFFFFFFF',
+        /** Инвертированный основной непрозрачный фон поверхности/контрола */
+        inverseSurfaceSolidPrimary: '#171717',
+        /** Инвертированный основной непрозрачный фон поверхности/контрола */
+        inverseSurfaceSolidPrimaryBrightness: '#262626FF',
+        /** Инвертированный вторичный непрозрачный фон поверхности/контрола */
+        inverseSurfaceSolidSecondary: '#262626',
+        /** Инвертированный третичный непрозрачный фон поверхности/контрола */
+        inverseSurfaceSolidTertiary: '#363636',
+        /** Инвертированный основной фон для карточек */
+        inverseSurfaceSolidCard: '#171717',
+        /** Инвертированный основной фон для карточек */
+        inverseSurfaceSolidCardBrightness: '#262626FF',
+        /** Инвертированный основной прозрачный фон поверхности/контрола */
+        inverseSurfaceTransparentPrimary: '#171717',
+        /** Инвертированный вторичный прозрачный фон поверхности/контрола */
+        inverseSurfaceTransparentSecondary: '#262626',
+        /** Инвертированный третичный прозрачный фон поверхности/контрола */
+        inverseSurfaceTransparentTertiary: '#363636',
+        /** Инвертированный прозрачный фон для карточек */
+        inverseSurfaceTransparentCard: '#080808',
+        /** Инвертированный прозрачный фон для карточек */
+        inverseSurfaceTransparentCardBrightness: '#171717FF',
+        /** Инвертированный акцентный фон поверхности/контрола */
+        inverseSurfaceAccent: '#FFFFFFFF',
+        /** Инвертированный цвет успеха */
+        inverseSurfacePositive: '#1A9E32',
+        /** Инвертированный цвет фона поверхности/контрола предупреждение */
+        inverseSurfaceWarning: '#FA5F05',
+        /** Инвертированный цвет фона поверхности/контрола ошибка */
+        inverseSurfaceNegative: '#FF293E',
+        /** Инвертированный фон поверхности/контрола без заливки */
+        inverseSurfaceClear: '#00000000',
+        /** Инвертированный непрозрачный фон поверхности/контрола по умолчанию */
+        inverseSurfaceSolidDefaultHover: '#FFFFFFFF',
+        /** Инвертированный непрозрачный фон поверхности/контрола по умолчанию */
+        inverseSurfaceSolidDefaultActive: '#FFFFFFFF',
+        /** Инвертированный основной непрозрачный фон поверхности/контрола */
+        inverseSurfaceSolidPrimaryHover: '#363636FF',
+        /** Инвертированный основной непрозрачный фон поверхности/контрола */
+        inverseSurfaceSolidPrimaryActive: '#0D0D0DFF',
+        /** Инвертированный вторичный непрозрачный фон поверхности/контрола */
+        inverseSurfaceSolidSecondaryHover: '#3B3B3BFF',
+        /** Инвертированный вторичный непрозрачный фон поверхности/контрола */
+        inverseSurfaceSolidSecondaryActive: '#1C1C1CFF',
+        /** Инвертированный третичный непрозрачный фон поверхности/контрола */
+        inverseSurfaceSolidTertiaryHover: '#4A4A4AFF',
+        /** Инвертированный третичный непрозрачный фон поверхности/контрола */
+        inverseSurfaceSolidTertiaryActive: '#2B2B2BFF',
+        /** Инвертированный основной фон для карточек */
+        inverseSurfaceSolidCardHover: '#363636FF',
+        /** Инвертированный основной фон для карточек */
+        inverseSurfaceSolidCardActive: '#0D0D0DFF',
+        /** Инвертированный основной прозрачный фон поверхности/контрола */
+        inverseSurfaceTransparentPrimaryHover: '#363636FF',
+        /** Инвертированный основной прозрачный фон поверхности/контрола */
+        inverseSurfaceTransparentPrimaryActive: '#0D0D0DFF',
+        /** Инвертированный вторичный прозрачный фон поверхности/контрола */
+        inverseSurfaceTransparentSecondaryHover: '#3B3B3BFF',
+        /** Инвертированный вторичный прозрачный фон поверхности/контрола */
+        inverseSurfaceTransparentSecondaryActive: '#1C1C1CFF',
+        /** Инвертированный третичный прозрачный фон поверхности/контрола */
+        inverseSurfaceTransparentTertiaryHover: '#4A4A4AFF',
+        /** Инвертированный третичный прозрачный фон поверхности/контрола */
+        inverseSurfaceTransparentTertiaryActive: '#2B2B2BFF',
+        /** Инвертированный прозрачный фон для карточек */
+        inverseSurfaceTransparentCardHover: '#262626FF',
+        /** Инвертированный прозрачный фон для карточек */
+        inverseSurfaceTransparentCardActive: '#030303FF',
+        /** Инвертированный акцентный фон поверхности/контрола */
+        inverseSurfaceAccentHover: '#FFFFFFFF',
+        /** Инвертированный акцентный фон поверхности/контрола */
+        inverseSurfaceAccentActive: '#FFFFFFFF',
+        /** Инвертированный фон поверхности/контрола без заливки */
+        inverseSurfaceClearHover: '#00000000',
+        /** Инвертированный фон поверхности/контрола без заливки */
+        inverseSurfaceClearActive: '#00000000',
+        /** light surface inverse surfaceTransparentDeep */
+        inverseSurfaceTransparentDeep: '#080808A3',
+        /** light surface inverse surfaceTransparentDeepHover */
+        inverseSurfaceTransparentDeepHover: '#0808088F',
+        /** light surface inverse surfaceTransparentDeepActive */
+        inverseSurfaceTransparentDeepActive: '#080808AD',
+        /** light surface inverse surfaceAccentMinor */
+        inverseSurfaceAccentMinor: '#DEE9FF',
+        /** light surface inverse surfaceAccentMinorHover */
+        inverseSurfaceAccentMinorHover: '#F5F8FFFF',
+        /** light surface inverse surfaceAccentMinorActive */
+        inverseSurfaceAccentMinorActive: '#D6E4FFFF',
+        /** light surface inverse surfaceTransparentAccent */
+        inverseSurfaceTransparentAccent: '#2A72F81F',
+        /** light surface inverse surfaceTransparentAccentHover */
+        inverseSurfaceTransparentAccentHover: '#2A72F80A',
+        /** light surface inverse surfaceTransparentAccentActive */
+        inverseSurfaceTransparentAccentActive: '#2A72F829',
+        /** light surface inverse surfaceInfo */
+        inverseSurfaceInfo: '#2A72F8',
+        /** light surface inverse surfaceInfoHover */
+        inverseSurfaceInfoHover: '#528DFAFF',
+        /** light surface inverse surfaceInfoActive */
+        inverseSurfaceInfoActive: '#1665F8FF',
+        /** light surface inverse surfacePositiveMinor */
+        inverseSurfacePositiveMinor: '#9EFAAF',
+        /** light surface inverse surfacePositiveMinorHover */
+        inverseSurfacePositiveMinorHover: '#B1FBBFFF',
+        /** light surface inverse surfacePositiveMinorActive */
+        inverseSurfacePositiveMinorActive: '#8BF99FFF',
+        /** light surface inverse surfaceWarningMinor */
+        inverseSurfaceWarningMinor: '#FEE2D2',
+        /** light surface inverse surfaceWarningMinorHover */
+        inverseSurfaceWarningMinorHover: '#FEEFE6FF',
+        /** light surface inverse surfaceWarningMinorActive */
+        inverseSurfaceWarningMinorActive: '#FEDCC8FF',
+        /** light surface inverse surfaceNegativeMinor */
+        inverseSurfaceNegativeMinor: '#FFE0E3',
+        /** light surface inverse surfaceNegativeMinorHover */
+        inverseSurfaceNegativeMinorHover: '#FFF5F6FF',
+        /** light surface inverse surfaceNegativeMinorActive */
+        inverseSurfaceNegativeMinorActive: '#FFD6DAFF',
+        /** light surface inverse surfaceInfoMinor */
+        inverseSurfaceInfoMinor: '#DEE9FF',
+        /** light surface inverse surfaceInfoMinorHover */
+        inverseSurfaceInfoMinorHover: '#F5F8FFFF',
+        /** light surface inverse surfaceInfoMinorActive */
+        inverseSurfaceInfoMinorActive: '#D6E4FFFF',
+        /** light surface inverse surfaceTransparentPositive */
+        inverseSurfaceTransparentPositive: '#1A9E321F',
+        /** light surface inverse surfaceTransparentPositiveHover */
+        inverseSurfaceTransparentPositiveHover: '#1A9E320A',
+        /** light surface inverse surfaceTransparentPositiveActive */
+        inverseSurfaceTransparentPositiveActive: '#1A9E3229',
+        /** light surface inverse surfaceTransparentWarning */
+        inverseSurfaceTransparentWarning: '#FA5F051F',
+        /** light surface inverse surfaceTransparentWarningHover */
+        inverseSurfaceTransparentWarningHover: '#FA5F050A',
+        /** light surface inverse surfaceTransparentWarningActive */
+        inverseSurfaceTransparentWarningActive: '#FA5F0529',
+        /** light surface inverse surfaceTransparentNegative */
+        inverseSurfaceTransparentNegative: '#F31B311F',
+        /** light surface inverse surfaceTransparentNegativeHover */
+        inverseSurfaceTransparentNegativeHover: '#F31B310A',
+        /** light surface inverse surfaceTransparentNegativeActive */
+        inverseSurfaceTransparentNegativeActive: '#F31B3129',
+        /** light surface inverse surfaceTransparentInfo */
+        inverseSurfaceTransparentInfo: '#2A72F81F',
+        /** light surface inverse surfaceTransparentInfoHover */
+        inverseSurfaceTransparentInfoHover: '#2A72F80A',
+        /** light surface inverse surfaceTransparentInfoActive */
+        inverseSurfaceTransparentInfoActive: '#2A72F829',
         /** Основной фон */
         backgroundPrimary: '#F9F9F9',
         /** Основной фон */
@@ -1962,6 +2538,10 @@ export const color = {
         darkBackgroundPrimary: '#080808',
         /** Основной фон на светлом фоне */
         lightBackgroundPrimary: '#F9F9F9',
+        /** Инвертированный основной фон */
+        inverseBackgroundPrimaryBrightness: '#0F0F0FFF',
+        /** Инвертированный основной фон */
+        inverseBackgroundPrimary: '#080808',
         /** Цвет фона паранжи светлый */
         overlaySoft: '#F9F9F98F',
         /** Цвет фона паранжи темный */
@@ -1980,6 +2560,12 @@ export const color = {
         onLightOverlayHard: '#F9F9F9F5',
         /** light overlay onLight overlayBlur */
         onLightOverlayBlur: '#F9F9F947',
+        /** Инвертированный цвет фона паранжи темный */
+        inverseOverlayHard: '#080808F5',
+        /** Инвертированный цвет фона паранжи светлый */
+        inverseOverlaySoft: '#0808088F',
+        /** light overlay inverse overlayBlur */
+        inverseOverlayBlur: '#08080847',
         /** light outline default outlineSecondaryHover */
         outlineSecondaryHover: '#A3A3A3FF',
         /** light outline default outlineSecondaryActive */
@@ -2387,8 +2973,142 @@ export const color = {
         /** light outline onLight outlineTransparentInfo */
         onLightOutlineTransparentInfo: '#2A72F833',
         /** light outline inverse outlinePrimaryHover */
-        inverseOutlinePrimaryHover: '#000000FF',
+        inverseOutlinePrimaryHover: '#787878FF',
         /** light outline inverse outlinePrimaryActive */
-        inverseOutlinePrimaryActive: '#CCCCCCFF',
+        inverseOutlinePrimaryActive: '#4F4F4FFF',
+        /** light outline inverse outlineSecondaryHover */
+        inverseOutlineSecondaryHover: '#FFFFFFFF',
+        /** light outline inverse outlineSecondaryActive */
+        inverseOutlineSecondaryActive: '#404040FF',
+        /** light outline inverse outlineTertiaryHover */
+        inverseOutlineTertiaryHover: '#FFFFFFFF',
+        /** light outline inverse outlineTertiaryActive */
+        inverseOutlineTertiaryActive: '#595959FF',
+        /** light outline inverse outlineDefaultHover */
+        inverseOutlineDefaultHover: '#FFFFFFFF',
+        /** light outline inverse outlineDefaultActive */
+        inverseOutlineDefaultActive: '#C7C7C7FF',
+        /** light outline inverse outlineTransparentPrimaryHover */
+        inverseOutlineTransparentPrimaryHover: '#FFFFFFFF',
+        /** light outline inverse outlineTransparentPrimaryActive */
+        inverseOutlineTransparentPrimaryActive: '#FFFFFF25',
+        /** light outline inverse outlineTransparentSecondaryHover */
+        inverseOutlineTransparentSecondaryHover: '#FFFFFFFF',
+        /** light outline inverse outlineTransparentSecondaryActive */
+        inverseOutlineTransparentSecondaryActive: '#FFFFFF3D',
+        /** light outline inverse outlineTransparentTertiaryHover */
+        inverseOutlineTransparentTertiaryHover: '#FFFFFFFF',
+        /** light outline inverse outlineTransparentTertiaryActive */
+        inverseOutlineTransparentTertiaryActive: '#FFFFFF7A',
+        /** light outline inverse outlineTransparentClearHover */
+        inverseOutlineTransparentClearHover: '#FFFFFFFF',
+        /** light outline inverse outlineTransparentClearActive */
+        inverseOutlineTransparentClearActive: '#FFFFFFFF',
+        /** light outline inverse outlineAccentHover */
+        inverseOutlineAccentHover: '#689CFDFF',
+        /** light outline inverse outlineAccentActive */
+        inverseOutlineAccentActive: '#1767FDFF',
+        /** light outline inverse outlineAccentMinorHover */
+        inverseOutlineAccentMinorHover: '#FFFFFFFF',
+        /** light outline inverse outlineAccentMinorActive */
+        inverseOutlineAccentMinorActive: '#113B88FF',
+        /** light outline inverse outlineTransparentAccentHover */
+        inverseOutlineTransparentAccentHover: '#3F82FDFF',
+        /** light outline inverse outlineTransparentAccentActive */
+        inverseOutlineTransparentAccentActive: '#3F82FD56',
+        /** light outline inverse outlinePositiveHover */
+        inverseOutlinePositiveHover: '#2BD44AFF',
+        /** light outline inverse outlinePositiveActive */
+        inverseOutlinePositiveActive: '#1D9032FF',
+        /** light outline inverse outlineWarningHover */
+        inverseOutlineWarningHover: '#FF8B4DFF',
+        /** light outline inverse outlineWarningActive */
+        inverseOutlineWarningActive: '#FA5700FF',
+        /** light outline inverse outlineNegativeHover */
+        inverseOutlineNegativeHover: '#FF6675FF',
+        /** light outline inverse outlineNegativeActive */
+        inverseOutlineNegativeActive: '#FF142CFF',
+        /** light outline inverse outlineInfoHover */
+        inverseOutlineInfoHover: '#689CFDFF',
+        /** light outline inverse outlineInfoActive */
+        inverseOutlineInfoActive: '#1767FDFF',
+        /** light outline inverse outlinePositiveMinorHover */
+        inverseOutlinePositiveMinorHover: '#11A72CFF',
+        /** light outline inverse outlinePositiveMinorActive */
+        inverseOutlinePositiveMinorActive: '#0D8222FF',
+        /** light outline inverse outlineWarningMinorHover */
+        inverseOutlineWarningMinorHover: '#CD5713FF',
+        /** light outline inverse outlineWarningMinorActive */
+        inverseOutlineWarningMinorActive: '#A84710FF',
+        /** light outline inverse outlineNegativeMinorHover */
+        inverseOutlineNegativeMinorHover: '#C2192AFF',
+        /** light outline inverse outlineNegativeMinorActive */
+        inverseOutlineNegativeMinorActive: '#7A101AFF',
+        /** light outline inverse outlineInfoMinorHover */
+        inverseOutlineInfoMinorHover: '#FFFFFFFF',
+        /** light outline inverse outlineInfoMinorActive */
+        inverseOutlineInfoMinorActive: '#113B88FF',
+        /** light outline inverse outlineTransparentPositiveHover */
+        inverseOutlineTransparentPositiveHover: '#1A9E32FF',
+        /** light outline inverse outlineTransparentPositiveActive */
+        inverseOutlineTransparentPositiveActive: '#1A9E3256',
+        /** light outline inverse outlineTransparentWarningHover */
+        inverseOutlineTransparentWarningHover: '#FA5F05FF',
+        /** light outline inverse outlineTransparentWarningActive */
+        inverseOutlineTransparentWarningActive: '#FA5F0556',
+        /** light outline inverse outlineTransparentNegativeHover */
+        inverseOutlineTransparentNegativeHover: '#FF293EFF',
+        /** light outline inverse outlineTransparentNegativeActive */
+        inverseOutlineTransparentNegativeActive: '#FF293E56',
+        /** light outline inverse outlineTransparentInfoHover */
+        inverseOutlineTransparentInfoHover: '#3F82FDFF',
+        /** light outline inverse outlineTransparentInfoActive */
+        inverseOutlineTransparentInfoActive: '#3F82FD56',
+        /** light outline inverse outlinePrimary */
+        inverseOutlinePrimary: '#262626',
+        /** light outline inverse outlineSecondary */
+        inverseOutlineSecondary: '#4E4E4E',
+        /** light outline inverse outlineTertiary */
+        inverseOutlineTertiary: '#707070',
+        /** light outline inverse outlineDefault */
+        inverseOutlineDefault: '#F9F9F9',
+        /** light outline inverse outlineTransparentPrimary */
+        inverseOutlineTransparentPrimary: '#FFFFFF1F',
+        /** light outline inverse outlineTransparentSecondary */
+        inverseOutlineTransparentSecondary: '#FFFFFF33',
+        /** light outline inverse outlineTransparentTertiary */
+        inverseOutlineTransparentTertiary: '#FFFFFF66',
+        /** light outline inverse outlineTransparentClear */
+        inverseOutlineTransparentClear: '#FFFFFF00',
+        /** light outline inverse outlineAccent */
+        inverseOutlineAccent: '#3F81FD',
+        /** light outline inverse outlineAccentMinor */
+        inverseOutlineAccentMinor: '#1549AB',
+        /** light outline inverse outlineTransparentAccent */
+        inverseOutlineTransparentAccent: '#3F81FD47',
+        /** light outline inverse outlinePositive */
+        inverseOutlinePositive: '#24B23E',
+        /** light outline inverse outlineWarning */
+        inverseOutlineWarning: '#FF7024',
+        /** light outline inverse outlineNegative */
+        inverseOutlineNegative: '#FF3D51',
+        /** light outline inverse outlineInfo */
+        inverseOutlineInfo: '#3F81FD',
+        /** light outline inverse outlinePositiveMinor */
+        inverseOutlinePositiveMinor: '#095C18',
+        /** light outline inverse outlineWarningMinor */
+        inverseOutlineWarningMinor: '#85380C',
+        /** light outline inverse outlineNegativeMinor */
+        inverseOutlineNegativeMinor: '#9C1422',
+        /** light outline inverse outlineInfoMinor */
+        inverseOutlineInfoMinor: '#1549AB',
+        /** light outline inverse outlineTransparentPositive */
+        inverseOutlineTransparentPositive: '#1A9E3247',
+        /** light outline inverse outlineTransparentWarning */
+        inverseOutlineTransparentWarning: '#FA5F0547',
+        /** light outline inverse outlineTransparentNegative */
+        inverseOutlineTransparentNegative: '#FF293E47',
+        /** light outline inverse outlineTransparentInfo */
+        inverseOutlineTransparentInfo: '#3F81FD47',
     },
 } as const;

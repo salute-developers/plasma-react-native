@@ -1458,6 +1458,12 @@ export const color = {
         backgroundPrimaryBrightness: '#0F0FFFFF',
         /** Вторичный фон */
         backgroundSecondary: '#171717',
+        /** Инвертированный основной фон */
+        inverseBackgroundPrimaryBrightness: '#FFFFFFFF',
+        /** Инвертированный основной фон */
+        inverseBackgroundPrimary: '#F2F2F2FF',
+        /** Инвертированный вторичный фон */
+        inverseBackgroundSecondary: '#FFFFFFFF',
         /** Цвет фона паранжи светлый на темном фоне */
         onDarkOverlaySoft: '#0000008F',
         /** Цвет фона паранжи темный на темном фоне */
@@ -3744,6 +3750,12 @@ export const color = {
         backgroundPrimaryBrightness: '#F3F3F3FF',
         /** Вторичный фон */
         backgroundSecondary: '#FFFFFFFF',
+        /** Инвертированный основной фон */
+        inverseBackgroundPrimaryBrightness: '#FFFFFFFF',
+        /** Инвертированный основной фон */
+        inverseBackgroundPrimary: '#000000FF',
+        /** Инвертированный вторичный фон */
+        inverseBackgroundSecondary: '#171717',
         /** Цвет фона паранжи светлый на темном фоне */
         onDarkOverlaySoft: '#0000008F',
         /** Цвет фона паранжи темный на темном фоне */
