@@ -1,7 +1,9 @@
-name: Release
+name: Release alpha
 
 on:
   pull_request:
+    branches:
+      - dev
 
 concurrency:
   # New commit on branch cancels running workflows of the same branch
