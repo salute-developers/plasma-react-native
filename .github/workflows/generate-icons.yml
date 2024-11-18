@@ -79,6 +79,8 @@ jobs:
           GH_TOKEN: ${{ secrets.GH_TOKEN }}
         run: |
           PLASMA_VER=${{ github.event.client_payload.version || github.event.inputs.plasma-version }}
+          git config --local user.email "salutedevs@gmail.com"
+          git config --local user.name "Salute Android Team"
           git add ./packages/plasma-icons/
           git commit -m "feat(plasma-icons): New icons were added from plasma v$PLASMA_VER"
           git push --set-upstream origin release/plasma-icons-$PLASMA_VER
