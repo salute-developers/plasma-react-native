@@ -55,15 +55,20 @@ jobs:
         shell: bash
         run: |
           git fetch --all
-          if git branch -a | grep -q release/plasma-icons-${{ github.event.client_payload.ref || github.event.inputs.plasma-ref }}; then exit 1; else exit 0; fi    
+          if git branch -a | grep -q release/plasma-icons-${{ github.event.client_payload.version || github.event.inputs.plasma-version }}; then exit 1; else exit 0; fi    
 
       - name: Create release branch
         working-directory: ./current
         shell: bash
         run: |
           git fetch --all
-          git checkout -b release/plasma-icons-${{ github.event.client_payload.ref || github.event.inputs.plasma-ref }}
+          git checkout -b release/plasma-icons-${{ github.event.client_payload.version || github.event.inputs.plasma-version }}
 
+      - name: Create src folder
+        working-directory: ./current
+        continue-on-error: true
+        run: mkdir -p ./packages/plasma-icons/src
+          
       - name: Move generated icons to plasma-icons folder
         run: cp -rf plasma/packages/plasma-icons/src-rn-build/. current/packages/plasma-icons/src
 
