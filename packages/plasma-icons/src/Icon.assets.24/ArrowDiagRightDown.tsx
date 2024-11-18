@@ -3,11 +3,12 @@ import * as s from 'react-native-svg';
 
 import { IconProps } from '../IconRoot';
 
-export const ArrowDiagLeftDown: React.FC<IconProps> = (props) => (
-    <s.Svg viewBox="0 0 16 16" width={16} height={16} fill="none" {...props}>
+export const ArrowDiagRightDown: React.FC<IconProps> = (props) => (
+    <s.Svg viewBox="0 0 24 24" width={24} height={24} fill="none" {...props}>
         <s.Path
-            d="M5.01399 6.16078L4.97217 11.388M4.97217 11.388L9.96373 11.1105M4.97217 11.388L11.513 4.84717"
+            d="M8.99994 17H17M17 17L16.6364 9.36358M17 17L7 7"
             stroke="currentColor"
+            strokeWidth="1.5"
             strokeLinecap="round"
             strokeLinejoin="round"
         />
