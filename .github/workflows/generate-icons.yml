@@ -80,8 +80,8 @@ jobs:
         run: |
           PLASMA_VER=${{ github.event.client_payload.version || github.event.inputs.plasma-version }}
           git config --local user.email "salutedevs@gmail.com"
-          git config --local user.name "Salute Android Team"
+          git config --local user.name "Salute Eva"
           git add ./packages/plasma-icons/
           git commit -m "feat(plasma-icons): New icons were added from plasma v$PLASMA_VER"
           git push --set-upstream origin release/plasma-icons-$PLASMA_VER
-          gh pr create --base dev --head release/plasma-icons-$PLASMA_VER --title "feat(plasma-icons): Update from plasma-web" --body "Icons were updated to v$PLASMA_VER"
+          gh pr create --base dev --head release/plasma-icons-$PLASMA_VER --title "feat(plasma-icons): Update from web plasma-icons ($PLASMA_VER)" --body "Icons were updated to v$PLASMA_VER"
