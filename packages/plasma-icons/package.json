@@ -1,5 +1,5 @@
 {
-  "version": "0.1.0",
+  "version": "0.2.0",
   "name": "@salutejs/plasma-icons-native",
   "description": "Plasma-icons package for native platform.",
   "author": "Salute Frontend Team <salute.developers@gmail.com>",
@@ -23,11 +23,11 @@
   "devDependencies": {
     "@types/node": "16.7.13",
     "@types/react": "18.2.45",
-    "ts-node": "10.2.1",
-    "typescript": "4.2.4",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
-    "react-native": "0.74.5"
+    "react-native": "0.74.5",
+    "ts-node": "10.2.1",
+    "typescript": "4.2.4"
   },
   "dependencies": {
     "react-native-svg": "15.2.0"

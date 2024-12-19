@@ -3,15 +3,16 @@ import fs from 'fs';
 
 import { getMetaGrouped } from '../utils';
 import { ThemeSource } from '../types';
-
 import {
     createColorTokens,
     createFontFamilyTokens,
     createGradientTokens,
     createShadowTokens,
     createShapeTokens,
+    createSpacingTokens,
     createTypographyTokens,
 } from '../creators';
+
 import { generateIndex } from '.';
 
 export const generateTheme = (outDir: string, themeSource: ThemeSource) => {
@@ -25,6 +26,7 @@ export const generateTheme = (outDir: string, themeSource: ThemeSource) => {
     createGradientTokens(themeDir, variations.gradient, metaGrouped.gradient);
     createShadowTokens(themeDir, variations.shadow, metaGrouped.shadow);
     createShapeTokens(themeDir, variations.shape, metaGrouped.shape);
+    createSpacingTokens(themeDir, variations.spacing, metaGrouped.spacing);
     createFontFamilyTokens(themeDir, variations.fontFamily, metaGrouped.fontFamily);
     createTypographyTokens(themeDir, variations.typography, metaGrouped.typography);
 

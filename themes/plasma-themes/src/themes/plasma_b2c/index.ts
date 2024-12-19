@@ -4,3 +4,4 @@ export * from './shadow';
 export * from './fontFamily';
 export * from './shape';
 export * from './typography';
+export * from './spacing';
