@@ -1110,8 +1110,6 @@ export const color = {
         outlineSolidSecondary: '#4E4E4E',
         /** Третичный непрозрачный цвет обводки */
         outlineSolidTertiary: '#707070',
-        /** dark outline default outlineDefault */
-        outlineDefault: '#F9F9F9',
         /** dark outline default outlineDefaultHover */
         outlineDefaultHover: '#FFFFFFFF',
         /** dark outline default outlineDefaultActive */
@@ -1154,6 +1152,12 @@ export const color = {
         outlineInfoMinor: '#1549AB',
         /** Прозрачный цвет обводки информация */
         outlineTransparentInfo: '#528EFF47',
+        /** dark outline default outlineSolidDefault */
+        outlineSolidDefault: '#F9F9F9',
+        /** dark outline default outlineSolidDefaultHover */
+        outlineSolidDefaultHover: '#C7C7C7FF',
+        /** dark outline default outlineSolidDefaultActive */
+        outlineSolidDefaultActive: '#E0E0E0FF',
         /** Основной непрозрачный цвет обводки на темном фоне */
         onDarkOutlineSolidPrimaryHover: '#303030FF',
         /** Основной непрозрачный цвет обводки на темном фоне */
@@ -1248,8 +1252,6 @@ export const color = {
         onDarkOutlineSolidSecondary: '#4E4E4E',
         /** Третичный непрозрачный цвет обводки на темном фоне */
         onDarkOutlineSolidTertiary: '#707070',
-        /** dark outline onDark outlineDefault */
-        onDarkOutlineDefault: '#F9F9F9',
         /** Основной прозрачный цвет обводки на темном фоне */
         onDarkOutlineTransparentPrimary: '#FFFFFF1F',
         /** Вторичный прозрачный цвет обводки на темном фоне */
@@ -1286,6 +1288,12 @@ export const color = {
         onDarkOutlineInfoMinor: '#1549AB',
         /** Прозрачный цвет обводки информация на темном фоне */
         onDarkOutlineTransparentInfo: '#528EFF47',
+        /** dark outline onDark outlineSolidDefault */
+        onDarkOutlineSolidDefault: '#F9F9F9',
+        /** dark outline onDark outlineSolidDefaultHover */
+        onDarkOutlineSolidDefaultHover: '#C7C7C7FF',
+        /** dark outline onDark outlineSolidDefaultActive */
+        onDarkOutlineSolidDefaultActive: '#E0E0E0FF',
         /** Основной непрозрачный цвет обводки на светлом фоне */
         onLightOutlineSolidPrimaryHover: '#E8E8E8FF',
         /** Основной непрозрачный цвет обводки на светлом фоне */
@@ -1380,8 +1388,6 @@ export const color = {
         onLightOutlineSolidSecondary: '#949494',
         /** Третичный непрозрачный цвет обводки на светлом фоне */
         onLightOutlineSolidTertiary: '#707070',
-        /** dark outline onLight outlineDefault */
-        onLightOutlineDefault: '#080808',
         /** Основной прозрачный цвет обводки на светлом фоне */
         onLightOutlineTransparentPrimary: '#08080833',
         /** Вторичный прозрачный цвет обводки на светлом фоне */
@@ -1418,6 +1424,12 @@ export const color = {
         onLightOutlineInfoMinor: '#8BB2FC',
         /** Прозрачный цвет обводки информация на светлом фоне */
         onLightOutlineTransparentInfo: '#2A72F833',
+        /** dark outline onLight outlineSolidDefault */
+        onLightOutlineSolidDefault: '#080808',
+        /** dark outline onLight outlineSolidDefaultHover */
+        onLightOutlineSolidDefaultHover: '#FFFFFFFF',
+        /** dark outline onLight outlineSolidDefaultActive */
+        onLightOutlineSolidDefaultActive: '#C7C7C7FF',
         /** Инвертированный основной непрозрачный цвет обводки */
         inverseOutlineSolidPrimaryHover: '#ABABABFF',
         /** Инвертированный основной непрозрачный цвет обводки */
@@ -1520,8 +1532,6 @@ export const color = {
         inverseOutlineTransparentTertiary: '#0808088F',
         /** Инвертированная бесцветная обводка */
         inverseOutlineClear: '#FFFFFF00',
-        /** dark outline inverse outlineDefault */
-        inverseOutlineDefault: '#080808',
         /** dark outline inverse outlineDefaultHover */
         inverseOutlineDefaultHover: '#FFFFFFFF',
         /** dark outline inverse outlineDefaultActive */
@@ -1556,6 +1566,12 @@ export const color = {
         inverseOutlineTransparentNegative: '#F31B3133',
         /** Прозрачный инвертированный цвет обводки информация */
         inverseOutlineTransparentInfo: '#2A72F833',
+        /** dark outline inverse outlineSolidDefault */
+        inverseOutlineSolidDefault: '#080808',
+        /** dark outline inverse outlineSolidDefaultHover */
+        inverseOutlineSolidDefaultHover: '#FFFFFFFF',
+        /** dark outline inverse outlineSolidDefaultActive */
+        inverseOutlineSolidDefaultActive: '#C7C7C7FF',
     },
     light: {
         /** Основной цвет текста */
@@ -2680,8 +2696,6 @@ export const color = {
         outlineTransparentTertiary: '#0808088F',
         /** Бесцветная обводка */
         outlineClear: '#FFFFFF00',
-        /** light outline default outlineDefault */
-        outlineDefault: '#080808',
         /** Акцентный цвет обводки */
         outlineAccent: '#2A72F8',
         /** Акцентный минорный непрозрачный цвет обводки */
@@ -2712,6 +2726,12 @@ export const color = {
         outlineInfoMinor: '#8BB2FC',
         /** Прозрачный цвет обводки информация */
         outlineTransparentInfo: '#2A72F833',
+        /** light outline default outlineSolidDefault */
+        outlineSolidDefault: '#F9F9F9',
+        /** light outline default outlineSolidDefaultHover */
+        outlineSolidDefaultHover: '#FFFFFFFF',
+        /** light outline default outlineSolidDefaultActive */
+        outlineSolidDefaultActive: '#C7C7C7FF',
         /** Основной непрозрачный цвет обводки на темном фоне */
         onDarkOutlineSolidPrimaryHover: '#3B3B3BFF',
         /** Основной непрозрачный цвет обводки на темном фоне */
@@ -2802,8 +2822,6 @@ export const color = {
         onDarkOutlineSolidSecondary: '#4E4E4E',
         /** Третичный непрозрачный цвет обводки на темном фоне */
         onDarkOutlineSolidTertiary: '#707070',
-        /** light outline onDark outlineDefault */
-        onDarkOutlineDefault: '#F9F9F9',
         /** light outline onDark outlineDefaultHover */
         onDarkOutlineDefaultHover: '#FFFFFFFF',
         /** light outline onDark outlineDefaultActive */
@@ -2844,6 +2862,12 @@ export const color = {
         onDarkOutlineInfoMinor: '#1549AB',
         /** Прозрачный цвет обводки информация на темном фоне */
         onDarkOutlineTransparentInfo: '#528EFF47',
+        /** light outline onDark outlineSolidDefault */
+        onDarkOutlineSolidDefault: '#F9F9F9',
+        /** light outline onDark outlineSolidDefaultHover */
+        onDarkOutlineSolidDefaultHover: '#FFFFFFFF',
+        /** light outline onDark outlineSolidDefaultActive */
+        onDarkOutlineSolidDefaultActive: '#C7C7C7FF',
         /** Основной непрозрачный цвет обводки на светлом фоне */
         onLightOutlineSolidPrimaryHover: '#EDEDEDFF',
         /** Основной непрозрачный цвет обводки на светлом фоне */
@@ -2934,8 +2958,6 @@ export const color = {
         onLightOutlineSolidSecondary: '#949494',
         /** Третичный непрозрачный цвет обводки на светлом фоне */
         onLightOutlineSolidTertiary: '#707070',
-        /** light outline onLight outlineDefault */
-        onLightOutlineDefault: '#080808',
         /** light outline onLight outlineDefaultHover */
         onLightOutlineDefaultHover: '#262626FF',
         /** light outline onLight outlineDefaultActive */
@@ -2976,6 +2998,12 @@ export const color = {
         onLightOutlineInfoMinor: '#8BB2FC',
         /** Прозрачный цвет обводки информация на светлом фоне */
         onLightOutlineTransparentInfo: '#2A72F833',
+        /** light outline onLight outlineSolidDefault */
+        onLightOutlineSolidDefault: '#080808',
+        /** light outline onLight outlineSolidDefaultHover */
+        onLightOutlineSolidDefaultHover: '#595959FF',
+        /** light outline onLight outlineSolidDefaultActive */
+        onLightOutlineSolidDefaultActive: '#303030FF',
         /** Инвертированный основной непрозрачный цвет обводки */
         inverseOutlineSolidPrimaryHover: '#787878FF',
         /** Инвертированный основной непрозрачный цвет обводки */
@@ -3080,8 +3108,6 @@ export const color = {
         inverseOutlineTransparentTertiary: '#FFFFFF66',
         /** Инвертированная бесцветная обводка */
         inverseOutlineClear: '#FFFFFF00',
-        /** light outline inverse outlineDefault */
-        inverseOutlineDefault: '#F9F9F9',
         /** Инвертированный акцентный цвет обводки */
         inverseOutlineAccent: '#3F81FD',
         /** Инвертированный акцентный минорный непрозрачный цвет обводки */
@@ -3114,5 +3140,11 @@ export const color = {
         inverseOutlineTransparentInfo: '#528EFF47',
         /** Инвертированный вторичный прозрачный цвет обводки */
         inverseOutlineTransparentSecondary: '#FFFFFF1F',
+        /** light outline inverse outlineSolidDefault */
+        inverseOutlineSolidDefault: '#080808',
+        /** light outline inverse outlineSolidDefaultHover */
+        inverseOutlineSolidDefaultHover: '#595959FF',
+        /** light outline inverse outlineSolidDefaultActive */
+        inverseOutlineSolidDefaultActive: '#303030FF',
     },
 } as const;

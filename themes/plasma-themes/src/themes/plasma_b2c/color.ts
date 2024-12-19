@@ -1016,26 +1016,18 @@ export const color = {
         inverseOverlayHard: '#F9F9F9F5',
         /** dark overlay inverse overlayBlur */
         inverseOverlayBlur: '#F9F9F947',
-        /** dark outline default outlinePrimary */
-        outlinePrimary: '#262626',
         /** dark outline default outlinePrimaryHover */
         outlinePrimaryHover: '#303030FF',
         /** dark outline default outlinePrimaryActive */
         outlinePrimaryActive: '#212121FF',
-        /** dark outline default outlineSecondary */
-        outlineSecondary: '#4E4E4E',
         /** dark outline default outlineSecondaryHover */
         outlineSecondaryHover: '#595959FF',
         /** dark outline default outlineSecondaryActive */
         outlineSecondaryActive: '#4A4A4AFF',
-        /** dark outline default outlineTertiary */
-        outlineTertiary: '#707070',
         /** dark outline default outlineTertiaryHover */
         outlineTertiaryHover: '#7A7A7AFF',
         /** dark outline default outlineTertiaryActive */
         outlineTertiaryActive: '#6B6B6BFF',
-        /** dark outline default outlineDefault */
-        outlineDefault: '#F9F9F9',
         /** dark outline default outlineDefaultHover */
         outlineDefaultHover: '#FFFFFFFF',
         /** dark outline default outlineDefaultActive */
@@ -1158,6 +1150,30 @@ export const color = {
         outlineTransparentInfo: '#3F81FD47',
         /** dark outline default outlineInfo */
         outlineInfo: '#528EFF',
+        /** dark outline default outlineSolidPrimary */
+        outlineSolidPrimary: '#262626',
+        /** dark outline default outlineSolidPrimaryHover */
+        outlineSolidPrimaryHover: '#FFFFFFFF',
+        /** dark outline default outlineSolidPrimaryActive */
+        outlineSolidPrimaryActive: '#ADADADFF',
+        /** dark outline default outlineSolidSecondary */
+        outlineSolidSecondary: '#4E4E4E',
+        /** dark outline default outlineSolidSecondaryHover */
+        outlineSolidSecondaryHover: '#FFFFFFFF',
+        /** dark outline default outlineSolidSecondaryActive */
+        outlineSolidSecondaryActive: '#8C8C8CFF',
+        /** dark outline default outlineSolidTertiary */
+        outlineSolidTertiary: '#707070',
+        /** dark outline default outlineSolidTertiaryHover */
+        outlineSolidTertiaryHover: '#FFFFFFFF',
+        /** dark outline default outlineSolidTertiaryActive */
+        outlineSolidTertiaryActive: '#737373FF',
+        /** dark outline default outlineSolidDefault */
+        outlineSolidDefault: '#F9F9F9',
+        /** dark outline default outlineSolidDefaultHover */
+        outlineSolidDefaultHover: '#C7C7C7FF',
+        /** dark outline default outlineSolidDefaultActive */
+        outlineSolidDefaultActive: '#E0E0E0FF',
         /** dark outline onDark outlinePrimaryHover */
         onDarkOutlinePrimaryHover: '#303030FF',
         /** dark outline onDark outlinePrimaryActive */
@@ -1246,14 +1262,6 @@ export const color = {
         onDarkOutlineTransparentInfoHover: '#3F82FD66',
         /** dark outline onDark outlineTransparentInfoActive */
         onDarkOutlineTransparentInfoActive: '#3F82FD38',
-        /** dark outline onDark outlinePrimary */
-        onDarkOutlinePrimary: '#262626',
-        /** dark outline onDark outlineSecondary */
-        onDarkOutlineSecondary: '#4E4E4E',
-        /** dark outline onDark outlineTertiary */
-        onDarkOutlineTertiary: '#707070',
-        /** dark outline onDark outlineDefault */
-        onDarkOutlineDefault: '#F9F9F9',
         /** dark outline onDark outlineTransparentPrimary */
         onDarkOutlineTransparentPrimary: '#FFFFFF1F',
         /** dark outline onDark outlineTransparentSecondary */
@@ -1290,6 +1298,30 @@ export const color = {
         onDarkOutlineInfo: '#528EFF',
         /** dark outline onDark outlineTransparentInfo */
         onDarkOutlineTransparentInfo: '#3F81FD47',
+        /** dark outline onDark outlineSolidPrimary */
+        onDarkOutlineSolidPrimary: '#262626',
+        /** dark outline onDark outlineSolidPrimaryHover */
+        onDarkOutlineSolidPrimaryHover: '#FFFFFFFF',
+        /** dark outline onDark outlineSolidPrimaryActive */
+        onDarkOutlineSolidPrimaryActive: '#ADADADFF',
+        /** dark outline onDark outlineSolidSecondary */
+        onDarkOutlineSolidSecondary: '#4E4E4E',
+        /** dark outline onDark outlineSolidSecondaryHover */
+        onDarkOutlineSolidSecondaryHover: '#FFFFFFFF',
+        /** dark outline onDark outlineSolidSecondaryActive */
+        onDarkOutlineSolidSecondaryActive: '#8C8C8CFF',
+        /** dark outline onDark outlineSolidTertiary */
+        onDarkOutlineSolidTertiary: '#707070',
+        /** dark outline onDark outlineSolidTertiaryHover */
+        onDarkOutlineSolidTertiaryHover: '#FFFFFFFF',
+        /** dark outline onDark outlineSolidTertiaryActive */
+        onDarkOutlineSolidTertiaryActive: '#737373FF',
+        /** dark outline onDark outlineSolidDefault */
+        onDarkOutlineSolidDefault: '#F9F9F9',
+        /** dark outline onDark outlineSolidDefaultHover */
+        onDarkOutlineSolidDefaultHover: '#C7C7C7FF',
+        /** dark outline onDark outlineSolidDefaultActive */
+        onDarkOutlineSolidDefaultActive: '#E0E0E0FF',
         /** dark outline onLight outlinePrimaryHover */
         onLightOutlinePrimaryHover: '#E8E8E8FF',
         /** dark outline onLight outlinePrimaryActive */
@@ -1298,14 +1330,10 @@ export const color = {
         onLightOutlineSecondaryHover: '#9E9E9EFF',
         /** dark outline onLight outlineSecondaryActive */
         onLightOutlineSecondaryActive: '#8F8F8FFF',
-        /** dark outline onLight outlineTertiary */
-        onLightOutlineTertiary: '#707070',
         /** dark outline onLight outlineTertiaryHover */
         onLightOutlineTertiaryHover: '#7A7A7AFF',
         /** dark outline onLight outlineTertiaryActive */
         onLightOutlineTertiaryActive: '#6B6B6BFF',
-        /** dark outline onLight outlineDefault */
-        onLightOutlineDefault: '#080808',
         /** dark outline onLight outlineDefaultHover */
         onLightOutlineDefaultHover: '#0D0D0DFF',
         /** dark outline onLight outlineDefaultActive */
@@ -1412,36 +1440,48 @@ export const color = {
         onLightOutlineTransparentInfoHover: '#2A72F852',
         /** dark outline onLight outlineTransparentInfoActive */
         onLightOutlineTransparentInfoActive: '#2A72F824',
-        /** dark outline onLight outlinePrimary */
-        onLightOutlinePrimary: '#DDDDDD',
-        /** dark outline onLight outlineSecondary */
-        onLightOutlineSecondary: '#949494',
         /** dark outline onLight outlineInfo */
         onLightOutlineInfo: '#3F81FD',
         /** dark outline onLight outlineInfoMinor */
         onLightOutlineInfoMinor: '#8BB2FC',
         /** dark outline onLight outlineTransparentInfo */
         onLightOutlineTransparentInfo: '#2A72F833',
+        /** dark outline onLight outlineSolidTertiary */
+        onLightOutlineSolidTertiary: '#707070',
+        /** dark outline onLight outlineSolidTertiaryHover */
+        onLightOutlineSolidTertiaryHover: '#FFFFFFFF',
+        /** dark outline onLight outlineSolidTertiaryActive */
+        onLightOutlineSolidTertiaryActive: '#737373FF',
+        /** dark outline onLight outlineSolidDefault */
+        onLightOutlineSolidDefault: '#080808',
+        /** dark outline onLight outlineSolidDefaultHover */
+        onLightOutlineSolidDefaultHover: '#FFFFFFFF',
+        /** dark outline onLight outlineSolidDefaultActive */
+        onLightOutlineSolidDefaultActive: '#C7C7C7FF',
+        /** dark outline onLight outlineSolidPrimary */
+        onLightOutlineSolidPrimary: '#DDDDDD',
+        /** dark outline onLight outlineSolidPrimaryHover */
+        onLightOutlineSolidPrimaryHover: '#ABABABFF',
+        /** dark outline onLight outlineSolidPrimaryActive */
+        onLightOutlineSolidPrimaryActive: '#C4C4C4FF',
+        /** dark outline onLight outlineSolidSecondary */
+        onLightOutlineSolidSecondary: '#949494',
+        /** dark outline onLight outlineSolidSecondaryHover */
+        onLightOutlineSolidSecondaryHover: '#FFFFFFFF',
+        /** dark outline onLight outlineSolidSecondaryActive */
+        onLightOutlineSolidSecondaryActive: '#575757FF',
         /** dark outline inverse outlinePrimaryHover */
         inverseOutlinePrimaryHover: '#ABABABFF',
         /** dark outline inverse outlinePrimaryActive */
         inverseOutlinePrimaryActive: '#C4C4C4FF',
-        /** dark outline inverse outlinePrimary */
-        inverseOutlinePrimary: '#DDDDDD',
-        /** dark outline inverse outlineSecondary */
-        inverseOutlineSecondary: '#949494',
         /** dark outline inverse outlineSecondaryHover */
         inverseOutlineSecondaryHover: '#FFFFFFFF',
         /** dark outline inverse outlineSecondaryActive */
         inverseOutlineSecondaryActive: '#575757FF',
-        /** dark outline inverse outlineTertiary */
-        inverseOutlineTertiary: '#707070',
         /** dark outline inverse outlineTertiaryHover */
         inverseOutlineTertiaryHover: '#FFFFFFFF',
         /** dark outline inverse outlineTertiaryActive */
         inverseOutlineTertiaryActive: '#737373FF',
-        /** dark outline inverse outlineDefault */
-        inverseOutlineDefault: '#080808',
         /** dark outline inverse outlineDefaultHover */
         inverseOutlineDefaultHover: '#FFFFFFFF',
         /** dark outline inverse outlineDefaultActive */
@@ -1560,6 +1600,30 @@ export const color = {
         inverseOutlineTransparentInfoHover: '#2A72F8FF',
         /** dark outline inverse outlineTransparentInfoActive */
         inverseOutlineTransparentInfoActive: '#2A72F83D',
+        /** dark outline inverse outlineSolidPrimary */
+        inverseOutlineSolidPrimary: '#DDDDDD',
+        /** dark outline inverse outlineSolidPrimaryHover */
+        inverseOutlineSolidPrimaryHover: '#ABABABFF',
+        /** dark outline inverse outlineSolidPrimaryActive */
+        inverseOutlineSolidPrimaryActive: '#C4C4C4FF',
+        /** dark outline inverse outlineSolidSecondary */
+        inverseOutlineSolidSecondary: '#949494',
+        /** dark outline inverse outlineSolidSecondaryHover */
+        inverseOutlineSolidSecondaryHover: '#FFFFFFFF',
+        /** dark outline inverse outlineSolidSecondaryActive */
+        inverseOutlineSolidSecondaryActive: '#575757FF',
+        /** dark outline inverse outlineSolidTertiary */
+        inverseOutlineSolidTertiary: '#707070',
+        /** dark outline inverse outlineSolidTertiaryHover */
+        inverseOutlineSolidTertiaryHover: '#FFFFFFFF',
+        /** dark outline inverse outlineSolidTertiaryActive */
+        inverseOutlineSolidTertiaryActive: '#737373FF',
+        /** dark outline inverse outlineSolidDefault */
+        inverseOutlineSolidDefault: '#080808',
+        /** dark outline inverse outlineSolidDefaultHover */
+        inverseOutlineSolidDefaultHover: '#FFFFFFFF',
+        /** dark outline inverse outlineSolidDefaultActive */
+        inverseOutlineSolidDefaultActive: '#C7C7C7FF',
     },
     light: {
         /** Основной цвет текста */
@@ -2654,18 +2718,10 @@ export const color = {
         outlineTransparentInfoHover: '#2A72F81F',
         /** light outline default outlineTransparentInfoActive */
         outlineTransparentInfoActive: '#2A72F83D',
-        /** light outline default outlinePrimary */
-        outlinePrimary: '#DDDDDD',
         /** light outline default outlinePrimaryHover */
         outlinePrimaryHover: '#EDEDEDFF',
         /** light outline default outlinePrimaryActive */
         outlinePrimaryActive: '#D4D4D4FF',
-        /** light outline default outlineSecondary */
-        outlineSecondary: '#949494',
-        /** light outline default outlineTertiary */
-        outlineTertiary: '#707070',
-        /** light outline default outlineDefault */
-        outlineDefault: '#080808',
         /** light outline default outlineTransparentPrimary */
         outlineTransparentPrimary: '#08080833',
         /** light outline default outlineTransparentSecondary */
@@ -2708,6 +2764,30 @@ export const color = {
         outlineInfoMinor: '#8BB2FC',
         /** light outline default outlineTransparentInfo */
         outlineTransparentInfo: '#2A72F833',
+        /** light outline default outlineSolidPrimary */
+        outlineSolidPrimary: '#262626',
+        /** light outline default outlineSolidPrimaryHover */
+        outlineSolidPrimaryHover: '#787878FF',
+        /** light outline default outlineSolidPrimaryActive */
+        outlineSolidPrimaryActive: '#4F4F4FFF',
+        /** light outline default outlineSolidSecondary */
+        outlineSolidSecondary: '#4E4E4E',
+        /** light outline default outlineSolidSecondaryHover */
+        outlineSolidSecondaryHover: '#FFFFFFFF',
+        /** light outline default outlineSolidSecondaryActive */
+        outlineSolidSecondaryActive: '#404040FF',
+        /** light outline default outlineSolidTertiary */
+        outlineSolidTertiary: '#707070',
+        /** light outline default outlineSolidTertiaryHover */
+        outlineSolidTertiaryHover: '#FFFFFFFF',
+        /** light outline default outlineSolidTertiaryActive */
+        outlineSolidTertiaryActive: '#595959FF',
+        /** light outline default outlineSolidDefault */
+        outlineSolidDefault: '#F9F9F9',
+        /** light outline default outlineSolidDefaultHover */
+        outlineSolidDefaultHover: '#FFFFFFFF',
+        /** light outline default outlineSolidDefaultActive */
+        outlineSolidDefaultActive: '#C7C7C7FF',
         /** light outline onDark outlineSecondaryHover */
         onDarkOutlineSecondaryHover: '#636363FF',
         /** light outline onDark outlineSecondaryActive */
@@ -2822,24 +2902,40 @@ export const color = {
         onDarkOutlineTransparentInfoHover: '#3F82FD33',
         /** light outline onDark outlineTransparentInfoActive */
         onDarkOutlineTransparentInfoActive: '#3F82FD52',
-        /** light outline onDark outlinePrimary */
-        onDarkOutlinePrimary: '#262626',
         /** light outline onDark outlinePrimaryHover */
         onDarkOutlinePrimaryHover: '#3B3B3BFF',
         /** light outline onDark outlinePrimaryActive */
         onDarkOutlinePrimaryActive: '#1C1C1CFF',
-        /** light outline onDark outlineSecondary */
-        onDarkOutlineSecondary: '#4E4E4E',
-        /** light outline onDark outlineTertiary */
-        onDarkOutlineTertiary: '#707070',
-        /** light outline onDark outlineDefault */
-        onDarkOutlineDefault: '#F9F9F9',
         /** light outline onDark outlineInfo */
         onDarkOutlineInfo: '#528EFF',
         /** light outline onDark outlineInfoMinor */
         onDarkOutlineInfoMinor: '#1549AB',
         /** light outline onDark outlineTransparentInfo */
         onDarkOutlineTransparentInfo: '#3F81FD47',
+        /** light outline onDark outlineSolidPrimary */
+        onDarkOutlineSolidPrimary: '#262626',
+        /** light outline onDark outlineSolidPrimaryHover */
+        onDarkOutlineSolidPrimaryHover: '#787878FF',
+        /** light outline onDark outlineSolidPrimaryActive */
+        onDarkOutlineSolidPrimaryActive: '#4F4F4FFF',
+        /** light outline onDark outlineSolidSecondary */
+        onDarkOutlineSolidSecondary: '#4E4E4E',
+        /** light outline onDark outlineSolidSecondaryHover */
+        onDarkOutlineSolidSecondaryHover: '#FFFFFFFF',
+        /** light outline onDark outlineSolidSecondaryActive */
+        onDarkOutlineSolidSecondaryActive: '#404040FF',
+        /** light outline onDark outlineSolidTertiary */
+        onDarkOutlineSolidTertiary: '#707070',
+        /** light outline onDark outlineSolidTertiaryHover */
+        onDarkOutlineSolidTertiaryHover: '#FFFFFFFF',
+        /** light outline onDark outlineSolidTertiaryActive */
+        onDarkOutlineSolidTertiaryActive: '#595959FF',
+        /** light outline onDark outlineSolidDefault */
+        onDarkOutlineSolidDefault: '#F9F9F9',
+        /** light outline onDark outlineSolidDefaultHover */
+        onDarkOutlineSolidDefaultHover: '#FFFFFFFF',
+        /** light outline onDark outlineSolidDefaultActive */
+        onDarkOutlineSolidDefaultActive: '#C7C7C7FF',
         /** light outline onLight outlineSecondaryHover */
         onLightOutlineSecondaryHover: '#A3A3A3FF',
         /** light outline onLight outlineSecondaryActive */
@@ -2848,8 +2944,6 @@ export const color = {
         onLightOutlineTertiaryHover: '#858585FF',
         /** light outline onLight outlineTertiaryActive */
         onLightOutlineTertiaryActive: '#666666FF',
-        /** light outline onLight outlineDefault */
-        onLightOutlineDefault: '#080808',
         /** light outline onLight outlineDefaultHover */
         onLightOutlineDefaultHover: '#262626FF',
         /** light outline onLight outlineDefaultActive */
@@ -2956,22 +3050,40 @@ export const color = {
         onLightOutlineTransparentInfoHover: '#2A72F81F',
         /** light outline onLight outlineTransparentInfoActive */
         onLightOutlineTransparentInfoActive: '#2A72F83D',
-        /** light outline onLight outlinePrimary */
-        onLightOutlinePrimary: '#DDDDDD',
         /** light outline onLight outlinePrimaryHover */
         onLightOutlinePrimaryHover: '#EDEDEDFF',
         /** light outline onLight outlinePrimaryActive */
         onLightOutlinePrimaryActive: '#D4D4D4FF',
-        /** light outline onLight outlineSecondary */
-        onLightOutlineSecondary: '#949494',
-        /** light outline onLight outlineTertiary */
-        onLightOutlineTertiary: '#707070',
         /** light outline onLight outlineInfo */
         onLightOutlineInfo: '#3F81FD',
         /** light outline onLight outlineInfoMinor */
         onLightOutlineInfoMinor: '#8BB2FC',
         /** light outline onLight outlineTransparentInfo */
         onLightOutlineTransparentInfo: '#2A72F833',
+        /** light outline onLight outlineSolidTertiary */
+        onLightOutlineSolidTertiary: '#707070',
+        /** light outline onLight outlineSolidTertiaryHover */
+        onLightOutlineSolidTertiaryHover: '#FFFFFFFF',
+        /** light outline onLight outlineSolidTertiaryActive */
+        onLightOutlineSolidTertiaryActive: '#595959FF',
+        /** light outline onLight outlineSolidDefault */
+        onLightOutlineSolidDefault: '#080808',
+        /** light outline onLight outlineSolidDefaultHover */
+        onLightOutlineSolidDefaultHover: '#595959FF',
+        /** light outline onLight outlineSolidDefaultActive */
+        onLightOutlineSolidDefaultActive: '#303030FF',
+        /** light outline onLight outlineSolidPrimary */
+        onLightOutlineSolidPrimary: '#DDDDDD',
+        /** light outline onLight outlineSolidPrimaryHover */
+        onLightOutlineSolidPrimaryHover: '#FFFFFFFF',
+        /** light outline onLight outlineSolidPrimaryActive */
+        onLightOutlineSolidPrimaryActive: '#B3B3B3FF',
+        /** light outline onLight outlineSolidSecondary */
+        onLightOutlineSolidSecondary: '#949494',
+        /** light outline onLight outlineSolidSecondaryHover */
+        onLightOutlineSolidSecondaryHover: '#FFFFFFFF',
+        /** light outline onLight outlineSolidSecondaryActive */
+        onLightOutlineSolidSecondaryActive: '#757575FF',
         /** light outline inverse outlinePrimaryHover */
         inverseOutlinePrimaryHover: '#787878FF',
         /** light outline inverse outlinePrimaryActive */
@@ -3064,14 +3176,6 @@ export const color = {
         inverseOutlineTransparentInfoHover: '#3F82FDFF',
         /** light outline inverse outlineTransparentInfoActive */
         inverseOutlineTransparentInfoActive: '#3F82FD56',
-        /** light outline inverse outlinePrimary */
-        inverseOutlinePrimary: '#262626',
-        /** light outline inverse outlineSecondary */
-        inverseOutlineSecondary: '#4E4E4E',
-        /** light outline inverse outlineTertiary */
-        inverseOutlineTertiary: '#707070',
-        /** light outline inverse outlineDefault */
-        inverseOutlineDefault: '#F9F9F9',
         /** light outline inverse outlineTransparentPrimary */
         inverseOutlineTransparentPrimary: '#FFFFFF1F',
         /** light outline inverse outlineTransparentSecondary */
@@ -3110,5 +3214,29 @@ export const color = {
         inverseOutlineTransparentNegative: '#FF293E47',
         /** light outline inverse outlineTransparentInfo */
         inverseOutlineTransparentInfo: '#3F81FD47',
+        /** light outline inverse outlineSolidPrimary */
+        inverseOutlineSolidPrimary: '#DDDDDD',
+        /** light outline inverse outlineSolidPrimaryHover */
+        inverseOutlineSolidPrimaryHover: '#FFFFFFFF',
+        /** light outline inverse outlineSolidPrimaryActive */
+        inverseOutlineSolidPrimaryActive: '#B3B3B3FF',
+        /** light outline inverse outlineSolidSecondary */
+        inverseOutlineSolidSecondary: '#949494',
+        /** light outline inverse outlineSolidSecondaryHover */
+        inverseOutlineSolidSecondaryHover: '#FFFFFFFF',
+        /** light outline inverse outlineSolidSecondaryActive */
+        inverseOutlineSolidSecondaryActive: '#757575FF',
+        /** light outline inverse outlineSolidTertiary */
+        inverseOutlineSolidTertiary: '#707070',
+        /** light outline inverse outlineSolidTertiaryHover */
+        inverseOutlineSolidTertiaryHover: '#FFFFFFFF',
+        /** light outline inverse outlineSolidTertiaryActive */
+        inverseOutlineSolidTertiaryActive: '#595959FF',
+        /** light outline inverse outlineSolidDefault */
+        inverseOutlineSolidDefault: '#080808',
+        /** light outline inverse outlineSolidDefaultHover */
+        inverseOutlineSolidDefaultHover: '#595959FF',
+        /** light outline inverse outlineSolidDefaultActive */
+        inverseOutlineSolidDefaultActive: '#303030FF',
     },
 } as const;
