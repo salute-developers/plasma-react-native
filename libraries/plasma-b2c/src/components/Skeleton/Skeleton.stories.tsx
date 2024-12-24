@@ -44,7 +44,7 @@ export const Default: StoryObj<StoryRectSkeletonProps> = {
 };
 
 const StoryRectSkeleton = (props: StoryRectSkeletonProps) => {
-    return <LineSkeleton {...props} />;
+    return <RectSkeleton {...props} />;
 };
 
 const rectNotes = `
