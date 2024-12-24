@@ -1,10 +1,10 @@
 import { ReactElement } from 'react';
 
-export type Color = {
+export interface Color {
     [k: string]: {
         [k: string]: string;
     };
-};
+}
 
 export interface LinearGradientType {
     kind: 'linear';
@@ -34,6 +34,12 @@ export interface Gradient {
 }
 
 export interface Shape {
+    [k: string]: {
+        [k: string]: number;
+    };
+}
+
+export interface Spacing {
     [k: string]: {
         [k: string]: number;
     };
@@ -86,13 +92,23 @@ export interface Data {
     gradient: Gradient;
     shadow: Shadow;
     shape: Shape;
+    spacing: Spacing;
     fontFamily: FontFamily;
     typography: Typography;
 }
 
 export interface Theme<T extends Data = Data> {
+    /*
+     * Режим темы
+     */
     mode: 'light' | 'dark';
+    /*
+     * Размер экрана, на котором
+     */
     screenSize: 'screenS' | 'screenM' | 'screenL';
+    /*
+     * Объект с токенами темы
+     */
     data: T;
 }
 

@@ -13,7 +13,7 @@ export type CellWithContentRight = {
      */
     alignContentRight?: AlignProp;
     /**
-     * Слот для контента спарва, например `Icon`
+     * Слот для контента справа, например `Icon`
      */
     contentRight?: ReactNode;
     /**
@@ -32,7 +32,7 @@ export type CellWithDisclosure = {
      */
     alignContentRight?: never;
     /**
-     * Слот для контента спарва, например `Icon`
+     * Слот для контента справа, например `Icon`
      */
     contentRight?: never;
     /**
