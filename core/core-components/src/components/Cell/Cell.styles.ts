@@ -103,6 +103,7 @@ export const getStyle = (
             gap: sizeStyle.gap,
             ...externalStyle?.container,
         },
+        // TODO: Удалить и проверить, что всё работает
         content: {
             height: 'auto',
             display: 'flex',
