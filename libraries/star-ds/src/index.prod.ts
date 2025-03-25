@@ -1,5 +1,6 @@
 export * from './components/Button';
 export * from './components/Carousel';
+export * from './components/Card';
 export * from './components/Cell';
 export * from './components/Checkbox';
 export * from './components/FocusContainer';
