@@ -1178,7 +1178,7 @@ PODS:
     - React-utils (= 0.74.5-0)
   - RNCAsyncStorage (1.23.1):
     - React-Core
-  - RNSVG (15.2.0):
+  - RNSVG (15.3.0):
     - React-Core
   - SocketRocket (0.7.0)
   - Yoga (0.0.0)
@@ -1445,7 +1445,7 @@ SPEC CHECKSUMS:
   React-utils: 0722628556f07211936d98debee53d0df33227c1
   ReactCommon: 1a11abd52b3c972770d105a523cbbbcc2ca678f9
   RNCAsyncStorage: 826b603ae9c0f88b5ac4e956801f755109fa4d5c
-  RNSVG: 43b64ed39c14ce830d840903774154ca0c1f27ec
+  RNSVG: a48668fd382115bc89761ce291a81c4ca5f2fd2e
   SocketRocket: abac6f5de4d4d62d24e11868d7a2f427e0ef940d
   Yoga: 69701a97cb6d539d522352f92334fa2b383f559c
 
