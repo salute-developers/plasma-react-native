@@ -18,6 +18,7 @@ module.exports = {
             },
         ], // NOTE: https://eslint.org/docs/latest/rules/space-before-function-paren
 
+        'global-require': 0,
         'react/jsx-wrap-multilines': 'off', // NOTE: https://github.com/jsx-eslint/eslint-plugin-react/blob/master/docs/rules/jsx-wrap-multilines.md
         'react/jsx-closing-tag-location': 'off', // NOTE: https://github.com/jsx-eslint/eslint-plugin-react/blob/master/docs/rules/jsx-closing-tag-location.md
         'react/jsx-no-leaked-render': 'off',
