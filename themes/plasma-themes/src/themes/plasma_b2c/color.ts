@@ -1624,6 +1624,78 @@ export const color = {
         inverseOutlineSolidDefaultHover: '#FFFFFFFF',
         /** dark outline inverse outlineSolidDefaultActive */
         inverseOutlineSolidDefaultActive: '#C7C7C7FF',
+        /** Желтый цвет для данных */
+        dataYellow: '#F3A912',
+        /** Желтый цвет для данных */
+        dataYellowHover: '#F4B22FFF',
+        /** Желтый цвет для данных */
+        dataYellowActive: '#EDA20CFF',
+        /** Минорный желтый цвет для данных */
+        dataYellowMinor: '#A16B00',
+        /** Минорный желтый цвет для данных */
+        dataYellowMinorHover: '#B87A00FF',
+        /** Минорный желтый цвет для данных */
+        dataYellowMinorActive: '#996600FF',
+        /** Прозрачный желтый цвет для данных */
+        dataYellowTransparent: '#F3A9128F',
+        /** Прозрачный желтый цвет для данных */
+        dataYellowTransparentHover: '#F3A812AD',
+        /** Прозрачный желтый цвет для данных */
+        dataYellowTransparentActive: '#F3A81280',
+        /** Желтый цвет для данных на темном фоне */
+        onDarkDataYellow: '#F3A912',
+        /** Желтый цвет для данных на темном фоне */
+        onDarkDataYellowHover: '#F4B22FFF',
+        /** Желтый цвет для данных на темном фоне */
+        onDarkDataYellowActive: '#EDA20CFF',
+        /** Минорный желтый цвет для данных на темном фоне */
+        onDarkDataYellowMinor: '#A16B00',
+        /** Минорный желтый цвет для данных на темном фоне */
+        onDarkDataYellowMinorHover: '#B87A00FF',
+        /** Минорный желтый цвет для данных на темном фоне */
+        onDarkDataYellowMinorActive: '#996600FF',
+        /** Прозрачный желтый цвет для данных на темном фоне */
+        onDarkDataYellowTransparent: '#F3A9128F',
+        /** Прозрачный желтый цвет для данных на темном фоне */
+        onDarkDataYellowTransparentHover: '#F3A812AD',
+        /** Прозрачный желтый цвет для данных на темном фоне */
+        onDarkDataYellowTransparentActive: '#F3A81280',
+        /** Желтый цвет для данных на светлом фоне */
+        onLightDataYellow: '#F3A912',
+        /** Желтый цвет для данных на светлом фоне */
+        onLightDataYellowHover: '#F4B22FFF',
+        /** Желтый цвет для данных на светлом фоне */
+        onLightDataYellowActive: '#EDA20CFF',
+        /** Минорный желтый цвет для данных на светлом фоне */
+        onLightDataYellowMinor: '#FFD37A',
+        /** Минорный желтый цвет для данных на светлом фоне */
+        onLightDataYellowMinorHover: '#FFDA8FFF',
+        /** Минорный желтый цвет для данных на светлом фоне */
+        onLightDataYellowMinorActive: '#FFCF70FF',
+        /** Прозрачный желтый цвет для данных на светлом фоне */
+        onLightDataYellowTransparent: '#F3A9128F',
+        /** Прозрачный желтый цвет для данных на светлом фоне */
+        onLightDataYellowTransparentHover: '#F3A812AD',
+        /** Прозрачный желтый цвет для данных на светлом фоне */
+        onLightDataYellowTransparentActive: '#F3A81280',
+        /** Инвертированный желтый цвет для данных */
+        inverseDataYellow: '#F3A912',
+        /** Инвертированный желтый цвет для данных */
+        inverseDataYellowHover: '#F4B22FFF',
+        /** Инвертированный желтый цвет для данных */
+        inverseDataYellowActive: '#EDA20CFF',
+        /** Инвертированный минорный желтый цвет для данных */
+        inverseDataYellowMinor: '#FFD37A',
+        /** Инвертированный минорный желтый цвет для данных */
+        inverseDataYellowMinorHover: '#FFDA8FFF',
+        /** Инвертированный минорный желтый цвет для данных */
+        inverseDataYellowMinorActive: '#FFCF70FF',
+        /** Инвертированный прозрачный желтый цвет для данных */
+        inverseDataYellowTransparent: '#F3A9128F',
+        /** Инвертированный прозрачный желтый цвет для данных */
+        inverseDataYellowTransparentHover: '#F3A812AD',
+        /** Инвертированный прозрачный желтый цвет для данных */
+        inverseDataYellowTransparentActive: '#F3A81280',
     },
     light: {
         /** Основной цвет текста */
@@ -2764,30 +2836,30 @@ export const color = {
         outlineInfoMinor: '#8BB2FC',
         /** light outline default outlineTransparentInfo */
         outlineTransparentInfo: '#2A72F833',
-        /** light outline default outlineSolidPrimary */
-        outlineSolidPrimary: '#262626',
         /** light outline default outlineSolidPrimaryHover */
-        outlineSolidPrimaryHover: '#787878FF',
+        outlineSolidPrimaryHover: '#FFFFFFFF',
         /** light outline default outlineSolidPrimaryActive */
-        outlineSolidPrimaryActive: '#4F4F4FFF',
-        /** light outline default outlineSolidSecondary */
-        outlineSolidSecondary: '#4E4E4E',
+        outlineSolidPrimaryActive: '#B3B3B3FF',
         /** light outline default outlineSolidSecondaryHover */
         outlineSolidSecondaryHover: '#FFFFFFFF',
         /** light outline default outlineSolidSecondaryActive */
-        outlineSolidSecondaryActive: '#404040FF',
-        /** light outline default outlineSolidTertiary */
-        outlineSolidTertiary: '#707070',
+        outlineSolidSecondaryActive: '#757575FF',
         /** light outline default outlineSolidTertiaryHover */
         outlineSolidTertiaryHover: '#FFFFFFFF',
         /** light outline default outlineSolidTertiaryActive */
         outlineSolidTertiaryActive: '#595959FF',
-        /** light outline default outlineSolidDefault */
-        outlineSolidDefault: '#F9F9F9',
         /** light outline default outlineSolidDefaultHover */
-        outlineSolidDefaultHover: '#FFFFFFFF',
+        outlineSolidDefaultHover: '#595959FF',
         /** light outline default outlineSolidDefaultActive */
-        outlineSolidDefaultActive: '#C7C7C7FF',
+        outlineSolidDefaultActive: '#303030FF',
+        /** light outline default outlineSolidPrimary */
+        outlineSolidPrimary: '#DDDDDD',
+        /** light outline default outlineSolidSecondary */
+        outlineSolidSecondary: '#949494',
+        /** light outline default outlineSolidTertiary */
+        outlineSolidTertiary: '#707070',
+        /** light outline default outlineSolidDefault */
+        outlineSolidDefault: '#080808',
         /** light outline onDark outlineSecondaryHover */
         onDarkOutlineSecondaryHover: '#636363FF',
         /** light outline onDark outlineSecondaryActive */
@@ -3060,30 +3132,30 @@ export const color = {
         onLightOutlineInfoMinor: '#8BB2FC',
         /** light outline onLight outlineTransparentInfo */
         onLightOutlineTransparentInfo: '#2A72F833',
-        /** light outline onLight outlineSolidTertiary */
-        onLightOutlineSolidTertiary: '#707070',
         /** light outline onLight outlineSolidTertiaryHover */
         onLightOutlineSolidTertiaryHover: '#FFFFFFFF',
         /** light outline onLight outlineSolidTertiaryActive */
         onLightOutlineSolidTertiaryActive: '#595959FF',
-        /** light outline onLight outlineSolidDefault */
-        onLightOutlineSolidDefault: '#080808',
         /** light outline onLight outlineSolidDefaultHover */
         onLightOutlineSolidDefaultHover: '#595959FF',
         /** light outline onLight outlineSolidDefaultActive */
         onLightOutlineSolidDefaultActive: '#303030FF',
-        /** light outline onLight outlineSolidPrimary */
-        onLightOutlineSolidPrimary: '#DDDDDD',
         /** light outline onLight outlineSolidPrimaryHover */
         onLightOutlineSolidPrimaryHover: '#FFFFFFFF',
         /** light outline onLight outlineSolidPrimaryActive */
         onLightOutlineSolidPrimaryActive: '#B3B3B3FF',
-        /** light outline onLight outlineSolidSecondary */
-        onLightOutlineSolidSecondary: '#949494',
         /** light outline onLight outlineSolidSecondaryHover */
         onLightOutlineSolidSecondaryHover: '#FFFFFFFF',
         /** light outline onLight outlineSolidSecondaryActive */
         onLightOutlineSolidSecondaryActive: '#757575FF',
+        /** light outline onLight outlineSolidPrimary */
+        onLightOutlineSolidPrimary: '#DDDDDD',
+        /** light outline onLight outlineSolidSecondary */
+        onLightOutlineSolidSecondary: '#949494',
+        /** light outline onLight outlineSolidTertiary */
+        onLightOutlineSolidTertiary: '#707070',
+        /** light outline onLight outlineSolidDefault */
+        onLightOutlineSolidDefault: '#080808',
         /** light outline inverse outlinePrimaryHover */
         inverseOutlinePrimaryHover: '#787878FF',
         /** light outline inverse outlinePrimaryActive */
@@ -3214,29 +3286,101 @@ export const color = {
         inverseOutlineTransparentNegative: '#FF293E47',
         /** light outline inverse outlineTransparentInfo */
         inverseOutlineTransparentInfo: '#3F81FD47',
-        /** light outline inverse outlineSolidPrimary */
-        inverseOutlineSolidPrimary: '#DDDDDD',
         /** light outline inverse outlineSolidPrimaryHover */
-        inverseOutlineSolidPrimaryHover: '#FFFFFFFF',
+        inverseOutlineSolidPrimaryHover: '#787878FF',
         /** light outline inverse outlineSolidPrimaryActive */
-        inverseOutlineSolidPrimaryActive: '#B3B3B3FF',
-        /** light outline inverse outlineSolidSecondary */
-        inverseOutlineSolidSecondary: '#949494',
+        inverseOutlineSolidPrimaryActive: '#4F4F4FFF',
         /** light outline inverse outlineSolidSecondaryHover */
         inverseOutlineSolidSecondaryHover: '#FFFFFFFF',
         /** light outline inverse outlineSolidSecondaryActive */
-        inverseOutlineSolidSecondaryActive: '#757575FF',
-        /** light outline inverse outlineSolidTertiary */
-        inverseOutlineSolidTertiary: '#707070',
+        inverseOutlineSolidSecondaryActive: '#404040FF',
         /** light outline inverse outlineSolidTertiaryHover */
         inverseOutlineSolidTertiaryHover: '#FFFFFFFF',
         /** light outline inverse outlineSolidTertiaryActive */
         inverseOutlineSolidTertiaryActive: '#595959FF',
-        /** light outline inverse outlineSolidDefault */
-        inverseOutlineSolidDefault: '#080808',
         /** light outline inverse outlineSolidDefaultHover */
         inverseOutlineSolidDefaultHover: '#595959FF',
         /** light outline inverse outlineSolidDefaultActive */
         inverseOutlineSolidDefaultActive: '#303030FF',
+        /** light outline inverse outlineSolidPrimary */
+        inverseOutlineSolidPrimary: '#262626',
+        /** light outline inverse outlineSolidSecondary */
+        inverseOutlineSolidSecondary: '#4E4E4E',
+        /** light outline inverse outlineSolidTertiary */
+        inverseOutlineSolidTertiary: '#707070',
+        /** light outline inverse outlineSolidDefault */
+        inverseOutlineSolidDefault: '#080808',
+        /** Желтый цвет для данных */
+        dataYellow: '#F3A912',
+        /** Желтый цвет для данных */
+        dataYellowHover: '#F5B638FF',
+        /** Желтый цвет для данных */
+        dataYellowActive: '#E49C0CFF',
+        /** Минорный желтый цвет для данных */
+        dataYellowMinor: '#FFD37A',
+        /** Минорный желтый цвет для данных */
+        dataYellowMinorHover: '#FFDA8FFF',
+        /** Минорный желтый цвет для данных */
+        dataYellowMinorActive: '#FFCC66FF',
+        /** Прозрачный желтый цвет для данных */
+        dataYellowTransparent: '#F3A9128F',
+        /** Прозрачный желтый цвет для данных */
+        dataYellowTransparentHover: '#F3A8127A',
+        /** Прозрачный желтый цвет для данных */
+        dataYellowTransparentActive: '#F3A81299',
+        /** Желтый цвет для данных на темном фоне */
+        onDarkDataYellow: '#F3A912',
+        /** Желтый цвет для данных на темном фоне */
+        onDarkDataYellowHover: '#F5B638FF',
+        /** Желтый цвет для данных на темном фоне */
+        onDarkDataYellowActive: '#E49C0CFF',
+        /** Минорный желтый цвет для данных на темном фоне */
+        onDarkDataYellowMinor: '#A16B00',
+        /** Минорный желтый цвет для данных на темном фоне */
+        onDarkDataYellowMinorHover: '#B87A00FF',
+        /** Минорный желтый цвет для данных на темном фоне */
+        onDarkDataYellowMinorActive: '#8F5F00FF',
+        /** Прозрачный желтый цвет для данных на темном фоне */
+        onDarkDataYellowTransparent: '#F3A9128F',
+        /** Прозрачный желтый цвет для данных на темном фоне */
+        onDarkDataYellowTransparentHover: '#F3A8127A',
+        /** Прозрачный желтый цвет для данных на темном фоне */
+        onDarkDataYellowTransparentActive: '#F3A81299',
+        /** Желтый цвет для данных на светлом фоне */
+        onLightDataYellow: '#F3A912',
+        /** Желтый цвет для данных на светлом фоне */
+        onLightDataYellowHover: '#F5B638FF',
+        /** Желтый цвет для данных на светлом фоне */
+        onLightDataYellowActive: '#E49C0CFF',
+        /** Минорный желтый цвет для данных на светлом фоне */
+        onLightDataYellowMinor: '#FFD37A',
+        /** Минорный желтый цвет для данных на светлом фоне */
+        onLightDataYellowMinorHover: '#FFDA8FFF',
+        /** Минорный желтый цвет для данных на светлом фоне */
+        onLightDataYellowMinorActive: '#FFCC66FF',
+        /** Прозрачный желтый цвет для данных на светлом фоне */
+        onLightDataYellowTransparent: '#F3A9128F',
+        /** Прозрачный желтый цвет для данных на светлом фоне */
+        onLightDataYellowTransparentHover: '#F3A8127A',
+        /** Прозрачный желтый цвет для данных на светлом фоне */
+        onLightDataYellowTransparentActive: '#F3A81299',
+        /** Инвертированный желтый цвет для данных */
+        inverseDataYellow: '#F3A912',
+        /** Инвертированный желтый цвет для данных */
+        inverseDataYellowHover: '#F5B638FF',
+        /** Инвертированный желтый цвет для данных */
+        inverseDataYellowActive: '#E49C0CFF',
+        /** Инвертированный минорный желтый цвет для данных */
+        inverseDataYellowMinor: '#A16B00',
+        /** Инвертированный минорный желтый цвет для данных */
+        inverseDataYellowMinorHover: '#B87A00FF',
+        /** Инвертированный минорный желтый цвет для данных */
+        inverseDataYellowMinorActive: '#8F5F00FF',
+        /** Инвертированный прозрачный желтый цвет для данных */
+        inverseDataYellowTransparent: '#F3A9128F',
+        /** Инвертированный прозрачный желтый цвет для данных */
+        inverseDataYellowTransparentHover: '#F3A8127A',
+        /** Инвертированный прозрачный желтый цвет для данных */
+        inverseDataYellowTransparentActive: '#F3A81299',
     },
 } as const;
