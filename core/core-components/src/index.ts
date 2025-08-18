@@ -8,6 +8,7 @@ export * from './components/Checkbox';
 export * from './components/FocusContainer';
 export * from './components/List';
 export * from './components/IconButton';
+export * from './components/Indicator';
 export * from './components/Skeleton';
 export * from './components/Spinner';
 export * from './components/Switch';
