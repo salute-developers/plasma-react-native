@@ -3,6 +3,7 @@ export * from './components/Carousel';
 export * from './components/Card';
 export * from './components/Cell';
 export * from './components/Checkbox';
+export * from './components/Divider';
 export * from './components/FocusContainer';
 export * from './components/List';
 export * from './components/IconButton';
